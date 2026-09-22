@@ -4,7 +4,8 @@ import json, re, collections
 from pathlib import Path
 from urllib.parse import urlparse, urlunparse
 
-RAW, OUT = Path("/workspace/awesome-system-one/raw"), Path("/workspace/awesome-system-one")
+ROOT = Path(__file__).resolve().parent
+RAW, OUT = ROOT / "raw", ROOT
 
 def normalize_url(url: str) -> str:
     url = (url or "").strip()
@@ -52,15 +53,30 @@ def should_exclude(url: str, title: str = "") -> bool:
 
 LINK_RE = re.compile(r"""^\s*[-*]\s+(?:\*\*)?\[(?:\*\*)?([^\*\]]+)(?:\*\*)?\](?:\*\*)?\(([^)]+)\)(?:\*\*)?\s*(?:[—–\-·]|\s+[—–]\s+|\s+·\s+)?(.*)$""", re.M)
 
+CAT_OFFICIAL = "Official"
+CAT_DOCS = "Docs & essays"
+CAT_OS = "Open-source / local alternatives"
+CAT_LISTS = "Awesome lists & indexes"
+CAT_SDKS = "SDKs & tooling"
+CAT_EVALS = "Evals & papers"
+CAT_USE = "Use cases"
+CAT_COMMUNITY = "Community"
+
+# Legacy names from earlier dumps / upstream headings
+CAT_ALIASES = {
+    "Open models & alternatives": CAT_OS,
+    "Demos": CAT_USE,
+}
+
 SECTION_MAP = [
-    (re.compile(r"official|product and documentation", re.I), "Official"),
-    (re.compile(r"research and writing|docs|essay|reference and reading|concepts|manifesto|blog|showcase", re.I), "Docs & essays"),
-    (re.compile(r"open model|reproduction|alternative|local model|open.?source", re.I), "Open models & alternatives"),
-    (re.compile(r"awesome|index|directory|gallery|catalog|radar", re.I), "Awesome lists & indexes"),
-    (re.compile(r"sdk|client librar|integration|developer tool|tooling|mcp|constrained|structured decoding|calibration and selective|agent and developer|cli|pipeline|context|security|guardrail|data.?search|code navigation|model routing", re.I), "SDKs & tooling"),
-    (re.compile(r"eval|benchmark|independent research|paper|calibration audit", re.I), "Evals & papers"),
-    (re.compile(r"demo|application|workflow|game|robot|browser|creative|see jev at work", re.I), "Demos"),
-    (re.compile(r"community|discord|show and tell|updates", re.I), "Community"),
+    (re.compile(r"official|product and documentation", re.I), CAT_OFFICIAL),
+    (re.compile(r"research and writing|docs|essay|reference and reading|concepts|manifesto|blog|showcase", re.I), CAT_DOCS),
+    (re.compile(r"open model|reproduction|alternative|local model|open.?source|local.?port|mlx|core.?ml", re.I), CAT_OS),
+    (re.compile(r"awesome|index|directory|gallery|catalog|radar", re.I), CAT_LISTS),
+    (re.compile(r"sdk|client librar|integration|developer tool|tooling|mcp|constrained|structured decoding|calibration and selective|agent and developer|cli|pipeline", re.I), CAT_SDKS),
+    (re.compile(r"eval|benchmark|jevbench|independent research|paper|calibration audit", re.I), CAT_EVALS),
+    (re.compile(r"demo|application|workflow|game|robot|browser|creative|use case|see jev at work|security|guardrail|data.?search|code navigation|model routing", re.I), CAT_USE),
+    (re.compile(r"community|discord|show and tell|updates", re.I), CAT_COMMUNITY),
 ]
 
 def category_from_heading(heading: str):
@@ -69,21 +85,21 @@ def category_from_heading(heading: str):
     return None
 
 def infer_category(url, title, heading, hint=None):
-    if hint: return hint
+    if hint: return CAT_ALIASES.get(hint, hint)
     c = category_from_heading(heading)
     if c: return c
     low = (url + " " + title).lower()
     if any(x in low for x in ("typesafe.ai", "docs.typesafe", "console.typesafe", "evals.typesafe", "discord.gg/typesafe")):
-        return "Docs & essays" if any(x in low for x in ("blog", "manifesto")) else "Official"
-    if any(x in low for x in ("arxiv.org", "benchmark", "eval", "jevals", "calibration", "paper")): return "Evals & papers"
-    if "awesome" in low and "github.com" in low: return "Awesome lists & indexes"
-    if any(x in low for x in ("laya", "nanojev", "semif", "openjev", "/kev", "nimble", "decider", "jevlike", "mini-jev", "jevmlx", "poorjev", "huggingface.co", "modernbert", "gliner", "setfit", "openthai", "reflex", "verdict", "litjev", "open-alternative", "pocketjev", "simple-jev", "simplejev")):
-        return "Open models & alternatives"
-    if any(x in low for x in ("sdk", "client", "mcp", "outlines", "instructor", "xgrammar", "guidance", "dspy")): return "SDKs & tooling"
-    if any(x in low for x in ("discord", "x.com/typesafe", "linkedin.com/company/typesafe")): return "Community"
-    if any(x in low for x in ("archerhume", "lilting.ch", "latent.space", "learnjev", "navinpai", "warmersun", "kevnu.com", "langchain.com/blog", "systemonemodels.org")): return "Docs & essays"
-    if any(x in low for x in ("demo", "snake", "mario", "pokemon", "chess", "game", "play")): return "Demos"
-    return "Demos"
+        return CAT_DOCS if any(x in low for x in ("blog", "manifesto")) else CAT_OFFICIAL
+    if any(x in low for x in ("arxiv.org", "benchmark", "eval", "jevals", "jevbench", "calibration", "paper")): return CAT_EVALS
+    if "awesome" in low and "github.com" in low: return CAT_LISTS
+    if any(x in low for x in ("laya", "nanojev", "semif", "openjev", "/kev", "nimble", "decider", "jevlike", "mini-jev", "jevmlx", "poorjev", "huggingface.co", "modernbert", "gliner", "setfit", "openthai", "reflex", "verdict", "litjev", "open-alternative", "pocketjev", "simple-jev", "simplejev", "coreml", "jevcoreml")):
+        return CAT_OS
+    if any(x in low for x in ("sdk", "client", "mcp", "outlines", "instructor", "xgrammar", "guidance", "dspy")): return CAT_SDKS
+    if any(x in low for x in ("discord", "x.com/typesafe", "linkedin.com/company/typesafe")): return CAT_COMMUNITY
+    if any(x in low for x in ("archerhume", "lilting.ch", "latent.space", "learnjev", "navinpai", "warmersun", "kevnu.com", "langchain.com/blog", "systemonemodels.org")): return CAT_DOCS
+    if any(x in low for x in ("demo", "snake", "mario", "pokemon", "chess", "game", "play")): return CAT_USE
+    return CAT_USE
 
 def clean_desc(s):
     if not s: return ""
@@ -115,18 +131,33 @@ def prefer_title(a, b):
     if b.lower() in ("link", "here", "repo", "github"): return a
     return a if len(a) <= len(b) + 10 else b
 
-RANK = {"Official":0,"Docs & essays":1,"Open models & alternatives":2,"Awesome lists & indexes":3,"SDKs & tooling":4,"Evals & papers":5,"Community":6,"Demos":7}
+# Merge priority when the same URL appears in multiple sources (lower wins).
+# Display order is ORDER in render_readme — not this map.
+RANK = {
+    CAT_OFFICIAL: 0,
+    CAT_DOCS: 1,
+    CAT_OS: 2,
+    CAT_EVALS: 3,
+    CAT_LISTS: 4,
+    CAT_COMMUNITY: 5,
+    CAT_SDKS: 6,
+    CAT_USE: 7,
+    "Open models & alternatives": 2,
+    "Demos": 7,
+}
 
 class Entry:
-    __slots__ = ("url","title","description","category","sources")
+    __slots__ = ("url","title","description","category","sources","subsection")
     def __init__(self, url, title, description, category, source):
-        self.url, self.title, self.description, self.category = url, title, description, category
-        self.sources = {source}
+        self.url, self.title, self.description, self.category = url, title, description, CAT_ALIASES.get(category, category)
+        self.sources = {source} if isinstance(source, str) else set(source or [])
+        self.subsection = ""
     def merge(self, title, description, category, source):
         self.title = prefer_title(self.title, title)
         self.description = prefer_desc(self.description, description)
+        category = CAT_ALIASES.get(category, category)
         if RANK.get(category, 9) < RANK.get(self.category, 9): self.category = category
-        self.sources.add(source)
+        if source: self.sources.add(source)
 
 def add(entries, url, title, desc, cat, source):
     if should_exclude(url, title): return
@@ -137,7 +168,7 @@ def add(entries, url, title, desc, cat, source):
     else: entries[nu] = Entry(nu, title, desc, cat, source)
 
 
-def parse_markdown_all_links(text, source, entries, default_cat="Demos"):
+def parse_markdown_all_links(text, source, entries, default_cat=None):
     """Fallback: harvest all markdown links on list lines, including - **[t](u)** · desc."""
     heading = ""
     for line in text.splitlines():
@@ -159,7 +190,7 @@ def parse_markdown_all_links(text, source, entries, default_cat="Demos"):
             after = re.sub(r"^(\*\*|\s|·|—|–|-|:)+", "", after)
             after = re.split(r"\[|\|", after)[0]
             desc = clean_desc(after)
-            add(entries, url, title, desc, infer_category(url, title, heading) or default_cat, source)
+            add(entries, url, title, desc, infer_category(url, title, heading) or default_cat or CAT_USE, source)
 
 def parse_markdown(text, source, entries):
     heading = ""
@@ -175,7 +206,7 @@ def parse_markdown(text, source, entries):
 
 def parse_abdelstark_json(path, entries):
     data = json.loads(path.read_text()); source = "AbdelStark/awesome-typesafe-jev"
-    cat_map = {"client-libraries-and-integrations":"SDKs & tooling","agent-and-developer-tooling":"SDKs & tooling","browser-agents":"Demos","applications-and-workflows":"Demos","games-and-robotics":"Demos","evaluations-and-independent-research":"Evals & papers","showcases-and-field-notes":"Docs & essays"}
+    cat_map = {"client-libraries-and-integrations":CAT_SDKS,"agent-and-developer-tooling":CAT_SDKS,"browser-agents":CAT_USE,"applications-and-workflows":CAT_USE,"games-and-robotics":CAT_USE,"evaluations-and-independent-research":CAT_EVALS,"showcases-and-field-notes":CAT_DOCS}
     for cat in data.get("categories", []):
         hint = cat_map.get(cat.get("id"))
         for r in cat.get("resources", []):
@@ -185,20 +216,20 @@ def parse_abdelstark_json(path, entries):
 
 def parse_kyd_catalog(path, entries):
     data = json.loads(path.read_text()); source = "kydlikebtc/awesome-jev"
-    kind_map = {"official-docs":"Official","sdk":"SDKs & tooling","integration":"SDKs & tooling","plugin":"SDKs & tooling","project":"Demos","alternative":"Open models & alternatives","benchmark":"Evals & papers","article":"Docs & essays","tutorial":"Docs & essays","snippet":"SDKs & tooling","video":"Docs & essays","discussion":"Community"}
+    kind_map = {"official-docs":CAT_OFFICIAL,"sdk":CAT_SDKS,"integration":CAT_SDKS,"plugin":CAT_SDKS,"project":CAT_USE,"alternative":CAT_OS,"benchmark":CAT_EVALS,"article":CAT_DOCS,"tutorial":CAT_DOCS,"snippet":CAT_SDKS,"video":CAT_DOCS,"discussion":CAT_COMMUNITY}
     for r in data:
         url, title, desc = r.get("url") or "", r.get("title") or "", r.get("summary") or ""
         cat = kind_map.get(r.get("kind")) or infer_category(url, title, "")
-        if r.get("official") and cat == "Demos": cat = "Official"
+        if r.get("official") and cat == CAT_USE: cat = CAT_OFFICIAL
         add(entries, url, title, desc, cat, source)
 
 
 def parse_beatapi_json(path, entries):
     data = json.loads(path.read_text()); source = "BeatAPI/awesome-jev"
     cat_map = {
-        "browser-computer-use":"Demos","sdk-integrations":"SDKs & tooling","routing-optimization":"SDKs & tooling",
-        "open-models":"Open models & alternatives","search-data":"SDKs & tooling","safety-review":"SDKs & tooling",
-        "agent-workflows":"SDKs & tooling","interfaces":"Demos","developer-tools":"SDKs & tooling","domain-tools":"Demos",
+        "browser-computer-use":CAT_USE,"sdk-integrations":CAT_SDKS,"routing-optimization":CAT_USE,
+        "open-models":CAT_OS,"search-data":CAT_USE,"safety-review":CAT_USE,
+        "agent-workflows":CAT_USE,"interfaces":CAT_USE,"developer-tools":CAT_SDKS,"domain-tools":CAT_USE,
     }
     for r in data.get("projects", []):
         url = r.get("repoUrl") or ""
@@ -215,14 +246,14 @@ def parse_beatapi_json(path, entries):
 def parse_alternatives_html(path, entries):
     text = path.read_text(encoding="utf-8", errors="replace"); source = "systemonemodels.org/examples/alternatives"
     for m in re.finditer(r'href="(https://github\.com/[^"#?\s]+)"[^>]*>([^<]*)<', text):
-        add(entries, m.group(1), m.group(2).strip() or m.group(1).rstrip("/").split("/")[-1], "", "Open models & alternatives", source)
+        add(entries, m.group(1), m.group(2).strip() or m.group(1).rstrip("/").split("/")[-1], "", CAT_OS, source)
     for m in re.finditer(r'href="(https://huggingface\.co/[^"#?\s]+)"', text):
-        url = m.group(1); add(entries, url, url.rstrip("/").split("/")[-1], "", "Open models & alternatives", source)
+        url = m.group(1); add(entries, url, url.rstrip("/").split("/")[-1], "", CAT_OS, source)
     for m in re.finditer(r'href="(https://[^"#?\s]+)"[^>]*>', text):
         url = m.group(1)
         if "github.com" in url or "huggingface.co" in url: continue
         if any(x in url for x in ("simplejev.ai", "laya.convai", "systemonemodels")):
-            add(entries, url, urlparse(url).netloc, "", "Open models & alternatives", source)
+            add(entries, url, urlparse(url).netloc, "", CAT_OS, source)
 
 SEEDS = [
 ("https://typesafe.ai","TypeSafe AI","Official product site for System One models and Jev.","Official","seed-official"),
@@ -303,7 +334,8 @@ SEEDS = [
 ("https://github.com/urchade/GLiNER","GLiNER","Zero-shot NER with labels at inference time — extraction-shaped cousin of typed decisions.","Open models & alternatives","seed-tier"),
 ("https://github.com/huggingface/setfit","SetFit","Few-shot Sentence Transformer classification without prompting.","Open models & alternatives","seed-tier"),
 ("https://github.com/kuleshov-group/mdlm","MDLM","NeurIPS 2024 masked diffusion LMs — open non-autoregressive research line often compared to Jev.","Evals & papers","seed-tier"),
-("https://github.com/fstandhartinger/jevbench","JevBench","Independent cross-model benchmark for typed decisions (accuracy, calibration, latency, cost).","Evals & papers","seed-tier"),
+("https://github.com/fstandhartinger/jevbench","JevBench (text decisions)","Independent cross-model benchmark for typed decisions (accuracy, calibration, latency, cost).","Evals & papers","seed-tier"),
+("https://jevbench.dev","JevBench","Interactive harness bench for Jev, open alternatives, and dual-brain (LLM + decision model) setups — starting with StarCraft II — measuring win/loss, task completion, and latency rather than a single typed-answer score.","Evals & papers","seed-tier"),
 ("https://jevals.com","Jevals.com","Independent hosted-Jev vs LLM benchmark with public methodology and per-decision logs.","Evals & papers","seed-tier"),
 ("https://github.com/AbdelStark/awesome-typesafe-jev","Awesome TypeSafe Jev","Large community field guide to Jev projects, SDKs, evals, and demos.","Awesome lists & indexes","seed-lists"),
 ("https://github.com/logicrw/awesome-jev-projects","Awesome Jev Projects","Commit-pinned radar of 479+ Jev projects across 17 domains.","Awesome lists & indexes","seed-lists"),
@@ -328,8 +360,179 @@ SEEDS = [
 
 ]
 
-def main():
-    entries = {}
+INGEST_DATE = "2026-09-22 PT"
+
+# Display order (newcomers: OS alternatives + use cases before the SDK dump).
+DISPLAY_ORDER = [CAT_OFFICIAL, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT_LISTS, CAT_COMMUNITY]
+
+LANDMARK_OS = [
+    "https://github.com/jaredpalmer/kev",
+    "https://github.com/NandhaKishorM/laya",
+    "https://github.com/vinnylarouge/jevlike",
+    "https://github.com/bespokelabsai/nimble",
+    "https://github.com/TheoLeeCJ/SemIf",
+    "https://github.com/bnsd55/jevmlx",
+    "https://github.com/GodModeAI2025/JevCoreML",
+    "https://github.com/mizorewww/laya-mlx",
+    "https://github.com/mizorewww/laya-coreml",
+]
+PIN_EVALS = [
+    "https://jevbench.dev",
+    "https://github.com/fstandhartinger/jevbench",
+    "https://jevals.com",
+]
+CATEGORY_OVERRIDE = {
+    "https://jevbench.dev": CAT_EVALS,
+    "https://github.com/fstandhartinger/jevbench": CAT_EVALS,
+    "https://jevals.com": CAT_EVALS,
+    "https://github.com/iammrduncan/typesafe-ai-benchmark": CAT_EVALS,
+    "https://github.com/kuleshov-group/mdlm": CAT_EVALS,
+    "https://systemonemodels.org/examples/alternatives": CAT_LISTS,
+    "https://github.com/kevinbadi/jev-voice": CAT_USE,
+    "https://github.com/kevinbadi/hyperedit": CAT_USE,
+    "https://github.com/OmniJev/PlayJev": CAT_USE,
+    "https://github.com/virajbhartiya/laya-vs-jev": CAT_USE,
+    "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow": CAT_DOCS,
+    "https://nobelprize.org/prizes/economic-sciences/2002/kahneman/lecture": CAT_DOCS,
+    "http://incompleteideas.net/IncIdeas/BitterLesson.html": CAT_DOCS,
+    "https://platform.openai.com/docs/guides/structured-outputs": CAT_DOCS,
+    "https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026": CAT_DOCS,
+    "https://agentpedia.codes/blog/jev-system-one-models": CAT_DOCS,
+    "https://github.com/trycua/cua": CAT_USE,
+    "https://github.com/FluidInference/FluidUse": CAT_USE,
+    "https://openrouter.ai/typesafe/jev-1.13": CAT_OFFICIAL,
+    "https://anthonymaio.substack.com/p/jev-the-language-model-that-wont": CAT_DOCS,
+    "https://doi.org/10.1016/j.ecolecon.2005.03.020": CAT_DOCS,
+    "https://github.com/qingshungLI/everything-about-jev": CAT_DOCS,
+    "https://github.com/Adkid-Zephyr/chinese-workflow-decision-bench": CAT_EVALS,
+    "https://github.com/aangelopoulos/conformal-prediction": CAT_EVALS,
+    "https://x.com/CompleteSkeptic/status/2099925682726002904": CAT_DOCS,
+}
+
+BLURBS = {
+    CAT_OFFICIAL: "TypeSafe product pages, docs, cookbooks, and official SDKs.",
+    CAT_OS: "Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML ports, adapters over existing LLMs, and related typed-output libraries.",
+    CAT_USE: "Community apps and demos grouped by decision shape. Official cookbooks stay under [Official](#official).",
+    CAT_DOCS: "Independent explainers, launch coverage, and background reading.",
+    CAT_EVALS: "How these models are measured — including [JevBench](https://jevbench.dev/) — plus papers on calibration and structured decisions.",
+    CAT_SDKS: "Clients, MCP servers, skills, and integrations. Official TypeSafe clients are under [Official](#official); application-shaped projects live under [Use cases](#use-cases).",
+    CAT_LISTS: "Other curated indexes this catalog merges.",
+    CAT_COMMUNITY: "Official chat, social, and the launch thread.",
+}
+
+def gh_anchor(heading: str) -> str:
+    s = heading.lower().replace(" & ", "--").replace(" / ", "--").replace("/", "--").replace(" ", "-")
+    return re.sub(r"[^a-z0-9\-]", "", s)
+
+def _blob(e: Entry) -> str:
+    return f"{e.title} {e.url} {e.description or ''}"
+
+def recategorize(e: Entry) -> None:
+    e.category = CAT_ALIASES.get(e.category, e.category)
+    if e.category == CAT_OFFICIAL:
+        return
+    if e.url in CATEGORY_OVERRIDE:
+        e.category = CATEGORY_OVERRIDE[e.url]
+    titles = {
+        "https://github.com/fstandhartinger/jevbench": "JevBench (text decisions)",
+        "https://jevbench.dev": "JevBench",
+    }
+    if e.url in titles:
+        e.title = titles[e.url]
+    if e.url in CATEGORY_OVERRIDE:
+        return
+    blob = _blob(e).lower()
+    if e.category in (CAT_SDKS, CAT_USE, CAT_OS):
+        if re.search(r"awesome[- ](jev|typesafe|open-system|open system)", blob) and "github.com" in e.url:
+            e.category = CAT_LISTS
+            return
+        if "logicrw.github.io/awesome-jev-projects" in e.url and "/categories/" in e.url:
+            e.category = CAT_LISTS
+            return
+        if "arxiv.org" in e.url or "doi.org" in e.url:
+            e.category = CAT_EVALS if "arxiv.org" in e.url else CAT_DOCS
+            return
+        if "substack.com" in e.url:
+            e.category = CAT_DOCS
+            return
+        if re.search(r"jevbench|jevals\.com", e.url.lower()):
+            e.category = CAT_EVALS
+            return
+        if re.search(r"\b(bench|benchmark|eval)\b", e.title.lower()) and "sdk" not in blob and e.category == CAT_SDKS:
+            e.category = CAT_EVALS
+            return
+    if e.category == CAT_USE:
+        if any(h in e.url for h in ("wikipedia.org", "nobelprize.org", "incompleteideas.net")):
+            e.category = CAT_DOCS
+
+def _first(blob: str, rules, default: str) -> str:
+    for name, rx in rules:
+        if rx.search(blob):
+            return name
+    return default
+
+def assign_subsection(e: Entry) -> str:
+    blob = _blob(e)
+    low = blob.lower()
+    cat = e.category
+    if cat == CAT_OFFICIAL:
+        if any(x in e.url.lower() for x in ("/cookbooks", "/patterns", "/demos", "use-case-map", "how-to-build", "model-jaggedness")):
+            return "Patterns & cookbooks"
+        if any(x in e.url.lower() for x in ("github.com/typesafe-ai", "vercel.com/ai-gateway", "evals.typesafe", "openrouter.ai/typesafe")):
+            return "Product & SDKs"
+        return "Getting started"
+    if cat == CAT_OS:
+        if e.url in LANDMARK_OS:
+            return "Landmark projects"
+        return _first(low, [
+            ("Related classifiers & structured output", re.compile(r"instructor|outlines|\bdspy\b|gliner|setfit|modernbert|\bmdlm\b")),
+            ("Adapters & logit readers", re.compile(r"adapter|logit|next-token|constrained decoding|anyjev|semif|simple-jev|simplejev|llm2jev|open-alternative|choosekit|poorjev|zero-shot nli")),
+            ("Runtimes, ports & servers", re.compile(r"mlx|core.?ml|coreml|runtime|sglang|vllm|llama\.cpp|webgpu|transformers\.js|node\.js|cloud run|on-device|iphone|container|self-hosted|spark")),
+        ], "Models & weights")
+    if cat == CAT_USE:
+        return _first(low, [
+            ("Games, robotics & simulation", re.compile(r"\bgames?\b|snake|chess|mario|pokemon|doom|pong|starcraft|star.?craft|minecraft|robot|mujoco|vizdoom|gomoku|\b2048\b|tetris|t-rex|trex|civ2|grand prix|playjev|arcade|shooter|fighter|clash royale|vampire survivors|runescape|drone|airways|simulation")),
+            ("Browser, computer use & OS", re.compile(r"browser|playwright|puppeteer|computer.?use|accessibility|chrome extension|firefox|\bcua\b|macos|os action|fluiduse")),
+            ("Search, RAG & rerank", re.compile(r"rerank|re-rank|\brag\b|retriev|passage|semantic (find|search|line)|jevfind|jev-search|data.?search")),
+            ("Guardrails, safety & review", re.compile(r"guardrail|prompt.?inject|moderat|safety|warden|permission|abuse|\bspam\b|adblock|containment|quarantine|code review|antivirus")),
+            ("Routing & triage", re.compile(r"\brout(?:e|er|ing)\b|triage|dispatch|intent|ticket")),
+            ("Extraction & structured data", re.compile(r"extract|document|\bner\b|entity|sql\b|duckdb|sqlite|pdf|folder filer")),
+            ("Classification", re.compile(r"classif|taxonomy|label|sentiment")),
+            ("Agents, tools & harnesses", re.compile(r"\bagents?\b|\bskill\b|harness|tool.?call|\bmcp\b")),
+            ("Voice, mail & productivity", re.compile(r"voice|speech|mail|email|inbox|dictation|clipboard|transcript|wechat|linkedin|youtube|call coach|reading-practice|\basr\b")),
+            ("Markets & operations", re.compile(r"\btrade\b|trading|stock|crypto|market|hedge.?fund|hyperliquid")),
+            ("Creative tools", re.compile(r"blender|midi|music|comfyui|video editor|hyperedit|design-mock|shadcn|creative")),
+            ("Playgrounds & live demos", re.compile(r"playground|try app|interactive|live demo|\bdemos?\b|\brepl\b")),
+        ], "Other applications")
+    if cat == CAT_SDKS:
+        if any(x in e.url.lower() for x in ("github.com/typesafe-ai", "vercel.com/ai-gateway", "vercel.com/kb/guide/typesafe")):
+            return "Official SDKs & gateways"
+        return _first(low, [
+            ("MCP, skills & agent plugins", re.compile(r"\bmcp\b|\bskill\b|plugin|claude code|codex|hermes|opencode|pretooluse|\bhook\b")),
+            ("Community SDKs & clients", re.compile(r"\bsdk\b|\bclient\b|pypi|npm |library|package")),
+            ("Integrations & data pipelines", re.compile(r"duckdb|sqlite|dbt|airflow|\bsql\b|gateway|provider|integration|polars|lang(?:chain|graph)|ai sdk")),
+        ], "Other tooling")
+    if cat == CAT_EVALS:
+        if "arxiv.org" in e.url:
+            return "Papers"
+        if any(x in low for x in ("jevbench.dev", "starcraft", "harness", "interactive")) or e.url in PIN_EVALS[:1]:
+            return "Harnesses & live benches"
+        return "Typed-decision benchmarks"
+    return ""
+
+def pin_index(url: str, pins: list[str]) -> int:
+    try:
+        return pins.index(url)
+    except ValueError:
+        return 10_000
+
+def sort_key(e: Entry, pins: list[str] | None = None):
+    return (pin_index(e.url, pins or []), e.title.lower())
+
+def raw_ready() -> bool:
+    return RAW.is_dir() and (RAW / "AbdelStark-awesome-typesafe-jev.md").exists()
+
+def ingest_raw(entries: dict) -> None:
     md_sources = {
         "AbdelStark/awesome-typesafe-jev": RAW/"AbdelStark-awesome-typesafe-jev.md",
         "logicrw/awesome-jev-projects": RAW/"logicrw-awesome-jev-projects.md",
@@ -350,83 +553,181 @@ def main():
     parse_alternatives_html(RAW/"systemonemodels-alternatives.html", entries)
     if (RAW/"BeatAPI-projects.json").exists():
         parse_beatapi_json(RAW/"BeatAPI-projects.json", entries)
-    for row in SEEDS:
-        add(entries, *row)
 
-    drop = [nu for nu,e in entries.items() if (not e.title) or e.title.lower() in {"link","here","readme","license"} or "camo.githubusercontent" in nu]
-    for nu in drop: del entries[nu]
-    for e in entries.values():
-        if not e.description:
-            e.description = f"{e.title} — System One / Jev related resource."
-    # scrub bad/setup descriptions
-    bad_desc = re.compile(r"edit [`']?\.env|replace the placeholder|keep this file private|do not paste the key|git ignores it", re.I)
-    for e in entries.values():
-        if bad_desc.search(e.description or ""):
-            e.description = f"{e.title} — System One / Jev related project."
-        # strip relative markdown leftovers
-        e.description = re.sub(r"\[([^\]]+)\]\((?!https?:)[^)]+\)", r"\1", e.description or "")
-        e.description = re.sub(r"^[\s⭐★☆·•]+(?:—\s*)?", "", e.description or "").strip()
+def load_links_json(entries: dict) -> None:
+    path = OUT / "links.json"
+    if not path.exists():
+        return
+    for row in json.loads(path.read_text(encoding="utf-8")):
+        url, title = row.get("url") or "", row.get("title") or ""
+        desc, cat = row.get("description") or "", row.get("category") or CAT_USE
+        srcs = row.get("sources") or ["links.json"]
+        add(entries, url, title, desc, cat, srcs[0])
+        nu = normalize_url(url)
+        if nu in entries:
+            for s in srcs[1:]:
+                entries[nu].sources.add(s)
 
+def intro_lines(n: int) -> list[str]:
+    return [
+        "# Awesome System One",
+        "",
+        "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+        "",
+        "> Typed decision models for software control flow — not chatbots. A consolidated catalog of **System One** / **Jev-style** resources.",
+        "",
+        "**System One** models take unstructured state plus typed questions and return structured decisions (`Choice`, `Score`, `Noul`) with calibrated probabilities in one parallel pass. Software branches on those values. They do not generate chat replies.",
+        "",
+        "TypeSafe’s **[Jev](https://typesafe.ai)** is the first *widely known* System One product — the launch that popularized this framing. Related ideas (typed classifiers, constrained decoding, calibrated probabilities, encoder decision heads) have a longer history; after Jev, the ecosystem filled in with [open reproductions](#open-source--local-alternatives), local/OS runtimes, [evals](#evals--papers), and community lists. This catalog merges those threads (see [Sources](#sources)). It does not claim Jev invented the underlying techniques.",
+        "",
+        f"**[JevBench](https://jevbench.dev/)** benches Jev, Jev-compatible open alternatives, and dual-brain (guide LLM + decision model) setups on interactive harnesses — starting with StarCraft II — measuring win/loss, task completion, and latency rather than a single typed-answer score.",
+        "",
+        "Deduplicated by normalized URL across the ingested indexes.",
+        "",
+        f"**{n} unique links** · Ingested **{INGEST_DATE}** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).",
+        "",
+        "### Start here",
+        "",
+        "- [Introduction (TypeSafe docs)](https://docs.typesafe.ai/introduction) — What Jev is, and the `Choice` / `Score` / `Noul` primitives.",
+        "- [Open-source / local alternatives](#open-source--local-alternatives) — Kev, Laya, Jevlike, adapters, Core ML / MLX ports.",
+        "- [Use cases](#use-cases) — Routing, classification, extraction, guardrails, agents, search/rerank, and more.",
+        "- [JevBench](https://jevbench.dev/) — Interactive harness bench for Jev and open alternatives.",
+        "- [System One Models](https://systemonemodels.org) — Independent living docs for the category.",
+        "- [Jev alternatives index](https://systemonemodels.org/examples/alternatives) — Living index of open reproductions and cousins.",
+        "",
+    ]
 
-    ORDER = ["Official","Docs & essays","Open models & alternatives","Awesome lists & indexes","SDKs & tooling","Evals & papers","Demos","Community"]
+def render_entry(e: Entry) -> str:
+    return f"- [{e.title}]({e.url}) — {e.description}"
+
+def write_outputs(entries: dict) -> None:
     by_cat = collections.defaultdict(list)
-    for e in entries.values(): by_cat[e.category].append(e)
-    for cat in by_cat: by_cat[cat].sort(key=lambda x: x.title.lower())
+    by_sub = collections.defaultdict(lambda: collections.defaultdict(list))
+    for e in entries.values():
+        recategorize(e)
+        e.subsection = assign_subsection(e)
+        by_cat[e.category].append(e)
+        by_sub[e.category][e.subsection or ""].append(e)
+
+    sub_order = {
+        CAT_OFFICIAL: ["Getting started", "Patterns & cookbooks", "Product & SDKs"],
+        CAT_OS: ["Landmark projects", "Models & weights", "Runtimes, ports & servers", "Adapters & logit readers", "Related classifiers & structured output"],
+        CAT_USE: [
+            "Routing & triage", "Classification", "Extraction & structured data",
+            "Guardrails, safety & review", "Agents, tools & harnesses", "Search, RAG & rerank",
+            "Browser, computer use & OS", "Games, robotics & simulation",
+            "Voice, mail & productivity", "Markets & operations", "Creative tools",
+            "Playgrounds & live demos", "Other applications",
+        ],
+        CAT_SDKS: ["Official SDKs & gateways", "Community SDKs & clients", "MCP, skills & agent plugins", "Integrations & data pipelines", "Other tooling"],
+        CAT_EVALS: ["Harnesses & live benches", "Typed-decision benchmarks", "Papers"],
+    }
+
+    for cat, items in by_cat.items():
+        pins = LANDMARK_OS if cat == CAT_OS else (PIN_EVALS if cat == CAT_EVALS else [])
+        items.sort(key=lambda e: sort_key(e, pins))
+        for sub, sub_items in by_sub[cat].items():
+            sub_items.sort(key=lambda e: sort_key(e, pins))
 
     source_counts = collections.Counter()
     for e in entries.values():
-        for s in e.sources: source_counts[s] += 1
+        for s in e.sources:
+            source_counts[s] += 1
 
     links = []
-    for cat in ORDER:
-        for e in by_cat.get(cat, []):
-            links.append({"url":e.url,"title":e.title,"description":e.description,"category":e.category,"sources":sorted(e.sources)})
+    for cat in DISPLAY_ORDER:
+        ordered_subs = sub_order.get(cat)
+        if ordered_subs:
+            seen = set()
+            for sub in ordered_subs:
+                for e in by_sub[cat].get(sub, []):
+                    links.append({"url": e.url, "title": e.title, "description": e.description, "category": e.category, "subsection": e.subsection, "sources": sorted(e.sources)})
+                    seen.add(e.url)
+            for e in by_cat.get(cat, []):
+                if e.url not in seen:
+                    links.append({"url": e.url, "title": e.title, "description": e.description, "category": e.category, "subsection": e.subsection, "sources": sorted(e.sources)})
+        else:
+            for e in by_cat.get(cat, []):
+                links.append({"url": e.url, "title": e.title, "description": e.description, "category": e.category, "subsection": e.subsection, "sources": sorted(e.sources)})
     for cat in sorted(by_cat):
-        if cat in ORDER: continue
+        if cat in DISPLAY_ORDER:
+            continue
         for e in by_cat[cat]:
-            links.append({"url":e.url,"title":e.title,"description":e.description,"category":e.category,"sources":sorted(e.sources)})
+            links.append({"url": e.url, "title": e.title, "description": e.description, "category": e.category, "subsection": e.subsection, "sources": sorted(e.sources)})
 
     n = len(links)
-    (OUT/"links.json").write_text(json.dumps(links, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+    (OUT / "links.json").write_text(json.dumps(links, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    lines = ["# Awesome System One", "", "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)", "",
-        "> A consolidated catalog of **System One** / **Jev** resources: official TypeSafe docs and SDKs, independent essays, open model reproductions, SDKs & tooling, evaluations, demos, and community indexes.", "",
-        "TypeSafe’s **Jev** is a hosted System One model that returns typed decisions (`Choice`, `Score`, `Noul`) with calibrated probabilities in one parallel pass—built for software control flow, not chat. This list merges every unique link found across multiple community awesome lists and living indexes (see [Sources](#sources)), deduplicated by normalized URL.", "",
-        f"**{n} unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).", "",
-        "## Contents", ""]
-    for cat in ORDER:
+    lines = intro_lines(n)
+    lines += ["## Contents", ""]
+    for cat in DISPLAY_ORDER:
         items = by_cat.get(cat, [])
-        if not items: continue
-        anchor = cat.lower().replace(" & ", "--").replace(" ", "-")
-        lines.append(f"- [{cat}](#{anchor}) ({len(items)})")
+        if not items:
+            continue
+        lines.append(f"- [{cat}](#{gh_anchor(cat)}) ({len(items)})")
+        for sub in sub_order.get(cat, []):
+            sub_items = by_sub[cat].get(sub, [])
+            if sub_items:
+                lines.append(f"  - [{sub}](#{gh_anchor(sub)}) ({len(sub_items)})")
     lines += ["- [Sources](#sources)", "- [Contributing](#contributing)", ""]
-    for cat in ORDER:
+
+    for cat in DISPLAY_ORDER:
         items = by_cat.get(cat, [])
-        if not items: continue
-        lines += [f"## {cat}", ""]
-        for e in items:
-            lines.append(f"- [{e.title}]({e.url}) — {e.description}")
-        lines.append("")
+        if not items:
+            continue
+        lines += [f"## {cat}", "", BLURBS.get(cat, ""), ""]
+        ordered_subs = [s for s in sub_order.get(cat, []) if by_sub[cat].get(s)]
+        leftover = [e for e in items if e.subsection not in ordered_subs] if ordered_subs else items
+        if ordered_subs:
+            for sub in ordered_subs:
+                lines += [f"### {sub}", ""]
+                for e in by_sub[cat][sub]:
+                    lines.append(render_entry(e))
+                lines.append("")
+            if leftover:
+                lines += ["### Other", ""]
+                for e in leftover:
+                    lines.append(render_entry(e))
+                lines.append("")
+        else:
+            for e in items:
+                lines.append(render_entry(e))
+            lines.append("")
+
     lines += ["## Sources", "", "This catalog consolidates and deduplicates entries from:", ""]
     for name, url in [
-        ("AbdelStark/awesome-typesafe-jev","https://github.com/AbdelStark/awesome-typesafe-jev"),
-        ("logicrw/awesome-jev-projects","https://github.com/logicrw/awesome-jev-projects"),
-        ("OmniJev/awesome-jev-gallery","https://github.com/OmniJev/awesome-jev-gallery"),
-        ("AppitStudio/awesome-jev","https://github.com/AppitStudio/awesome-jev"),
-        ("BeatAPI/awesome-jev","https://github.com/BeatAPI/awesome-jev"),
-        ("rupeshpoojary9/awesome-open-system-one","https://github.com/rupeshpoojary9/awesome-open-system-one"),
-        ("kydlikebtc/awesome-jev","https://github.com/kydlikebtc/awesome-jev"),
-        ("MrJev/awesome-jev","https://github.com/MrJev/awesome-jev"),
-        ("systemonemodels.org/examples/alternatives","https://systemonemodels.org/examples/alternatives/"),
+        ("AbdelStark/awesome-typesafe-jev", "https://github.com/AbdelStark/awesome-typesafe-jev"),
+        ("logicrw/awesome-jev-projects", "https://github.com/logicrw/awesome-jev-projects"),
+        ("OmniJev/awesome-jev-gallery", "https://github.com/OmniJev/awesome-jev-gallery"),
+        ("AppitStudio/awesome-jev", "https://github.com/AppitStudio/awesome-jev"),
+        ("BeatAPI/awesome-jev", "https://github.com/BeatAPI/awesome-jev"),
+        ("rupeshpoojary9/awesome-open-system-one", "https://github.com/rupeshpoojary9/awesome-open-system-one"),
+        ("kydlikebtc/awesome-jev", "https://github.com/kydlikebtc/awesome-jev"),
+        ("MrJev/awesome-jev", "https://github.com/MrJev/awesome-jev"),
+        ("systemonemodels.org/examples/alternatives", "https://systemonemodels.org/examples/alternatives/"),
     ]:
         lines.append(f"- [{name}]({url})")
-    lines += ["", "Plus official TypeSafe pages, independent essays (Archer Hume, lilting.ch, Latent.Space, Learn Jev, etc.), and Tier A/B open reproductions cross-checked against the alternatives index.", "",
-        "Machine-readable dump: [`links.json`](links.json). Ingest map: [`SOURCES.md`](SOURCES.md). Counts: [`stats.txt`](stats.txt).", "",
-        "## Contributing", "", "Prefer fixing upstream awesome lists; this file is a merge. When adding here: one factual line, working URL, System One / Jev relevance, no LayaAir-style name collisions, no empty stubs.", "",
-        "## License", "", "This compilation is dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Individual projects and linked content retain their own licenses and terms.", ""]
-    (OUT/"README.md").write_text("\n".join(lines), encoding="utf-8")
+    lines += [
+        "",
+        "Plus official TypeSafe pages, independent essays (Archer Hume, lilting.ch, Latent.Space, Learn Jev, etc.), and Tier A/B open reproductions cross-checked against the alternatives index.",
+        "",
+        "Machine-readable dump: [`links.json`](links.json). Ingest map: [`SOURCES.md`](SOURCES.md). Counts: [`stats.txt`](stats.txt).",
+        "",
+        "## Contributing",
+        "",
+        "Prefer fixing upstream awesome lists; this file is a merge. When adding here: one factual line, working URL, System One / Jev relevance, no LayaAir-style name collisions, no empty stubs.",
+        "",
+        "Regenerate with `python3 build.py`. If `raw/` ingest artifacts are present they are merged first; otherwise the script reloads [`links.json`](links.json) and re-renders. Keep category mapping in `build.py` in sync with README sections.",
+        "",
+        "## License",
+        "",
+        "This compilation is dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Individual projects and linked content retain their own licenses and terms.",
+        "",
+    ]
+    (OUT / "README.md").write_text("\n".join(lines), encoding="utf-8")
 
-    sources_md = ["# Sources ingested", "", "Ingest date: **2026-09-22 PT** (America/Los_Angeles).", "",
+    sources_md = [
+        "# Sources ingested", "", f"Ingest date: **{INGEST_DATE}** (America/Los_Angeles).", "",
         "| Source | URL | Artifact used |", "| --- | --- | --- |",
         "| AbdelStark/awesome-typesafe-jev | https://github.com/AbdelStark/awesome-typesafe-jev | README.md + resources.json |",
         "| logicrw/awesome-jev-projects | https://github.com/logicrw/awesome-jev-projects | README.md |",
@@ -438,20 +739,64 @@ def main():
         "| MrJev/awesome-jev | https://github.com/MrJev/awesome-jev | README.md |",
         "| systemonemodels.org alternatives | https://systemonemodels.org/examples/alternatives/ | HTML index |",
         "| seed-official / seed-essays / seed-tier / seed-lists | (manual) | Official docs, essays, Tier A/B models, list self-links |",
-        "", "Normalization: strip trailing `/`, `.git`, `www.`, URL fragments/queries; exclude badge/shield hosts, issue templates, and known unrelated collisions (e.g. LayaAir).", ""]
-    (OUT/"SOURCES.md").write_text("\n".join(sources_md), encoding="utf-8")
+        "",
+        "Normalization: strip trailing `/`, `.git`, `www.`, URL fragments/queries; exclude badge/shield hosts, issue templates, and known unrelated collisions (e.g. LayaAir).",
+        "",
+    ]
+    (OUT / "SOURCES.md").write_text("\n".join(sources_md), encoding="utf-8")
 
     stats = [f"unique_links\t{n}", "", "by_category"]
-    for cat in ORDER: stats.append(f"{cat}\t{len(by_cat.get(cat, []))}")
+    for cat in DISPLAY_ORDER:
+        stats.append(f"{cat}\t{len(by_cat.get(cat, []))}")
     for cat in sorted(by_cat):
-        if cat not in ORDER: stats.append(f"{cat}\t{len(by_cat[cat])}")
+        if cat not in DISPLAY_ORDER:
+            stats.append(f"{cat}\t{len(by_cat[cat])}")
+    stats += ["", "by_subsection"]
+    for cat in DISPLAY_ORDER:
+        for sub in sub_order.get(cat, []):
+            k = len(by_sub[cat].get(sub, []))
+            if k:
+                stats.append(f"{cat} / {sub}\t{k}")
+        extra_subs = sorted(s for s in by_sub[cat] if s not in sub_order.get(cat, []))
+        for sub in extra_subs:
+            stats.append(f"{cat} / {sub or '(none)'}\t{len(by_sub[cat][sub])}")
     stats += ["", "by_source_appearance_count", "# (a link counted once per source that mentioned it)"]
-    for s,c in sorted(source_counts.items(), key=lambda x: (-x[1], x[0])): stats.append(f"{s}\t{c}")
-    stats += ["", f"json_count_matches_unique\t{len(links)==n}", ""]
-    (OUT/"stats.txt").write_text("\n".join(stats), encoding="utf-8")
+    for s, c in sorted(source_counts.items(), key=lambda x: (-x[1], x[0])):
+        stats.append(f"{s}\t{c}")
+    stats += ["", f"json_count_matches_unique\t{len(links) == n}", ""]
+    (OUT / "stats.txt").write_text("\n".join(stats), encoding="utf-8")
     print(f"Wrote {n} unique links")
-    for cat in ORDER: print(f"  {cat}: {len(by_cat.get(cat, []))}")
+    for cat in DISPLAY_ORDER:
+        print(f"  {cat}: {len(by_cat.get(cat, []))}")
+        for sub in sub_order.get(cat, []):
+            k = len(by_sub[cat].get(sub, []))
+            if k:
+                print(f"    {sub}: {k}")
     print("top sources:", source_counts.most_common(15))
+
+def cleanup_entries(entries: dict) -> None:
+    drop = [nu for nu, e in entries.items() if (not e.title) or e.title.lower() in {"link", "here", "readme", "license"} or "camo.githubusercontent" in nu]
+    for nu in drop:
+        del entries[nu]
+    bad_desc = re.compile(r"edit [`']?\.env|replace the placeholder|keep this file private|do not paste the key|git ignores it", re.I)
+    for e in entries.values():
+        if not e.description:
+            e.description = f"{e.title} — System One / Jev related resource."
+        if bad_desc.search(e.description or ""):
+            e.description = f"{e.title} — System One / Jev related project."
+        e.description = re.sub(r"\[([^\]]+)\]\((?!https?:)[^)]+\)", r"\1", e.description or "")
+        e.description = re.sub(r"^[\s⭐★☆·•]+(?:—\s*)?", "", e.description or "").strip()
+
+def main():
+    entries = {}
+    if raw_ready():
+        ingest_raw(entries)
+    else:
+        load_links_json(entries)
+    for row in SEEDS:
+        add(entries, *row)
+    cleanup_entries(entries)
+    write_outputs(entries)
 
 if __name__ == "__main__":
     main()
