@@ -1,46 +1,44 @@
 unique_links	1139
 
 by_category
-Official	48
+Hosted: TypeSafe Jev	3
 Open-source / local alternatives	82
-Use cases	248
-Docs & essays	47
-Evals & papers	78
-SDKs & tooling	577
+Use cases	274
+Docs & essays	56
+Evals & papers	79
+SDKs & tooling	586
 Awesome lists & indexes	54
 Community	5
 
 by_subsection
-Official / Getting started	12
-Official / Patterns & cookbooks	28
-Official / Product & SDKs	8
+Hosted: TypeSafe Jev / (none)	3
 Open-source / local alternatives / Landmark projects	9
 Open-source / local alternatives / Models & weights	37
 Open-source / local alternatives / Runtimes, ports & servers	11
 Open-source / local alternatives / Adapters & logit readers	14
 Open-source / local alternatives / Related classifiers & structured output	11
-Use cases / Routing & triage	15
-Use cases / Classification	12
-Use cases / Extraction & structured data	8
-Use cases / Guardrails, safety & review	6
-Use cases / Agents, tools & harnesses	9
-Use cases / Search, RAG & rerank	5
+Use cases / Routing & triage	18
+Use cases / Classification	16
+Use cases / Extraction & structured data	14
+Use cases / Guardrails, safety & review	8
+Use cases / Agents, tools & harnesses	10
+Use cases / Search, RAG & rerank	8
 Use cases / Browser, computer use & OS	58
 Use cases / Games, robotics & simulation	48
 Use cases / Voice, mail & productivity	10
-Use cases / Markets & operations	8
+Use cases / Markets & operations	9
 Use cases / Creative tools	5
-Use cases / Playgrounds & live demos	22
-Use cases / Other applications	42
-Docs & essays / (none)	47
+Use cases / Playgrounds & live demos	24
+Use cases / Other applications	46
+Docs & essays / (none)	56
 Evals & papers / Harnesses & live benches	5
-Evals & papers / Typed-decision benchmarks	51
+Evals & papers / Typed-decision benchmarks	52
 Evals & papers / Papers	22
-SDKs & tooling / Official SDKs & gateways	2
+SDKs & tooling / TypeSafe SDKs & gateways	11
 SDKs & tooling / Community SDKs & clients	92
-SDKs & tooling / MCP, skills & agent plugins	164
+SDKs & tooling / MCP, skills & agent plugins	165
 SDKs & tooling / Integrations & data pipelines	45
-SDKs & tooling / Other tooling	274
+SDKs & tooling / Other tooling	273
 Awesome lists & indexes / (none)	54
 Community / (none)	5
 

@@ -1,89 +1,12 @@
 [
   {
-    "url": "https://docs.typesafe.ai/confidence",
-    "title": "Confidence",
-    "description": "How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/models",
-    "title": "Current models",
-    "description": "Find model versions, moving aliases, supported inputs, pricing, and current limits.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/agent-skill",
-    "title": "docs",
-    "description": "Official docs for giving a coding agent API context and guidance when designing narrow System One / Jev decision questions (Claude Code plugin and skills.sh install paths).",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
     "url": "https://docs.typesafe.ai",
     "title": "Documentation",
-    "description": "Guides, SDK references, patterns, cookbooks, and the HTTP API.",
-    "category": "Official",
-    "subsection": "Getting started",
+    "description": "TypeSafe docs home — what Jev is and how System One differs from text generation.",
+    "category": "Hosted: TypeSafe Jev",
+    "subsection": "",
     "sources": [
       "AbdelStark/awesome-typesafe-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/api",
-    "title": "HTTP API reference",
-    "description": "The one endpoint, POST /v1/systemone, with the exact request and answer shapes for all three question types.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
-    "title": "Introducing System One Models & Jev",
-    "description": "The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "MrJev/awesome-jev",
-      "OmniJev/awesome-jev-gallery",
-      "kydlikebtc/awesome-jev",
-      "rupeshpoojary9/awesome-open-system-one",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/introduction",
-    "title": "Introduction",
-    "description": "What Jev is, how System One models differ from text-generation models, and the Choice, Score, and Noul primitives.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "MrJev/awesome-jev",
       "seed-official"
     ]
   },
@@ -91,8 +14,8 @@
     "url": "https://docs.typesafe.ai/primitives",
     "title": "Primitives",
     "description": "What each primitive is for and how to write criteria, including the 255-option cap on Choice and the 2-10 level range on Score.",
-    "category": "Official",
-    "subsection": "Getting started",
+    "category": "Hosted: TypeSafe Jev",
+    "subsection": "",
     "sources": [
       "AbdelStark/awesome-typesafe-jev",
       "OmniJev/awesome-jev-gallery",
@@ -101,463 +24,15 @@
     ]
   },
   {
-    "url": "https://docs.typesafe.ai/introduction/quickstart",
-    "title": "Quick start",
-    "description": "The canonical first call: one support ticket, one Choice, one Score and one Noul in a single request, in Python, JS and cURL.",
-    "category": "Official",
-    "subsection": "Getting started",
+    "url": "https://docs.typesafe.ai/api",
+    "title": "HTTP API reference",
+    "description": "The one endpoint, POST /v1/systemone, with the exact request and answer shapes for all three question types.",
+    "category": "Hosted: TypeSafe Jev",
+    "subsection": "",
     "sources": [
       "AbdelStark/awesome-typesafe-jev",
       "AppitStudio/awesome-jev",
-      "MrJev/awesome-jev",
       "kydlikebtc/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/concepts/system-one",
-    "title": "System One (TypeSafe docs)",
-    "description": "Author definition of System One models and the typed-decision interface.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "rupeshpoojary9/awesome-open-system-one",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://typesafe.ai",
-    "title": "TypeSafe AI",
-    "description": "Official product site for System One models and Jev.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "MrJev/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://console.typesafe.ai",
-    "title": "TypeSafe Console",
-    "description": "Create keys and inspect live Jev requests.",
-    "category": "Official",
-    "subsection": "Getting started",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook",
-    "title": "Choice self-consistency",
-    "description": "Adds an explicit \"uncertain\" outcome to moderation decisions and measures label agreement against the share of actions taken automatically.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/classifying_rag_passages",
-    "title": "Classifying RAG passages",
-    "description": "Scores each retrieved passage, then decides in code which reach the answering model — keeping contradictory ones flagged and dropping ones carrying prompt injection.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/patterns/composite-scoring",
-    "title": "Composite scoring",
-    "description": "Break one broad judgement into atomic scores and combine them with weights that live in your code, not in the prompt.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/patterns/confidence-routing",
-    "title": "Confidence-gated routing",
-    "description": "Treat confidence as a second axis: the answer tells you what, the confidence tells you whether to act on it.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery",
-    "title": "Cookbook: Autoresearch feature discovery",
-    "description": "An autoresearch loop that proposes questions, turns free text into numeric features, and uses model error to improve a supervised gradient-boosting regressor.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/classification_using_confidence",
-    "title": "Cookbook: Classification using confidence",
-    "description": "Classifies annual reports into 75 industry groups, then reads the answer's own confidence to decide whether to report that group or the broader division above it.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/function_calling",
-    "title": "Cookbook: Function calling",
-    "description": "Maps natural-language trading requests onto ordinary typed functions by turning function names and closed-set arguments into confidence-aware questions.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/sde_cascade",
-    "title": "Cookbook: Structured data extraction cascade",
-    "description": "A two-stage mini-then-verify-then-reasoning cascade that reaches most of a big reasoning model's quality at a fraction of the cost.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/parallel_questions",
-    "title": "Cookbooks",
-    "description": "A 13-question regulatory briefing over one long article, showing that batching every question into one call is far cheaper and faster with no change in answers.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/llm_guardrails",
-    "title": "Cookbooks",
-    "description": "Screens every message in and out of an LLM app in one request, naming hazards and scoring how much harm complying would do.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "MrJev/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/date_extraction_cookbook",
-    "title": "Date extraction",
-    "description": "Extracts absolute and relative dates by asking for the parts a document names, then resolving and validating them in code with confidence-based review.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/demos/smart-home",
-    "title": "Demo: Smart home assistant",
-    "description": "Runnable demo code for a smart home assistant that evaluates user requests with typed decisions.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/citation_check",
-    "title": "Double-checking citations",
-    "description": "Catches wrong or invented citations against the source document with one Choice, using its confidence to flag borderline cases for review.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/concepts/use-case-map",
-    "title": "Example use cases",
-    "description": "The vendor's own taxonomy: five headline categories, nineteen industry groups, and ten decision shapes from classification through to structured data extraction.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/hierarchical_classification",
-    "title": "Hierarchical classification",
-    "description": "Walks deep patent, retail, biomedical and source-code taxonomies with a parallel beam search over Choice probabilities.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
-    "title": "How to build with TypeSafe",
-    "description": "Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/patterns/intent-routing",
-    "title": "Intent routing",
-    "description": "Classify an incoming request and route it to the cheapest adequate handler: deterministic code, a specialist LLM, or a person.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/demos",
-    "title": "Interactive demos",
-    "description": "Official hands-on examples, including the smart-home assistant.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
-    "title": "Jev 1.13 jaggedness",
-    "description": "The vendor's own list of where the model fails: literal reading, arithmetic and counting, date comparison, indirection, large noisy states, adversarial content.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "MrJev/awesome-jev",
-      "OmniJev/awesome-jev-gallery",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/entity_alignment",
-    "title": "Knowledge graph entity alignment",
-    "description": "Decides which of 450 candidate pairs from two product catalogues describe the same thing, with one Score whose three levels are the three available actions.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/semantic_find",
-    "title": "Line-by-line search",
-    "description": "Semantic search over a terms-of-service document: one request scores 218 line ids with a Choice, and a Noul checks whether the document answers at all.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook",
-    "title": "Noul self-consistency",
-    "description": "Routes uncertain probabilities to human review while keeping the underlying noul values visible rather than collapsing them to a label.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/patterns",
-    "title": "Patterns",
-    "description": "Confidence-gated routing, composite scoring, speculative fan-out, and intent routing.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "MrJev/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook",
-    "title": "Pre-parsed value extraction",
-    "description": "Regexes find candidate emails, phone numbers and amounts; the model selects the requested span so code can normalise a verbatim value.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe",
-    "title": "Re-ranking",
-    "description": "Re-ranks 30-passage BM25 shortlists for 40 legal queries with one question per query-candidate pair, reporting large top-1 and top-10 gains.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/skill_suggestion",
-    "title": "Skill suggestion",
-    "description": "Picks at most one skill out of 182 for an agent turn: one request ranks every skill and asks whether the turn needs one at all, a second reads the top three.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/patterns/fan-out",
-    "title": "Speculative fan-out",
-    "description": "Pack many questions, including ones you may not need, into a single request and let your code decide afterwards what was relevant.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://docs.typesafe.ai/cookbooks/autoformat",
-    "title": "Structure recovery",
-    "description": "Reconstructs Markdown from plain text that lost its formatting, in two requests: one restitches hard-wrapped lines, one classifies every block.",
-    "category": "Official",
-    "subsection": "Patterns & cookbooks",
-    "sources": [
-      "AppitStudio/awesome-jev",
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://github.com/typesafe-ai/typesafe-sdk-js",
-    "title": "JavaScript SDK",
-    "description": "The official TypeScript client. Ships ESM, CJS and type declarations, with lowercase choice()/score()/noul() helper factories.",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "BeatAPI/awesome-jev",
-      "MrJev/awesome-jev",
-      "kydlikebtc/awesome-jev",
-      "logicrw/awesome-jev-projects",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://openrouter.ai/typesafe/jev-1.13",
-    "title": "Model page",
-    "description": "Model page — System One / Jev related resource.",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "MrJev/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://github.com/typesafe-ai/typesafe-sdk-python",
-    "title": "Python SDK",
-    "description": "The official Python client. Sync and async clients, retry policy with retry-after support, and Choice/Score/Noul helper classes.",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "BeatAPI/awesome-jev",
-      "MrJev/awesome-jev",
-      "kydlikebtc/awesome-jev",
-      "logicrw/awesome-jev-projects",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://github.com/typesafe-ai/system-one-adapter-python",
-    "title": "System One Adapter",
-    "description": "243 stars — A drop-in TypeSafeClient replacement that backs System One calls with ordinary LLM APIs.…",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "BeatAPI/awesome-jev",
-      "OmniJev/awesome-jev-gallery",
-      "kydlikebtc/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://github.com/typesafe-ai/skills",
-    "title": "TypeSafe Agent Skills",
-    "description": "1.6K stars — Official agent skills for building against TypeSafe’s System One / JEV API. [Source](https://github.com/typesafe-ai/skills/blob/65a39f393687675ce170e6094757de20370365b9/skills/typesafe-ai/SKILL.md)",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "AppitStudio/awesome-jev",
-      "BeatAPI/awesome-jev",
-      "OmniJev/awesome-jev-gallery",
-      "kydlikebtc/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://github.com/typesafe-ai",
-    "title": "TypeSafe GitHub organization",
-    "description": "Source repositories maintained by TypeSafe.",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://vercel.com/ai-gateway/models/jev",
-    "title": "Vercel AI Gateway",
-    "description": "Third-party hosted gateway entry for calling Jev through Vercel's AI SDK and gateway.",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "MrJev/awesome-jev",
-      "seed-official"
-    ]
-  },
-  {
-    "url": "https://evals.typesafe.ai",
-    "title": "Workflow evals",
-    "description": ", TypeSafe's own four-workflow dashboard, Jev at 61.7 to 76.0% accuracy and 0.3 to 0.5s per case against frontier baselines.…",
-    "category": "Official",
-    "subsection": "Product & SDKs",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "MrJev/awesome-jev",
-      "OmniJev/awesome-jev-gallery",
       "seed-official"
     ]
   },
@@ -1518,6 +993,17 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/patterns/confidence-routing",
+    "title": "Confidence-gated routing",
+    "description": "Treat confidence as a second axis: the answer tells you what, the confidence tells you whether to act on it.",
+    "category": "Use cases",
+    "subsection": "Routing & triage",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/FerryCorleone/crush-monitor",
     "title": "Crush Monitor",
     "description": "`Open source` · `Free source build` · `BYOK`. Local WeChat-style chat analyzer: TypeSafe Jev labels emotion/intent, scores affinity, and rates replies (BYOK). Project guide.",
@@ -1545,6 +1031,17 @@
     "category": "Use cases",
     "subsection": "Routing & triage",
     "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/patterns/intent-routing",
+    "title": "Intent routing",
+    "description": "Classify an incoming request and route it to the cheapest adequate handler: deterministic code, a specialist LLM, or a person.",
+    "category": "Use cases",
+    "subsection": "Routing & triage",
+    "sources": [
+      "AppitStudio/awesome-jev",
       "kydlikebtc/awesome-jev"
     ]
   },
@@ -1642,6 +1139,18 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/patterns",
+    "title": "Patterns",
+    "description": "Confidence-gated routing, composite scoring, speculative fan-out, and intent routing.",
+    "category": "Use cases",
+    "subsection": "Routing & triage",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "MrJev/awesome-jev",
+      "seed-official"
+    ]
+  },
+  {
     "url": "https://mrjev.com/projects/gargpratyush-jev-router",
     "title": "Read",
     "description": "Read — System One / Jev related resource.",
@@ -1662,6 +1171,16 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/classification_using_confidence",
+    "title": "Cookbook: Classification using confidence",
+    "description": "Classifies annual reports into 75 industry groups, then reads the answer's own confidence to decide whether to report that group or the broader division above it.",
+    "category": "Use cases",
+    "subsection": "Classification",
+    "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/hemanth/hfjev",
     "title": "hfjev",
     "description": "Classify Hugging Face datasets across typed semantic dimensions with TypeSafe Jev System One. Auto-adapts evaluation rubrics to dataset domains (reviews, news, LLM tuning, support) and classifies rows in a single parallel System One…",
@@ -1669,6 +1188,17 @@
     "subsection": "Classification",
     "sources": [
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/hierarchical_classification",
+    "title": "Hierarchical classification",
+    "description": "Walks deep patent, retail, biomedical and source-code taxonomies with a parallel beam search over Choice probabilities.",
+    "category": "Use cases",
+    "subsection": "Classification",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -1743,6 +1273,17 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook",
+    "title": "Noul self-consistency",
+    "description": "Routes uncertain probabilities to human review while keeping the underlying noul values visible rather than collapsing them to a label.",
+    "category": "Use cases",
+    "subsection": "Classification",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://mrjev.com/projects/kyotofin-tax-doc-classifier",
     "title": "Read",
     "description": "Read — System One / Jev related resource.",
@@ -1750,6 +1291,17 @@
     "subsection": "Classification",
     "sources": [
       "MrJev/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/autoformat",
+    "title": "Structure recovery",
+    "description": "Reconstructs Markdown from plain text that lost its formatting, in two requests: one restitches hard-wrapped lines, one classifies every block.",
+    "category": "Use cases",
+    "subsection": "Classification",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -1803,6 +1355,38 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/sde_cascade",
+    "title": "Cookbook: Structured data extraction cascade",
+    "description": "A two-stage mini-then-verify-then-reasoning cascade that reaches most of a big reasoning model's quality at a fraction of the cost.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/date_extraction_cookbook",
+    "title": "Date extraction",
+    "description": "Extracts absolute and relative dates by asking for the parts a document names, then resolving and validating them in code with confidence-based review.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/citation_check",
+    "title": "Double-checking citations",
+    "description": "Catches wrong or invented citations against the source document with one Choice, using its confidence to flag borderline cases for review.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/colliber/duckdb-jev",
     "title": "duckdb-jev",
     "description": "A DuckDB extension that calls Jev from SQL and returns answers as ENUM, numeric, or STRUCT types.",
@@ -1811,6 +1395,17 @@
     "sources": [
       "MrJev/awesome-jev",
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/concepts/use-case-map",
+    "title": "Example use cases",
+    "description": "The vendor's own taxonomy: five headline categories, nineteen industry groups, and ten decision shapes from classification through to structured data extraction.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -1844,6 +1439,17 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/entity_alignment",
+    "title": "Knowledge graph entity alignment",
+    "description": "Decides which of 450 candidate pairs from two product catalogues describe the same thing, with one Score whose three levels are the three available actions.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/pnthn-ai/polar_llama",
     "title": "polar\\_llama",
     "description": "A Polars library for parallel provider inference that also calls Jev per row as Noul, Choice, and Score questions, or as one typed contract over a document.",
@@ -1851,6 +1457,17 @@
     "subsection": "Extraction & structured data",
     "sources": [
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook",
+    "title": "Pre-parsed value extraction",
+    "description": "Regexes find candidate emails, phone numbers and amounts; the model selects the requested span so code can normalise a verbatim value.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -1864,6 +1481,17 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook",
+    "title": "Choice self-consistency",
+    "description": "Adds an explicit \"uncertain\" outcome to moderation decisions and measures label agreement against the share of actions taken automatically.",
+    "category": "Use cases",
+    "subsection": "Guardrails, safety & review",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/frostney/clean-code-review",
     "title": "Clean Code Review",
     "description": "`Open source` · `Free source build` · `BYOK`. Hosted/source PR reviewer: TypeSafe Jev judges files on Clean Code questions; Luna writes evidence-first prose (MCP included). [Try app](https://clean-code-review.vercel.app) · [Project…",
@@ -1871,6 +1499,17 @@
     "subsection": "Guardrails, safety & review",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/llm_guardrails",
+    "title": "Cookbooks",
+    "description": "Screens every message in and out of an LLM app in one request, naming hazards and scoring how much harm complying would do.",
+    "category": "Use cases",
+    "subsection": "Guardrails, safety & review",
+    "sources": [
+      "MrJev/awesome-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -2018,6 +1657,28 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/skill_suggestion",
+    "title": "Skill suggestion",
+    "description": "Picks at most one skill out of 182 for an agent turn: one request ranks every skill and asks whether the turn needs one at all, a second reads the top three.",
+    "category": "Use cases",
+    "subsection": "Agents, tools & harnesses",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/classifying_rag_passages",
+    "title": "Classifying RAG passages",
+    "description": "Scores each retrieved passage, then decides in code which reach the answering model — keeping contradictory ones flagged and dropping ones carrying prompt injection.",
+    "category": "Use cases",
+    "subsection": "Search, RAG & rerank",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/AkashPriyadarshii/jev-scout",
     "title": "jev-scout",
     "description": "A repository and Rust crate search tool that asks Jev to score and select retrieved candidates for a request.",
@@ -2048,6 +1709,17 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/semantic_find",
+    "title": "Line-by-line search",
+    "description": "Semantic search over a terms-of-service document: one request scores 218 line ids with a Choice, and a Noul checks whether the document answers at all.",
+    "category": "Use cases",
+    "subsection": "Search, RAG & rerank",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/MarissaFamularo/citation-verifier",
     "title": "Paper Trellis Citation Verifier",
     "description": "Human-reviewed manuscript citation checker: code verifies retrieved passages, Claude proposes evidence, and Jev scores whether the cited passage supports the claim; citation text and paper content go to the selected providers, and the…",
@@ -2055,6 +1727,17 @@
     "subsection": "Search, RAG & rerank",
     "sources": [
       "AbdelStark/awesome-typesafe-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe",
+    "title": "Re-ranking",
+    "description": "Re-ranks 30-passage BM25 shortlists for 40 legal queries with one question per query-candidate pair, reporting large top-1 and top-10 gains.",
+    "category": "Use cases",
+    "subsection": "Search, RAG & rerank",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -3305,6 +2988,16 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/cookbooks/function_calling",
+    "title": "Cookbook: Function calling",
+    "description": "Maps natural-language trading requests onto ordinary typed functions by turning function names and closed-set arguments into confidence-aware questions.",
+    "category": "Use cases",
+    "subsection": "Markets & operations",
+    "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/aowang-ai/jev-trade",
     "title": "Jev Trade",
     "description": "Live Hyperliquid desk across five isolated wallets: each tick packages book, tape, and position as state, Jev answers Choice questions for long/short, open/close/hold, and leverage, and application code places or pulls the quote (hold…",
@@ -3438,6 +3131,16 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/demos/smart-home",
+    "title": "Demo: Smart home assistant",
+    "description": "Runnable demo code for a smart home assistant that evaluates user requests with typed decisions.",
+    "category": "Use cases",
+    "subsection": "Playgrounds & live demos",
+    "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/bnistor4/fotocopiatrice",
     "title": "Fotocopiatrice",
     "description": "`Open source` · `Free source build` · `BYOK`. Italian Camera amendment explorer: code dedupes identical texts; TypeSafe Jev judges attributes and near-duplicate pairs (static site). [Try app](https://fotocopiatrice.vercel.app/) ·…",
@@ -3445,6 +3148,17 @@
     "subsection": "Playgrounds & live demos",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/demos",
+    "title": "Interactive demos",
+    "description": "Official hands-on examples, including the smart-home assistant.",
+    "category": "Use cases",
+    "subsection": "Playgrounds & live demos",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "seed-official"
     ]
   },
   {
@@ -3645,6 +3359,38 @@
     "subsection": "Playgrounds & live demos",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/patterns/composite-scoring",
+    "title": "Composite scoring",
+    "description": "Break one broad judgement into atomic scores and combine them with weights that live in your code, not in the prompt.",
+    "category": "Use cases",
+    "subsection": "Other applications",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery",
+    "title": "Cookbook: Autoresearch feature discovery",
+    "description": "An autoresearch loop that proposes questions, turns free text into numeric features, and uses model error to improve a supervised gradient-boosting regressor.",
+    "category": "Use cases",
+    "subsection": "Other applications",
+    "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/cookbooks/parallel_questions",
+    "title": "Cookbooks",
+    "description": "A 13-question regulatory briefing over one long article, showing that batching every question into one call is far cheaper and faster with no change in answers.",
+    "category": "Use cases",
+    "subsection": "Other applications",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -4066,6 +3812,17 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/patterns/fan-out",
+    "title": "Speculative fan-out",
+    "description": "Pack many questions, including ones you may not need, into a single request and let your code decide afterwards what was relevant.",
+    "category": "Use cases",
+    "subsection": "Other applications",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://github.com/AustinAWay/Working-Memory-Jev",
     "title": "Working-Memory-Jev",
     "description": "Working-Memory-Jev — System One / Jev related project.",
@@ -4172,6 +3929,30 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/confidence",
+    "title": "Confidence",
+    "description": "How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/models",
+    "title": "Current models",
+    "description": "Find model versions, moving aliases, supported inputs, pricing, and current limits.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
     "url": "https://navinpai.github.io/decoding-jev",
     "title": "Decoding Jev",
     "description": "Independent walkthrough of architecture, inference, and RLCD evidence status.",
@@ -4212,6 +3993,16 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+    "title": "How to build with TypeSafe",
+    "description": "Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev"
+    ]
+  },
+  {
     "url": "https://x.com/identityTorn/status/2100475121324728615",
     "title": "Internal classifier field note",
     "description": "A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.",
@@ -4219,6 +4010,34 @@
     "subsection": "",
     "sources": [
       "AbdelStark/awesome-typesafe-jev"
+    ]
+  },
+  {
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "title": "Introducing System One Models & Jev",
+    "description": "The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "MrJev/awesome-jev",
+      "OmniJev/awesome-jev-gallery",
+      "kydlikebtc/awesome-jev",
+      "rupeshpoojary9/awesome-open-system-one",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/introduction",
+    "title": "Introduction",
+    "description": "What Jev is, how System One models differ from text-generation models, and the Choice, Score, and Noul primitives.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "MrJev/awesome-jev",
+      "seed-official"
     ]
   },
   {
@@ -4248,6 +4067,19 @@
     "category": "Docs & essays",
     "subsection": "",
     "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+    "title": "Jev 1.13 jaggedness",
+    "description": "The vendor's own list of where the model fails: literal reading, arithmetic and counting, date comparison, indirection, large noisy states, adversarial content.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AppitStudio/awesome-jev",
+      "MrJev/awesome-jev",
+      "OmniJev/awesome-jev-gallery",
       "kydlikebtc/awesome-jev"
     ]
   },
@@ -4427,6 +4259,20 @@
     ]
   },
   {
+    "url": "https://docs.typesafe.ai/introduction/quickstart",
+    "title": "Quick start",
+    "description": "The canonical first call: one support ticket, one Choice, one Score and one Noul in a single request, in Python, JS and cURL.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "MrJev/awesome-jev",
+      "kydlikebtc/awesome-jev",
+      "seed-official"
+    ]
+  },
+  {
     "url": "https://x.com/iamMrDuncan/status/2100467548298899918",
     "title": "Qwen on Cerebras comparison",
     "description": "Shannon's video and source-backed comparison of a structured-output LLM baseline with Jev.",
@@ -4454,6 +4300,17 @@
     "subsection": "",
     "sources": [
       "seed-essays"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/concepts/system-one",
+    "title": "System One (TypeSafe docs)",
+    "description": "Author definition of System One models and the typed-decision interface.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "rupeshpoojary9/awesome-open-system-one",
+      "seed-official"
     ]
   },
   {
@@ -4519,6 +4376,18 @@
       "AbdelStark/awesome-typesafe-jev",
       "OmniJev/awesome-jev-gallery",
       "seed-essays"
+    ]
+  },
+  {
+    "url": "https://typesafe.ai",
+    "title": "TypeSafe AI",
+    "description": "Official product site for System One models and Jev.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "MrJev/awesome-jev",
+      "seed-official"
     ]
   },
   {
@@ -5140,6 +5009,19 @@
     ]
   },
   {
+    "url": "https://evals.typesafe.ai",
+    "title": "Workflow evals",
+    "description": ", TypeSafe's own four-workflow dashboard, Jev at 61.7 to 76.0% accuracy and 0.3 to 0.5s per case against frontier baselines.…",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "MrJev/awesome-jev",
+      "OmniJev/awesome-jev-gallery",
+      "seed-official"
+    ]
+  },
+  {
     "url": "https://github.com/koala73/worldmonitor",
     "title": "worldmonitor: news threat classification",
     "description": "Two Choice questions over threat level and category, held in shadow mode after a blind evaluation found Jev merely tied the incumbent model.",
@@ -5370,11 +5252,53 @@
     ]
   },
   {
+    "url": "https://github.com/typesafe-ai/typesafe-sdk-js",
+    "title": "JavaScript SDK",
+    "description": "The official TypeScript client. Ships ESM, CJS and type declarations, with lowercase choice()/score()/noul() helper factories.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "BeatAPI/awesome-jev",
+      "MrJev/awesome-jev",
+      "kydlikebtc/awesome-jev",
+      "logicrw/awesome-jev-projects",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://openrouter.ai/typesafe/jev-1.13",
+    "title": "Model page",
+    "description": "Model page — System One / Jev related resource.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "MrJev/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/typesafe-ai/typesafe-sdk-python",
+    "title": "Python SDK",
+    "description": "The official Python client. Sync and async clients, retry policy with retry-after support, and Choice/Score/Noul helper classes.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "BeatAPI/awesome-jev",
+      "MrJev/awesome-jev",
+      "kydlikebtc/awesome-jev",
+      "logicrw/awesome-jev-projects",
+      "seed-official"
+    ]
+  },
+  {
     "url": "https://github.com/typesafe-ai/typesafe-sdk-python/releases/tag/v0.7.0",
     "title": "Release notes",
     "description": "Release notes — System One / Jev related resource.",
     "category": "SDKs & tooling",
-    "subsection": "Official SDKs & gateways",
+    "subsection": "TypeSafe SDKs & gateways",
     "sources": [
       "MrJev/awesome-jev"
     ]
@@ -5384,9 +5308,83 @@
     "title": "Release notes",
     "description": "Release notes — System One / Jev related resource.",
     "category": "SDKs & tooling",
-    "subsection": "Official SDKs & gateways",
+    "subsection": "TypeSafe SDKs & gateways",
     "sources": [
       "MrJev/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/typesafe-ai/system-one-adapter-python",
+    "title": "System One Adapter",
+    "description": "243 stars — A drop-in TypeSafeClient replacement that backs System One calls with ordinary LLM APIs.…",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "BeatAPI/awesome-jev",
+      "OmniJev/awesome-jev-gallery",
+      "kydlikebtc/awesome-jev",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://github.com/typesafe-ai/skills",
+    "title": "TypeSafe Agent Skills",
+    "description": "1.6K stars — Official agent skills for building against TypeSafe’s System One / JEV API. [Source](https://github.com/typesafe-ai/skills/blob/65a39f393687675ce170e6094757de20370365b9/skills/typesafe-ai/SKILL.md)",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "BeatAPI/awesome-jev",
+      "OmniJev/awesome-jev-gallery",
+      "kydlikebtc/awesome-jev",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://console.typesafe.ai",
+    "title": "TypeSafe Console",
+    "description": "Create keys and inspect live Jev requests.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://github.com/typesafe-ai",
+    "title": "TypeSafe GitHub organization",
+    "description": "Source repositories maintained by TypeSafe.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "seed-official"
+    ]
+  },
+  {
+    "url": "https://openrouter.ai/typesafe",
+    "title": "TypeSafe on OpenRouter",
+    "description": "OpenRouter's listing for Jev, with its own model ids and the unusual pricing shape of paid input and free output.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://vercel.com/ai-gateway/models/jev",
+    "title": "Vercel AI Gateway",
+    "description": "Third-party hosted gateway entry for calling Jev through Vercel's AI SDK and gateway.",
+    "category": "SDKs & tooling",
+    "subsection": "TypeSafe SDKs & gateways",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "MrJev/awesome-jev",
+      "seed-official"
     ]
   },
   {
@@ -6594,6 +6592,18 @@
     "subsection": "MCP, skills & agent plugins",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://docs.typesafe.ai/agent-skill",
+    "title": "docs",
+    "description": "Official docs for giving a coding agent API context and guidance when designing narrow System One / Jev decision questions (Claude Code plugin and skills.sh install paths).",
+    "category": "SDKs & tooling",
+    "subsection": "MCP, skills & agent plugins",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "AppitStudio/awesome-jev",
+      "kydlikebtc/awesome-jev"
     ]
   },
   {
@@ -11354,16 +11364,6 @@
     "url": "https://pydantic.dev/docs/ai/models/typesafe",
     "title": "TypeSafe models in Pydantic AI",
     "description": "First-party Pydantic AI support: an Agent with output_type=bool over the typesafe:jev-latest model string.",
-    "category": "SDKs & tooling",
-    "subsection": "Other tooling",
-    "sources": [
-      "kydlikebtc/awesome-jev"
-    ]
-  },
-  {
-    "url": "https://openrouter.ai/typesafe",
-    "title": "TypeSafe on OpenRouter",
-    "description": "OpenRouter's listing for Jev, with its own model ids and the unusual pricing shape of paid input and free output.",
     "category": "SDKs & tooling",
     "subsection": "Other tooling",
     "sources": [

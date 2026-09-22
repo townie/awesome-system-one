@@ -53,7 +53,7 @@ def should_exclude(url: str, title: str = "") -> bool:
 
 LINK_RE = re.compile(r"""^\s*[-*]\s+(?:\*\*)?\[(?:\*\*)?([^\*\]]+)(?:\*\*)?\](?:\*\*)?\(([^)]+)\)(?:\*\*)?\s*(?:[—–\-·]|\s+[—–]\s+|\s+·\s+)?(.*)$""", re.M)
 
-CAT_OFFICIAL = "Official"
+CAT_HOSTED = "Hosted: TypeSafe Jev"
 CAT_DOCS = "Docs & essays"
 CAT_OS = "Open-source / local alternatives"
 CAT_LISTS = "Awesome lists & indexes"
@@ -62,14 +62,22 @@ CAT_EVALS = "Evals & papers"
 CAT_USE = "Use cases"
 CAT_COMMUNITY = "Community"
 
+# Docs home (live intro), primitives, HTTP API — the only TypeSafe sitemap we keep here.
+HOSTED_KEEP = (
+    "https://docs.typesafe.ai",
+    "https://docs.typesafe.ai/primitives",
+    "https://docs.typesafe.ai/api",
+)
+PIN_HOSTED = list(HOSTED_KEEP)
+
 # Legacy names from earlier dumps / upstream headings
 CAT_ALIASES = {
+    "Official": CAT_HOSTED,
     "Open models & alternatives": CAT_OS,
     "Demos": CAT_USE,
 }
 
 SECTION_MAP = [
-    (re.compile(r"official|product and documentation", re.I), CAT_OFFICIAL),
     (re.compile(r"research and writing|docs|essay|reference and reading|concepts|manifesto|blog|showcase", re.I), CAT_DOCS),
     (re.compile(r"open model|reproduction|alternative|local model|open.?source|local.?port|mlx|core.?ml", re.I), CAT_OS),
     (re.compile(r"awesome|index|directory|gallery|catalog|radar", re.I), CAT_LISTS),
@@ -89,8 +97,17 @@ def infer_category(url, title, heading, hint=None):
     c = category_from_heading(heading)
     if c: return c
     low = (url + " " + title).lower()
-    if any(x in low for x in ("typesafe.ai", "docs.typesafe", "console.typesafe", "evals.typesafe", "discord.gg/typesafe")):
-        return CAT_DOCS if any(x in low for x in ("blog", "manifesto")) else CAT_OFFICIAL
+    nu = normalize_url(url)
+    if nu in HOSTED_KEEP:
+        return CAT_HOSTED
+    if any(x in low for x in ("typesafe.ai", "docs.typesafe", "console.typesafe", "evals.typesafe")):
+        if "evals.typesafe" in low:
+            return CAT_EVALS
+        if any(x in low for x in ("/cookbooks", "/patterns", "/demos", "use-case-map")):
+            return CAT_USE
+        if any(x in low for x in ("console.typesafe", "agent-skill", "/sdk")):
+            return CAT_SDKS
+        return CAT_DOCS
     if any(x in low for x in ("arxiv.org", "benchmark", "eval", "jevals", "jevbench", "calibration", "paper")): return CAT_EVALS
     if "awesome" in low and "github.com" in low: return CAT_LISTS
     if any(x in low for x in ("laya", "nanojev", "semif", "openjev", "/kev", "nimble", "decider", "jevlike", "mini-jev", "jevmlx", "poorjev", "huggingface.co", "modernbert", "gliner", "setfit", "openthai", "reflex", "verdict", "litjev", "open-alternative", "pocketjev", "simple-jev", "simplejev", "coreml", "jevcoreml")):
@@ -134,7 +151,8 @@ def prefer_title(a, b):
 # Merge priority when the same URL appears in multiple sources (lower wins).
 # Display order is ORDER in render_readme — not this map.
 RANK = {
-    CAT_OFFICIAL: 0,
+    CAT_HOSTED: 0,
+    "Official": 0,
     CAT_DOCS: 1,
     CAT_OS: 2,
     CAT_EVALS: 3,
@@ -216,11 +234,11 @@ def parse_abdelstark_json(path, entries):
 
 def parse_kyd_catalog(path, entries):
     data = json.loads(path.read_text()); source = "kydlikebtc/awesome-jev"
-    kind_map = {"official-docs":CAT_OFFICIAL,"sdk":CAT_SDKS,"integration":CAT_SDKS,"plugin":CAT_SDKS,"project":CAT_USE,"alternative":CAT_OS,"benchmark":CAT_EVALS,"article":CAT_DOCS,"tutorial":CAT_DOCS,"snippet":CAT_SDKS,"video":CAT_DOCS,"discussion":CAT_COMMUNITY}
+    kind_map = {"official-docs":CAT_DOCS,"sdk":CAT_SDKS,"integration":CAT_SDKS,"plugin":CAT_SDKS,"project":CAT_USE,"alternative":CAT_OS,"benchmark":CAT_EVALS,"article":CAT_DOCS,"tutorial":CAT_DOCS,"snippet":CAT_SDKS,"video":CAT_DOCS,"discussion":CAT_COMMUNITY}
     for r in data:
         url, title, desc = r.get("url") or "", r.get("title") or "", r.get("summary") or ""
         cat = kind_map.get(r.get("kind")) or infer_category(url, title, "")
-        if r.get("official") and cat == CAT_USE: cat = CAT_OFFICIAL
+        if r.get("official") and normalize_url(url) in HOSTED_KEEP: cat = CAT_HOSTED
         add(entries, url, title, desc, cat, source)
 
 
@@ -256,18 +274,18 @@ def parse_alternatives_html(path, entries):
             add(entries, url, urlparse(url).netloc, "", CAT_OS, source)
 
 SEEDS = [
-("https://typesafe.ai","TypeSafe AI","Official product site for System One models and Jev.","Official","seed-official"),
-("https://docs.typesafe.ai","TypeSafe documentation","Guides, SDK references, patterns, cookbooks, and HTTP API.","Official","seed-official"),
-("https://docs.typesafe.ai/concepts/system-one","System One concept","Author definition of System One models and the typed-decision interface.","Official","seed-official"),
-("https://docs.typesafe.ai/introduction","Introduction","What Jev is and how System One differs from text-generation models.","Official","seed-official"),
-("https://docs.typesafe.ai/introduction/quickstart","Quickstart","Shortest path from an API key to a typed decision.","Official","seed-official"),
-("https://docs.typesafe.ai/primitives","Primitives","Choice, Score, and Noul: result shapes and when to use each.","Official","seed-official"),
-("https://docs.typesafe.ai/api","HTTP API reference","Request/response contract for POST /v1/systemone.","Official","seed-official"),
-("https://docs.typesafe.ai/confidence","Confidence","How confidence differs from answer probability as an architectural control.","Official","seed-official"),
-("https://docs.typesafe.ai/patterns","Patterns","Confidence-gated routing, composite scoring, speculative fan-out, intent routing.","Official","seed-official"),
-("https://docs.typesafe.ai/demos","Interactive demos","Official hands-on examples including the smart-home assistant.","Official","seed-official"),
-("https://console.typesafe.ai","TypeSafe Console","Create keys and inspect live Jev requests.","Official","seed-official"),
-("https://evals.typesafe.ai","Workflow evals","TypeSafe published workflows, model comparisons, and methodology.","Official","seed-official"),
+("https://typesafe.ai","TypeSafe AI","Product site for TypeSafe System One models and Jev.","Docs & essays","seed-official"),
+("https://docs.typesafe.ai","Documentation","TypeSafe docs home — what Jev is and how System One differs from text generation.","Hosted: TypeSafe Jev","seed-official"),
+("https://docs.typesafe.ai/concepts/system-one","System One concept","Author definition of System One models and the typed-decision interface.","Docs & essays","seed-official"),
+("https://docs.typesafe.ai/introduction","Introduction","What Jev is and how System One differs from text-generation models.","Docs & essays","seed-official"),
+("https://docs.typesafe.ai/introduction/quickstart","Quickstart","Shortest path from an API key to a typed decision.","Docs & essays","seed-official"),
+("https://docs.typesafe.ai/primitives","Primitives","Choice, Score, and Noul: result shapes and when to use each.","Hosted: TypeSafe Jev","seed-official"),
+("https://docs.typesafe.ai/api","HTTP API reference","Request/response contract for POST /v1/systemone.","Hosted: TypeSafe Jev","seed-official"),
+("https://docs.typesafe.ai/confidence","Confidence","How confidence differs from answer probability as an architectural control.","Docs & essays","seed-official"),
+("https://docs.typesafe.ai/patterns","Patterns","Confidence-gated routing, composite scoring, speculative fan-out, intent routing.","Use cases","seed-official"),
+("https://docs.typesafe.ai/demos","Interactive demos","TypeSafe hands-on examples including the smart-home assistant.","Use cases","seed-official"),
+("https://console.typesafe.ai","TypeSafe Console","Create keys and inspect live Jev requests.","SDKs & tooling","seed-official"),
+("https://evals.typesafe.ai","Workflow evals","TypeSafe published workflows, model comparisons, and methodology.","Evals & papers","seed-official"),
 ("https://typesafe.ai/blog/introducing-system-one-models-and-jev","Introducing System One Models & Jev","Launch post naming the category, thesis, results, and limitations.","Docs & essays","seed-official"),
 ("https://typesafe.ai/manifesto","Manifesto","Case for machine-native intelligence built for software rather than conversation.","Docs & essays","seed-official"),
 ("https://typesafe.ai/blog/bitterest-lesson","The Bitterest Lesson","Why optimizing the wrong task can dominate gains from scale.","Docs & essays","seed-official"),
@@ -276,7 +294,7 @@ SEEDS = [
 ("https://github.com/typesafe-ai/typesafe-sdk-python","Python SDK","Official sync/async Python client.","SDKs & tooling","seed-official"),
 ("https://github.com/typesafe-ai/system-one-adapter-python","System One Adapter","Drop-in Python adapter for OpenAI/Anthropic-compatible LLMs behind the typed interface.","SDKs & tooling","seed-official"),
 ("https://github.com/typesafe-ai/skills","TypeSafe Agent Skills","Official agent skill for designing TypeSafe workflows.","SDKs & tooling","seed-official"),
-("https://github.com/typesafe-ai","TypeSafe GitHub org","Source repositories maintained by TypeSafe.","Official","seed-official"),
+("https://github.com/typesafe-ai","TypeSafe GitHub org","Source repositories maintained by TypeSafe.","SDKs & tooling","seed-official"),
 ("https://discord.gg/typesafe","TypeSafe Discord","Official community server.","Community","seed-official"),
 ("https://x.com/typesafeai","TypeSafe on X","Product and research updates.","Community","seed-official"),
 ("https://www.linkedin.com/company/typesafe-ai","TypeSafe on LinkedIn","Company announcements and hiring.","Community","seed-official"),
@@ -363,7 +381,7 @@ SEEDS = [
 INGEST_DATE = "2026-09-22 PT"
 
 # Display order (newcomers: OS alternatives + use cases before the SDK dump).
-DISPLAY_ORDER = [CAT_OFFICIAL, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT_LISTS, CAT_COMMUNITY]
+DISPLAY_ORDER = [CAT_HOSTED, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT_LISTS, CAT_COMMUNITY]
 
 LANDMARK_OS = [
     "https://github.com/jaredpalmer/kev",
@@ -400,7 +418,7 @@ CATEGORY_OVERRIDE = {
     "https://agentpedia.codes/blog/jev-system-one-models": CAT_DOCS,
     "https://github.com/trycua/cua": CAT_USE,
     "https://github.com/FluidInference/FluidUse": CAT_USE,
-    "https://openrouter.ai/typesafe/jev-1.13": CAT_OFFICIAL,
+    "https://openrouter.ai/typesafe/jev-1.13": CAT_SDKS,
     "https://anthonymaio.substack.com/p/jev-the-language-model-that-wont": CAT_DOCS,
     "https://doi.org/10.1016/j.ecolecon.2005.03.020": CAT_DOCS,
     "https://github.com/qingshungLI/everything-about-jev": CAT_DOCS,
@@ -410,14 +428,14 @@ CATEGORY_OVERRIDE = {
 }
 
 BLURBS = {
-    CAT_OFFICIAL: "TypeSafe product pages, docs, cookbooks, and official SDKs.",
+    CAT_HOSTED: "Three TypeSafe docs entry points. This catalog is an industry index, not a TypeSafe sitemap — cookbooks, SDKs, and essays live in the sections below.",
     CAT_OS: "Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML ports, adapters over existing LLMs, and related typed-output libraries.",
-    CAT_USE: "Community apps and demos grouped by decision shape. Official cookbooks stay under [Official](#official).",
-    CAT_DOCS: "Independent explainers, launch coverage, and background reading.",
+    CAT_USE: "Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.",
+    CAT_DOCS: "Explainers, launch coverage, TypeSafe concept pages, and background reading.",
     CAT_EVALS: "How these models are measured — including [JevBench](https://jevbench.dev/) — plus papers on calibration and structured decisions.",
-    CAT_SDKS: "Clients, MCP servers, skills, and integrations. Official TypeSafe clients are under [Official](#official); application-shaped projects live under [Use cases](#use-cases).",
+    CAT_SDKS: "Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. Application-shaped projects live under [Use cases](#use-cases).",
     CAT_LISTS: "Other curated indexes this catalog merges.",
-    CAT_COMMUNITY: "Official chat, social, and the launch thread.",
+    CAT_COMMUNITY: "TypeSafe chat, social, and the launch thread.",
 }
 
 def gh_anchor(heading: str) -> str:
@@ -427,19 +445,42 @@ def gh_anchor(heading: str) -> str:
 def _blob(e: Entry) -> str:
     return f"{e.title} {e.url} {e.description or ''}"
 
+def rehome_typesafe(e: Entry) -> str:
+    """Former Official dump → industry sections. Only HOSTED_KEEP stay in the pointer section."""
+    if e.url in HOSTED_KEEP:
+        return CAT_HOSTED
+    u = e.url.lower()
+    if "evals.typesafe" in u:
+        return CAT_EVALS
+    if any(x in u for x in (
+        "github.com/typesafe-ai", "console.typesafe", "agent-skill",
+        "vercel.com/ai-gateway", "openrouter.ai/typesafe",
+    )):
+        return CAT_SDKS
+    if any(x in u for x in ("/cookbooks", "/patterns", "/demos", "use-case-map")):
+        return CAT_USE
+    if "typesafe" in u:
+        return CAT_DOCS
+    return CAT_DOCS
+
 def recategorize(e: Entry) -> None:
     e.category = CAT_ALIASES.get(e.category, e.category)
-    if e.category == CAT_OFFICIAL:
-        return
-    if e.url in CATEGORY_OVERRIDE:
+    if e.url in HOSTED_KEEP:
+        e.category = CAT_HOSTED
+    elif e.category == CAT_HOSTED:
+        e.category = rehome_typesafe(e)
+    if e.url in CATEGORY_OVERRIDE and e.url not in HOSTED_KEEP:
         e.category = CATEGORY_OVERRIDE[e.url]
     titles = {
         "https://github.com/fstandhartinger/jevbench": "JevBench (text decisions)",
         "https://jevbench.dev": "JevBench",
+        "https://docs.typesafe.ai": "Documentation",
+        "https://docs.typesafe.ai/primitives": "Primitives",
+        "https://docs.typesafe.ai/api": "HTTP API reference",
     }
     if e.url in titles:
         e.title = titles[e.url]
-    if e.url in CATEGORY_OVERRIDE:
+    if e.url in HOSTED_KEEP or (e.url in CATEGORY_OVERRIDE and e.url not in HOSTED_KEEP):
         return
     blob = _blob(e).lower()
     if e.category in (CAT_SDKS, CAT_USE, CAT_OS):
@@ -475,12 +516,8 @@ def assign_subsection(e: Entry) -> str:
     blob = _blob(e)
     low = blob.lower()
     cat = e.category
-    if cat == CAT_OFFICIAL:
-        if any(x in e.url.lower() for x in ("/cookbooks", "/patterns", "/demos", "use-case-map", "how-to-build", "model-jaggedness")):
-            return "Patterns & cookbooks"
-        if any(x in e.url.lower() for x in ("github.com/typesafe-ai", "vercel.com/ai-gateway", "evals.typesafe", "openrouter.ai/typesafe")):
-            return "Product & SDKs"
-        return "Getting started"
+    if cat == CAT_HOSTED:
+        return ""
     if cat == CAT_OS:
         if e.url in LANDMARK_OS:
             return "Landmark projects"
@@ -505,8 +542,8 @@ def assign_subsection(e: Entry) -> str:
             ("Playgrounds & live demos", re.compile(r"playground|try app|interactive|live demo|\bdemos?\b|\brepl\b")),
         ], "Other applications")
     if cat == CAT_SDKS:
-        if any(x in e.url.lower() for x in ("github.com/typesafe-ai", "vercel.com/ai-gateway", "vercel.com/kb/guide/typesafe")):
-            return "Official SDKs & gateways"
+        if any(x in e.url.lower() for x in ("github.com/typesafe-ai", "vercel.com/ai-gateway", "vercel.com/kb/guide/typesafe", "console.typesafe", "openrouter.ai/typesafe")):
+            return "TypeSafe SDKs & gateways"
         return _first(low, [
             ("MCP, skills & agent plugins", re.compile(r"\bmcp\b|\bskill\b|plugin|claude code|codex|hermes|opencode|pretooluse|\bhook\b")),
             ("Community SDKs & clients", re.compile(r"\bsdk\b|\bclient\b|pypi|npm |library|package")),
@@ -588,7 +625,7 @@ def intro_lines(n: int) -> list[str]:
         "",
         "### Start here",
         "",
-        "- [Introduction (TypeSafe docs)](https://docs.typesafe.ai/introduction) — What Jev is, and the `Choice` / `Score` / `Noul` primitives.",
+        "- [Hosted: TypeSafe Jev](#hosted-typesafe-jev) — Three docs entry points (home, primitives, HTTP API).",
         "- [Open-source / local alternatives](#open-source--local-alternatives) — Kev, Laya, Jevlike, adapters, Core ML / MLX ports.",
         "- [Use cases](#use-cases) — Routing, classification, extraction, guardrails, agents, search/rerank, and more.",
         "- [JevBench](https://jevbench.dev/) — Interactive harness bench for Jev and open alternatives.",
@@ -610,7 +647,6 @@ def write_outputs(entries: dict) -> None:
         by_sub[e.category][e.subsection or ""].append(e)
 
     sub_order = {
-        CAT_OFFICIAL: ["Getting started", "Patterns & cookbooks", "Product & SDKs"],
         CAT_OS: ["Landmark projects", "Models & weights", "Runtimes, ports & servers", "Adapters & logit readers", "Related classifiers & structured output"],
         CAT_USE: [
             "Routing & triage", "Classification", "Extraction & structured data",
@@ -619,12 +655,12 @@ def write_outputs(entries: dict) -> None:
             "Voice, mail & productivity", "Markets & operations", "Creative tools",
             "Playgrounds & live demos", "Other applications",
         ],
-        CAT_SDKS: ["Official SDKs & gateways", "Community SDKs & clients", "MCP, skills & agent plugins", "Integrations & data pipelines", "Other tooling"],
+        CAT_SDKS: ["TypeSafe SDKs & gateways", "Community SDKs & clients", "MCP, skills & agent plugins", "Integrations & data pipelines", "Other tooling"],
         CAT_EVALS: ["Harnesses & live benches", "Typed-decision benchmarks", "Papers"],
     }
 
     for cat, items in by_cat.items():
-        pins = LANDMARK_OS if cat == CAT_OS else (PIN_EVALS if cat == CAT_EVALS else [])
+        pins = PIN_HOSTED if cat == CAT_HOSTED else LANDMARK_OS if cat == CAT_OS else (PIN_EVALS if cat == CAT_EVALS else [])
         items.sort(key=lambda e: sort_key(e, pins))
         for sub, sub_items in by_sub[cat].items():
             sub_items.sort(key=lambda e: sort_key(e, pins))

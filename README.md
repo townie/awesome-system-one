@@ -16,7 +16,7 @@ Deduplicated by normalized URL across the ingested indexes.
 
 ### Start here
 
-- [Introduction (TypeSafe docs)](https://docs.typesafe.ai/introduction) — What Jev is, and the `Choice` / `Score` / `Noul` primitives.
+- [Hosted: TypeSafe Jev](#hosted-typesafe-jev) — Three docs entry points (home, primitives, HTTP API).
 - [Open-source / local alternatives](#open-source--local-alternatives) — Kev, Laya, Jevlike, adapters, Core ML / MLX ports.
 - [Use cases](#use-cases) — Routing, classification, extraction, guardrails, agents, search/rerank, and more.
 - [JevBench](https://jevbench.dev/) — Interactive harness bench for Jev and open alternatives.
@@ -25,106 +25,50 @@ Deduplicated by normalized URL across the ingested indexes.
 
 ## Contents
 
-- [Official](#official) (48)
-  - [Getting started](#getting-started) (12)
-  - [Patterns & cookbooks](#patterns--cookbooks) (28)
-  - [Product & SDKs](#product--sdks) (8)
+- [Hosted: TypeSafe Jev](#hosted-typesafe-jev) (3)
 - [Open-source / local alternatives](#open-source--local-alternatives) (82)
   - [Landmark projects](#landmark-projects) (9)
   - [Models & weights](#models--weights) (37)
   - [Runtimes, ports & servers](#runtimes-ports--servers) (11)
   - [Adapters & logit readers](#adapters--logit-readers) (14)
   - [Related classifiers & structured output](#related-classifiers--structured-output) (11)
-- [Use cases](#use-cases) (248)
-  - [Routing & triage](#routing--triage) (15)
-  - [Classification](#classification) (12)
-  - [Extraction & structured data](#extraction--structured-data) (8)
-  - [Guardrails, safety & review](#guardrails-safety--review) (6)
-  - [Agents, tools & harnesses](#agents-tools--harnesses) (9)
-  - [Search, RAG & rerank](#search-rag--rerank) (5)
+- [Use cases](#use-cases) (274)
+  - [Routing & triage](#routing--triage) (18)
+  - [Classification](#classification) (16)
+  - [Extraction & structured data](#extraction--structured-data) (14)
+  - [Guardrails, safety & review](#guardrails-safety--review) (8)
+  - [Agents, tools & harnesses](#agents-tools--harnesses) (10)
+  - [Search, RAG & rerank](#search-rag--rerank) (8)
   - [Browser, computer use & OS](#browser-computer-use--os) (58)
   - [Games, robotics & simulation](#games-robotics--simulation) (48)
   - [Voice, mail & productivity](#voice-mail--productivity) (10)
-  - [Markets & operations](#markets--operations) (8)
+  - [Markets & operations](#markets--operations) (9)
   - [Creative tools](#creative-tools) (5)
-  - [Playgrounds & live demos](#playgrounds--live-demos) (22)
-  - [Other applications](#other-applications) (42)
-- [Docs & essays](#docs--essays) (47)
-- [Evals & papers](#evals--papers) (78)
+  - [Playgrounds & live demos](#playgrounds--live-demos) (24)
+  - [Other applications](#other-applications) (46)
+- [Docs & essays](#docs--essays) (56)
+- [Evals & papers](#evals--papers) (79)
   - [Harnesses & live benches](#harnesses--live-benches) (5)
-  - [Typed-decision benchmarks](#typed-decision-benchmarks) (51)
+  - [Typed-decision benchmarks](#typed-decision-benchmarks) (52)
   - [Papers](#papers) (22)
-- [SDKs & tooling](#sdks--tooling) (577)
-  - [Official SDKs & gateways](#official-sdks--gateways) (2)
+- [SDKs & tooling](#sdks--tooling) (586)
+  - [TypeSafe SDKs & gateways](#typesafe-sdks--gateways) (11)
   - [Community SDKs & clients](#community-sdks--clients) (92)
-  - [MCP, skills & agent plugins](#mcp-skills--agent-plugins) (164)
+  - [MCP, skills & agent plugins](#mcp-skills--agent-plugins) (165)
   - [Integrations & data pipelines](#integrations--data-pipelines) (45)
-  - [Other tooling](#other-tooling) (274)
+  - [Other tooling](#other-tooling) (273)
 - [Awesome lists & indexes](#awesome-lists--indexes) (54)
 - [Community](#community) (5)
 - [Sources](#sources)
 - [Contributing](#contributing)
 
-## Official
+## Hosted: TypeSafe Jev
 
-TypeSafe product pages, docs, cookbooks, and official SDKs.
+Three TypeSafe docs entry points. This catalog is an industry index, not a TypeSafe sitemap — cookbooks, SDKs, and essays live in the sections below.
 
-### Getting started
-
-- [Confidence](https://docs.typesafe.ai/confidence) — How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.
-- [Current models](https://docs.typesafe.ai/models) — Find model versions, moving aliases, supported inputs, pricing, and current limits.
-- [docs](https://docs.typesafe.ai/agent-skill) — Official docs for giving a coding agent API context and guidance when designing narrow System One / Jev decision questions (Claude Code plugin and skills.sh install paths).
-- [Documentation](https://docs.typesafe.ai) — Guides, SDK references, patterns, cookbooks, and the HTTP API.
-- [HTTP API reference](https://docs.typesafe.ai/api) — The one endpoint, POST /v1/systemone, with the exact request and answer shapes for all three question types.
-- [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.
-- [Introduction](https://docs.typesafe.ai/introduction) — What Jev is, how System One models differ from text-generation models, and the Choice, Score, and Noul primitives.
+- [Documentation](https://docs.typesafe.ai) — TypeSafe docs home — what Jev is and how System One differs from text generation.
 - [Primitives](https://docs.typesafe.ai/primitives) — What each primitive is for and how to write criteria, including the 255-option cap on Choice and the 2-10 level range on Score.
-- [Quick start](https://docs.typesafe.ai/introduction/quickstart) — The canonical first call: one support ticket, one Choice, one Score and one Noul in a single request, in Python, JS and cURL.
-- [System One (TypeSafe docs)](https://docs.typesafe.ai/concepts/system-one) — Author definition of System One models and the typed-decision interface.
-- [TypeSafe AI](https://typesafe.ai) — Official product site for System One models and Jev.
-- [TypeSafe Console](https://console.typesafe.ai) — Create keys and inspect live Jev requests.
-
-### Patterns & cookbooks
-
-- [Choice self-consistency](https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook) — Adds an explicit "uncertain" outcome to moderation decisions and measures label agreement against the share of actions taken automatically.
-- [Classifying RAG passages](https://docs.typesafe.ai/cookbooks/classifying_rag_passages) — Scores each retrieved passage, then decides in code which reach the answering model — keeping contradictory ones flagged and dropping ones carrying prompt injection.
-- [Composite scoring](https://docs.typesafe.ai/patterns/composite-scoring) — Break one broad judgement into atomic scores and combine them with weights that live in your code, not in the prompt.
-- [Confidence-gated routing](https://docs.typesafe.ai/patterns/confidence-routing) — Treat confidence as a second axis: the answer tells you what, the confidence tells you whether to act on it.
-- [Cookbook: Autoresearch feature discovery](https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery) — An autoresearch loop that proposes questions, turns free text into numeric features, and uses model error to improve a supervised gradient-boosting regressor.
-- [Cookbook: Classification using confidence](https://docs.typesafe.ai/cookbooks/classification_using_confidence) — Classifies annual reports into 75 industry groups, then reads the answer's own confidence to decide whether to report that group or the broader division above it.
-- [Cookbook: Function calling](https://docs.typesafe.ai/cookbooks/function_calling) — Maps natural-language trading requests onto ordinary typed functions by turning function names and closed-set arguments into confidence-aware questions.
-- [Cookbook: Structured data extraction cascade](https://docs.typesafe.ai/cookbooks/sde_cascade) — A two-stage mini-then-verify-then-reasoning cascade that reaches most of a big reasoning model's quality at a fraction of the cost.
-- [Cookbooks](https://docs.typesafe.ai/cookbooks/parallel_questions) — A 13-question regulatory briefing over one long article, showing that batching every question into one call is far cheaper and faster with no change in answers.
-- [Cookbooks](https://docs.typesafe.ai/cookbooks/llm_guardrails) — Screens every message in and out of an LLM app in one request, naming hazards and scoring how much harm complying would do.
-- [Date extraction](https://docs.typesafe.ai/cookbooks/date_extraction_cookbook) — Extracts absolute and relative dates by asking for the parts a document names, then resolving and validating them in code with confidence-based review.
-- [Demo: Smart home assistant](https://docs.typesafe.ai/demos/smart-home) — Runnable demo code for a smart home assistant that evaluates user requests with typed decisions.
-- [Double-checking citations](https://docs.typesafe.ai/cookbooks/citation_check) — Catches wrong or invented citations against the source document with one Choice, using its confidence to flag borderline cases for review.
-- [Example use cases](https://docs.typesafe.ai/concepts/use-case-map) — The vendor's own taxonomy: five headline categories, nineteen industry groups, and ten decision shapes from classification through to structured data extraction.
-- [Hierarchical classification](https://docs.typesafe.ai/cookbooks/hierarchical_classification) — Walks deep patent, retail, biomedical and source-code taxonomies with a parallel beam search over Choice probabilities.
-- [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
-- [Intent routing](https://docs.typesafe.ai/patterns/intent-routing) — Classify an incoming request and route it to the cheapest adequate handler: deterministic code, a specialist LLM, or a person.
-- [Interactive demos](https://docs.typesafe.ai/demos) — Official hands-on examples, including the smart-home assistant.
-- [Jev 1.13 jaggedness](https://docs.typesafe.ai/model-jaggedness/jev-1.13) — The vendor's own list of where the model fails: literal reading, arithmetic and counting, date comparison, indirection, large noisy states, adversarial content.
-- [Knowledge graph entity alignment](https://docs.typesafe.ai/cookbooks/entity_alignment) — Decides which of 450 candidate pairs from two product catalogues describe the same thing, with one Score whose three levels are the three available actions.
-- [Line-by-line search](https://docs.typesafe.ai/cookbooks/semantic_find) — Semantic search over a terms-of-service document: one request scores 218 line ids with a Choice, and a Noul checks whether the document answers at all.
-- [Noul self-consistency](https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook) — Routes uncertain probabilities to human review while keeping the underlying noul values visible rather than collapsing them to a label.
-- [Patterns](https://docs.typesafe.ai/patterns) — Confidence-gated routing, composite scoring, speculative fan-out, and intent routing.
-- [Pre-parsed value extraction](https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook) — Regexes find candidate emails, phone numbers and amounts; the model selects the requested span so code can normalise a verbatim value.
-- [Re-ranking](https://docs.typesafe.ai/cookbooks/rerank_typesafe) — Re-ranks 30-passage BM25 shortlists for 40 legal queries with one question per query-candidate pair, reporting large top-1 and top-10 gains.
-- [Skill suggestion](https://docs.typesafe.ai/cookbooks/skill_suggestion) — Picks at most one skill out of 182 for an agent turn: one request ranks every skill and asks whether the turn needs one at all, a second reads the top three.
-- [Speculative fan-out](https://docs.typesafe.ai/patterns/fan-out) — Pack many questions, including ones you may not need, into a single request and let your code decide afterwards what was relevant.
-- [Structure recovery](https://docs.typesafe.ai/cookbooks/autoformat) — Reconstructs Markdown from plain text that lost its formatting, in two requests: one restitches hard-wrapped lines, one classifies every block.
-
-### Product & SDKs
-
-- [JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js) — The official TypeScript client. Ships ESM, CJS and type declarations, with lowercase choice()/score()/noul() helper factories.
-- [Model page](https://openrouter.ai/typesafe/jev-1.13) — Model page — System One / Jev related resource.
-- [Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) — The official Python client. Sync and async clients, retry policy with retry-after support, and Choice/Score/Noul helper classes.
-- [System One Adapter](https://github.com/typesafe-ai/system-one-adapter-python) — 243 stars — A drop-in TypeSafeClient replacement that backs System One calls with ordinary LLM APIs.…
-- [TypeSafe Agent Skills](https://github.com/typesafe-ai/skills) — 1.6K stars — Official agent skills for building against TypeSafe’s System One / JEV API. [Source](https://github.com/typesafe-ai/skills/blob/65a39f393687675ce170e6094757de20370365b9/skills/typesafe-ai/SKILL.md)
-- [TypeSafe GitHub organization](https://github.com/typesafe-ai) — Source repositories maintained by TypeSafe.
-- [Vercel AI Gateway](https://vercel.com/ai-gateway/models/jev) — Third-party hosted gateway entry for calling Jev through Vercel's AI SDK and gateway.
-- [Workflow evals](https://evals.typesafe.ai) — , TypeSafe's own four-workflow dashboard, Jev at 61.7 to 76.0% accuracy and 0.3 to 0.5s per case against frontier baselines.…
+- [HTTP API reference](https://docs.typesafe.ai/api) — The one endpoint, POST /v1/systemone, with the exact request and answer shapes for all three question types.
 
 ## Open-source / local alternatives
 
@@ -229,14 +173,16 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 
 ## Use cases
 
-Community apps and demos grouped by decision shape. Official cookbooks stay under [Official](#official).
+Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 
 ### Routing & triage
 
 - [BTK audit studies](https://boringtoolskit.com/blog/seo-audit-cost-2026) — Production SEO studies driven by Jev striking-distance triage: 1,204 pages judged per run, 4,816 typed judgments in under 3 minutes, $0.0048 per 12-query batch (jev-1.13.0).
+- [Confidence-gated routing](https://docs.typesafe.ai/patterns/confidence-routing) — Treat confidence as a second axis: the answer tells you what, the confidence tells you whether to act on it.
 - [Crush Monitor](https://github.com/FerryCorleone/crush-monitor) — `Open source` · `Free source build` · `BYOK`. Local WeChat-style chat analyzer: TypeSafe Jev labels emotion/intent, scores affinity, and rates replies (BYOK). Project guide.
 - [ha-conversation-jev](https://github.com/luxus/ha-conversation-jev) — A Home Assistant conversation integration routing simple lighting commands to services and other requests to Grok.
 - [hyperedit](https://github.com/kevinbadi/hyperedit) — An AI video editor routing an editing instruction to an operation, a target clip and a track, with a keyword router as fallback.
+- [Intent routing](https://docs.typesafe.ai/patterns/intent-routing) — Classify an incoming request and route it to the cheapest adequate handler: deterministic code, a specialist LLM, or a person.
 - [Jev Agent Skill Router](https://mrjev.com/projects/godsboy-jev-agent-skill-router) — Jev Agent Skill Router — System One / Jev related resource.
 - [Jev Chat Assistant](https://github.com/jev-chat/jev-chat-jarvis) — , Android chat overlay where Jev judges intent and ranks replies while a separate LLM drafts them; the author reports roughly one-second judgments and device-tested WeChat, QQ, X and Lark adapters.…
 - [jev-for-engineers](https://github.com/Foadsf/jev-for-engineers) — Eight mechanical and electrical engineering experiments using Jev for task routing, log checks and component selection.
@@ -246,12 +192,15 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 - [JevSeek](https://github.com/morcoan/JevSeek) — Local coding workspace and agent decoupling tool routing via Jev from detailed argument generation via DeepSeek.
 - [JevZero](https://github.com/jayozer/jevzero) — `Open source` · `Free source build` · `BYOK`. Local Gmail triage with TypeSafe Jev: review proposed labels, apply with receipts, and undo. Project guide.
 - [lurk](https://github.com/getanyapi-com/lurk) — Self-hostable Reddit buyer-intent finder that uses Jev to judge every post and comment a scan reads.
+- [Patterns](https://docs.typesafe.ai/patterns) — Confidence-gated routing, composite scoring, speculative fan-out, and intent routing.
 - [Read](https://mrjev.com/projects/gargpratyush-jev-router) — Read — System One / Jev related resource.
 - [tc39-atlas](https://github.com/hemanth/tc39-atlas) — Interactive semantic explorer and taxonomy for TC39 proposals. Applies TypeSafe AI System One (Jev) to classify ECMAScript proposals across adoption pathways, cognitive overhead, web-compatibility risk, and foundational intent archetypes.
 
 ### Classification
 
+- [Cookbook: Classification using confidence](https://docs.typesafe.ai/cookbooks/classification_using_confidence) — Classifies annual reports into 75 industry groups, then reads the answer's own confidence to decide whether to report that group or the broader division above it.
 - [hfjev](https://github.com/hemanth/hfjev) — Classify Hugging Face datasets across typed semantic dimensions with TypeSafe Jev System One. Auto-adapts evaluation rubrics to dataset domains (reviews, news, LLM tuning, support) and classifies rows in a single parallel System One…
+- [Hierarchical classification](https://docs.typesafe.ai/cookbooks/hierarchical_classification) — Walks deep patent, retail, biomedical and source-code taxonomies with a parallel beam search over Choice probabilities.
 - [Jev Call Screener](https://github.com/SuchintK/jev-call-screener) — `Open source` · `Free source build` · `BYOK`. Self-hosted call screening: TypeSafe Jev classifies caller transcripts; Go policy forwards or rejects (Twilio adapter; fail-open defaults). [Project…
 - [Jev Column Race](https://github.com/goodrahstar/jev-column-race) — `Open source` · `Free source build` · `BYOK`. Labels 1,000 app reviews in parallel: TypeSafe Jev typed questions vs Gemini JSON, with free replay (hosted or local). [Try app](https://jev-column-race.vercel.app) · [Project…
 - [Jev Mail Classifier](https://github.com/parth-kp/jev-mail-classifier) — `Open source` · `Free source build` · `BYOK`. Classifies IMAP inbox messages with Jev category judgments, then tags, moves, flags, or notifies from a local Textual TUI and CLI. [Project…
@@ -259,7 +208,9 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 - [jevsome-projects](https://github.com/ozers/jevsome-projects) — A Jev project directory and discovery pipeline that stores integration evidence and can use Jev for classification.
 - [leadgenrationaivoiceagent](https://github.com/sumitrevolt/leadgenrationaivoiceagent) — An experimental TypeSafe module in a marketing and voice platform chooses specialization labels for agent roles.
 - [let-jev-speak](https://github.com/suidouble/let-jev-speak) — TypeSafe's \`/v1/systemone\` endpoint classifies text — it returns a \`choice\`, a \`score\`, or a probability. It does not generate prose. This library makes it generate prose anyway: every word of the answer is a separate \`choice\`…
+- [Noul self-consistency](https://docs.typesafe.ai/cookbooks/consistency_noul_cookbook) — Routes uncertain probabilities to human review while keeping the underlying noul values visible rather than collapsing them to a label.
 - [Read](https://mrjev.com/projects/kyotofin-tax-doc-classifier) — Read — System One / Jev related resource.
+- [Structure recovery](https://docs.typesafe.ai/cookbooks/autoformat) — Reconstructs Markdown from plain text that lost its formatting, in two requests: one restitches hard-wrapped lines, one classifies every block.
 - [Transcript Lens](https://github.com/sensahin/transcript-lens) — `Open source` · `Free source build` · `BYOK`. Next.js (Türkçe UI) YouTube transcript explorer: TypeSafe Jev classifies blocks for kind/value/signals without rewriting text. Project guide.
 - [typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow) — An async LangGraph example that classifies mocked emails as invoice-related or general.
 - [work-with-jev](https://github.com/Adkid-Zephyr/work-with-jev) — Work with Jev is a local-first message classifier that uses Jev to sort work messages into urgent, to-do, worth-reading, and skippable groups with cross-chat to-do management and Feishu and WeCom adapters.
@@ -268,16 +219,24 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 
 - [aegis: TypeSafe as a first-class provider](https://github.com/dvjn/aegis) — A personal Rust AI gateway with a TypeSafe provider, usage extraction and alias resolution tested against real response bodies.
 - [ComfyUI-Jev](https://github.com/hndrr/ComfyUI-Jev) — Custom nodes for using Jev's text interpretation and judgments in ComfyUI. Use natural-language instructions to select candidates, evaluate conditions, score text, or extract numbers, then pass the results to other nodes. Jev judgments…
+- [Cookbook: Structured data extraction cascade](https://docs.typesafe.ai/cookbooks/sde_cascade) — A two-stage mini-then-verify-then-reasoning cascade that reaches most of a big reasoning model's quality at a fraction of the cost.
+- [Date extraction](https://docs.typesafe.ai/cookbooks/date_extraction_cookbook) — Extracts absolute and relative dates by asking for the parts a document names, then resolving and validating them in code with confidence-based review.
+- [Double-checking citations](https://docs.typesafe.ai/cookbooks/citation_check) — Catches wrong or invented citations against the source document with one Choice, using its confidence to flag borderline cases for review.
 - [duckdb-jev](https://github.com/colliber/duckdb-jev) — A DuckDB extension that calls Jev from SQL and returns answers as ENUM, numeric, or STRUCT types.
+- [Example use cases](https://docs.typesafe.ai/concepts/use-case-map) — The vendor's own taxonomy: five headline categories, nineteen industry groups, and ten decision shapes from classification through to structured data extraction.
 - [JEV Document Classification](https://github.com/Charlyhno-eng/jev-document-classification) — `Open source` · `Free source build` · `BYOK`. Local-first folder filer: TypeSafe Jev (Vercel AI Gateway) chooses category/confidentiality/injection/subject; audit preview and undo. [Project…
 - [jev-information-extraction](https://github.com/abhishekmamdapure/jev-information-extraction) — Ask questions about a PDF. Use Jev to rank the source text that answers them. Inspect each match, its probability, and its location on the original page.
 - [jev-seo](https://github.com/AgriciDaniel/jev-seo) — \\PDF: how the audit was made, the scorecard and the priorities\\
+- [Knowledge graph entity alignment](https://docs.typesafe.ai/cookbooks/entity_alignment) — Decides which of 450 candidate pairs from two product catalogues describe the same thing, with one Score whose three levels are the three available actions.
 - [polar\_llama](https://github.com/pnthn-ai/polar_llama) — A Polars library for parallel provider inference that also calls Jev per row as Noul, Choice, and Score questions, or as one typed contract over a document.
+- [Pre-parsed value extraction](https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook) — Regexes find candidate emails, phone numbers and amounts; the model selects the requested span so code can normalise a verbatim value.
 - [sqlite3-jev](https://github.com/mattn/sqlite3-jev) — SQLite C extension enabling TypeSafe Jev judgments as native SQL functions for semantic scoring and choices.
 
 ### Guardrails, safety & review
 
+- [Choice self-consistency](https://docs.typesafe.ai/cookbooks/consistency_choice_cookbook) — Adds an explicit "uncertain" outcome to moderation decisions and measures label agreement against the share of actions taken automatically.
 - [Clean Code Review](https://github.com/frostney/clean-code-review) — `Open source` · `Free source build` · `BYOK`. Hosted/source PR reviewer: TypeSafe Jev judges files on Clean Code questions; Luna writes evidence-first prose (MCP included). [Try app](https://clean-code-review.vercel.app) · [Project…
+- [Cookbooks](https://docs.typesafe.ai/cookbooks/llm_guardrails) — Screens every message in and out of an LLM app in one request, naming hazards and scoring how much harm complying would do.
 - [DeepChat: agent tool-permission review](https://github.com/ThinkInAIXYZ/deepchat) — Reviews each tool call on three axes — risk level, whether the user authorised it, and an explicit prompt-injection pressure check.
 - [Jev Anti-Spam Bot](https://github.com/backmeupplz/jev_antispam_bot) — `Open source` · `Free source build` · `BYOK`. Self-hosted Telegram bot that deletes high-confidence spam using TypeSafe Jev Noul signals, with fail-open errors. Project guide.
 - [jevai.org community showcase cases](https://jevai.org/cases) — Nine worked community scenarios: intent routing, invoice classification, news filtering, product tagging, moderation, claim verification, CSV validation and more.
@@ -295,13 +254,17 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 - [jevscan](https://github.com/jevbook/jevscan) — An EVM Token screening tool with library, CLI and MCP interfaces for market-feature-based risk judgments.
 - [JevScout](https://github.com/hqman/JevScout) — A demo job-search Skill for coding Agents that browses company careers pages in Chrome, uses Jev to screen AI and software-engineering roles, and saves the results.
 - [Prism](https://github.com/irfndi/prism-liquidity-agent) — 69 stars — An autonomous liquidity agent that uses JEV inside its rebalancing decision service. [Source](https://github.com/irfndi/prism-liquidity-agent/blob/22c67bdbe30bab608226832256a5013ad826b707/engine/jev-service.ts)
+- [Skill suggestion](https://docs.typesafe.ai/cookbooks/skill_suggestion) — Picks at most one skill out of 182 for an agent turn: one request ranks every skill and asks whether the turn needs one at all, a second reads the top three.
 
 ### Search, RAG & rerank
 
+- [Classifying RAG passages](https://docs.typesafe.ai/cookbooks/classifying_rag_passages) — Scores each retrieved passage, then decides in code which reach the answering model — keeping contradictory ones flagged and dropping ones carrying prompt injection.
 - [jev-scout](https://github.com/AkashPriyadarshii/jev-scout) — A repository and Rust crate search tool that asks Jev to score and select retrieved candidates for a request.
 - [jev-search](https://github.com/larguesa/jev-search) — Experimental semantic line search with TypeSafe Jev via OpenRouter. Python CLI with no runtime dependencies.
 - [JevFind](https://github.com/Peu77/JevFind) — Fast semantic code search powered by Jev. Find the relevant files, line ranges, and snippets
+- [Line-by-line search](https://docs.typesafe.ai/cookbooks/semantic_find) — Semantic search over a terms-of-service document: one request scores 218 line ids with a Choice, and a Noul checks whether the document answers at all.
 - [Paper Trellis Citation Verifier](https://github.com/MarissaFamularo/citation-verifier) — Human-reviewed manuscript citation checker: code verifies retrieved passages, Claude proposes evidence, and Jev scores whether the cited passage supports the claim; citation text and paper content go to the selected providers, and the…
+- [Re-ranking](https://docs.typesafe.ai/cookbooks/rerank_typesafe) — Re-ranks 30-passage BM25 shortlists for 40 legal queries with one question per query-candidate pair, reporting large top-1 and top-10 gains.
 - [reranker](https://github.com/hev/reranker) — A Python reranker that packs a query and up to 30 candidates into one Jev state, with one Noul relevance question per document.
 
 ### Browser, computer use & OS
@@ -432,6 +395,7 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 ### Markets & operations
 
 - [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) — 63.7K stars — An educational hedge-fund prototype with an optional JEV adapter for structured strategy judgments. [Source](https://github.com/virattt/ai-hedge-fund/blob/154a8b2f46dca0f40764d814e4e747b0ad71f4c4/hedge_fund/llm/client.py)
+- [Cookbook: Function calling](https://docs.typesafe.ai/cookbooks/function_calling) — Maps natural-language trading requests onto ordinary typed functions by turning function names and closed-set arguments into confidence-aware questions.
 - [Jev Trade](https://github.com/aowang-ai/jev-trade) — Live Hyperliquid desk across five isolated wallets: each tick packages book, tape, and position as state, Jev answers Choice questions for long/short, open/close/hold, and leverage, and application code places or pulls the quote (hold…
 - [jev-market-reflex](https://github.com/zzsong1023/jev-market-reflex) — Fast typed AI decisions on live crypto markets using TypeSafe AI Jev.
 - [jev-trade](https://github.com/Waxmell114514/jev-trade) — A simulated crypto trading loop that sends BTC and ETH market features to Jev and models execution costs and latency.
@@ -451,7 +415,9 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 ### Playgrounds & live demos
 
 - [Crowdcheck](https://crowdcheck-ai.vercel.app) — Live demo that tests a 144-character post on 10,000 persistent synthetic personas: code decides who sees it, and batched Jev calls return read, like/dislike, agreement, repost, follow, and block probabilities per persona group; posting…
+- [Demo: Smart home assistant](https://docs.typesafe.ai/demos/smart-home) — Runnable demo code for a smart home assistant that evaluates user requests with typed decisions.
 - [Fotocopiatrice](https://github.com/bnistor4/fotocopiatrice) — `Open source` · `Free source build` · `BYOK`. Italian Camera amendment explorer: code dedupes identical texts; TypeSafe Jev judges attributes and near-duplicate pairs (static site). [Try app](https://fotocopiatrice.vercel.app/) ·…
+- [Interactive demos](https://docs.typesafe.ai/demos) — Official hands-on examples, including the smart-home assistant.
 - [Jev demos](https://github.com/mayank953/Jev) — `Open source` · `Free source build` · `BYOK`. Six local side-by-side TypeSafe Jev demos with Claude/Kimi switcher and simulated mode without keys. Project guide.
 - [Jev Explained](https://github.com/davila7/jev-explained) — Interactive playground that walks through a typed request and its probabilities, with your own key.
 - [jev-playground](https://github.com/Little-Planet-Labs/jev-playground) — A web playground for entering state and decision questions, then inspecting Jev answers and probability distributions.
@@ -475,6 +441,9 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 
 ### Other applications
 
+- [Composite scoring](https://docs.typesafe.ai/patterns/composite-scoring) — Break one broad judgement into atomic scores and combine them with weights that live in your code, not in the prompt.
+- [Cookbook: Autoresearch feature discovery](https://docs.typesafe.ai/cookbooks/autoresearch_feature_discovery) — An autoresearch loop that proposes questions, turns free text into numeric features, and uses model error to improve a supervised gradient-boosting regressor.
+- [Cookbooks](https://docs.typesafe.ai/cookbooks/parallel_questions) — A 13-question regulatory briefing over one long article, showing that batching every question into one call is far cheaper and faster with no change in answers.
 - [Create a BeatAPI key](https://beatapi.io/dashboard/apikeys) — Create a BeatAPI key — System One / Jev related resource.
 - [hermes-jev-approvals](https://mrjev.com/projects/anpicasso-hermes-jev-approvals) — hermes-jev-approvals — System One / Jev related resource.
 - [Hx](https://github.com/doitrous/hx) — `Open source` · `Free source build` · `BYOK`. Clinical note checklist that ticks items against clauses from the note using TypeSafe Jev (never generates text). Project guide.
@@ -516,11 +485,12 @@ Community apps and demos grouped by decision shape. Official cookbooks stay unde
 - [Read](https://mrjev.com/projects/alurith-jeff) — Read — System One / Jev related resource.
 - [Read](https://mrjev.com/projects/wfzyx-von) — Read — System One / Jev related resource.
 - [refgarden](https://github.com/AlbionaHoti/refgarden) — `Open source` · `Free source build` · `BYOK`. Local spatial reference gallery where TypeSafe Jev chooses search phrases and highlights Met/NASA/Cosmos/Archive items from text metadata. Project guide.
+- [Speculative fan-out](https://docs.typesafe.ai/patterns/fan-out) — Pack many questions, including ones you may not need, into a single request and let your code decide afterwards what was relevant.
 - [Working-Memory-Jev](https://github.com/AustinAWay/Working-Memory-Jev) — Working-Memory-Jev — System One / Jev related project.
 
 ## Docs & essays
 
-Independent explainers, launch coverage, and background reading.
+Explainers, launch coverage, TypeSafe concept pages, and background reading.
 
 - [A deep dive into Jev](https://flaviocopes.com/jev) — The densest independent explainer: code in JS, Python and the AI SDK, all three answer shapes, the advanced patterns, and an honest list of where the model fails.
 - [A new kind of AI model from a ChatGPT inventor is thrilling developers](https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers) — The only launch coverage with first-hand developer quotes rather than vendor figures, including a caution that interpreting the thresholds is now your job.
@@ -531,14 +501,20 @@ Independent explainers, launch coverage, and background reading.
 - [AINews: Jev, a System One Model that only decides](https://latent.space/p/ainews-jev-a-system-one-model-that) — Community roundup of the System One / Jev launch and early reactions.
 - [Browser Use + Jev](https://x.com/gregpr07/status/2100411066966749359) — Gregor Zunic's real-time flight-search demo and short description of the dynamic DOM action space.
 - [Building a Harness with Jev](https://langchain.com/blog/building-a-harness-with-jev) — LangChain's explainer and integration walkthrough: the three question types, plus model routing and gating risky tool calls before they run.
+- [Confidence](https://docs.typesafe.ai/confidence) — How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.
+- [Current models](https://docs.typesafe.ai/models) — Find model versions, moving aliases, supported inputs, pricing, and current limits.
 - [Decoding Jev](https://navinpai.github.io/decoding-jev) — Independent walkthrough of architecture, inference, and RLCD evidence status.
 - [everything-about-jev](https://github.com/qingshungLI/everything-about-jev) — tell you everything about jev,TypeSafe AI's System One model for typed decisions.
 - [Founder launch thread on X](https://x.com/CompleteSkeptic/status/2099925682726002904) — , Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do.…
 - [How does Jev work? RLCD and parallel inference](https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026) — , Explainer reconstructing the RLCD objective and the parallel sampler from public statements.…
+- [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
 - [Internal classifier field note](https://x.com/identityTorn/status/2100475121324728615) — A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.
+- [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.
+- [Introduction](https://docs.typesafe.ai/introduction) — What Jev is, how System One models differ from text-generation models, and the Choice, Score, and Noul primitives.
 - [Jev (AI model) on Wikipedia](https://en.wikipedia.org/wiki/Jev_(AI_model)) — Most useful as an index: its reference list is a fast route to the coverage worth reading.
 - [Jev (AI model) on Wikipedia](https://en.wikipedia.org/wiki/Jev_(AI_model) — ) — Most useful as an index: its reference list is a fast route to the coverage worth reading.
 - [Jev - The Ultimate Classification Model?](https://youtube.com/watch) — A review that puts the limitation in the title rather than burying it.
+- [Jev 1.13 jaggedness](https://docs.typesafe.ai/model-jaggedness/jev-1.13) — The vendor's own list of where the model fails: literal reading, arithmetic and counting, date comparison, indirection, large noisy states, adversarial content.
 - [Jev AI Use Cases](https://medium.com/data-science-in-your-pocket/jev-ai-use-cases-9a87d57ac3b4) — Walks through use case after use case — agent routing, an in-agent decision layer, ticket triage — each with a concrete option set and a sample response.
 - [Jev by TypeSafe: A Decision Model for AI Agents](https://beam.ai/agentic-insights/jev-typesafe-ai-agents) — An agent-builder's framing of where a decision model sits in an agent stack.
 - [Jev Cuts AI Decision Costs 100x And Vercel, Cloudflare Rushed To Add It](https://forbes.com/sites/josipamajic/2026/09/19/jev-cuts-ai-decision-costs-100x-and-vercel-cloudflare-rushed-to-add-it) — Mainstream coverage of the launch and the speed with which gateways added support.
@@ -556,15 +532,18 @@ Independent explainers, launch coverage, and background reading.
 - [Maps of Bounded Rationality (Kahneman Nobel lecture)](https://nobelprize.org/prizes/economic-sciences/2002/kahneman/lecture) — , Kahneman's two-system account, intuition returning an answer directly while reasoning deliberates, the split Jev's design copies.…
 - [On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599) — Guo et al., 2017. Introduces temperature scaling and ECE, the calibration foundations these models rely on.
 - [OpenAI Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs) — , The provider-side JSON-schema guarantee the CEO named on HN as what Jev replaces, shape enforced but no probability returned.…
+- [Quick start](https://docs.typesafe.ai/introduction/quickstart) — The canonical first call: one support ticket, one Choice, one Score and one Noul in a single request, in Python, JS and cURL.
 - [Qwen on Cerebras comparison](https://x.com/iamMrDuncan/status/2100467548298899918) — Shannon's video and source-backed comparison of a structured-output LLM baseline with Jev.
 - [RLCD explained: Reinforcement Learning for Calibrated Decisions](https://systemonemodels.org/guides/rlcd-explained) — An independent write-up whose most useful finding is a negative one: there is no paper, no reward function, no dataset description and no reproducible evaluation for RLCD.
 - [RLCD: how Jev is trained](https://learnjev.com/concepts/rlcd) — Learn Jev primer on what is and is not public about RLCD.
+- [System One (TypeSafe docs)](https://docs.typesafe.ai/concepts/system-one) — Author definition of System One models and the typed-decision interface.
 - [System One Models](https://systemonemodels.org) — Independent living documentation site for the System One category.
 - [The Bitter Lesson](http://incompleteideas.net/IncIdeas/BitterLesson.html) — , The essay TypeSafe's own Bitterest Lesson argues against, named in TypeSafe's materials as its starting point.…
 - [The Bitterest Lesson](https://typesafe.ai/blog/bitterest-lesson) — Why optimizing the wrong task can dominate gains from scale.
 - [The Register: TypeSafe AI debuts model for machines](https://theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711) — The most sceptical mainstream piece: it challenges the no-hallucination framing on the grounds that a well-formed answer is not the same as a correct one.
 - [Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) — , The source TypeSafe cites for naming Jev after System 1, fast intuitive judgement with no deliberation.…
 - [Typed Decisions, Not Chat](https://warmersun.com/jev) — , Secondary analysis of TypeSafe's dashboard putting Jev at about 67.8% mean agreement against 74.1% for the best comparator.…
+- [TypeSafe AI](https://typesafe.ai) — Official product site for System One models and Jev.
 - [TypeSafe Jev technical deconstruction](https://kevnu.com/en/posts/typesafe-jev-technical-deconstruction-non-autoregressive-decision-primitives-rlcd-and-local-open-source-implementation) — Non-autoregressive primitives, RLCD, and local open-source implementations.
 - [TypeSafe's Jev: Can decision models replace LLM judges?](https://arize.com/blog/typesafe-jev-llm-judge) — Collects the third-party evaluations that exist so far and frames the question of where a decision model can stand in for an LLM judge.
 - [typesafeai.app](https://typesafeai.app) — Independent directory of public Jev capabilities: each record states what Jev was shown doing, links to its public sources, and carries an evidence level (author-reported to editor-reproduced) and an Official or Community label;…
@@ -634,6 +613,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [Probing Jev's behaviour with repeated API calls](https://github.com/ahastudio/til) — Independent Korean-language notes reporting that reversing the order of options shifted a probability enough to flip a 0.9 threshold.
 - [sysone-bench](https://github.com/instax-dutta/sysone-bench) — , September 21 comparison of Jev, Laya and Qwen-PCD on 751 states across nine suites with identical questions; Jev leads moderation 98.9% to Laya's 83.3%, while Laya leads AG News 94% to 91%.…
 - [TypeSafe AI Benchmark](https://github.com/iammrduncan/typesafe-ai-benchmark) — Side-by-side Jev and Qwen-on-Cerebras comparison with raw exports, cost accounting, methodology, and task-specific limitations.
+- [Workflow evals](https://evals.typesafe.ai) — , TypeSafe's own four-workflow dashboard, Jev at 61.7 to 76.0% accuracy and 0.3 to 0.5s per case against frontier baselines.…
 - [worldmonitor: news threat classification](https://github.com/koala73/worldmonitor) — Two Choice questions over threat level and category, held in shadow mode after a blind evaluation found Jev merely tied the incumbent model.
 
 ### Papers
@@ -663,12 +643,21 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 
 ## SDKs & tooling
 
-Clients, MCP servers, skills, and integrations. Official TypeSafe clients are under [Official](#official); application-shaped projects live under [Use cases](#use-cases).
+Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. Application-shaped projects live under [Use cases](#use-cases).
 
-### Official SDKs & gateways
+### TypeSafe SDKs & gateways
 
+- [JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js) — The official TypeScript client. Ships ESM, CJS and type declarations, with lowercase choice()/score()/noul() helper factories.
+- [Model page](https://openrouter.ai/typesafe/jev-1.13) — Model page — System One / Jev related resource.
+- [Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) — The official Python client. Sync and async clients, retry policy with retry-after support, and Choice/Score/Noul helper classes.
 - [Release notes](https://github.com/typesafe-ai/typesafe-sdk-python/releases/tag/v0.7.0) — Release notes — System One / Jev related resource.
 - [Release notes](https://github.com/typesafe-ai/typesafe-sdk-js/releases/tag/v0.6.0) — Release notes — System One / Jev related resource.
+- [System One Adapter](https://github.com/typesafe-ai/system-one-adapter-python) — 243 stars — A drop-in TypeSafeClient replacement that backs System One calls with ordinary LLM APIs.…
+- [TypeSafe Agent Skills](https://github.com/typesafe-ai/skills) — 1.6K stars — Official agent skills for building against TypeSafe’s System One / JEV API. [Source](https://github.com/typesafe-ai/skills/blob/65a39f393687675ce170e6094757de20370365b9/skills/typesafe-ai/SKILL.md)
+- [TypeSafe Console](https://console.typesafe.ai) — Create keys and inspect live Jev requests.
+- [TypeSafe GitHub organization](https://github.com/typesafe-ai) — Source repositories maintained by TypeSafe.
+- [TypeSafe on OpenRouter](https://openrouter.ai/typesafe) — OpenRouter's listing for Jev, with its own model ids and the unusual pricing shape of paid input and free output.
+- [Vercel AI Gateway](https://vercel.com/ai-gateway/models/jev) — Third-party hosted gateway entry for calling Jev through Vercel's AI SDK and gateway.
 
 ### Community SDKs & clients
 
@@ -790,6 +779,7 @@ Clients, MCP servers, skills, and integrations. Official TypeSafe clients are un
 - [daf-jev](https://github.com/docxology/daf-jev) — Composable Python toolkit for TypeSafe Jev: question builders, confidence gates, evaluator, calibration, CLI, and optional MCP server. Project guide.
 - [decision-first](https://github.com/harrymunro/decision-first) — Agent skill that tries TypeSafe Jev on bounded-judgment steps first and documents every attempt in a reusable decision lab. Project guide.
 - [deslop](https://github.com/yoichiojima-2/deslop) — Agent skill/CLI that scores page bodies with TypeSafe Jev probabilities for ads, slop, SEO shape, and derivative content. Project guide.
+- [docs](https://docs.typesafe.ai/agent-skill) — Official docs for giving a coding agent API context and guidance when designing narrow System One / Jev decision questions (Claude Code plugin and skills.sh install paths).
 - [dsh-jev](https://github.com/zhangxaochen/dsh-jev) — Jev (System One decision model) plugin suite for DeepSeek Harness (dsh)
 - [dsh-jev](https://github.com/noetion/dsh-jev) — DeepSeek Harness plugin registering `jev_ask` for TypeSafe Jev noul/choice/score (pin GitHub commit; npm name `dsh-jev` collides with another package). Project guide.
 - [dsh-jev-decide](https://github.com/nanami-0713/dsh-jev-decide) — DeepSeek Harness plugin registering `jev_decide` for TypeSafe Jev noul/choice/score (distinct from dsh-jev / dsh-jev-verify / dsh-jev-prune). Project guide.
@@ -1239,7 +1229,6 @@ Clients, MCP servers, skills, and integrations. Official TypeSafe clients are un
 - [TypeSafe AI Playground](https://github.com/markjaquith/typesafe-ai-playground) — Rust CLI of Jev experiments, including PHI detection, code-comment review, live tone analysis, and occupation and industry classification.
 - [TypeSafe Mario](https://github.com/fhshaik/typesafe-mario) — 338 stars — An experimental NES Mario controller that gives Jev structured emulator RAM and telemetry instead of screenshots. [Source](https://github.com/fhshaik/typesafe-mario/blob/ca22449ed187118d19326d1f54b01b6636578aa4/README.md)
 - [TypeSafe models in Pydantic AI](https://pydantic.dev/docs/ai/models/typesafe) — First-party Pydantic AI support: an Agent with output_type=bool over the typesafe:jev-latest model string.
-- [TypeSafe on OpenRouter](https://openrouter.ai/typesafe) — OpenRouter's listing for Jev, with its own model ids and the unusual pricing shape of paid input and free output.
 - [TypeSafe pass-through on LiteLLM](https://docs.litellm.ai/docs/pass_through/typesafe) — Proxy Jev through LiteLLM for unified keys and cost tracking, with any path under /typesafe/ passed straight through.
 - [typesafe-ai-jev-example](https://github.com/ItBayMax/typesafe-ai-jev-example) — This repository provides six runnable Python demos and four notes covering TypeSafe Jev primitives and composition patterns, with offline mock mode and committed live samples from jev-1.13.0.
 - [typesafe-cli](https://github.com/y0usaf/typesafe-cli) — Shell `jev` CLI for TypeSafe Jev noul/choice/score answers as numbers (distinct from Python typesafeai-cli). Project guide.
@@ -1318,7 +1307,7 @@ Other curated indexes this catalog merges.
 
 ## Community
 
-Official chat, social, and the launch thread.
+TypeSafe chat, social, and the launch thread.
 
 - [Discord](https://discord.gg/typesafe) — Official community server for builders, support, and discussion.
 - [Hacker News launch thread](https://news.ycombinator.com/item) — The launch thread, and the densest single collection of scepticism: unsupported RLCD claims, apples-to-oranges latency comparisons, and the deliberate absence of public benchmarks.
