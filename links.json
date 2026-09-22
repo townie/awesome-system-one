@@ -8300,6 +8300,15 @@
     ]
   },
   {
+    "url": "https://jevbench.dev",
+    "title": "JevBench",
+    "description": "Independent live-agent bench for Jev, Jev-compatible models, and dual-brain (guide LLM + Jev) setups; measures win/loss, task completion, and latency on interactive harnesses (StarCraft II first), not a single typed answer. Distinct from the [534-task text-decision suite](https://github.com/fstandhartinger/jevbench).",
+    "category": "Evals & papers",
+    "sources": [
+      "seed-tier"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2501.10868",
     "title": "JSONSchemaBench",
     "description": ", \"A Rigorous Benchmark of Structured Outputs for Language Models\". 10k real schemas scored on validity, coverage and latency, the constrained-decoding route Jev's 0% type errors claim competes against. !",

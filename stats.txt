@@ -1,4 +1,4 @@
-unique_links	1138
+unique_links	1139
 
 by_category
 Official	47
@@ -6,7 +6,7 @@ Docs & essays	36
 Open models & alternatives	91
 Awesome lists & indexes	33
 SDKs & tooling	591
-Evals & papers	69
+Evals & papers	70
 Demos	266
 Community	5
 
@@ -19,7 +19,7 @@ AbdelStark/awesome-typesafe-jev	198
 BeatAPI/awesome-jev	177
 kydlikebtc/awesome-jev	135
 OmniJev/awesome-jev-gallery	132
-seed-tier	50
+seed-tier	51
 systemonemodels.org/examples/alternatives	34
 rupeshpoojary9/awesome-open-system-one	26
 seed-official	25

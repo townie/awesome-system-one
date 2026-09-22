@@ -304,6 +304,7 @@ SEEDS = [
 ("https://github.com/huggingface/setfit","SetFit","Few-shot Sentence Transformer classification without prompting.","Open models & alternatives","seed-tier"),
 ("https://github.com/kuleshov-group/mdlm","MDLM","NeurIPS 2024 masked diffusion LMs — open non-autoregressive research line often compared to Jev.","Evals & papers","seed-tier"),
 ("https://github.com/fstandhartinger/jevbench","JevBench","Independent cross-model benchmark for typed decisions (accuracy, calibration, latency, cost).","Evals & papers","seed-tier"),
+("https://jevbench.dev","JevBench","Independent live-agent bench for Jev and open alternatives on interactive harnesses (StarCraft II first); win/loss, completion, latency — not a single typed answer. Distinct from the 534-task text-decision suite.","Evals & papers","seed-tier"),
 ("https://jevals.com","Jevals.com","Independent hosted-Jev vs LLM benchmark with public methodology and per-decision logs.","Evals & papers","seed-tier"),
 ("https://github.com/AbdelStark/awesome-typesafe-jev","Awesome TypeSafe Jev","Large community field guide to Jev projects, SDKs, evals, and demos.","Awesome lists & indexes","seed-lists"),
 ("https://github.com/logicrw/awesome-jev-projects","Awesome Jev Projects","Commit-pinned radar of 479+ Jev projects across 17 domains.","Awesome lists & indexes","seed-lists"),
@@ -391,7 +392,15 @@ def main():
 
     lines = ["# Awesome System One", "", "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)", "",
         "> A consolidated catalog of **System One** / **Jev** resources: official TypeSafe docs and SDKs, independent essays, open model reproductions, SDKs & tooling, evaluations, demos, and community indexes.", "",
-        "TypeSafe’s **Jev** is a hosted System One model that returns typed decisions (`Choice`, `Score`, `Noul`) with calibrated probabilities in one parallel pass—built for software control flow, not chat. This list merges every unique link found across multiple community awesome lists and living indexes (see [Sources](#sources)), deduplicated by normalized URL.", "",
+        "**System One** models are typed decision engines for software control flow, not chat. You send a state plus questions; they return structured answers — `Choice`, `Score`, `Noul` — with calibrated probabilities your code can branch, sort, and gate on. No generated prose.", "",
+        "[TypeSafe](https://typesafe.ai)’s **[Jev](https://docs.typesafe.ai/introduction)** is the first widely known System One product. Its September 2026 launch popularized the framing (TypeSafe calls Jev “the first System One model”). Adjacent ideas are older — encoder classifiers, reward-model heads, constrained decoding, typed LM signatures — and after launch the community filled in open reproductions, local servers, evals, and indexes within days. This list merges those catalogs (see [Sources](#sources)), deduplicated by normalized URL.", "",
+        "A landmark to know early: **[JevBench](https://jevbench.dev/)** measures Jev, Jev-compatible models, and dual-brain (guide LLM + Jev) setups on interactive agent harnesses — win/loss, task completion, latency — not a single typed answer. StarCraft II first; product loops next.", "",
+        "**Start here**", "",
+        "- [Introduction](https://docs.typesafe.ai/introduction) — Official `Choice` / `Score` / `Noul` primitives and how System One differs from text generation.",
+        "- [Launch post](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — TypeSafe’s announcement of System One models and Jev.",
+        "- [JevBench](https://jevbench.dev/) — Independent live-agent bench for hosted Jev and open alternatives.",
+        "- [Kev](https://github.com/jaredpalmer/kev) — Apache-licensed local Choice/Score/Noul models with weights, training code, and a compatible server.",
+        "- [systemonemodels.org](https://systemonemodels.org) — Independent living docs for the category.", "",
         f"**{n} unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).", "",
         "## Contents", ""]
     for cat in ORDER:

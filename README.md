@@ -4,9 +4,21 @@
 
 > A consolidated catalog of **System One** / **Jev** resources: official TypeSafe docs and SDKs, independent essays, open model reproductions, SDKs & tooling, evaluations, demos, and community indexes.
 
-TypeSafe’s **Jev** is a hosted System One model that returns typed decisions (`Choice`, `Score`, `Noul`) with calibrated probabilities in one parallel pass—built for software control flow, not chat. This list merges every unique link found across multiple community awesome lists and living indexes (see [Sources](#sources)), deduplicated by normalized URL.
+**System One** models are typed decision engines for software control flow, not chat. You send a state plus questions; they return structured answers — `Choice`, `Score`, `Noul` — with calibrated probabilities your code can branch, sort, and gate on. No generated prose.
 
-**1138 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
+[TypeSafe](https://typesafe.ai)’s **[Jev](https://docs.typesafe.ai/introduction)** is the first widely known System One product. Its September 2026 launch popularized the framing (TypeSafe calls Jev “the first System One model”). Adjacent ideas are older — encoder classifiers, reward-model heads, constrained decoding, typed LM signatures — and after launch the community filled in open reproductions, local servers, evals, and indexes within days. This list merges those catalogs (see [Sources](#sources)), deduplicated by normalized URL.
+
+A landmark to know early: **[JevBench](https://jevbench.dev/)** measures Jev, Jev-compatible models, and dual-brain (guide LLM + Jev) setups on interactive agent harnesses — win/loss, task completion, latency — not a single typed answer. StarCraft II first; product loops next.
+
+**Start here**
+
+- [Introduction](https://docs.typesafe.ai/introduction) — Official `Choice` / `Score` / `Noul` primitives and how System One differs from text generation.
+- [Launch post](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — TypeSafe’s announcement of System One models and Jev.
+- [JevBench](https://jevbench.dev/) — Independent live-agent bench for hosted Jev and open alternatives.
+- [Kev](https://github.com/jaredpalmer/kev) — Apache-licensed local Choice/Score/Noul models with weights, training code, and a compatible server.
+- [systemonemodels.org](https://systemonemodels.org) — Independent living docs for the category.
+
+**1139 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ## Contents
 
@@ -15,7 +27,7 @@ TypeSafe’s **Jev** is a hosted System One model that returns typed decisions (
 - [Open models & alternatives](#open-models--alternatives) (91)
 - [Awesome lists & indexes](#awesome-lists--indexes) (33)
 - [SDKs & tooling](#sdks--tooling) (591)
-- [Evals & papers](#evals--papers) (69)
+- [Evals & papers](#evals--papers) (70)
 - [Demos](#demos) (266)
 - [Community](#community) (5)
 - [Sources](#sources)
@@ -883,6 +895,7 @@ TypeSafe’s **Jev** is a hosted System One model that returns typed decisions (
 - [jev-synergy-screening](https://github.com/PistachioAIHQ/jev-synergy-screening) — A Jev title-and-abstract screening experiment compared with Cohen Abstract Triage labels for an ADHD review.
 - [jevals](https://github.com/openlayer-ai/jevals) — Agent evals and guardrails as typed questions instead of an LLM judge, packing every eval for a trace into one request. From Openlayer, with a mock backend so the whole library runs without a key.
 - [Jevals.com](https://jevals.com) — Independent benchmark of hosted Jev and six LLMs on PubMedQA, Banking77, and HelpSteer2, with human labels, proper scores, calibration, cost, and latency; [suite files and per-decision logs](https://github.com/Jevals/jevals-data) and…
+- [JevBench](https://jevbench.dev) — Independent live-agent bench for Jev, Jev-compatible models, and dual-brain (guide LLM + Jev) setups; measures win/loss, task completion, and latency on interactive harnesses (StarCraft II first), not a single typed answer. Distinct from the [534-task text-decision suite](https://github.com/fstandhartinger/jevbench).
 - [JSONSchemaBench](https://arxiv.org/abs/2501.10868) — , "A Rigorous Benchmark of Structured Outputs for Language Models". 10k real schemas scored on validity, coverage and latency, the constrained-decoding route Jev's 0% type errors claim competes against. !
 - [LegalForecastBench](https://github.com/johnhughes3/LegalForecastBench) — , Claim-level Brier scoring of federal motion-to-dismiss outcomes, a fixed binary with one probability per unit; no Jev row published yet.…
 - [Let Me Speak Freely?](https://arxiv.org/abs/2408.02442) — , "A Study on the Impact of Format Restrictions on Performance of Large Language Models". Measures the accuracy format restrictions cost, the study behind the CEO's HN claim that constrained decoding makes models dumber. ![EMNLP 2024…
