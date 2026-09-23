@@ -12,7 +12,7 @@ TypeSafe’s **[Jev](https://typesafe.ai)** is the first *widely known* System O
 
 Deduplicated by normalized URL across the ingested indexes.
 
-**1139 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
+**1142 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ### Start here
 
@@ -26,8 +26,8 @@ Deduplicated by normalized URL across the ingested indexes.
 ## Contents
 
 - [Hosted: TypeSafe Jev](#hosted-typesafe-jev) (3)
-- [Open-source / local alternatives](#open-source--local-alternatives) (82)
-  - [Landmark projects](#landmark-projects) (9)
+- [Open-source / local alternatives](#open-source--local-alternatives) (83)
+  - [Landmark projects](#landmark-projects) (10)
   - [Models & weights](#models--weights) (37)
   - [Runtimes, ports & servers](#runtimes-ports--servers) (11)
   - [Adapters & logit readers](#adapters--logit-readers) (14)
@@ -46,10 +46,10 @@ Deduplicated by normalized URL across the ingested indexes.
   - [Creative tools](#creative-tools) (5)
   - [Playgrounds & live demos](#playgrounds--live-demos) (24)
   - [Other applications](#other-applications) (46)
-- [Docs & essays](#docs--essays) (56)
-- [Evals & papers](#evals--papers) (79)
+- [Docs & essays](#docs--essays) (57)
+- [Evals & papers](#evals--papers) (80)
   - [Harnesses & live benches](#harnesses--live-benches) (5)
-  - [Typed-decision benchmarks](#typed-decision-benchmarks) (52)
+  - [Typed-decision benchmarks](#typed-decision-benchmarks) (53)
   - [Papers](#papers) (22)
 - [SDKs & tooling](#sdks--tooling) (586)
   - [TypeSafe SDKs & gateways](#typesafe-sdks--gateways) (11)
@@ -79,6 +79,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Kev](https://github.com/jaredpalmer/kev) — Apache-licensed, locally runnable Jev-style Choice, Score, and Noul models at 0.8B, 4B, and 9B, with released weights, training code, a System One-compatible server, frozen evaluation suites, and a playground. Its author reports a 0.822…
 - [Laya](https://github.com/NandhaKishorM/laya) — Convai Innovations decision head on ModernBERT/mmBERT; Choice/Score/Noul; ECE 0.081 after temperature fit; Apache-2.0.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) — 1.2K stars — An independent starter model that scores a changing list of text or visual options in one pass. [Source](https://github.com/vinnylarouge/jevlike/blob/94f5fd1b0b11d52bbdfdf4e0ee6aa96b568f8452/README.md)
+- [Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) — Multimodal open System One classifier (text/image/audio/video) on Gemma 4 12B; Apache-2.0; author reports JevBench parity and <100ms on H100.
 - [Bespoke Nimble](https://github.com/bespokelabsai/nimble) — , Data, model and recipe for an open Jev: Qwen3.5-9B plus LoRA on contrastive examples, with a 13-subset public evaluation suite scored against Jev 1.13.…
 - [SemIf](https://github.com/TheoLeeCJ/SemIf) — Frozen-model logit reader for typed Choice on open models (e.g. Qwen3.5-4B); MIT.
 - [jevmlx](https://github.com/bnsd55/jevmlx) — MIT-licensed local decision layer for Apple Silicon that scores constrained Boolean, enum, and multi-select fields from MLX model logits in one prefill, returns schema-valid JSON, and offers a System One-compatible endpoint and…
@@ -522,6 +523,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Jev Typewriter launch post](https://x.com/stevekrouse/status/2100287368221659289) — Steve Krouse's playable 16-judgment demo and video.
 - [Jev vs auto-regressive LLMs vs MDLM](https://lilting.ch/en/articles/typesafe-ai-jev-system-one-model) — , Technical comparison of Jev's single-pass sampler with token-by-token decoding and masked diffusion.…
 - [jev-agent-skill](https://github.com/yuyang2230/jev-agent-skill) — Claude Code / ZCode skill that offloads small judgments (classify/route, batch screening, scoring, compliance pre-checks) from the main model to Jev on OpenCode Zen's free `/v1/systemone` endpoint; bundles a zero-dependency `jev.py`…
+- [Jev-Omni launch thread](https://x.com/Akhila_988/status/2102171891410825520) — Announcement of Jev-Omni as a multimodal open System One model with HF weights.
 - [Jev: System One models for Prod, not God](https://latent.space/p/jev) — Interview on System One models for production, not AGI chat.
 - [Jev: The Language Model That Won't Talk](https://anthonymaio.substack.com/p/jev-the-language-model-that-wont) — Critical look at the "no hallucination" and benchmark claims.
 - [Jev: TypeSafe's System One Model Explained](https://datacamp.com/blog/system-one-models-jev) — A neutral survey of the architecture, the claimed benchmarks and the pricing, which states plainly that no large independent reproduction had surfaced.
@@ -569,6 +571,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [ask-jev](https://github.com/omni-/ask-jev) — A Windows PowerShell tool for auditing recorded Codex execution evidence with :jev.
 - [chinese-workflow-decision-bench](https://github.com/Adkid-Zephyr/chinese-workflow-decision-bench) — Feishu-style Chinese message classification bench: 64 frozen scenarios, Choice/four-Noul workflows, published TypeSafe Jev vs Laya results. Project guide.
 - [conformal-prediction](https://github.com/aangelopoulos/conformal-prediction) — Angelopoulos and Bates: lecture notes and runnable notebooks on conformal prediction and distribution-free uncertainty, the basis for principled abstention.
+- [DecisionBench](https://huggingface.co/datasets/akhilaaa3/decision-bench) — Public typed-decision eval set used with Jev-Omni (scenarios → questions with option probabilities).
 - [Evaluation & Observability (29)](https://logicrw.github.io/awesome-jev-projects/en/categories/evaluation-observability) — Evaluation & Observability (29) — System One / Jev related resource.
 - [Every: Mini-Vibe Check](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds) — , 777 judgments over 37 articles in 0.7s for a quarter of a cent; caught six of seven planted defects, Fable seven.…
 - [foreman-jev](https://github.com/Shifty-Eye-Games/foreman-jev) — An experimental Jev supervisor for Codex workers with programmer-selected acceptance commands.

@@ -366,6 +366,9 @@ SEEDS = [
 ("https://abdelstark.github.io/awesome-typesafe-jev","Awesome TypeSafe Jev (live site)","Browsable live directory for the AbdelStark list.","Awesome lists & indexes","seed-lists"),
 ("https://logicrw.github.io/awesome-jev-projects/en","Awesome Jev Projects (live site)","Searchable English radar UI for logicrw listings.","Awesome lists & indexes","seed-lists"),
 ("https://typesafeai.app","typesafeai.app","Independent directory of public Jev capabilities with evidence levels.","Awesome lists & indexes","seed-lists"),
+("https://huggingface.co/akhilaaa3/Jev-Omni","Jev-Omni","Multimodal open System One classifier (text/image/audio/video) on Gemma 4 12B; Apache-2.0; author reports JevBench parity and <100ms on H100.","Open models & alternatives","seed-tier"),
+("https://huggingface.co/datasets/akhilaaa3/decision-bench","DecisionBench","Public typed-decision eval set used with Jev-Omni (scenarios → questions with option probabilities).","Evals & papers","seed-tier"),
+("https://x.com/Akhila_988/status/2102171891410825520","Jev-Omni launch thread","Announcement of Jev-Omni as a multimodal open System One model with HF weights.","Docs & essays","seed-essays"),
 ("https://github.com/mizorewww/laya-coreml","laya-coreml","Local Laya typed decisions on Apple Core ML / Neural Engine; ~5 ms short decisions on M3 Max.","Open models & alternatives","seed-tier"),
 ("https://github.com/GodModeAI2025/JevCoreML","JevCoreML","Native macOS Core ML decision stack for kev-0.6b and Laya without Python or cloud at runtime.","Open models & alternatives","seed-tier"),
 ("https://github.com/FluidInference/FluidUse","FluidUse","Local computer use on Apple silicon using Laya + CUA-S1-FORMS via Accessibility API.","Open models & alternatives","seed-tier"),
@@ -387,6 +390,7 @@ LANDMARK_OS = [
     "https://github.com/jaredpalmer/kev",
     "https://github.com/NandhaKishorM/laya",
     "https://github.com/vinnylarouge/jevlike",
+    "https://huggingface.co/akhilaaa3/Jev-Omni",
     "https://github.com/bespokelabsai/nimble",
     "https://github.com/TheoLeeCJ/SemIf",
     "https://github.com/bnsd55/jevmlx",
@@ -400,6 +404,9 @@ PIN_EVALS = [
     "https://jevals.com",
 ]
 CATEGORY_OVERRIDE = {
+    "https://huggingface.co/akhilaaa3/Jev-Omni": CAT_OS,
+    "https://huggingface.co/datasets/akhilaaa3/decision-bench": CAT_EVALS,
+    "https://x.com/Akhila_988/status/2102171891410825520": CAT_DOCS,
     "https://jevbench.dev": CAT_EVALS,
     "https://github.com/fstandhartinger/jevbench": CAT_EVALS,
     "https://jevals.com": CAT_EVALS,

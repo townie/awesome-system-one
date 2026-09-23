@@ -1,18 +1,18 @@
-unique_links	1139
+unique_links	1142
 
 by_category
 Hosted: TypeSafe Jev	3
-Open-source / local alternatives	82
+Open-source / local alternatives	83
 Use cases	274
-Docs & essays	56
-Evals & papers	79
+Docs & essays	57
+Evals & papers	80
 SDKs & tooling	586
 Awesome lists & indexes	54
 Community	5
 
 by_subsection
 Hosted: TypeSafe Jev / (none)	3
-Open-source / local alternatives / Landmark projects	9
+Open-source / local alternatives / Landmark projects	10
 Open-source / local alternatives / Models & weights	37
 Open-source / local alternatives / Runtimes, ports & servers	11
 Open-source / local alternatives / Adapters & logit readers	14
@@ -30,9 +30,9 @@ Use cases / Markets & operations	9
 Use cases / Creative tools	5
 Use cases / Playgrounds & live demos	24
 Use cases / Other applications	46
-Docs & essays / (none)	56
+Docs & essays / (none)	57
 Evals & papers / Harnesses & live benches	5
-Evals & papers / Typed-decision benchmarks	52
+Evals & papers / Typed-decision benchmarks	53
 Evals & papers / Papers	22
 SDKs & tooling / TypeSafe SDKs & gateways	11
 SDKs & tooling / Community SDKs & clients	92
@@ -51,11 +51,11 @@ AbdelStark/awesome-typesafe-jev	198
 BeatAPI/awesome-jev	177
 kydlikebtc/awesome-jev	135
 OmniJev/awesome-jev-gallery	132
-seed-tier	51
+seed-tier	53
 systemonemodels.org/examples/alternatives	34
 rupeshpoojary9/awesome-open-system-one	26
 seed-official	25
-seed-essays	13
+seed-essays	14
 seed-lists	12
 
 json_count_matches_unique	True

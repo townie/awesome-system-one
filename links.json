@@ -83,6 +83,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/akhilaaa3/Jev-Omni",
+    "title": "Jev-Omni",
+    "description": "Multimodal open System One classifier (text/image/audio/video) on Gemma 4 12B; Apache-2.0; author reports JevBench parity and <100ms on H100.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Landmark projects",
+    "sources": [
+      "seed-tier"
+    ]
+  },
+  {
     "url": "https://github.com/bespokelabsai/nimble",
     "title": "Bespoke Nimble",
     "description": ", Data, model and recipe for an open Jev: Qwen3.5-9B plus LoRA on contrastive examples, with a 13-subset public evaluation suite scored against Jev 1.13.…",
@@ -4155,6 +4165,16 @@
     ]
   },
   {
+    "url": "https://x.com/Akhila_988/status/2102171891410825520",
+    "title": "Jev-Omni launch thread",
+    "description": "Announcement of Jev-Omni as a multimodal open System One model with HF weights.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-essays"
+    ]
+  },
+  {
     "url": "https://latent.space/p/jev",
     "title": "Jev: System One models for Prod, not God",
     "description": "Interview on System One models for production, not AGI chat.",
@@ -4545,6 +4565,16 @@
     "subsection": "Typed-decision benchmarks",
     "sources": [
       "rupeshpoojary9/awesome-open-system-one"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/datasets/akhilaaa3/decision-bench",
+    "title": "DecisionBench",
+    "description": "Public typed-decision eval set used with Jev-Omni (scenarios → questions with option probabilities).",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-tier"
     ]
   },
   {
