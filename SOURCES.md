@@ -1,6 +1,6 @@
 # Sources ingested
 
-Ingest date: **2026-09-22 PT** (America/Los_Angeles).
+Ingest date: **2026-09-24 PT** (America/Los_Angeles).
 
 | Source | URL | Artifact used |
 | --- | --- | --- |
@@ -14,5 +14,7 @@ Ingest date: **2026-09-22 PT** (America/Los_Angeles).
 | MrJev/awesome-jev | https://github.com/MrJev/awesome-jev | README.md |
 | systemonemodels.org alternatives | https://systemonemodels.org/examples/alternatives/ | HTML index |
 | seed-official / seed-essays / seed-tier / seed-lists | (manual) | Official docs, essays, Tier A/B models, list self-links |
+| seed-logicrw-refresh | https://logicrw.github.io/awesome-jev-projects/projects.json | 2026-09-24 evidenced projects missing from prior ingest |
+| Reddit r/LLMDevs top-20 roundup | https://www.reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are/ | Community review post (credit) |
 
 Normalization: strip trailing `/`, `.git`, `www.`, URL fragments/queries; exclude badge/shield hosts, issue templates, and known unrelated collisions (e.g. LayaAir).

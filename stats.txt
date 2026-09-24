@@ -1,45 +1,45 @@
-unique_links	1153
+unique_links	1329
 
 by_category
 Hosted: TypeSafe Jev	3
-Open-source / local alternatives	90
-Use cases	274
-Docs & essays	61
-Evals & papers	80
-SDKs & tooling	586
-Awesome lists & indexes	54
+Open-source / local alternatives	95
+Use cases	372
+Docs & essays	65
+Evals & papers	85
+SDKs & tooling	649
+Awesome lists & indexes	55
 Community	5
 
 by_subsection
 Hosted: TypeSafe Jev / (none)	3
 Open-source / local alternatives / Landmark projects	12
-Open-source / local alternatives / Models & weights	39
+Open-source / local alternatives / Models & weights	43
 Open-source / local alternatives / Runtimes, ports & servers	12
-Open-source / local alternatives / Adapters & logit readers	16
+Open-source / local alternatives / Adapters & logit readers	17
 Open-source / local alternatives / Related classifiers & structured output	11
-Use cases / Routing & triage	18
-Use cases / Classification	16
-Use cases / Extraction & structured data	14
-Use cases / Guardrails, safety & review	8
-Use cases / Agents, tools & harnesses	10
-Use cases / Search, RAG & rerank	8
-Use cases / Browser, computer use & OS	58
-Use cases / Games, robotics & simulation	48
-Use cases / Voice, mail & productivity	10
-Use cases / Markets & operations	9
-Use cases / Creative tools	5
-Use cases / Playgrounds & live demos	24
-Use cases / Other applications	46
-Docs & essays / (none)	61
+Use cases / Routing & triage	35
+Use cases / Classification	18
+Use cases / Extraction & structured data	16
+Use cases / Guardrails, safety & review	13
+Use cases / Agents, tools & harnesses	16
+Use cases / Search, RAG & rerank	11
+Use cases / Browser, computer use & OS	71
+Use cases / Games, robotics & simulation	54
+Use cases / Voice, mail & productivity	12
+Use cases / Markets & operations	12
+Use cases / Creative tools	6
+Use cases / Playgrounds & live demos	27
+Use cases / Other applications	81
+Docs & essays / (none)	65
 Evals & papers / Harnesses & live benches	5
-Evals & papers / Typed-decision benchmarks	53
+Evals & papers / Typed-decision benchmarks	58
 Evals & papers / Papers	22
 SDKs & tooling / TypeSafe SDKs & gateways	11
-SDKs & tooling / Community SDKs & clients	92
-SDKs & tooling / MCP, skills & agent plugins	165
-SDKs & tooling / Integrations & data pipelines	45
-SDKs & tooling / Other tooling	273
-Awesome lists & indexes / (none)	54
+SDKs & tooling / Community SDKs & clients	98
+SDKs & tooling / MCP, skills & agent plugins	186
+SDKs & tooling / Integrations & data pipelines	47
+SDKs & tooling / Other tooling	307
+Awesome lists & indexes / (none)	55
 Community / (none)	5
 
 by_source_appearance_count
@@ -49,6 +49,7 @@ AppitStudio/awesome-jev	370
 MrJev/awesome-jev	251
 AbdelStark/awesome-typesafe-jev	198
 BeatAPI/awesome-jev	177
+seed-logicrw-refresh	174
 kydlikebtc/awesome-jev	135
 OmniJev/awesome-jev-gallery	132
 seed-tier	62
@@ -56,6 +57,6 @@ systemonemodels.org/examples/alternatives	34
 rupeshpoojary9/awesome-open-system-one	26
 seed-official	25
 seed-essays	18
-seed-lists	12
+seed-lists	14
 
 json_count_matches_unique	True
