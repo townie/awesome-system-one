@@ -14,7 +14,7 @@ Deduplicated by normalized URL across the ingested indexes.
 
 Within each section (and subsection), **pins / landmarks stay first**; remaining items are ordered by **GitHub stars** (descending), then title. Stars are a practical proxy — not a full citation PageRank. Non-GitHub URLs (docs, HF, X, etc.) sort after starred repos. See [`stars_cache.json`](stars_cache.json).
 
-**1329 unique links** · Ingested **2026-09-24 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
+**1340 unique links** · Ingested **2026-09-24 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ### Start here
 
@@ -28,13 +28,13 @@ Within each section (and subsection), **pins / landmarks stay first**; remaining
 ## Contents
 
 - [Hosted: TypeSafe Jev](#hosted-typesafe-jev) (3)
-- [Open-source / local alternatives](#open-source--local-alternatives) (95)
+- [Open-source / local alternatives](#open-source--local-alternatives) (103)
   - [Landmark projects](#landmark-projects) (12)
-  - [Models & weights](#models--weights) (43)
+  - [Models & weights](#models--weights) (49)
   - [Runtimes, ports & servers](#runtimes-ports--servers) (12)
-  - [Adapters & logit readers](#adapters--logit-readers) (17)
-  - [Related classifiers & structured output](#related-classifiers--structured-output) (11)
-- [Use cases](#use-cases) (372)
+  - [Adapters & logit readers](#adapters--logit-readers) (18)
+  - [Related classifiers & structured output](#related-classifiers--structured-output) (12)
+- [Use cases](#use-cases) (374)
   - [Routing & triage](#routing--triage) (35)
   - [Classification](#classification) (18)
   - [Extraction & structured data](#extraction--structured-data) (16)
@@ -46,11 +46,11 @@ Within each section (and subsection), **pins / landmarks stay first**; remaining
   - [Voice, mail & productivity](#voice-mail--productivity) (12)
   - [Markets & operations](#markets--operations) (12)
   - [Creative tools](#creative-tools) (6)
-  - [Playgrounds & live demos](#playgrounds--live-demos) (27)
+  - [Playgrounds & live demos](#playgrounds--live-demos) (29)
   - [Other applications](#other-applications) (81)
 - [Docs & essays](#docs--essays) (65)
-- [Evals & papers](#evals--papers) (85)
-  - [Harnesses & live benches](#harnesses--live-benches) (5)
+- [Evals & papers](#evals--papers) (86)
+  - [Harnesses & live benches](#harnesses--live-benches) (6)
   - [Typed-decision benchmarks](#typed-decision-benchmarks) (58)
   - [Papers](#papers) (22)
 - [SDKs & tooling](#sdks--tooling) (649)
@@ -112,6 +112,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [OpenThai-SystemOne](https://github.com/iapp-technology/openthai-systemone) — Open (Apache-2.0) Thai and English System One decision model, 0.8B with a 256-way slot head.
 - [solar-mini4-jev](https://github.com/hunkim/solar-mini4-jev) — A drop-in wrapper that exposes Upstage \\Solar Mini4\\ through the TypeSafe Jev System One API shape.
 - [open-jev](https://github.com/JoshuaSP/open-jev) — , Typed JSON inference with DiffusionGemma: fixed JSON, parallel decisions. [![Code](https://img.shields.io/github/stars/JoshuaSP/open-jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/JoshuaSP/open-jev)
+- [system-one-open](https://github.com/mithalouni/system-one-open) — Open replica of TypeSafe Jev: typed calibrated decisions in one forward pass on Gemma 4 E2B / Gemma 3 270M (Modal).
 - [openjev (zhihz)](https://github.com/zhihz/openjev) — , Local bilingual probability decisions from context, questions and candidate answers. [![Code](https://img.shields.io/github/stars/zhihz/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhihz/openjev)
 - [JevBERT](https://github.com/hawkymisc/typed-decision-bert) — A local server that speaks Jev's `/v1/systemone` shape from a BERT encoder, with a numbered account of every request it refuses that Jev might accept.
 - [OpenJevPro](https://github.com/zhangcy122/OpenJev) — Asks an Ollama or OpenAI-compatible model to write a likelihood score per candidate, then softmaxes them with a fixed temperature. PolyForm Noncommercial, not an open-source licence.
@@ -121,10 +122,15 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [stuntd](https://github.com/bladedevoff/stuntd) — Local proxy that learns your app's typed LLM decisions and answers them with a Laya head. Jev and OpenAI compatible.
 - [jevbetter](https://github.com/olanotolu/jevbetter) — , One-pass scorer over a variable option list: hashed n-gram encoder, rival-aware attention, gated head, temperature scaling.…
 - [Luce](https://github.com/scienthoon/luce) — Open recipe for Jev-style decision models: a task description, an LLM teacher that writes the data, then LoRA plus a decision head on Qwen3-4B-Base returning calibrated choice, score, and boolean probabilities on a 12 GB GPU; the README…
+- [lev](https://github.com/franckverrot/lev) — Jev-style decision model on LiquidAI LFM2.5-350M with a TypeSafe-compatible /v1/systemone server.
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) — , Choice, Score and Noul on Qwen3.5-0.8B, the smallest decoder-based reproduction.…
 - [reflex](https://github.com/kaustav1996/reflex) — A coding agent and personal assistant built on the Pi coding agent. Jev checks every tool call, turn and voice transcript, and code decides what happens next: allow, ask or block an action, which model tier to use,…
 - [stuntdouble](https://github.com/ReallyArtificial/stuntdouble) — Drop-in /v1/systemone proxy that shadows Jev with local decision models (Kev, Laya) and reports whether you can swap
+- [jqv](https://github.com/Octalab-Inc/jqv) — Stock Qwen3 decision API: shared-state prefill, choice-token readout, temperature-calibrated probabilities, TypeSafe-compatible.
 - [NanoJev](https://github.com/chenyangcun/NanoJev) — A minimal nanoGPT-style replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline.
+- [open-jev-tinfoil](https://github.com/VitaDAO/open-jev-tinfoil) — Attested CPU serving for the open Jev DeBERTa typed-decision model.
+- [Codiv](https://codiv.ai) — Hosted inference for open System One models; serves OpenJev through a Jev-compatible API.
+- [Codiv API](https://api.codiv.ai) — Jev-compatible base URL for Codiv-hosted OpenJev (point TYPESAFE_BASE_URL here).
 - [Laya](https://laya.convaiinnovations.com) — A 421M non-autoregressive System One decision engine with RLCD-trained calibrated probabilities and multilingual support.
 - [LFM2.5-2.6B-RLCD](https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD) — , RLCD-style fine-tune of Liquid AI's LFM2.5-2.6B for typed decisions. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD)
 - [LFM2.5-350M-RLCD](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD) — , 350M-parameter RLCD-style decision model, the smallest open attempt. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD)
@@ -162,6 +168,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Open Alternative to Jev](https://github.com/ikermoel/open-alternative-jev) — Apache-licensed Python library that reads option-token probabilities from open models through Transformers or vLLM, with packed and separate question modes, temperature scaling, benchmark scripts, and raw result files; its measurements…
 - [OpenSourceJev](https://github.com/sabeel111/OpenSourceJev) — Research experiment in local System One decisions through llama.cpp logits projection on consumer hardware.
 - [choosekit](https://github.com/NotXf1le/choosekit) — Scores a finite set of choices with a model you already run in llama.cpp and returns a typed decision with a probability distribution.
+- [fastjev](https://github.com/chengyongru/fastjev) — Independently maintained SemIf fork: self-hosted semantic decisions via Torch, vLLM, MLX, llama.cpp, and optional HTTP API.
 - [poorjev](https://github.com/rupeshpoojary9/poorjev) — Open, local reproduction of the Choice/Score/Noul interface on commodity zero-shot NLI models with temperature scaling and conformal abstention; ships a reproducible calibration eval (ECE 0.170 to 0.071 on its own small labelled set,…
 - [open-bonsai-jev](https://github.com/NicolaiLassen/open-bonsai-jev) — openjev's mechanism, Bonsai's weights: typed decisions read straight from one forward pass of a 1.75-bit 27B model. Credit to TheoLeeCJ (SemIf/OpenJev) and PrismML.
 - [semif-go](https://github.com/wnzn/semif-go) — Go System One adapter over llama.cpp: Choice/Noul/Score from next-token option probs; multimodal state (text/image/audio/video).
@@ -184,6 +191,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [rlcd-modernbert-151m](https://github.com/Heman10x-NGU/Verdict-open-jev) — , Encoder-side reproduction: GLiClass ModernBERT base retrained for calibrated label probabilities.…
 - [OpenDecision](https://github.com/deepanwadhwa/OpenDecision) — Zero-shot NLI decision engine on ModernBERT-large (~400M) with Choice/Noul/Score vocabulary.
 - [Jev Local](https://github.com/Argos1111/jev_local) — A local `/v1/systemone` server with two backends: an LFM model zero-shot, and a fine-tuned ModernBERT-Ja cross-encoder. Japanese documentation.
+- [typed-decisions](https://github.com/kotoba-lang/typed-decisions) — Jev-shaped Choice/Score/Noul model on ModernBERT, DeBERTa, and LLaDA-MoE with measured latency, accuracy, and calibration.
 - [Laya](https://huggingface.co/convaiinnovations/laya) — , ModernBERT-large with RLCD-trained decision heads: Choice, Score and Noul in one 38 ms pass. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/convaiinnovations/laya)…
 
 ## Use cases
@@ -506,6 +514,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [Crowdcheck](https://crowdcheck-ai.vercel.app) — Live demo that tests a 144-character post on 10,000 persistent synthetic personas: code decides who sees it, and batched Jev calls return read, like/dislike, agreement, repost, follow, and block probabilities per persona group; posting…
 - [Demo: Smart home assistant](https://docs.typesafe.ai/demos/smart-home) — Runnable demo code for a smart home assistant that evaluates user requests with typed decisions.
 - [Interactive demos](https://docs.typesafe.ai/demos) — Official hands-on examples, including the smart-home assistant.
+- [Is it AI slop?](https://is-it-ai-slop.app.mintapis.com) — No-signup JevBench demo: typed decisions for AI-slop detection.
 - [Try app](https://clean-code-review.vercel.app) — Try app — System One / Jev related resource.
 - [Try app](https://fotocopiatrice.vercel.app) — Try app — System One / Jev related resource.
 - [Try app](https://jev.mintan.org) — Try app — System One / Jev related resource.
@@ -516,6 +525,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [Try app](https://slopmop.lol) — Try app — System One / Jev related resource.
 - [Try app](https://watermelon.shashwatchavan.com) — Try app — System One / Jev related resource.
 - [TypeSafe Typewriter](https://typesafe-demo.val.run) — Live Val Town demo that updates 16 typed judgments as text changes.
+- [Who is right?](https://who-is-right.app.mintapis.com) — No-signup JevBench demo: typed decisions over a claim-dispute scenario.
 
 ### Other applications
 
@@ -677,6 +687,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 
 ### Harnesses & live benches
 
+- [JevBench (Benchmark Heaven)](https://benchmarkheaven.com/jev-models) — Interactive JevBench leaderboard: typed decision models scored on intelligence, calibration, speed, and cost.
 - [JevBench](https://jevbench.dev) — Interactive harness bench for Jev, open alternatives, and dual-brain (LLM + decision model) setups — starting with StarCraft II — measuring win/loss, task completion, and latency rather than a single typed-answer score.
 - [Jev vs. ML](https://github.com/QuicqDev/Jev-vs-ML) — Compares a typed decision model with classical classification pipelines across eight datasets, with a published protocol and an interactive report.
 - [typesafe-playground](https://github.com/kavehmz/typesafe-playground) — Interactive Jev experiments for support-routing previews and 3D driving simulations.

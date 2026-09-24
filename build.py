@@ -582,6 +582,19 @@ SEEDS = [
 ('https://github.com/Teylersf/WindowsJev','WindowsJev','Token-efficient Windows automation and durable research MCP server for Codex and Claude Code, powered by TypeSafe Jev.','Use cases',"seed-logicrw-refresh"),
 ('https://github.com/baize7815/jev-mcp-open-source','jev-mcp-open-source','Self-hosted Jev MCP on Cloudflare Workers with intent routing, retrieval reranking and batch judgments','SDKs & tooling',"seed-logicrw-refresh"),
 
+# Daily X-scan 2026-09-24 — missing high-signal OS / serving / evals
+("https://github.com/mithalouni/system-one-open","system-one-open","Open replica of TypeSafe Jev: typed calibrated decisions in one forward pass on Gemma 4 E2B / Gemma 3 270M (Modal).","Open models & alternatives","seed-x-scan"),
+("https://github.com/kotoba-lang/typed-decisions","typed-decisions","Jev-shaped Choice/Score/Noul model on ModernBERT, DeBERTa, and LLaDA-MoE with measured latency, accuracy, and calibration.","Open models & alternatives","seed-x-scan"),
+("https://github.com/VitaDAO/open-jev-tinfoil","open-jev-tinfoil","Attested CPU serving for the open Jev DeBERTa typed-decision model.","Open models & alternatives","seed-x-scan"),
+("https://github.com/chengyongru/fastjev","fastjev","Independently maintained SemIf fork: self-hosted semantic decisions via Torch, vLLM, MLX, llama.cpp, and optional HTTP API.","Open models & alternatives","seed-x-scan"),
+("https://github.com/franckverrot/lev","lev","Jev-style decision model on LiquidAI LFM2.5-350M with a TypeSafe-compatible /v1/systemone server.","Open models & alternatives","seed-x-scan"),
+("https://github.com/Octalab-Inc/jqv","jqv","Stock Qwen3 decision API: shared-state prefill, choice-token readout, temperature-calibrated probabilities, TypeSafe-compatible.","Open models & alternatives","seed-x-scan"),
+("https://codiv.ai","Codiv","Hosted inference for open System One models; serves OpenJev through a Jev-compatible API.","Open models & alternatives","seed-x-scan"),
+("https://api.codiv.ai","Codiv API","Jev-compatible base URL for Codiv-hosted OpenJev (point TYPESAFE_BASE_URL here).","Open models & alternatives","seed-x-scan"),
+("https://benchmarkheaven.com/jev-models","JevBench (Benchmark Heaven)","Interactive JevBench leaderboard: typed decision models scored on intelligence, calibration, speed, and cost.","Evals & papers","seed-x-scan"),
+("https://who-is-right.app.mintapis.com","Who is right?","No-signup JevBench demo: typed decisions over a claim-dispute scenario.","Use cases","seed-x-scan"),
+("https://is-it-ai-slop.app.mintapis.com","Is it AI slop?","No-signup JevBench demo: typed decisions for AI-slop detection.","Use cases","seed-x-scan"),
+
 ]
 
 INGEST_DATE = "2026-09-24 PT"
@@ -604,11 +617,24 @@ LANDMARK_OS = [
     "https://github.com/mizorewww/laya-coreml",
 ]
 PIN_EVALS = [
+    "https://benchmarkheaven.com/jev-models",
     "https://jevbench.dev",
     "https://github.com/fstandhartinger/jevbench",
     "https://jevals.com",
 ]
 CATEGORY_OVERRIDE = {
+    "https://github.com/mithalouni/system-one-open": CAT_OS,
+    "https://github.com/kotoba-lang/typed-decisions": CAT_OS,
+    "https://github.com/VitaDAO/open-jev-tinfoil": CAT_OS,
+    "https://github.com/chengyongru/fastjev": CAT_OS,
+    "https://github.com/franckverrot/lev": CAT_OS,
+    "https://github.com/Octalab-Inc/jqv": CAT_OS,
+    "https://codiv.ai": CAT_OS,
+    "https://api.codiv.ai": CAT_OS,
+    "https://benchmarkheaven.com/jev-models": CAT_EVALS,
+    "https://who-is-right.app.mintapis.com": CAT_USE,
+    "https://is-it-ai-slop.app.mintapis.com": CAT_USE,
+
     "https://huggingface.co/akhilaaa3/Jev-Omni": CAT_OS,
     "https://huggingface.co/datasets/akhilaaa3/decision-bench": CAT_EVALS,
     "https://x.com/Akhila_988/status/2102171891410825520": CAT_DOCS,

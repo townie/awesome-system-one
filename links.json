@@ -415,6 +415,16 @@
     ]
   },
   {
+    "url": "https://github.com/mithalouni/system-one-open",
+    "title": "system-one-open",
+    "description": "Open replica of TypeSafe Jev: typed calibrated decisions in one forward pass on Gemma 4 E2B / Gemma 3 270M (Modal).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/zhihz/openjev",
     "title": "openjev (zhihz)",
     "description": ", Local bilingual probability decisions from context, questions and candidate answers. [![Code](https://img.shields.io/github/stars/zhihz/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhihz/openjev)",
@@ -510,6 +520,16 @@
     ]
   },
   {
+    "url": "https://github.com/franckverrot/lev",
+    "title": "lev",
+    "description": "Jev-style decision model on LiquidAI LFM2.5-350M with a TypeSafe-compatible /v1/systemone server.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/shamazharikh/qwen-rlcd",
     "title": "qwen-rlcd",
     "description": ", Choice, Score and Noul on Qwen3.5-0.8B, the smallest decoder-based reproduction.…",
@@ -540,6 +560,16 @@
     ]
   },
   {
+    "url": "https://github.com/Octalab-Inc/jqv",
+    "title": "jqv",
+    "description": "Stock Qwen3 decision API: shared-state prefill, choice-token readout, temperature-calibrated probabilities, TypeSafe-compatible.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/chenyangcun/NanoJev",
     "title": "NanoJev",
     "description": "A minimal nanoGPT-style replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline.",
@@ -547,6 +577,36 @@
     "subsection": "Models & weights",
     "sources": [
       "rupeshpoojary9/awesome-open-system-one"
+    ]
+  },
+  {
+    "url": "https://github.com/VitaDAO/open-jev-tinfoil",
+    "title": "open-jev-tinfoil",
+    "description": "Attested CPU serving for the open Jev DeBERTa typed-decision model.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://codiv.ai",
+    "title": "Codiv",
+    "description": "Hosted inference for open System One models; serves OpenJev through a Jev-compatible API.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://api.codiv.ai",
+    "title": "Codiv API",
+    "description": "Jev-compatible base URL for Codiv-hosted OpenJev (point TYPESAFE_BASE_URL here).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -895,6 +955,16 @@
     ]
   },
   {
+    "url": "https://github.com/chengyongru/fastjev",
+    "title": "fastjev",
+    "description": "Independently maintained SemIf fork: self-hosted semantic decisions via Torch, vLLM, MLX, llama.cpp, and optional HTTP API.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Adapters & logit readers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/rupeshpoojary9/poorjev",
     "title": "poorjev",
     "description": "Open, local reproduction of the Choice/Score/Noul interface on commodity zero-shot NLI models with temperature scaling and conformal abstention; ships a reproducible calibration eval (ECE 0.170 to 0.071 on its own small labelled set,…",
@@ -1101,6 +1171,16 @@
     "subsection": "Related classifiers & structured output",
     "sources": [
       "MrJev/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/kotoba-lang/typed-decisions",
+    "title": "typed-decisions",
+    "description": "Jev-shaped Choice/Score/Noul model on ModernBERT, DeBERTa, and LLaDA-MoE with measured latency, accuracy, and calibration.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Related classifiers & structured output",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -4024,6 +4104,16 @@
     ]
   },
   {
+    "url": "https://is-it-ai-slop.app.mintapis.com",
+    "title": "Is it AI slop?",
+    "description": "No-signup JevBench demo: typed decisions for AI-slop detection.",
+    "category": "Use cases",
+    "subsection": "Playgrounds & live demos",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://clean-code-review.vercel.app",
     "title": "Try app",
     "description": "Try app — System One / Jev related resource.",
@@ -4121,6 +4211,16 @@
     "subsection": "Playgrounds & live demos",
     "sources": [
       "AbdelStark/awesome-typesafe-jev"
+    ]
+  },
+  {
+    "url": "https://who-is-right.app.mintapis.com",
+    "title": "Who is right?",
+    "description": "No-signup JevBench demo: typed decisions over a claim-dispute scenario.",
+    "category": "Use cases",
+    "subsection": "Playgrounds & live demos",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -5631,6 +5731,16 @@
     "subsection": "",
     "sources": [
       "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://benchmarkheaven.com/jev-models",
+    "title": "JevBench (Benchmark Heaven)",
+    "description": "Interactive JevBench leaderboard: typed decision models scored on intelligence, calibration, speed, and cost.",
+    "category": "Evals & papers",
+    "subsection": "Harnesses & live benches",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {

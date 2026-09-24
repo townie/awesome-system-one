@@ -1,11 +1,11 @@
-unique_links	1329
+unique_links	1340
 
 by_category
 Hosted: TypeSafe Jev	3
-Open-source / local alternatives	95
-Use cases	372
+Open-source / local alternatives	103
+Use cases	374
 Docs & essays	65
-Evals & papers	85
+Evals & papers	86
 SDKs & tooling	649
 Awesome lists & indexes	55
 Community	5
@@ -13,10 +13,10 @@ Community	5
 by_subsection
 Hosted: TypeSafe Jev / (none)	3
 Open-source / local alternatives / Landmark projects	12
-Open-source / local alternatives / Models & weights	43
+Open-source / local alternatives / Models & weights	49
 Open-source / local alternatives / Runtimes, ports & servers	12
-Open-source / local alternatives / Adapters & logit readers	17
-Open-source / local alternatives / Related classifiers & structured output	11
+Open-source / local alternatives / Adapters & logit readers	18
+Open-source / local alternatives / Related classifiers & structured output	12
 Use cases / Routing & triage	35
 Use cases / Classification	18
 Use cases / Extraction & structured data	16
@@ -28,10 +28,10 @@ Use cases / Games, robotics & simulation	54
 Use cases / Voice, mail & productivity	12
 Use cases / Markets & operations	12
 Use cases / Creative tools	6
-Use cases / Playgrounds & live demos	27
+Use cases / Playgrounds & live demos	29
 Use cases / Other applications	81
 Docs & essays / (none)	65
-Evals & papers / Harnesses & live benches	5
+Evals & papers / Harnesses & live benches	6
 Evals & papers / Typed-decision benchmarks	58
 Evals & papers / Papers	22
 SDKs & tooling / TypeSafe SDKs & gateways	11
@@ -58,5 +58,6 @@ rupeshpoojary9/awesome-open-system-one	26
 seed-official	25
 seed-essays	18
 seed-lists	14
+seed-x-scan	11
 
 json_count_matches_unique	True
