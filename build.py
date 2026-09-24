@@ -1,11 +1,23 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import json, re, collections
+import json, re, collections, subprocess, sys, time, os
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parent
 RAW, OUT = ROOT / "raw", ROOT
+STARS_CACHE = OUT / "stars_cache.json"
+# GraphQL batch size — polite to the API; ~1090 repos ≈ 22 calls.
+STARS_BATCH = 50
+# Skip re-fetching cache entries newer than this many days unless --refresh-stars.
+STARS_TTL_DAYS = 14
+GH_SKIP_OWNERS = {
+    "topics", "orgs", "sponsors", "settings", "marketplace", "features", "pricing",
+    "about", "login", "join", "explore", "collections", "events", "codespaces",
+    "copilot", "enterprise", "security", "customer-stories", "readme", "pulls",
+    "issues", "notifications", "stars", "watch", "new", "apps", "account",
+}
 
 def normalize_url(url: str) -> str:
     url = (url or "").strip()
@@ -789,8 +801,170 @@ def pin_index(url: str, pins: list[str]) -> int:
     except ValueError:
         return 10_000
 
-def sort_key(e: Entry, pins: list[str] | None = None):
-    return (pin_index(e.url, pins or []), e.title.lower())
+def github_repo_slug(url: str) -> str | None:
+    """Return owner/repo for a GitHub repo-root URL, else None (HF/docs/X/deep paths skipped)."""
+    nu = normalize_url(url)
+    m = re.match(r"^https?://github\.com/([^/]+)/([^/]+)$", nu, re.I)
+    if not m:
+        return None
+    owner, repo = m.group(1), m.group(2)
+    if owner.lower() in GH_SKIP_OWNERS:
+        return None
+    if repo.lower() in {"followers", "following", "repositories", "projects", "packages", "sponsors"}:
+        return None
+    return f"{owner}/{repo}"
+
+def load_stars_cache() -> dict:
+    if not STARS_CACHE.exists():
+        return {}
+    try:
+        data = json.loads(STARS_CACHE.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+def save_stars_cache(cache: dict) -> None:
+    # Stable key order for cleaner diffs.
+    ordered = {k: cache[k] for k in sorted(cache, key=str.lower)}
+    STARS_CACHE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+def _cache_entry_fresh(entry: dict, now: datetime) -> bool:
+    if not isinstance(entry, dict) or "stars" not in entry:
+        return False
+    fetched = entry.get("fetched_at") or ""
+    try:
+        ts = datetime.fromisoformat(fetched.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    if ts.tzinfo is None:
+        ts = ts.replace(tzinfo=timezone.utc)
+    return (now - ts).total_seconds() < STARS_TTL_DAYS * 86400
+
+def _fetch_stars_graphql_batch(slugs: list[str]) -> dict[str, int | None]:
+    """Batch-fetch stargazerCount via `gh api graphql`. Missing repos → None."""
+    if not slugs:
+        return {}
+    parts = []
+    alias_to_slug = {}
+    for i, slug in enumerate(slugs):
+        owner, repo = slug.split("/", 1)
+        alias = f"r{i}"
+        alias_to_slug[alias] = slug
+        parts.append(
+            f"{alias}: repository(owner: {json.dumps(owner)}, name: {json.dumps(repo)}) {{ stargazerCount }}"
+        )
+    # Single-line query body; pass via temp file so shell/-f quoting stays sane.
+    query = "query { " + " ".join(parts) + " }"
+    qpath = ROOT / ".stars_query.graphql"
+    for attempt in range(4):
+        qpath.write_text(query, encoding="utf-8")
+        proc = subprocess.run(
+            ["gh", "api", "graphql", "-F", f"query=@{qpath}"],
+            capture_output=True, text=True, timeout=180,
+        )
+        # gh exits 1 when any alias is NOT_FOUND, but still returns partial data on stdout.
+        try:
+            payload = json.loads(proc.stdout or "")
+        except json.JSONDecodeError:
+            payload = {}
+        data = payload.get("data")
+        if isinstance(data, dict) and data:
+            out: dict[str, int | None] = {}
+            for alias, slug in alias_to_slug.items():
+                node = data.get(alias)
+                if node is None:
+                    out[slug] = None
+                else:
+                    out[slug] = int(node.get("stargazerCount") or 0)
+            return out
+        err = (proc.stderr or proc.stdout or "").strip()
+        # Rate limit / secondary limit — back off.
+        if "rate limit" in err.lower() or "403" in err or "502" in err or "timeout" in err.lower():
+            time.sleep(2 ** attempt)
+            continue
+        print(f"  graphql batch failed ({len(slugs)}): {err[:200]}", file=sys.stderr)
+        return {s: None for s in slugs}
+    print(f"  graphql batch gave up after retries ({len(slugs)})", file=sys.stderr)
+    return {s: None for s in slugs}
+
+def ensure_stars(entries: dict, force: bool = False) -> dict[str, int | None]:
+    """
+    Return map of normalized entry URL → star count (int) or None if unknown/non-GitHub.
+    Cache lives in stars_cache.json (keyed by owner/repo). Uses `gh api graphql` in batches.
+    """
+    cache = load_stars_cache()
+    now = datetime.now(timezone.utc)
+    now_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    needed: list[str] = []
+    slug_by_url: dict[str, str] = {}
+    for e in entries.values():
+        slug = github_repo_slug(e.url)
+        if not slug:
+            continue
+        slug_by_url[e.url] = slug
+        key = slug.lower()
+        # Prefer exact key, fall back to case-insensitive hit.
+        entry = cache.get(slug) or cache.get(key)
+        if entry is None:
+            for k, v in cache.items():
+                if k.lower() == key:
+                    entry = v
+                    break
+        if force or not _cache_entry_fresh(entry or {}, now):
+            needed.append(slug)
+
+    # Dedupe while preserving order
+    seen = set()
+    todo = []
+    for s in needed:
+        k = s.lower()
+        if k not in seen:
+            seen.add(k)
+            todo.append(s)
+
+    if todo:
+        print(f"Fetching GitHub stars for {len(todo)} repos (batch={STARS_BATCH})…")
+        for i in range(0, len(todo), STARS_BATCH):
+            batch = todo[i : i + STARS_BATCH]
+            got = _fetch_stars_graphql_batch(batch)
+            for slug, stars in got.items():
+                cache[slug] = {"stars": stars, "fetched_at": now_iso}
+            print(f"  …{min(i + STARS_BATCH, len(todo))}/{len(todo)}")
+            time.sleep(0.2)  # polite pause between batches
+        save_stars_cache(cache)
+        print(f"Wrote {STARS_CACHE.name} ({len(cache)} entries)")
+    else:
+        print(f"Star cache fresh ({len(cache)} entries) — skip API")
+
+    # Build URL → stars map (None = unknown / non-GitHub)
+    url_stars: dict[str, int | None] = {}
+    for e in entries.values():
+        slug = slug_by_url.get(e.url) or github_repo_slug(e.url)
+        if not slug:
+            url_stars[e.url] = None
+            continue
+        entry = cache.get(slug)
+        if entry is None:
+            for k, v in cache.items():
+                if k.lower() == slug.lower():
+                    entry = v
+                    break
+        if isinstance(entry, dict) and entry.get("stars") is not None:
+            url_stars[e.url] = int(entry["stars"])
+        else:
+            url_stars[e.url] = None
+    return url_stars
+
+def sort_key(e: Entry, pins: list[str] | None = None, stars_map: dict | None = None):
+    """Pins/landmarks first (pin list order), then stars desc, then title. Unknown stars last."""
+    pin = pin_index(e.url, pins or [])
+    raw = (stars_map or {}).get(e.url)
+    # Known counts (including 0) beat unknown; among known, higher first.
+    if raw is None:
+        star_rank = -1  # sorts after 0 via -star_rank
+    else:
+        star_rank = int(raw)
+    return (pin, -star_rank, e.title.lower())
 
 def raw_ready() -> bool:
     return RAW.is_dir() and (RAW / "AbdelStark-awesome-typesafe-jev.md").exists()
@@ -847,6 +1021,8 @@ def intro_lines(n: int) -> list[str]:
         "",
         "Deduplicated by normalized URL across the ingested indexes.",
         "",
+        "Within each section (and subsection), **pins / landmarks stay first**; remaining items are ordered by **GitHub stars** (descending), then title. Stars are a practical proxy — not a full citation PageRank. Non-GitHub URLs (docs, HF, X, etc.) sort after starred repos. See [`stars_cache.json`](stars_cache.json).",
+        "",
         f"**{n} unique links** · Ingested **{INGEST_DATE}** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).",
         "",
         "### Start here",
@@ -863,7 +1039,8 @@ def intro_lines(n: int) -> list[str]:
 def render_entry(e: Entry) -> str:
     return f"- [{e.title}]({e.url}) — {e.description}"
 
-def write_outputs(entries: dict) -> None:
+def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
+    stars_map = stars_map or {}
     by_cat = collections.defaultdict(list)
     by_sub = collections.defaultdict(lambda: collections.defaultdict(list))
     for e in entries.values():
@@ -887,9 +1064,9 @@ def write_outputs(entries: dict) -> None:
 
     for cat, items in by_cat.items():
         pins = PIN_HOSTED if cat == CAT_HOSTED else LANDMARK_OS if cat == CAT_OS else (PIN_EVALS if cat == CAT_EVALS else [])
-        items.sort(key=lambda e: sort_key(e, pins))
+        items.sort(key=lambda e: sort_key(e, pins, stars_map))
         for sub, sub_items in by_sub[cat].items():
-            sub_items.sort(key=lambda e: sort_key(e, pins))
+            sub_items.sort(key=lambda e: sort_key(e, pins, stars_map))
 
     source_counts = collections.Counter()
     for e in entries.values():
@@ -974,13 +1151,15 @@ def write_outputs(entries: dict) -> None:
         "",
         "Plus official TypeSafe pages, independent essays (Archer Hume, lilting.ch, Latent.Space, Learn Jev, etc.), Tier A/B open reproductions, a 2026-09-24 logicrw projects.json refresh for missing evidenced integrations, and the [r/LLMDevs 287-project / top-20 roundup](https://www.reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are/).",
         "",
-        "Machine-readable dump: [`links.json`](links.json). Ingest map: [`SOURCES.md`](SOURCES.md). Counts: [`stats.txt`](stats.txt).",
+        "Machine-readable dump: [`links.json`](links.json). Star cache: [`stars_cache.json`](stars_cache.json). Ingest map: [`SOURCES.md`](SOURCES.md). Counts: [`stats.txt`](stats.txt).",
         "",
         "## Contributing",
         "",
         "Prefer fixing upstream awesome lists; this file is a merge. When adding here: one factual line, working URL, System One / Jev relevance, no LayaAir-style name collisions, no empty stubs.",
         "",
         "Regenerate with `python3 build.py`. If `raw/` ingest artifacts are present they are merged first; otherwise the script reloads [`links.json`](links.json) and re-renders. Keep category mapping in `build.py` in sync with README sections.",
+        "",
+        "Within-section order is **pin/landmark first**, then **GitHub star count** (cached in [`stars_cache.json`](stars_cache.json)), then title — not pure editorial PageRank. Refresh stars: `python3 build.py --refresh-stars` (uses authenticated `gh api graphql` in batches; skips non-GitHub URLs).",
         "",
         "## License",
         "",
@@ -1006,6 +1185,8 @@ def write_outputs(entries: dict) -> None:
         "| Reddit r/LLMDevs top-20 roundup | https://www.reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are/ | Community review post (credit) |",
         "",
         "Normalization: strip trailing `/`, `.git`, `www.`, URL fragments/queries; exclude badge/shield hosts, issue templates, and known unrelated collisions (e.g. LayaAir).",
+        "",
+        "Ordering: within each category/subsection, pinned and landmark URLs stay first; remaining entries are sorted by GitHub stars (descending), then title. Star counts live in `stars_cache.json` (fetched via `gh api graphql`). Non-GitHub URLs are treated as unknown and sort after starred repos. Refresh with `python3 build.py --refresh-stars`. This is a star-count proxy, not a citation-graph PageRank.",
         "",
     ]
     (OUT / "SOURCES.md").write_text("\n".join(sources_md), encoding="utf-8")
@@ -1052,7 +1233,9 @@ def cleanup_entries(entries: dict) -> None:
         e.description = re.sub(r"\[([^\]]+)\]\((?!https?:)[^)]+\)", r"\1", e.description or "")
         e.description = re.sub(r"^[\s⭐★☆·•]+(?:—\s*)?", "", e.description or "").strip()
 
-def main():
+def main(argv: list[str] | None = None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    force_stars = "--refresh-stars" in argv
     entries = {}
     if raw_ready():
         ingest_raw(entries)
@@ -1061,7 +1244,14 @@ def main():
     for row in SEEDS:
         add(entries, *row)
     cleanup_entries(entries)
-    write_outputs(entries)
+    stars_map = ensure_stars(entries, force=force_stars)
+    qpath = ROOT / ".stars_query.graphql"
+    if qpath.exists():
+        try:
+            qpath.unlink()
+        except OSError:
+            pass
+    write_outputs(entries, stars_map)
 
 if __name__ == "__main__":
     main()

@@ -18,3 +18,5 @@ Ingest date: **2026-09-24 PT** (America/Los_Angeles).
 | Reddit r/LLMDevs top-20 roundup | https://www.reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are/ | Community review post (credit) |
 
 Normalization: strip trailing `/`, `.git`, `www.`, URL fragments/queries; exclude badge/shield hosts, issue templates, and known unrelated collisions (e.g. LayaAir).
+
+Ordering: within each category/subsection, pinned and landmark URLs stay first; remaining entries are sorted by GitHub stars (descending), then title. Star counts live in `stars_cache.json` (fetched via `gh api graphql`). Non-GitHub URLs are treated as unknown and sort after starred repos. Refresh with `python3 build.py --refresh-stars`. This is a star-count proxy, not a citation-graph PageRank.

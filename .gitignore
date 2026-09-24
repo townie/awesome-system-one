@@ -1,0 +1,3 @@
+*.pyc
+.stars_query.graphql
+__pycache__/
