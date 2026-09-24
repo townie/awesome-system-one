@@ -55,6 +55,20 @@
     ]
   },
   {
+    "url": "https://github.com/razorback16/openjev",
+    "title": "openjev",
+    "description": "Apache-licensed System One decision server on DiffusionGemma 26B (vLLM NVIDIA + MLX Apple); Choice/Score/Noul, optional images.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Landmark projects",
+    "sources": [
+      "AbdelStark/awesome-typesafe-jev",
+      "BeatAPI/awesome-jev",
+      "MrJev/awesome-jev",
+      "logicrw/awesome-jev-projects",
+      "seed-tier"
+    ]
+  },
+  {
     "url": "https://github.com/NandhaKishorM/laya",
     "title": "Laya",
     "description": "Convai Innovations decision head on ModernBERT/mmBERT; Choice/Score/Noul; ECE 0.081 after temperature fit; Apache-2.0.",
@@ -383,19 +397,6 @@
     ]
   },
   {
-    "url": "https://github.com/razorback16/openjev",
-    "title": "openjev",
-    "description": "Apache-licensed decision server that reads Choice, Score, and Noul probabilities from DiffusionGemma 26B through a System One-shaped API, with NVIDIA and Apple silicon backends plus optional image input. Its NVIDIA path pins an unmerged…",
-    "category": "Open-source / local alternatives",
-    "subsection": "Models & weights",
-    "sources": [
-      "AbdelStark/awesome-typesafe-jev",
-      "BeatAPI/awesome-jev",
-      "MrJev/awesome-jev",
-      "logicrw/awesome-jev-projects"
-    ]
-  },
-  {
     "url": "https://github.com/SiliconLabAI/OpenJev",
     "title": "OpenJev",
     "description": "Approximates the System One contract on top of any logprob-capable model: a fixed answer space, each option scored independently, all questions in parallel.",
@@ -415,6 +416,16 @@
     "subsection": "Models & weights",
     "sources": [
       "systemonemodels.org/examples/alternatives"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/openjev/openjev",
+    "title": "OpenJev (weights)",
+    "description": "HF decision-model checkpoint for OpenJev; zero-shot classification / calibrated option probabilities; CC-BY-NC-4.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-tier"
     ]
   },
   {
@@ -653,7 +664,8 @@
     "subsection": "Runtimes, ports & servers",
     "sources": [
       "BeatAPI/awesome-jev",
-      "MrJev/awesome-jev"
+      "MrJev/awesome-jev",
+      "seed-tier"
     ]
   },
   {
@@ -706,6 +718,16 @@
     ]
   },
   {
+    "url": "https://github.com/vllm-project/vllm/pull/57250",
+    "title": "vLLM PR #57250 — DiffusionGemma structured mode",
+    "description": "Prototype structured-generation / Jev-like canvas read for DiffusionGemma with sample /v1/systemone interposer.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Runtimes, ports & servers",
+    "sources": [
+      "seed-tier"
+    ]
+  },
+  {
     "url": "https://github.com/nokia-applied-research/AnyJev",
     "title": "AnyJev",
     "description": "Turns any open-weights LLM into a typed decider by averaging the option logits over permutations and subtracting a label-free prior, so the answer barely moves when you reorder the options.",
@@ -733,6 +755,16 @@
     "subsection": "Adapters & logit readers",
     "sources": [
       "MrJev/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/jaredpalmer/kev/releases/tag/kev-family",
+    "title": "Kev family release",
+    "description": "Packaged Kev-0.8B / 4B / 9B adapters + heads on Qwen3.5 with locked-test numbers and checksums.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Adapters & logit readers",
+    "sources": [
+      "seed-tier"
     ]
   },
   {
@@ -837,6 +869,16 @@
     "subsection": "Adapters & logit readers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://github.com/wnzn/semif-go",
+    "title": "semif-go",
+    "description": "Go System One adapter over llama.cpp: Choice/Noul/Score from next-token option probs; multimodal state (text/image/audio/video).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Adapters & logit readers",
+    "sources": [
+      "seed-tier"
     ]
   },
   {
@@ -4023,6 +4065,16 @@
     ]
   },
   {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation",
+    "title": "Introducing DiffusionGemma",
+    "description": "Google blog on DiffusionGemma — faster non-autoregressive text generation used by open System One servers.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-essays"
+    ]
+  },
+  {
     "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
     "title": "Introducing System One Models & Jev",
     "description": "The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.",
@@ -4220,6 +4272,16 @@
     "url": "https://archerhume.com/posts/jevs-architecture-unmasked",
     "title": "Jev’s Architecture Unmasked",
     "description": "Archer Hume: architecture probe from ~10k API calls — shared state, isolated questions, parallel readouts.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-essays"
+    ]
+  },
+  {
+    "url": "https://x.com/thekitze/status/2102775497822503298",
+    "title": "kitze thread: Kev / OpenJev / Laya",
+    "description": "Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.",
     "category": "Docs & essays",
     "subsection": "",
     "sources": [

@@ -378,6 +378,14 @@ SEEDS = [
 ("https://github.com/nico-martin/open-jev","open-jev (browser)","Browser TypeScript runtime for Kev/DeBERTa decisions via Transformers.js (WebGPU/WASM).","Open models & alternatives","seed-tier"),
 ("https://github.com/ipenywis/laya-ultrafast","Laya Ultrafast","Local MLX port of Jev Ultrafast with narrow-decision policy for browser tasks.","Open models & alternatives","seed-tier"),
 ("https://beatapi.io/awesome-jev","BeatAPI Awesome JEV gallery","Live gallery UI for the BeatAPI curated ≥50-star JEV project catalogue.","Awesome lists & indexes","seed-lists"),
+("https://x.com/thekitze/status/2102775497822503298","kitze thread: Kev / OpenJev / Laya","Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.","Docs & essays","seed-essays"),
+("https://github.com/jaredpalmer/kev/releases/tag/kev-family","Kev family release","Packaged Kev-0.8B / 4B / 9B adapters + heads on Qwen3.5 with locked-test numbers and checksums.","Open models & alternatives","seed-tier"),
+("https://github.com/razorback16/openjev","OpenJev","Apache-licensed System One decision server on DiffusionGemma 26B (vLLM NVIDIA + MLX Apple); Choice/Score/Noul, optional images.","Open models & alternatives","seed-tier"),
+("https://huggingface.co/openjev/openjev","OpenJev (weights)","HF decision-model checkpoint for OpenJev; zero-shot classification / calibrated option probabilities; CC-BY-NC-4.0.","Open models & alternatives","seed-tier"),
+("https://github.com/receptron/laya","Laya Node Runtime","Node.js / TypeScript ONNX Runtime for open Laya typed decisions.","Open models & alternatives","seed-tier"),
+("https://github.com/wnzn/semif-go","semif-go","Go System One adapter over llama.cpp: Choice/Noul/Score from next-token option probs; multimodal state (text/image/audio/video).","Open models & alternatives","seed-tier"),
+("https://github.com/vllm-project/vllm/pull/57250","vLLM PR #57250 — DiffusionGemma structured mode","Prototype structured-generation / Jev-like canvas read for DiffusionGemma with sample /v1/systemone interposer.","Open models & alternatives","seed-tier"),
+("https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/","Introducing DiffusionGemma","Google blog on DiffusionGemma — faster non-autoregressive text generation used by open System One servers.","Docs & essays","seed-essays"),
 
 ]
 
@@ -388,6 +396,7 @@ DISPLAY_ORDER = [CAT_HOSTED, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT
 
 LANDMARK_OS = [
     "https://github.com/jaredpalmer/kev",
+    "https://github.com/razorback16/openjev",
     "https://github.com/NandhaKishorM/laya",
     "https://github.com/vinnylarouge/jevlike",
     "https://huggingface.co/akhilaaa3/Jev-Omni",
@@ -407,6 +416,12 @@ CATEGORY_OVERRIDE = {
     "https://huggingface.co/akhilaaa3/Jev-Omni": CAT_OS,
     "https://huggingface.co/datasets/akhilaaa3/decision-bench": CAT_EVALS,
     "https://x.com/Akhila_988/status/2102171891410825520": CAT_DOCS,
+    "https://x.com/thekitze/status/2102775497822503298": CAT_DOCS,
+    "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation": CAT_DOCS,
+    "https://huggingface.co/openjev/openjev": CAT_OS,
+    "https://github.com/vllm-project/vllm/pull/57250": CAT_OS,
+    "https://github.com/wnzn/semif-go": CAT_OS,
+    "https://github.com/jaredpalmer/kev/releases/tag/kev-family": CAT_OS,
     "https://jevbench.dev": CAT_EVALS,
     "https://github.com/fstandhartinger/jevbench": CAT_EVALS,
     "https://jevals.com": CAT_EVALS,

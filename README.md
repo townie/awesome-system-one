@@ -12,7 +12,7 @@ TypeSafe’s **[Jev](https://typesafe.ai)** is the first *widely known* System O
 
 Deduplicated by normalized URL across the ingested indexes.
 
-**1142 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
+**1148 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ### Start here
 
@@ -26,11 +26,11 @@ Deduplicated by normalized URL across the ingested indexes.
 ## Contents
 
 - [Hosted: TypeSafe Jev](#hosted-typesafe-jev) (3)
-- [Open-source / local alternatives](#open-source--local-alternatives) (83)
-  - [Landmark projects](#landmark-projects) (10)
+- [Open-source / local alternatives](#open-source--local-alternatives) (87)
+  - [Landmark projects](#landmark-projects) (11)
   - [Models & weights](#models--weights) (37)
-  - [Runtimes, ports & servers](#runtimes-ports--servers) (11)
-  - [Adapters & logit readers](#adapters--logit-readers) (14)
+  - [Runtimes, ports & servers](#runtimes-ports--servers) (12)
+  - [Adapters & logit readers](#adapters--logit-readers) (16)
   - [Related classifiers & structured output](#related-classifiers--structured-output) (11)
 - [Use cases](#use-cases) (274)
   - [Routing & triage](#routing--triage) (18)
@@ -46,7 +46,7 @@ Deduplicated by normalized URL across the ingested indexes.
   - [Creative tools](#creative-tools) (5)
   - [Playgrounds & live demos](#playgrounds--live-demos) (24)
   - [Other applications](#other-applications) (46)
-- [Docs & essays](#docs--essays) (57)
+- [Docs & essays](#docs--essays) (59)
 - [Evals & papers](#evals--papers) (80)
   - [Harnesses & live benches](#harnesses--live-benches) (5)
   - [Typed-decision benchmarks](#typed-decision-benchmarks) (53)
@@ -77,6 +77,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 ### Landmark projects
 
 - [Kev](https://github.com/jaredpalmer/kev) — Apache-licensed, locally runnable Jev-style Choice, Score, and Noul models at 0.8B, 4B, and 9B, with released weights, training code, a System One-compatible server, frozen evaluation suites, and a playground. Its author reports a 0.822…
+- [openjev](https://github.com/razorback16/openjev) — Apache-licensed System One decision server on DiffusionGemma 26B (vLLM NVIDIA + MLX Apple); Choice/Score/Noul, optional images.
 - [Laya](https://github.com/NandhaKishorM/laya) — Convai Innovations decision head on ModernBERT/mmBERT; Choice/Score/Noul; ECE 0.081 after temperature fit; Apache-2.0.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) — 1.2K stars — An independent starter model that scores a changing list of text or visual options in one pass. [Source](https://github.com/vinnylarouge/jevlike/blob/94f5fd1b0b11d52bbdfdf4e0ee6aa96b568f8452/README.md)
 - [Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) — Multimodal open System One classifier (text/image/audio/video) on Gemma 4 12B; Apache-2.0; author reports JevBench parity and <100ms on H100.
@@ -108,9 +109,9 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Open JEV](https://github.com/daseinlabs/open-jev) — One-pass option scoring on local Gemma 3 4B with HTTP server and System One API.
 - [Open Jev (intikhab49)](https://github.com/intikhab49/open-jev-typed-decision-engine) — A 150M encoder trained to answer typed questions in one pass, with the training notebook written to run on a free GPU.
 - [open-jev](https://github.com/JoshuaSP/open-jev) — , Typed JSON inference with DiffusionGemma: fixed JSON, parallel decisions. [![Code](https://img.shields.io/github/stars/JoshuaSP/open-jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/JoshuaSP/open-jev)
-- [openjev](https://github.com/razorback16/openjev) — Apache-licensed decision server that reads Choice, Score, and Noul probabilities from DiffusionGemma 26B through a System One-shaped API, with NVIDIA and Apple silicon backends plus optional image input. Its NVIDIA path pins an unmerged…
 - [OpenJev](https://github.com/SiliconLabAI/OpenJev) — Approximates the System One contract on top of any logprob-capable model: a fixed answer space, each option scored independently, all questions in parallel.
 - [openjev](https://github.com/siliconlabai/openjev) — openjev — System One / Jev related resource.
+- [OpenJev (weights)](https://huggingface.co/openjev/openjev) — HF decision-model checkpoint for OpenJev; zero-shot classification / calibrated option probabilities; CC-BY-NC-4.0.
 - [openjev (zhihz)](https://github.com/zhihz/openjev) — , Local bilingual probability decisions from context, questions and candidate answers. [![Code](https://img.shields.io/github/stars/zhihz/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhihz/openjev)
 - [openjev-verdict-2.0](https://github.com/heman10x-ngu/openjev-verdict-2.0) — openjev-verdict-2.0 — System One / Jev related resource.
 - [OpenJevPro](https://github.com/zhangcy122/OpenJev) — Asks an Ollama or OpenAI-compatible model to write a likelihood score per candidate, then softmaxes them with a fixed temperature. PolyForm Noncommercial, not an open-source licence.
@@ -140,12 +141,14 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [open-jev](https://github.com/nico-martin/open-jev) — Runs independent Kev and DeBERTa typed-decision models locally through Transformers.js, with browser WebGPU/WASM support; does not use official Jev weights. Project guide.
 - [open-spark-jev](https://github.com/abhishek085/open-spark-jev) — Local decision models on Qwen3 sized for NVIDIA DGX Spark.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) — Implements a Jev-shaped HTTP decision API using Qwen and SGLang; independent model behavior and unspecified code licensing. Project guide.
+- [vLLM PR #57250 — DiffusionGemma structured mode](https://github.com/vllm-project/vllm/pull/57250) — Prototype structured-generation / Jev-like canvas read for DiffusionGemma with sample /v1/systemone interposer.
 
 ### Adapters & logit readers
 
 - [AnyJev](https://github.com/nokia-applied-research/AnyJev) — Turns any open-weights LLM into a typed decider by averaging the option logits over permutations and subtracting a label-free prior, so the answer barely moves when you reorder the options.
 - [Build Your Own JEV Locally: Run a 100% Private AI Agent on Your Machine](https://medium.com/coding-nexus/build-your-own-jev-locally-run-a-100-private-ai-agent-on-your-machine-bb98126d394a) — Despite the title, this does not run Jev. It builds a Jev-like decision engine from an open LLM using constrained next-token scoring.
 - [choosekit](https://github.com/NotXf1le/choosekit) — Scores a finite set of choices with a model you already run in llama.cpp and returns a typed decision with a probability distribution.
+- [Kev family release](https://github.com/jaredpalmer/kev/releases/tag/kev-family) — Packaged Kev-0.8B / 4B / 9B adapters + heads on Qwen3.5 with locked-test numbers and checksums.
 - [LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) — Apache-licensed local toolkit that reads causal-model logits for Choice, Score, and Noul answers through Transformers or SGLang, with a System One-shaped HTTP endpoint, web and Snake demos, and shared-prefix cache measurements. Its…
 - [mini-jev](https://github.com/r-ms/mini-jev) — Frozen Qwen3-4B next-token logit interface for Choice/Noul; not a full reproduction.
 - [Open Alternative to Jev](https://github.com/ikermoel/open-alternative-jev) — Apache-licensed Python library that reads option-token probabilities from open models through Transformers or vLLM, with packed and separate question modes, temperature scaling, benchmark scripts, and raw result files; its measurements…
@@ -155,6 +158,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [PocketJev](https://github.com/NullPo-jp/PocketJev) — SwiftUI on-device multiple-choice tool reading next-token logits on iPhone.
 - [poorjev](https://github.com/rupeshpoojary9/poorjev) — Open, local reproduction of the Choice/Score/Noul interface on commodity zero-shot NLI models with temperature scaling and conformal abstention; ships a reproducible calibration eval (ECE 0.170 to 0.071 on its own small labelled set,…
 - [Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) — , Qwen2.5-1.5B fine-tune plus parallel constrained decoding; all schema fields scored in one broadcast prefill, 5.6x to 7x faster on Apple Silicon.…
+- [semif-go](https://github.com/wnzn/semif-go) — Go System One adapter over llama.cpp: Choice/Noul/Score from next-token option probs; multimodal state (text/image/audio/video).
 - [Simple Jev](https://github.com/featherless-ai/simple-jev) — Apache-licensed local server that scores Choice, Score, and Noul with open-model logits; tokenizer support and decision calibration vary by model.
 - [simplejev.ai](https://simplejev.ai) — Hosted/open library giving HF models Jev-style structured decision output.
 
@@ -510,6 +514,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [How does Jev work? RLCD and parallel inference](https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026) — , Explainer reconstructing the RLCD objective and the parallel sampler from public statements.…
 - [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
 - [Internal classifier field note](https://x.com/identityTorn/status/2100475121324728615) — A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.
+- [Introducing DiffusionGemma](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation) — Google blog on DiffusionGemma — faster non-autoregressive text generation used by open System One servers.
 - [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.
 - [Introduction](https://docs.typesafe.ai/introduction) — What Jev is, how System One models differ from text-generation models, and the Choice, Score, and Noul primitives.
 - [Jev (AI model) on Wikipedia](https://en.wikipedia.org/wiki/Jev_(AI_model)) — Most useful as an index: its reference list is a fast route to the coverage worth reading.
@@ -529,6 +534,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Jev: TypeSafe's System One Model Explained](https://datacamp.com/blog/system-one-models-jev) — A neutral survey of the architecture, the claimed benchmarks and the pricing, which states plainly that no large independent reproduction had surfaced.
 - [Jevons' paradox (Alcott 2005)](https://doi.org/10.1016/j.ecolecon.2005.03.020) — , The rebound effect Jev is named for, where cheaper decisions raise total decision volume. ![Ecological Economics 2005](https://img.shields.io/badge/Ecological_Economics_2005-4B5563?style=flat-square)…
 - [Jev’s Architecture Unmasked](https://archerhume.com/posts/jevs-architecture-unmasked) — Archer Hume: architecture probe from ~10k API calls — shared state, isolated questions, parallel readouts.
+- [kitze thread: Kev / OpenJev / Laya](https://x.com/thekitze/status/2102775497822503298) — Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.
 - [Latent.Space: 6 clones of Jev in 2 days](https://latent.space/p/ainews-here-are-6-clones-of-jev-in) — Roundup of early open reproductions (Nimble, Kev, and others).
 - [Manifesto](https://typesafe.ai/manifesto) — TypeSafe's case for machine-native intelligence built for software rather than conversation.
 - [Maps of Bounded Rationality (Kahneman Nobel lecture)](https://nobelprize.org/prizes/economic-sciences/2002/kahneman/lecture) — , Kahneman's two-system account, intuition returning an answer directly while reasoning deliberates, the split Jev's design copies.…
