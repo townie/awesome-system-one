@@ -69,6 +69,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
+    "title": "Tev1-4B-experimental",
+    "description": "Open-weight Jev-inspired decision model finetuned from Qwen3.5-4B; Together serverless + HF weights.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Landmark projects",
+    "sources": [
+      "seed-tier"
+    ]
+  },
+  {
     "url": "https://github.com/NandhaKishorM/laya",
     "title": "Laya",
     "description": "Convai Innovations decision head on ModernBERT/mmBERT; Choice/Score/Noul; ECE 0.081 after temperature fit; Apache-2.0.",
@@ -564,6 +574,26 @@
     "subsection": "Models & weights",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://github.com/togethercomputer/tev1",
+    "title": "tev1",
+    "description": "Together AI open recipe + training example for Tev1-4B-experimental (Jev-inspired decision LoRA on Qwen3.5-4B).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-tier"
+    ]
+  },
+  {
+    "url": "https://api.together.ai/models/together/Tev1-4B-experimental",
+    "title": "Tev1 on Together serverless",
+    "description": "Hosted Tev1-4B-experimental endpoint on Together AI ($0.042/M input, $0/M output per announcement).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-tier"
     ]
   },
   {
@@ -4055,6 +4085,16 @@
     ]
   },
   {
+    "url": "https://together.ai/blog/how-to-train-your-own-jev",
+    "title": "How to train your own Jev",
+    "description": "Together tutorial / data recipe for fine-tuning a decision classifier (~$17 Tev1 training cost claimed).",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-essays"
+    ]
+  },
+  {
     "url": "https://x.com/identityTorn/status/2100475121324728615",
     "title": "Internal classifier field note",
     "description": "A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.",
@@ -4446,6 +4486,16 @@
     "subsection": "",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://x.com/togethercompute/status/2102882216950763814",
+    "title": "Together AI: Tev1-4B-experimental",
+    "description": "Announcement of Tev1 — Jev-like classifier on Qwen3.5 4B, serverless pricing, data recipe, and train-your-own tutorial.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-essays"
     ]
   },
   {

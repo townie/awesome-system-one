@@ -12,7 +12,7 @@ TypeSafe’s **[Jev](https://typesafe.ai)** is the first *widely known* System O
 
 Deduplicated by normalized URL across the ingested indexes.
 
-**1148 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
+**1153 unique links** · Ingested **2026-09-22 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ### Start here
 
@@ -26,9 +26,9 @@ Deduplicated by normalized URL across the ingested indexes.
 ## Contents
 
 - [Hosted: TypeSafe Jev](#hosted-typesafe-jev) (3)
-- [Open-source / local alternatives](#open-source--local-alternatives) (87)
-  - [Landmark projects](#landmark-projects) (11)
-  - [Models & weights](#models--weights) (37)
+- [Open-source / local alternatives](#open-source--local-alternatives) (90)
+  - [Landmark projects](#landmark-projects) (12)
+  - [Models & weights](#models--weights) (39)
   - [Runtimes, ports & servers](#runtimes-ports--servers) (12)
   - [Adapters & logit readers](#adapters--logit-readers) (16)
   - [Related classifiers & structured output](#related-classifiers--structured-output) (11)
@@ -46,7 +46,7 @@ Deduplicated by normalized URL across the ingested indexes.
   - [Creative tools](#creative-tools) (5)
   - [Playgrounds & live demos](#playgrounds--live-demos) (24)
   - [Other applications](#other-applications) (46)
-- [Docs & essays](#docs--essays) (59)
+- [Docs & essays](#docs--essays) (61)
 - [Evals & papers](#evals--papers) (80)
   - [Harnesses & live benches](#harnesses--live-benches) (5)
   - [Typed-decision benchmarks](#typed-decision-benchmarks) (53)
@@ -78,6 +78,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 
 - [Kev](https://github.com/jaredpalmer/kev) — Apache-licensed, locally runnable Jev-style Choice, Score, and Noul models at 0.8B, 4B, and 9B, with released weights, training code, a System One-compatible server, frozen evaluation suites, and a playground. Its author reports a 0.822…
 - [openjev](https://github.com/razorback16/openjev) — Apache-licensed System One decision server on DiffusionGemma 26B (vLLM NVIDIA + MLX Apple); Choice/Score/Noul, optional images.
+- [Tev1-4B-experimental](https://huggingface.co/togethercomputer/Tev1-4B-experimental) — Open-weight Jev-inspired decision model finetuned from Qwen3.5-4B; Together serverless + HF weights.
 - [Laya](https://github.com/NandhaKishorM/laya) — Convai Innovations decision head on ModernBERT/mmBERT; Choice/Score/Noul; ECE 0.081 after temperature fit; Apache-2.0.
 - [Jevlike](https://github.com/vinnylarouge/jevlike) — 1.2K stars — An independent starter model that scores a changing list of text or visual options in one pass. [Source](https://github.com/vinnylarouge/jevlike/blob/94f5fd1b0b11d52bbdfdf4e0ee6aa96b568f8452/README.md)
 - [Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) — Multimodal open System One classifier (text/image/audio/video) on Gemma 4 12B; Apache-2.0; author reports JevBench parity and <100ms on H100.
@@ -125,6 +126,8 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Splash](https://github.com/incoai/splash) — 578 stars — A local Apple Silicon inference engine oriented around decision-style models. [Source](https://github.com/incoai/splash/blob/f53d5ab543a7accdc332c060fd594a693f33f529/README.md)
 - [system-one-mini](https://huggingface.co/DavidHatley/system-one-mini) — , DistilBERT-sized System One shape, a floor for how small the idea can go. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/DavidHatley/system-one-mini)
 - [system-one-qwen3.5-4b-scorer](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer) — , Qwen3.5-4B base trained as a Score-style rubric rater. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer)
+- [tev1](https://github.com/togethercomputer/tev1) — Together AI open recipe + training example for Tev1-4B-experimental (Jev-inspired decision LoRA on Qwen3.5-4B).
+- [Tev1 on Together serverless](https://api.together.ai/models/together/Tev1-4B-experimental) — Hosted Tev1-4B-experimental endpoint on Together AI ($0.042/M input, $0/M output per announcement).
 - [verdict-open-jev](https://github.com/heman10x-ngu/verdict-open-jev) — verdict-open-jev — System One / Jev related resource.
 - [Von](https://github.com/wfzyx/von) — Open local Choice, Noul, and Score model with public weights, training code, and a System One-shaped API. Benchmark comparisons are author-reported: its README gives a 91.23% accuracy headline without a matching result artifact in the…
 
@@ -513,6 +516,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Founder launch thread on X](https://x.com/CompleteSkeptic/status/2099925682726002904) — , Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do.…
 - [How does Jev work? RLCD and parallel inference](https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026) — , Explainer reconstructing the RLCD objective and the parallel sampler from public statements.…
 - [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
+- [How to train your own Jev](https://together.ai/blog/how-to-train-your-own-jev) — Together tutorial / data recipe for fine-tuning a decision classifier (~$17 Tev1 training cost claimed).
 - [Internal classifier field note](https://x.com/identityTorn/status/2100475121324728615) — A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.
 - [Introducing DiffusionGemma](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation) — Google blog on DiffusionGemma — faster non-autoregressive text generation used by open System One servers.
 - [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.
@@ -550,6 +554,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [The Bitterest Lesson](https://typesafe.ai/blog/bitterest-lesson) — Why optimizing the wrong task can dominate gains from scale.
 - [The Register: TypeSafe AI debuts model for machines](https://theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711) — The most sceptical mainstream piece: it challenges the no-hallucination framing on the grounds that a well-formed answer is not the same as a correct one.
 - [Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) — , The source TypeSafe cites for naming Jev after System 1, fast intuitive judgement with no deliberation.…
+- [Together AI: Tev1-4B-experimental](https://x.com/togethercompute/status/2102882216950763814) — Announcement of Tev1 — Jev-like classifier on Qwen3.5 4B, serverless pricing, data recipe, and train-your-own tutorial.
 - [Typed Decisions, Not Chat](https://warmersun.com/jev) — , Secondary analysis of TypeSafe's dashboard putting Jev at about 67.8% mean agreement against 74.1% for the best comparator.…
 - [TypeSafe AI](https://typesafe.ai) — Official product site for System One models and Jev.
 - [TypeSafe Jev technical deconstruction](https://kevnu.com/en/posts/typesafe-jev-technical-deconstruction-non-autoregressive-decision-primitives-rlcd-and-local-open-source-implementation) — Non-autoregressive primitives, RLCD, and local open-source implementations.

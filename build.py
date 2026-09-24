@@ -386,6 +386,11 @@ SEEDS = [
 ("https://github.com/wnzn/semif-go","semif-go","Go System One adapter over llama.cpp: Choice/Noul/Score from next-token option probs; multimodal state (text/image/audio/video).","Open models & alternatives","seed-tier"),
 ("https://github.com/vllm-project/vllm/pull/57250","vLLM PR #57250 — DiffusionGemma structured mode","Prototype structured-generation / Jev-like canvas read for DiffusionGemma with sample /v1/systemone interposer.","Open models & alternatives","seed-tier"),
 ("https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/","Introducing DiffusionGemma","Google blog on DiffusionGemma — faster non-autoregressive text generation used by open System One servers.","Docs & essays","seed-essays"),
+("https://x.com/togethercompute/status/2102882216950763814","Together AI: Tev1-4B-experimental","Announcement of Tev1 — Jev-like classifier on Qwen3.5 4B, serverless pricing, data recipe, and train-your-own tutorial.","Docs & essays","seed-essays"),
+("https://github.com/togethercomputer/tev1","tev1","Together AI open recipe + training example for Tev1-4B-experimental (Jev-inspired decision LoRA on Qwen3.5-4B).","Open models & alternatives","seed-tier"),
+("https://huggingface.co/togethercomputer/Tev1-4B-experimental","Tev1-4B-experimental","Open-weight Jev-inspired decision model finetuned from Qwen3.5-4B; Together serverless + HF weights.","Open models & alternatives","seed-tier"),
+("https://www.together.ai/blog/how-to-train-your-own-jev","How to train your own Jev","Together tutorial / data recipe for fine-tuning a decision classifier (~$17 Tev1 training cost claimed).","Docs & essays","seed-essays"),
+("https://api.together.ai/models/together/Tev1-4B-experimental","Tev1 on Together serverless","Hosted Tev1-4B-experimental endpoint on Together AI ($0.042/M input, $0/M output per announcement).","Open models & alternatives","seed-tier"),
 
 ]
 
@@ -397,6 +402,7 @@ DISPLAY_ORDER = [CAT_HOSTED, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT
 LANDMARK_OS = [
     "https://github.com/jaredpalmer/kev",
     "https://github.com/razorback16/openjev",
+    "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
     "https://github.com/NandhaKishorM/laya",
     "https://github.com/vinnylarouge/jevlike",
     "https://huggingface.co/akhilaaa3/Jev-Omni",
@@ -417,6 +423,11 @@ CATEGORY_OVERRIDE = {
     "https://huggingface.co/datasets/akhilaaa3/decision-bench": CAT_EVALS,
     "https://x.com/Akhila_988/status/2102171891410825520": CAT_DOCS,
     "https://x.com/thekitze/status/2102775497822503298": CAT_DOCS,
+    "https://x.com/togethercompute/status/2102882216950763814": CAT_DOCS,
+    "https://together.ai/blog/how-to-train-your-own-jev": CAT_DOCS,
+    "https://huggingface.co/togethercomputer/Tev1-4B-experimental": CAT_OS,
+    "https://github.com/togethercomputer/tev1": CAT_OS,
+    "https://api.together.ai/models/together/Tev1-4B-experimental": CAT_OS,
     "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation": CAT_DOCS,
     "https://huggingface.co/openjev/openjev": CAT_OS,
     "https://github.com/vllm-project/vllm/pull/57250": CAT_OS,
