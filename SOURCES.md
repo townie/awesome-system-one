@@ -1,6 +1,6 @@
 # Sources ingested
 
-Ingest date: **2026-09-24 PT** (America/Los_Angeles).
+Ingest date: **2026-09-25 PT** (America/Los_Angeles).
 
 | Source | URL | Artifact used |
 | --- | --- | --- |

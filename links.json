@@ -661,6 +661,36 @@
     ]
   },
   {
+    "url": "https://huggingface.co/ZefanCai/Open-Jev-2B",
+    "title": "Open-Jev-2B",
+    "description": "LoRA + decision head on Qwen3.5-2B for Choice/Score/Noul; Apache-2.0 weights for Zefan-Cai/Open-Jev.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/ZefanCai/Open-Jev-9B",
+    "title": "Open-Jev-9B",
+    "description": "LoRA + decision head on Qwen3.5-9B for Choice/Score/Noul; Apache-2.0 weights for Zefan-Cai/Open-Jev.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
+    "title": "open-jev-deberta-v3-large",
+    "description": "DeBERTa-v3-large Jev-shaped Choice/Score/Noul model from kotoba-lang/typed-decisions; public-gold training.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/openjev/openjev",
     "title": "OpenJev (weights)",
     "description": "HF decision-model checkpoint for OpenJev; zero-shot classification / calibrated option probabilities; CC-BY-NC-4.0.",
@@ -668,6 +698,16 @@
     "subsection": "Models & weights",
     "sources": [
       "seed-tier"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/openjev/openjev-FP8",
+    "title": "openjev-FP8",
+    "description": "FP8 quantized OpenJev weights (~29 GB) for single-GPU serving.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -848,6 +888,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/openjev/openjev-MLX",
+    "title": "openjev-MLX",
+    "description": "MLX 8-bit OpenJev build for Apple silicon (text-only).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Runtimes, ports & servers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/vllm-project/vllm/pull/57250",
     "title": "vLLM PR #57250 — DiffusionGemma structured mode",
     "description": "Prototype structured-generation / Jev-like canvas read for DiffusionGemma with sample /v1/systemone interposer.",
@@ -1025,6 +1075,16 @@
     "subsection": "Adapters & logit readers",
     "sources": [
       "seed-tier"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/AlexWortega/openjev",
+    "title": "openjev (AlexWortega)",
+    "description": "Qwen3.5 NLI/cross-encoder Jev-style models (0.8B–4B, MoE) with typed-decision adapter and public JevBench numbers.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Adapters & logit readers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -5459,6 +5519,16 @@
     ]
   },
   {
+    "url": "https://x.com/airesearch12/status/2103267811480993858",
+    "title": "JevBench v1.4.2 update",
+    "description": "Benchmark Heaven post: JevBench v1.4.2 live; decider-4b v2 leads on the board.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://doi.org/10.1016/j.ecolecon.2005.03.020",
     "title": "Jevons' paradox (Alcott 2005)",
     "description": ", The rebound effect Jev is named for, where cheaper decisions raise total decision volume. ![Ecological Economics 2005](https://img.shields.io/badge/Ecological_Economics_2005-4B5563?style=flat-square)…",
@@ -5528,6 +5598,16 @@
     "sources": [
       "rupeshpoojary9/awesome-open-system-one",
       "seed-essays"
+    ]
+  },
+  {
+    "url": "https://zefan-cai.github.io/open-jev",
+    "title": "Open-Jev (site)",
+    "description": "Project site for Open-Jev open-weight typed-decision checkpoints and evals.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -6115,6 +6195,16 @@
     ]
   },
   {
+    "url": "https://github.com/sumleo/RLCDAlignBench",
+    "title": "RLCDAlignBench",
+    "description": "Code and data for Just Ask Jev — 44 alignment-failure detection benchmarks with cached Jev answers.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/bitnovus/jev-spam-eval",
     "title": "Jev Spam Eval",
     "description": ", Zero-shot spam Noul on 18,514 emails reaching 0.9833 accuracy, matching a TF-IDF classifier trained on 14,800 labels.…",
@@ -6359,6 +6449,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
+    "title": "Jev Decision Index",
+    "description": "HF Space indexing 30+ open-weight decision models across 35+ benchmarks / 130K questions.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://backnotprop.com/blog/jev-poker",
     "title": "Jev is the fish at the poker table",
     "description": ", Poker probe finding 15 to 30 point swings from relabelling the same hand, and 16 of 16 bets against a made flush.…",
@@ -6388,6 +6488,16 @@
     "sources": [
       "OmniJev/awesome-jev-gallery",
       "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/datasets/sumleo/RLCDAlignBench",
+    "title": "RLCDAlignBench (dataset)",
+    "description": "Cached Jev responses and detection instances for RLCDAlignBench.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -6491,6 +6601,16 @@
     "subsection": "Papers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.29429",
+    "title": "Just Ask Jev",
+    "description": "RLCDAlignBench paper: Jev as zero-shot alignment-failure detector across 44 benchmarks (median AUROC 0.886).",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {

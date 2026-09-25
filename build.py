@@ -595,9 +595,23 @@ SEEDS = [
 ("https://who-is-right.app.mintapis.com","Who is right?","No-signup JevBench demo: typed decisions over a claim-dispute scenario.","Use cases","seed-x-scan"),
 ("https://is-it-ai-slop.app.mintapis.com","Is it AI slop?","No-signup JevBench demo: typed decisions for AI-slop detection.","Use cases","seed-x-scan"),
 
+# Daily X-scan 2026-09-25 — paper/weights/index finds (live X search loginwalled; indexed + web)
+("https://arxiv.org/abs/2609.29429","Just Ask Jev","RLCDAlignBench paper: Jev as zero-shot alignment-failure detector across 44 benchmarks (median AUROC 0.886).","Evals & papers","seed-x-scan"),
+("https://github.com/sumleo/RLCDAlignBench","RLCDAlignBench","Code and data for Just Ask Jev — 44 alignment-failure detection benchmarks with cached Jev answers.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/datasets/sumleo/RLCDAlignBench","RLCDAlignBench (dataset)","Cached Jev responses and detection instances for RLCDAlignBench.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/AlexWortega/openjev","openjev (AlexWortega)","Qwen3.5 NLI/cross-encoder Jev-style models (0.8B–4B, MoE) with typed-decision adapter and public JevBench numbers.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/ZefanCai/Open-Jev-2B","Open-Jev-2B","LoRA + decision head on Qwen3.5-2B for Choice/Score/Noul; Apache-2.0 weights for Zefan-Cai/Open-Jev.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/ZefanCai/Open-Jev-9B","Open-Jev-9B","LoRA + decision head on Qwen3.5-9B for Choice/Score/Noul; Apache-2.0 weights for Zefan-Cai/Open-Jev.","Open models & alternatives","seed-x-scan"),
+("https://zefan-cai.github.io/open-jev/","Open-Jev (site)","Project site for Open-Jev open-weight typed-decision checkpoints and evals.","Docs & essays","seed-x-scan"),
+("https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large","open-jev-deberta-v3-large","DeBERTa-v3-large Jev-shaped Choice/Score/Noul model from kotoba-lang/typed-decisions; public-gold training.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/spaces/multimodalart/jev-decision-index","Jev Decision Index","HF Space indexing 30+ open-weight decision models across 35+ benchmarks / 130K questions.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/openjev/openjev-FP8","openjev-FP8","FP8 quantized OpenJev weights (~29 GB) for single-GPU serving.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/openjev/openjev-MLX","openjev-MLX","MLX 8-bit OpenJev build for Apple silicon (text-only).","Open models & alternatives","seed-x-scan"),
+("https://x.com/airesearch12/status/2103267811480993858","JevBench v1.4.2 update","Benchmark Heaven post: JevBench v1.4.2 live; decider-4b v2 leads on the board.","Docs & essays","seed-x-scan"),
+
 ]
 
-INGEST_DATE = "2026-09-24 PT"
+INGEST_DATE = "2026-09-25 PT"
 
 # Display order (newcomers: OS alternatives + use cases before the SDK dump).
 DISPLAY_ORDER = [CAT_HOSTED, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT_LISTS, CAT_COMMUNITY]
@@ -688,6 +702,18 @@ CATEGORY_OVERRIDE = {
     'https://github.com/lianghsun/jev-tmmluplus-eval': CAT_EVALS,
     "https://reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are": CAT_DOCS,
     "https://logicrw.github.io/awesome-jev-projects": CAT_LISTS,
+    "https://arxiv.org/abs/2609.29429": CAT_EVALS,
+    "https://github.com/sumleo/RLCDAlignBench": CAT_EVALS,
+    "https://huggingface.co/datasets/sumleo/RLCDAlignBench": CAT_EVALS,
+    "https://huggingface.co/AlexWortega/openjev": CAT_OS,
+    "https://huggingface.co/ZefanCai/Open-Jev-2B": CAT_OS,
+    "https://huggingface.co/ZefanCai/Open-Jev-9B": CAT_OS,
+    "https://zefan-cai.github.io/open-jev/": CAT_DOCS,
+    "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large": CAT_OS,
+    "https://huggingface.co/spaces/multimodalart/jev-decision-index": CAT_EVALS,
+    "https://huggingface.co/openjev/openjev-FP8": CAT_OS,
+    "https://huggingface.co/openjev/openjev-MLX": CAT_OS,
+    "https://x.com/airesearch12/status/2103267811480993858": CAT_DOCS,
 
 }
 
