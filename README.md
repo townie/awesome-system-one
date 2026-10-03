@@ -14,7 +14,6 @@ Deduplicated by normalized URL across the ingested indexes.
 
 Within each section (and subsection), **pins / landmarks stay first**; remaining items are ordered by **GitHub stars** (descending), then title. Stars are a practical proxy — not a full citation PageRank. Non-GitHub URLs (docs, HF, X, etc.) sort after starred repos. See [`stars_cache.json`](stars_cache.json).
 
-**1532 unique links** · Ingested **2026-10-03 PT** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ### Start here
 
@@ -152,6 +151,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [lev](https://github.com/franckverrot/lev) — Jev-style decision model on LiquidAI LFM2.5-350M with a TypeSafe-compatible /v1/systemone server.
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) — , Choice, Score and Noul on Qwen3.5-0.8B, the smallest decoder-based reproduction.…
 - [reflex](https://github.com/kaustav1996/reflex) — A coding agent and personal assistant built on the Pi coding agent. Jev checks every tool call, turn and voice transcript, and code decides what happens next: allow, ask or block an action, which model tier to use,…
+- [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) — Open-weight Jev alternative for Choice/Score/Noul plus multi-label questions, with calibrated probabilities; local /v1/systemone server works with TypeSafe's Python SDK; Apache-2.0.
 - [cbjev](https://github.com/tomek7667/cbjev) — One-encoder-pass typed decisions (choice/score/noul); faster/better-calibrated Laya successor; Jev wire compatible.
 - [Wald-4B](https://github.com/org2AI/wald-4b) — Calibrated 4B decision model (Decision Index #6 / best 4B claimed); sequential stop-when-sure effort.
 - [jevless](https://github.com/jbpayton/jevless) — Jev-style Choice/Noul/Score from any logprobs API, plus a local /v1/systemone server.

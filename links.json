@@ -820,6 +820,16 @@
     ]
   },
   {
+    "url": "https://github.com/SamratDuttaOfficial/WaterSheep",
+    "title": "WaterSheep",
+    "description": "Open-weight Jev alternative for Choice/Score/Noul plus multi-label questions, with calibrated probabilities; local /v1/systemone server works with TypeSafe's Python SDK; Apache-2.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-tier"
+    ]
+  },
+  {
     "url": "https://github.com/tomek7667/cbjev",
     "title": "cbjev",
     "description": "One-encoder-pass typed decisions (choice/score/noul); faster/better-calibrated Laya successor; Jev wire compatible.",

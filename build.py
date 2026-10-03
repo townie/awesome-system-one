@@ -351,6 +351,7 @@ SEEDS = [
 ("https://github.com/abhishek085/open-spark-jev","open-spark-jev","Local decision models on Qwen3 sized for NVIDIA DGX Spark.","Open models & alternatives","seed-tier"),
 ("https://github.com/NullPo-jp/PocketJev","PocketJev","SwiftUI on-device multiple-choice tool reading next-token logits on iPhone.","Open models & alternatives","seed-tier"),
 ("https://github.com/iapp-technology/openthai-systemone","OpenThai-SystemOne","Open Thai/English System One decision model (0.8B, 256-way slot head); Apache-2.0.","Open models & alternatives","seed-tier"),
+("https://github.com/SamratDuttaOfficial/WaterSheep","WaterSheep","Open-weight Jev alternative for Choice/Score/Noul plus multi-label questions, with calibrated probabilities; local /v1/systemone server works with TypeSafe's Python SDK; Apache-2.0.","Open models & alternatives","seed-tier"),
 ("https://github.com/logan-markewich/jeff","jeff","Self-hosted GLiFormer 400M server for Choice/Score/Noul via Jev-compatible API.","Open models & alternatives","seed-tier"),
 ("https://github.com/scienthoon/luce","Luce","Open recipe: LLM teacher data → LoRA + decision head on Qwen3-4B-Base.","Open models & alternatives","seed-tier"),
 ("https://github.com/Yinsongxu/LLM2Jev","LLM2Jev","Read causal-model logits for Choice/Score/Noul via Transformers or SGLang.","Open models & alternatives","seed-tier"),

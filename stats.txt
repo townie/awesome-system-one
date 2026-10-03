@@ -53,7 +53,7 @@ BeatAPI/awesome-jev	177
 seed-logicrw-refresh	174
 kydlikebtc/awesome-jev	135
 OmniJev/awesome-jev-gallery	132
-seed-tier	63
+seed-tier	64
 systemonemodels.org/examples/alternatives	34
 rupeshpoojary9/awesome-open-system-one	26
 seed-official	25
