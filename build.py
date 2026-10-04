@@ -642,7 +642,7 @@ SEEDS = [
 ("https://huggingface.co/fastino/GLiNER2.5-Decide-1B","GLiNER2.5-Decide-1B","1B specialist classifier for operational decisions (intent/routing/moderation) in one pass; Apache-2.0.","Open models & alternatives","seed-x-scan"),
 ("https://github.com/xyzzzh/GroundingJev","GroundingJev","Jev-inspired non-autoregressive visual grounding on Qwen3.5-0.8B with continuous box regression.","Open models & alternatives","seed-x-scan"),
 ("https://huggingface.co/spaces/xyzzzh/GroundingJev","GroundingJev Space","HF Space demo for GroundingJev visual grounding.","Use cases","seed-x-scan"),
-("https://github.com/dzhng/jevgrep","jevgrep","CLI for coding agents: find code by asking what it does, using Jev for file/context discovery (774★).","Use cases","seed-x-scan"),
+("https://github.com/dzhng/jevgrep","jevgrep","CLI for coding agents that uses Jev to find relevant files and source context by asking what the code does.","SDKs & tooling","seed-x-scan"),
 ("https://github.com/christianmat/jev-pokemon","jev-pokemon","Jev plays Pokémon Red end-to-end (reported clear in 37h 40m).","Use cases","seed-x-scan"),
 ("https://github.com/aaddrick/building-with-typesafe-jev","building-with-typesafe-jev","Unofficial agent skill teaching typed decisions + calibrated confidence from 150+ community projects.","SDKs & tooling","seed-x-scan"),
 ("https://github.com/UditAkhourii/quicksilver","quicksilver","Claude Code skill: hand bulk judgments to Jev (reported 86% fewer Claude tokens on a 12-task bench).","Use cases","seed-x-scan"),
@@ -954,7 +954,7 @@ CATEGORY_OVERRIDE = {
     "https://huggingface.co/fastino/GLiNER2.5-Decide-1B": CAT_OS,
     "https://github.com/xyzzzh/GroundingJev": CAT_OS,
     "https://huggingface.co/spaces/xyzzzh/GroundingJev": CAT_USE,
-    "https://github.com/dzhng/jevgrep": CAT_USE,
+    "https://github.com/dzhng/jevgrep": CAT_SDKS,
     "https://github.com/christianmat/jev-pokemon": CAT_USE,
     "https://github.com/aaddrick/building-with-typesafe-jev": CAT_SDKS,
     "https://github.com/UditAkhourii/quicksilver": CAT_USE,
@@ -1447,7 +1447,7 @@ def load_links_json(entries: dict) -> None:
             for s in srcs[1:]:
                 entries[nu].sources.add(s)
 
-def intro_lines(n: int) -> list[str]:
+def intro_lines() -> list[str]:
     return [
         "# Awesome System One",
         "",
@@ -1465,7 +1465,7 @@ def intro_lines(n: int) -> list[str]:
         "",
         "Within each section (and subsection), **pins / landmarks stay first**; remaining items are ordered by **GitHub stars** (descending), then title. Stars are a practical proxy — not a full citation PageRank. Non-GitHub URLs (docs, HF, X, etc.) sort after starred repos. See [`stars_cache.json`](stars_cache.json).",
         "",
-        f"**{n} unique links** · Ingested **{INGEST_DATE}** · License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).",
+        "License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).",
         "",
         "### Start here",
         "",
@@ -1510,11 +1510,6 @@ def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
         for sub, sub_items in by_sub[cat].items():
             sub_items.sort(key=lambda e: sort_key(e, pins, stars_map))
 
-    source_counts = collections.Counter()
-    for e in entries.values():
-        for s in e.sources:
-            source_counts[s] += 1
-
     links = []
     for cat in DISPLAY_ORDER:
         ordered_subs = sub_order.get(cat)
@@ -1539,17 +1534,17 @@ def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
     n = len(links)
     (OUT / "links.json").write_text(json.dumps(links, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    lines = intro_lines(n)
+    lines = intro_lines()
     lines += ["## Contents", ""]
     for cat in DISPLAY_ORDER:
         items = by_cat.get(cat, [])
         if not items:
             continue
-        lines.append(f"- [{cat}](#{gh_anchor(cat)}) ({len(items)})")
+        lines.append(f"- [{cat}](#{gh_anchor(cat)})")
         for sub in sub_order.get(cat, []):
             sub_items = by_sub[cat].get(sub, [])
             if sub_items:
-                lines.append(f"  - [{sub}](#{gh_anchor(sub)}) ({len(sub_items)})")
+                lines.append(f"  - [{sub}](#{gh_anchor(sub)})")
     lines += ["- [Sources](#sources)", "- [Contributing](#contributing)", ""]
 
     for cat in DISPLAY_ORDER:
@@ -1593,7 +1588,7 @@ def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
         "",
         "Plus official TypeSafe pages, independent essays (Archer Hume, lilting.ch, Latent.Space, Learn Jev, etc.), Tier A/B open reproductions, a 2026-09-24 logicrw projects.json refresh for missing evidenced integrations, and the [r/LLMDevs 287-project / top-20 roundup](https://www.reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are/).",
         "",
-        "Machine-readable dump: [`links.json`](links.json). Star cache: [`stars_cache.json`](stars_cache.json). Ingest map: [`SOURCES.md`](SOURCES.md). Counts: [`stats.txt`](stats.txt).",
+        "Machine-readable dump: [`links.json`](links.json). Star cache: [`stars_cache.json`](stars_cache.json). Ingest map: [`SOURCES.md`](SOURCES.md).",
         "",
         "## Contributing",
         "",
@@ -1633,26 +1628,6 @@ def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
     ]
     (OUT / "SOURCES.md").write_text("\n".join(sources_md), encoding="utf-8")
 
-    stats = [f"unique_links\t{n}", "", "by_category"]
-    for cat in DISPLAY_ORDER:
-        stats.append(f"{cat}\t{len(by_cat.get(cat, []))}")
-    for cat in sorted(by_cat):
-        if cat not in DISPLAY_ORDER:
-            stats.append(f"{cat}\t{len(by_cat[cat])}")
-    stats += ["", "by_subsection"]
-    for cat in DISPLAY_ORDER:
-        for sub in sub_order.get(cat, []):
-            k = len(by_sub[cat].get(sub, []))
-            if k:
-                stats.append(f"{cat} / {sub}\t{k}")
-        extra_subs = sorted(s for s in by_sub[cat] if s not in sub_order.get(cat, []))
-        for sub in extra_subs:
-            stats.append(f"{cat} / {sub or '(none)'}\t{len(by_sub[cat][sub])}")
-    stats += ["", "by_source_appearance_count", "# (a link counted once per source that mentioned it)"]
-    for s, c in sorted(source_counts.items(), key=lambda x: (-x[1], x[0])):
-        stats.append(f"{s}\t{c}")
-    stats += ["", f"json_count_matches_unique\t{len(links) == n}", ""]
-    (OUT / "stats.txt").write_text("\n".join(stats), encoding="utf-8")
     print(f"Wrote {n} unique links")
     for cat in DISPLAY_ORDER:
         print(f"  {cat}: {len(by_cat.get(cat, []))}")
@@ -1660,7 +1635,6 @@ def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
             k = len(by_sub[cat].get(sub, []))
             if k:
                 print(f"    {sub}: {k}")
-    print("top sources:", source_counts.most_common(15))
 
 def cleanup_entries(entries: dict) -> None:
     drop = [nu for nu, e in entries.items() if (not e.title) or e.title.lower() in {"link", "here", "readme", "license"} or "camo.githubusercontent" in nu]

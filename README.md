@@ -14,6 +14,7 @@ Deduplicated by normalized URL across the ingested indexes.
 
 Within each section (and subsection), **pins / landmarks stay first**; remaining items are ordered by **GitHub stars** (descending), then title. Stars are a practical proxy — not a full citation PageRank. Non-GitHub URLs (docs, HF, X, etc.) sort after starred repos. See [`stars_cache.json`](stars_cache.json).
 
+License for this compilation: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (linked projects keep their own licenses).
 
 ### Start here
 
@@ -26,40 +27,40 @@ Within each section (and subsection), **pins / landmarks stay first**; remaining
 
 ## Contents
 
-- [Hosted: TypeSafe Jev](#hosted-typesafe-jev) (3)
-- [Open-source / local alternatives](#open-source--local-alternatives) (184)
-  - [Landmark projects](#landmark-projects) (30)
-  - [Models & weights](#models--weights) (97)
-  - [Runtimes, ports & servers](#runtimes-ports--servers) (21)
-  - [Adapters & logit readers](#adapters--logit-readers) (20)
-  - [Related classifiers & structured output](#related-classifiers--structured-output) (16)
-- [Use cases](#use-cases) (393)
-  - [Routing & triage](#routing--triage) (36)
-  - [Classification](#classification) (18)
-  - [Extraction & structured data](#extraction--structured-data) (17)
-  - [Guardrails, safety & review](#guardrails-safety--review) (15)
-  - [Agents, tools & harnesses](#agents-tools--harnesses) (19)
-  - [Search, RAG & rerank](#search-rag--rerank) (12)
-  - [Browser, computer use & OS](#browser-computer-use--os) (76)
-  - [Games, robotics & simulation](#games-robotics--simulation) (55)
-  - [Voice, mail & productivity](#voice-mail--productivity) (12)
-  - [Markets & operations](#markets--operations) (13)
-  - [Creative tools](#creative-tools) (6)
-  - [Playgrounds & live demos](#playgrounds--live-demos) (30)
-  - [Other applications](#other-applications) (84)
-- [Docs & essays](#docs--essays) (97)
-- [Evals & papers](#evals--papers) (137)
-  - [Harnesses & live benches](#harnesses--live-benches) (7)
-  - [Typed-decision benchmarks](#typed-decision-benchmarks) (76)
-  - [Papers](#papers) (54)
-- [SDKs & tooling](#sdks--tooling) (653)
-  - [TypeSafe SDKs & gateways](#typesafe-sdks--gateways) (11)
-  - [Community SDKs & clients](#community-sdks--clients) (99)
-  - [MCP, skills & agent plugins](#mcp-skills--agent-plugins) (187)
-  - [Integrations & data pipelines](#integrations--data-pipelines) (47)
-  - [Other tooling](#other-tooling) (309)
-- [Awesome lists & indexes](#awesome-lists--indexes) (60)
-- [Community](#community) (5)
+- [Hosted: TypeSafe Jev](#hosted-typesafe-jev)
+- [Open-source / local alternatives](#open-source--local-alternatives)
+  - [Landmark projects](#landmark-projects)
+  - [Models & weights](#models--weights)
+  - [Runtimes, ports & servers](#runtimes-ports--servers)
+  - [Adapters & logit readers](#adapters--logit-readers)
+  - [Related classifiers & structured output](#related-classifiers--structured-output)
+- [Use cases](#use-cases)
+  - [Routing & triage](#routing--triage)
+  - [Classification](#classification)
+  - [Extraction & structured data](#extraction--structured-data)
+  - [Guardrails, safety & review](#guardrails-safety--review)
+  - [Agents, tools & harnesses](#agents-tools--harnesses)
+  - [Search, RAG & rerank](#search-rag--rerank)
+  - [Browser, computer use & OS](#browser-computer-use--os)
+  - [Games, robotics & simulation](#games-robotics--simulation)
+  - [Voice, mail & productivity](#voice-mail--productivity)
+  - [Markets & operations](#markets--operations)
+  - [Creative tools](#creative-tools)
+  - [Playgrounds & live demos](#playgrounds--live-demos)
+  - [Other applications](#other-applications)
+- [Docs & essays](#docs--essays)
+- [Evals & papers](#evals--papers)
+  - [Harnesses & live benches](#harnesses--live-benches)
+  - [Typed-decision benchmarks](#typed-decision-benchmarks)
+  - [Papers](#papers)
+- [SDKs & tooling](#sdks--tooling)
+  - [TypeSafe SDKs & gateways](#typesafe-sdks--gateways)
+  - [Community SDKs & clients](#community-sdks--clients)
+  - [MCP, skills & agent plugins](#mcp-skills--agent-plugins)
+  - [Integrations & data pipelines](#integrations--data-pipelines)
+  - [Other tooling](#other-tooling)
+- [Awesome lists & indexes](#awesome-lists--indexes)
+- [Community](#community)
 - [Sources](#sources)
 - [Contributing](#contributing)
 
@@ -379,7 +380,6 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 
 ### Agents, tools & harnesses
 
-- [jevgrep](https://github.com/dzhng/jevgrep) — CLI for coding agents: find code by asking what it does, using Jev for file/context discovery (774★).
 - [Prism](https://github.com/irfndi/prism-liquidity-agent) — 69 stars — An autonomous liquidity agent that uses JEV inside its rebalancing decision service. [Source](https://github.com/irfndi/prism-liquidity-agent/blob/22c67bdbe30bab608226832256a5013ad826b707/engine/jev-service.ts)
 - [quicksilver](https://github.com/UditAkhourii/quicksilver) — Claude Code skill: hand bulk judgments to Jev (reported 86% fewer Claude tokens on a 12-task bench).
 - [JevScout](https://github.com/hqman/JevScout) — A demo job-search Skill for coding Agents that browses company careers pages in Chrome, uses Jev to screen AI and software-engineering roles, and saves the results.
@@ -1340,6 +1340,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [celesto](https://github.com/CelestoAI/celesto) — 958 stars — A Celesto PR-review example prepares sandbox checks and compares a general model with Jev on candidate findings.…
 - [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) — Combines local OCR and Accessibility observations with Jev decisions to operate macOS, with an optional writing model. Project guide.
 - [atomic](https://github.com/bastani-inc/atomic) — 812 stars — An optional Jev decision backend in the Atomic coding Agent for bounded structured choices such as routing.…
+- [jevgrep](https://github.com/dzhng/jevgrep) — CLI for coding agents that uses Jev to find relevant files and source context by asking what the code does.
 - [Hippo Memory](https://github.com/kitfunso/hippo-memory) — Local agent memory system with an opt-in Jev reranker that batches Noul judgments over the top 40 recalled memories and falls back to a local cross-encoder on errors. The author's published study found better ranking on two corpora but…
 - [Distill](https://github.com/samuelfaj/distill) — Coding agent harness that can use Jev to select a model and effort, route bounded utility tasks, and judge what context to retain. Code constrains the choices and validates utility results; failed or low-confidence decisions leave the…
 - [kody](https://github.com/kentcdodds/kody) — 663 stars — Optional second-stage search: widen the hybrid pool, then Score-rerank candidates with Workers AI typesafe/jev.…
@@ -1727,7 +1728,7 @@ This catalog consolidates and deduplicates entries from:
 
 Plus official TypeSafe pages, independent essays (Archer Hume, lilting.ch, Latent.Space, Learn Jev, etc.), Tier A/B open reproductions, a 2026-09-24 logicrw projects.json refresh for missing evidenced integrations, and the [r/LLMDevs 287-project / top-20 roundup](https://www.reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are/).
 
-Machine-readable dump: [`links.json`](links.json). Star cache: [`stars_cache.json`](stars_cache.json). Ingest map: [`SOURCES.md`](SOURCES.md). Counts: [`stats.txt`](stats.txt).
+Machine-readable dump: [`links.json`](links.json). Star cache: [`stars_cache.json`](stars_cache.json). Ingest map: [`SOURCES.md`](SOURCES.md).
 
 ## Contributing
 

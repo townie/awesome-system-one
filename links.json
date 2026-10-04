@@ -2895,16 +2895,6 @@
     ]
   },
   {
-    "url": "https://github.com/dzhng/jevgrep",
-    "title": "jevgrep",
-    "description": "CLI for coding agents: find code by asking what it does, using Jev for file/context discovery (774★).",
-    "category": "Use cases",
-    "subsection": "Agents, tools & harnesses",
-    "sources": [
-      "seed-x-scan"
-    ]
-  },
-  {
     "url": "https://github.com/irfndi/prism-liquidity-agent",
     "title": "Prism",
     "description": "69 stars — An autonomous liquidity agent that uses JEV inside its rebalancing decision service. [Source](https://github.com/irfndi/prism-liquidity-agent/blob/22c67bdbe30bab608226832256a5013ad826b707/engine/jev-service.ts)",
@@ -12295,6 +12285,16 @@
     "sources": [
       "BeatAPI/awesome-jev",
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://github.com/dzhng/jevgrep",
+    "title": "jevgrep",
+    "description": "CLI for coding agents that uses Jev to find relevant files and source context by asking what the code does.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
