@@ -715,6 +715,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 
 Explainers, launch coverage, TypeSafe concept pages, and background reading.
 
+- [OpenAI Decisions API](https://developers.openai.com/api/docs/guides/decisions) — OpenAI public-beta POST /v1/decisions on gpt-6-luna: typed predicate (probability), choice, and score answers with per-option probabilities and confidence over text and images, about 10x faster than the Responses API.
 - [ai-cookbook: Jev track](https://github.com/daveebbelaar/ai-cookbook) — A graded course from a first call through each primitive, state shapes and criteria, to ticket triage and a multi-step workflow, mirroring all four official patterns.
 - [learn-jev-end-to-end](https://github.com/harshithsunku/learn-jev-end-to-end) — Learn Jev end to end is a free, hands-on course. In 12 short notebooks you go from "what is Jev?" to building 13 real AI tools with it: an email triage job, a scam-text detector, a code vulnerability…
 - [jev-usecases](https://github.com/kenhuangus/jev-usecases) — Production TypeSafe Jev (System One) use-case harnesses with confidence-gated decision logic

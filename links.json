@@ -6045,6 +6045,16 @@
     ]
   },
   {
+    "url": "https://developers.openai.com/api/docs/guides/decisions",
+    "title": "OpenAI Decisions API",
+    "description": "OpenAI public-beta POST /v1/decisions on gpt-6-luna: typed predicate (probability), choice, and score answers with per-option probabilities and confidence over text and images, about 10x faster than the Responses API.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-official"
+    ]
+  },
+  {
     "url": "https://github.com/daveebbelaar/ai-cookbook",
     "title": "ai-cookbook: Jev track",
     "description": "A graded course from a first call through each primitive, state shapes and criteria, to ticket triage and a multi-step workflow, mirroring all four official patterns.",
