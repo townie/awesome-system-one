@@ -298,6 +298,7 @@ SEEDS = [
 ("https://docs.typesafe.ai/demos","Interactive demos","TypeSafe hands-on examples including the smart-home assistant.","Use cases","seed-official"),
 ("https://console.typesafe.ai","TypeSafe Console","Create keys and inspect live Jev requests.","SDKs & tooling","seed-official"),
 ("https://evals.typesafe.ai","Workflow evals","TypeSafe published workflows, model comparisons, and methodology.","Evals & papers","seed-official"),
+("https://developers.openai.com/api/docs/guides/decisions","OpenAI Decisions API","OpenAI public-beta POST /v1/decisions on gpt-6-luna: typed predicate (probability), choice, and score answers with per-option probabilities and confidence over text and images, about 10x faster than the Responses API.","Docs & essays","seed-official"),
 ("https://typesafe.ai/blog/introducing-system-one-models-and-jev","Introducing System One Models & Jev","Launch post naming the category, thesis, results, and limitations.","Docs & essays","seed-official"),
 ("https://typesafe.ai/manifesto","Manifesto","Case for machine-native intelligence built for software rather than conversation.","Docs & essays","seed-official"),
 ("https://typesafe.ai/blog/bitterest-lesson","The Bitterest Lesson","Why optimizing the wrong task can dominate gains from scale.","Docs & essays","seed-official"),
@@ -839,6 +840,9 @@ LANDMARK_OS = [
     "https://github.com/QiqianFu/Qev",
     "https://github.com/benmagnifico/DriveJev",
 ]
+PIN_DOCS = [
+    "https://developers.openai.com/api/docs/guides/decisions",
+]
 PIN_EVALS = [
     "https://benchmarkheaven.com/jev-models",
     "https://jevbench.dev",
@@ -846,6 +850,7 @@ PIN_EVALS = [
     "https://jevals.com",
 ]
 CATEGORY_OVERRIDE = {
+    "https://developers.openai.com/api/docs/guides/decisions": CAT_DOCS,
     "https://github.com/mithalouni/system-one-open": CAT_OS,
     "https://github.com/kotoba-lang/typed-decisions": CAT_OS,
     "https://github.com/VitaDAO/open-jev-tinfoil": CAT_OS,
@@ -1505,7 +1510,7 @@ def write_outputs(entries: dict, stars_map: dict | None = None) -> None:
     }
 
     for cat, items in by_cat.items():
-        pins = PIN_HOSTED if cat == CAT_HOSTED else LANDMARK_OS if cat == CAT_OS else (PIN_EVALS if cat == CAT_EVALS else [])
+        pins = PIN_HOSTED if cat == CAT_HOSTED else LANDMARK_OS if cat == CAT_OS else (PIN_EVALS if cat == CAT_EVALS else (PIN_DOCS if cat == CAT_DOCS else []))
         items.sort(key=lambda e: sort_key(e, pins, stars_map))
         for sub, sub_items in by_sub[cat].items():
             sub_items.sort(key=lambda e: sort_key(e, pins, stars_map))
