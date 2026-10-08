@@ -6749,6 +6749,16 @@
     ]
   },
   {
+    "url": "https://madewithjev.com/open-source-jev",
+    "title": "Is Jev open source?",
+    "description": "No; explains what TypeSafe keeps closed and lists 54 open models and reproductions that answer typed questions locally, with the sizes and speeds their authors published.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "author submission"
+    ]
+  },
+  {
     "url": "https://typesafe.ai/manifesto",
     "title": "Manifesto",
     "description": "TypeSafe's case for machine-native intelligence built for software rather than conversation.",

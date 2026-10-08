@@ -749,6 +749,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Introducing Strands Decider 2B](https://strandsagents.com/blog/introducing-strands-decider) — Official Strands Labs launch post: architecture, JevBench numbers, local latency, and agent intervention examples.
 - [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) — The launch post: what a System One model is, why decisions were split from generation, and the vendor's latency and cost claims.
 - [Introduction](https://docs.typesafe.ai/introduction) — What Jev is, how System One models differ from text-generation models, and the Choice, Score, and Noul primitives.
+- [Is Jev open source?](https://madewithjev.com/open-source-jev) — No; explains what TypeSafe keeps closed and lists 54 open models and reproductions that answer typed questions locally, with the sizes and speeds their authors published.
 - [Jebadiah.ai](https://jebadiah.ai) — Project site for the open Jebadiah System One decision model.
 - [Jev (AI model) on Wikipedia](https://en.wikipedia.org/wiki/Jev_(AI_model)) — Most useful as an index: its reference list is a fast route to the coverage worth reading.
 - [Jev (AI model) on Wikipedia](https://en.wikipedia.org/wiki/Jev_(AI_model) — ) — Most useful as an index: its reference list is a fast route to the coverage worth reading.
