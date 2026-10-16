@@ -1,4638 +1,4682 @@
 {
   "0x7067/claude-jev": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "0xNatoshi/jev-codex-router": {
-    "stars": 262,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 274,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "0xPlaygrounds/rig": {
-    "stars": 8714,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8893,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "0xwhrari/grok-jev-guard": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "1jehuang/jcode": {
-    "stars": 20074,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20937,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "2389-research/typesafe-go": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "2456868764/jevguide": {
-    "stars": 5,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "24601/Augustus": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "3clyp50/a0-typesafe-ai": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "455-dIAO/jev-codex-router-skill": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "48Nauts-Operator/skill-dash": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "4anti/jev-broadcast-lab": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "4esv/jev-eval": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "4rays/profanity-checker": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "567-labs/instructor": {
-    "stars": 13939,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14022,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "6Mikao9/jev-agent-design-with-topk-logits-choices": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "a-Fig/jev-score": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AABBAASS1/jev-router": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "aaddrick/building-with-typesafe-jev": {
-    "stars": 87,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 142,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "aangelopoulos/conformal-prediction": {
-    "stars": 1091,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1101,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "aaronshaf/opencode-jev-orchestrator": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/awesome-typesafe": {
-    "stars": 501,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 594,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/awesome-typesafe-jev": {
-    "stars": 501,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 594,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/bicameral": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/heist-one": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/jev-benchmarks": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 26,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/s1-rs": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AbdelStark/typesafe-rs": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "abeatrix/cline-plugin-jev-browser": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "abhishek085/open-spark-jev": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "abhishekmamdapure/jev-information-extraction": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "abhishekswe/agent-fastpath": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "abhixhek/jevcal": {
     "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ably-labs/jev-pong": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AboveColin/HA-Jev": {
-    "stars": 58,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 78,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AboveColin/jevclient": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "achimala/jev-paint": {
-    "stars": 56,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 63,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "adammichaelwood/jev-music-theory-1": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "adhyaay-karnwal/jev-chat": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Adityakhalkar/JevEye": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Adkid-Zephyr/chinese-workflow-decision-bench": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Adkid-Zephyr/work-with-jev": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "affirmitv/bitrate-advisor": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "agent-chaperone/agent-chaperone": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 22,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "agent-labs-dev/fastbrowse": {
-    "stars": 100,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 120,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "agentgateway/agentgateway": {
-    "stars": 5019,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5373,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AgentiLoop/Agent": {
-    "stars": 632,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 646,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "agentjido/req_llm": {
-    "stars": 582,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 597,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AgriciDaniel/jev-seo": {
-    "stars": 76,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 652,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ahastudio/til": {
-    "stars": 190,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 191,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "aidil2105/jev-browser-pilot": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Aimark-dai/jev-chat-windows-deepseek-jev": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ainame/swift-typesafe": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ajanm007/jevrag": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ajayk/jev-go-sdk": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ajensenwaud/hermes-jev-plugin": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AkashPriyadarshii/jev-curate": {
-    "stars": 47,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AkashPriyadarshii/jev-scout": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AkashPriyadarshii/jev-seo": {
-    "stars": 43,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AkashPriyadarshii/jev-superpowers": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "akivet/Mica-v0.1-4B": {
-    "stars": 21,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Akramovic1/jev-pilot": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AlbionaHoti/refgarden": {
-    "stars": 30,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 35,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Alex314618-create/JevRev": {
-    "stars": 292,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "alexj11324/open-jev-approvals": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ali-master/usejev": {
-    "stars": 6,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "allebee/jevgrep": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "allebee/jevk5": {
-    "stars": 57,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 153,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "allebee/pytest-jev": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "alp82/goodwatch-monorepo": {
-    "stars": 38,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 41,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Alpha-Harper-Franklin/jev-drive": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "alpha-tales/alphaoptimizer": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "alterhq/typesafe-sdk-swift": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "altryne/jevify": {
-    "stars": 27,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 44,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Alurith/jeff": {
-    "stars": 37,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "amberwhitehead/jevscript": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AMMIROSOH/jev-2048-selenium": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AmoghCreator/doom-jev": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anasbekheit/typesafe-jev-mcp": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "andrelandgraf/safer-with-jev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AndreuVM/jev-reasoning-navigator": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "andududu/jeview": {
-    "stars": 47,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 64,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anessbelbati/jev-rerank-bench": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Anil-matcha/awesome-jev-by-typesafe": {
-    "stars": 829,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anisselbd/jev-phishing-bench": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ankit-aglawe/tinyjev": {
-    "stars": 25,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 27,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anomalyco/opencode": {
-    "stars": 209740,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 214287,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AnotiaWang/awesome-jev": {
-    "stars": 341,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 649,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anpicasso/hermes-jev-approvals": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anpicasso/hermes-jev-curator": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Anson-gzy/jev-paste": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AnswerDotAI/ModernBERT": {
-    "stars": 1744,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1770,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "antiyro/jevdroid": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AntonioCoppe/jev-harness": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anuran-de/tripwire": {
     "stars": null,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "anxkhn/JevPlaysPokemon": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "aoprisan/jev-ts-repl": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "aowang-ai/jev-trade": {
-    "stars": 130,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 212,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AppChainAI/Jevatar": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AppitStudio/awesome-jev": {
-    "stars": 83,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 105,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AppitStudio/testimonial-miner": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ARCJ137442/jev-2048": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Argos1111/jev_local": {
-    "stars": 35,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ariel-frischer/jevkit": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ArielBubis/Jevflix": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "arjun988/Kev": {
-    "stars": 17,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "arnab621/typesafe-jev-plugin": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Arpit-Khandelwal/jev-linkedin-slop-filter": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "arslanr-com/perfectrecall": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Ashfaqbs/jev-mcp-spring": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ashishakkumar/Jev-Checkpoint": {
     "stars": null,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "assistant-ui/jevia": {
-    "stars": 5,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Asymptote-Labs/agent-beacon": {
-    "stars": 1371,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1834,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "AustinAWay/Working-Memory-Jev": {
-    "stars": 75,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 77,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "awlevin/typesafe-computer-use": {
-    "stars": 935,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1236,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ax-llm/ax": {
-    "stars": 2946,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2967,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Ayush0054/metis": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "b0bleet/syn": {
     "stars": 0,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "backmeupplz/jev_antispam_bot": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "baize7815/jev-mcp-open-source": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "baronunread/leanest": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bastani-inc/atomic": {
-    "stars": 820,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 860,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BeatAPI/awesome-jev": {
-    "stars": 55,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 69,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "benmagnifico/DriveJev": {
-    "stars": 19,
-    "fetched_at": "2026-10-03T22:17:30Z"
+    "stars": 87,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BennyKok/omg.dev": {
-    "stars": 537,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 548,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bensyverson/goodall": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BerriAI/litellm": {
-    "stars": 59521,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 61393,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bespokelabsai/nimble": {
-    "stars": 1704,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2220,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BillionsBobby/JevRouter": {
-    "stars": 190,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 472,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bitnovus/jev-spam-eval": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Biztactix/n8n-nodes-typesafe": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bl888m/jev-bot": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bladedevoff/stuntd": {
-    "stars": 19,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 70,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "blakestone-x/jev-mcp": {
-    "stars": 22,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "blockbrain-ai/cygnet-recipe": {
-    "stars": 13,
-    "fetched_at": "2026-09-29T15:48:00Z"
+    "stars": 34,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bnistor4/fotocopiatrice": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bnsd55/jevmlx": {
-    "stars": 60,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 70,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bodepudimuneendra-netizen/laya-jev-GraphRAG": {
-    "stars": 22,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 51,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Bodila51/grok-bot-jev": {
-    "stars": 78,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 109,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Bodila51/muse-jev-playbook": {
-    "stars": 16,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bojansandhaus/jev-decisions": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "boldbug1/jev-triage": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BorisLeMeec/jev": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 42,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BoundaryML/feelings": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 24,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "brainstormity/Jev-Moderation-Bot": {
-    "stars": 44,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 48,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "brainstormity/Jev-X-Sentiment-Analysis": {
-    "stars": 167,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 218,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Brainwires/jevwire": {
-    "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 24,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bramtechs/Focus": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "brickfrog/moongate": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "brida-ai/reflexbench": {
-    "stars": 5,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Bring-AI/jev-numeric": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Bring-AI/jev-rl": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "brnyxx/jev-ra": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "browser-use/jev-ultrafast": {
-    "stars": 19323,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23084,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "buchmark/claude-jev": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Bud-ro/jev-demos": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BudEcosystem/Bud-Decision-Engine": {
-    "stars": 5,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 110,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bugkiwi/elons-job": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bugkiwi/turing-jail": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "buluoray/JevOnly": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "burnigtm/jev-mcp": {
-    "stars": 43,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 64,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Butochnikov/laravel-typesafe-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Butochnikov/typesafe-sdk-php": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "BYK/jev-mcp": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "bytelabs-oss/clash-jev": {
-    "stars": 32,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 36,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ca7ai/jev-prompt-sentry": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "caiovicentino/jev-shield": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Cairn-ink/cairn-jev-lab": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "can1357/jegrep": {
-    "stars": 88,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 117,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "can1357/oh-my-pi": {
-    "stars": 33070,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 35673,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CaptainCore/captaincore": {
-    "stars": 71,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 75,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "carlchou0dailyfresh/jev-gates": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "carldaws/hunch": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 19,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "carlosedm10/agi-jev-containment": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "catpotd/agy-jevgate": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ccai40359-wq/jev-triage": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CelestoAI/celesto": {
-    "stars": 973,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1032,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cequence-io/openai-scala-client": {
-    "stars": 249,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 255,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Chandler-Sun/chat2jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CharlesFeng0314/JEV_sees": {
-    "stars": 108,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 152,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Charlyhno-eng/jev-codex-pilot": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Charlyhno-eng/jev-document-classification": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chengyongru/fastjev": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T15:47:17Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chenyangcun/NanoJev": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ChenYCL/jev-browser-skill": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CheshiAI/Cheshi": {
     "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ChetasLua/jevmeter": {
-    "stars": 81,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 109,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chopratejas/invalidate": {
-    "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "choxos/jev-reviewer": {
-    "stars": 33,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "choxos/jevchess": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chrishan17/claude-jev-mod": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "christianmat/jev-pokemon": {
-    "stars": 87,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 128,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chy4pro/jev-for-chrome": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 40,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chy4pro/jev-in-mcp": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "chy4pro/JevBrowserExt": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 40,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "clduab11/jev-test": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ClemensSchartmueller/jev-guard": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cmpnd-ai/dspy-system-one-agent-patterns": {
-    "stars": 33,
-    "fetched_at": "2026-10-03T22:17:30Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cobanov/awesome-jev": {
-    "stars": 378,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 559,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cobusgreyling/Jev": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 137,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cocktailpeanut/jevthoven": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CodeIA-Academy/jev-mcp": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "codeitlikemiley/typesafe-sdk-rust": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "codejunkie99/jev-engineering": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CogFlux/opencode-jev-guard": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cognesy/instructor-php": {
-    "stars": 327,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 328,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "coldteadotai/abide": {
-    "stars": 211,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 582,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "cole-gillespie/typesafe-go": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "colinmcdermott/emoji-jev": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "collapseindex/jev-builder": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "colliber/duckdb-jev": {
-    "stars": 24,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 29,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CompleteDotTech/jev-factorio-agent": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CompleteTech-LLC-AI-Research/jev-311-heatmap": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ComposioHQ/composio": {
-    "stars": 30301,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 30593,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "compozy/yoshi": {
-    "stars": 25,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 31,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "connectedGraph/claude-jev-warden": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "coo-quack/jev-pii-checker": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "copyleftdev/jev-labs": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "crmne/ruby_llm": {
-    "stars": 4404,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4467,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "csskrtao/jev-to-answer": {
-    "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ctmx/openrouter-jev-mcp": {
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "CyanSalt/decision-pony": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "CYMCharming/S1Q": {
     "stars": 0,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "d-date/swift-jev": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dabaicai001/jeves-desk": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dabit3/jev-experiments": {
-    "stars": 379,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 405,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dagfinndybvig/Jev_Ontology": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "daniel4x/JevEmon": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "danieljvdm/effect-agent": {
-    "stars": 122,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 164,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DanielKillenberger/jev-predict-skill": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "danielnc/jev-browse": {
-    "stars": 8,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dannote/jev": {
-    "stars": 32,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 36,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DanRWilloughby/snifftest": {
-    "stars": 29,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 35,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "darthblanc/tictacjev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "daseinlabs/open-jev": {
-    "stars": 107,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 134,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "daveebbelaar/ai-cookbook": {
-    "stars": 4578,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4647,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "davertor/jev-slop-guard": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "davila7/claude-code-templates": {
-    "stars": 31622,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 32681,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "davila7/jev-explained": {
-    "stars": 29,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 35,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dayhaysoos/jevals": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dbreunig/building-with-jev-skill": {
-    "stars": 131,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 155,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ddfeyes/jev-mode": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DDnim/jev-tweet-radar": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Dearest/plotveil": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DECRUX9812/typesafe-skill-router": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "deepanwadhwa/OpenDecision": {
-    "stars": 56,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 98,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "deepopen-com/deepopen": {
-    "stars": 741,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2048,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "denikuchero/jev-chess-lab": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "devagrawal09/jev-code": {
-    "stars": 114,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 117,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "devagrawal09/jev-review": {
-    "stars": 584,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 688,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "devagrawal09/stanley-code": {
-    "stars": 114,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 117,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "devanshbatham/commit-miner": {
-    "stars": 36,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 39,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "devbackend/jevgo": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "developmentseed/stac-zap": {
-    "stars": 6,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Devin-AXIS/jev-dsh-decision": {
-    "stars": 160,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 255,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DevMortimer/pi-typesafe": {
-    "stars": 45,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 48,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DevMortimer/pi-warden": {
-    "stars": 138,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 171,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "devtooligan/jevscan-evm": {
-    "stars": 27,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 28,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dglazkov/jev2ui": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Dharundp6/jev-carryforward": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Dicklesworthstone/skillranker": {
-    "stars": 116,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 135,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "different-ai/openwork": {
-    "stars": 23715,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 24138,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Dimweaker/jev-libero": {
-    "stars": 63,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 83,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dingw530/playwright-jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "docxology/daf-jev": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "doeixd/discern": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "doeixd/jev-pref": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "doitrous/hx": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DonaldMurillo/system-one-playground": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dorkitude/webctl": {
-    "stars": 139,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 161,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "doronp/jevc": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "DotNetVibeCoderz/Vibe_SDK": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dottxt-ai/outlines": {
-    "stars": 15879,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15943,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dougsong/jev-android": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dr-dimitru/claude-jev-plugin": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "droidrun/mobile-jev": {
-    "stars": 379,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 448,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dtduc-git/jev-packs": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dtduc-git/jev-table": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dtduc-git/jevnav": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dtheofr/typesafe-jev-ruby": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dvjn/aegis": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "dzhng/jevgrep": {
-    "stars": 774,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 2748,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "E-FL/typesafe-as-a-judge": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Effect-TS/effect": {
-    "stars": 16197,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17307,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ehui1226/hookmeter-jev": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 22,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ekzhang/openjev-sglang": {
-    "stars": 308,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 333,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "EliaAlberti/jev-rules": {
-    "stars": 49,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 66,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "elie222/inbox-zero": {
-    "stars": 12328,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12578,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Eliot5566/JEV-Paper-Radar": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 32,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Eliovp-BV/Jev-Radar": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "elizaOS/eliza": {
-    "stars": 19478,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 19609,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ellipsis-dev/blink": {
-    "stars": 70,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 99,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ElshinQ/jevaluate": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "elvisun/newsjack": {
-    "stars": 1330,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1554,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "emirbartu/jev-for-all": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "emreozyoruk/hush": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "emrickgarrett/OneVOneJev": {
-    "stars": 31,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 42,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "endomorphosis/JevOps": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ennsharma/scrollpatrol": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "enoyola/jev-grand-prix": {
     "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "eran-broder/jev-skills": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "erendikmenn/jev-rag-benchmark": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 18,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Eric-Zhou-0302/jev-A-share-trader": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "erkamyaman/jev-enforce": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "EthanAlgoX/jev-trading": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ethanplusai/jev-chat-for-twitch": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "etnt/unsafe-c-finder": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "EugeneBoondock/jevsql": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "eugeniughelbur/jev-engineering": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "evoke-build/evoke": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 24,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Excalibur9527/dsh-jev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "expanso-io/demo-expanso-jev": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "exYze/rift": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fatelei/jev-compact": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fatwang2/awesome-jev": {
-    "stars": 203,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 226,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fatwang2/jev-review-action": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "FazalAAli/jev-robotics-demo": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fazlerocks/jevmail": {
-    "stars": 74,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 100,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "FBddcz/embodied-jev": {
-    "stars": 221,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 307,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "featherless-ai/simple-jev": {
-    "stars": 506,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 606,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "feder-cr/jev": {
-    "stars": 1057,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 1341,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "FeiLiuEM/open-medical-jev": {
-    "stars": 24,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fellowship-dev/jev-second-brain": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "felpsdev/jev-classifier": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "FerryCorleone/crush-monitor": {
-    "stars": 207,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 308,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fgn/jevgo": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fhshaik/typesafe-mario": {
-    "stars": 381,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 450,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fidecastro/jevify": {
-    "stars": 48,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 55,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Finderchangchang/jev-chat-JARVIS": {
-    "stars": 5477,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7812,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "FirasSX914/Janus": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "flazouh/ego-jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "florian-hoenicke/jev-gpt": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "FluidInference/FluidUse": {
-    "stars": 152,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 518,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Foadsf/jev-for-engineers": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "formulahendry/jev-acp": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "forvela/jev-agent-browser": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Fox-Islam/typesafe-sdk-php": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "franckverrot/lev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T15:47:17Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "freepik-company/jev-mcp": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Friedjof/jev-mobile": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "frodi-karlsson/onesie": {
-    "stars": 2,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "frostney/clean-code-review": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "fstandhartinger/jevbench": {
-    "stars": 110,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 278,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "g0runmezadam/jev-architecture-research": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gaborishka/jev-wrapped": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gaborishka/jevtown": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gamesonrblx/Jevbridge": {
-    "stars": 41,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 48,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gargpratyush/jev-router": {
-    "stars": 376,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 601,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "garry-schuette/browser-use-with-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Gaurav-Gosain/jev-go": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Gaurav-Gosain/jev-sec-bench": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gavansmyth-arch/jev-chrome-extension": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "GenieRobot/typesafe-ai-rails": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "getainode/jebadiah": {
-    "stars": 1,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "getanyapi-com/lurk": {
-    "stars": 99,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 118,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "getsynkora/synkora-ai": {
-    "stars": 35,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 47,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "GhalebDweikat/winnow": {
-    "stars": 80,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 110,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gholtzap/jev-codex-model-and-effort-router": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ghubnab99/jev-enterprise-decision-fabric": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "GiesN/typesafe-jev-workflow": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gilljon/typesafe-ai-rs": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "githubnext/localjev": {
-    "stars": 740,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 826,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "giuliosmall/pg_typesafe": {
-    "stars": 82,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 88,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "glud123/jev-assist": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "GodModeAI2025/JevCoreML": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "GodsBoy/jev-agent-skill-router": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 29,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "goodrahstar/jev-column-race": {
     "stars": 23,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "grayrepo-byte/jev_filter_for_x": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "GreptimeTeam/greptimedb": {
-    "stars": 6707,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6743,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "grmkris/robo-harness": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gualican/jev-model-router": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gudcks0305/jev-java": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "guidance-ai/guidance": {
-    "stars": 21776,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21798,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "guilhem/jev-ci-selector": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "guillemus/jev-go": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "gulbaki/jev-llm-guard": {
-    "stars": 10,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "h0j5bz0adh0-stack/jev-pilot": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hackclub/ai": {
-    "stars": 133,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 136,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hamakyo/jev-starter": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "Haple/system-one": {
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "HarnessRouter/SystemOneHarness": {
-    "stars": 157,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 194,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "harrymunro/decision-first": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "harrymunro/jev-laya-benchmark": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "harshil1712/slidepilot": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "harshithsunku/learn-jev-end-to-end": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "harshpuri84/slopcheck-jev": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "harshwasan/pi-jev-sentinel": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "haseeb-heaven/jev-system-one": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hawkymisc/typed-decision-bert": {
-    "stars": 31,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 35,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hawkyre/jevx": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Hawxy/TypeSafeAI.Net": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hayriyigit/JimmyJenk": {
     "stars": 0,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "haystackeditor/stop-rules": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hegargarcia/jev-playground": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hellogumbo/awesome-jev": {
-    "stars": 179,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 222,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hellozenstrategist-lab/eutrya": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "heman10x-ngu/openjev-verdict-2.0": {
-    "stars": 281,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 295,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "heman10x-ngu/verdict-open-jev": {
-    "stars": 91,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 110,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/hfjev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/jev-chess": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/jevish": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/pkg-gate": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/tc39-atlas": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/tool-prune": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hemanth/traffic-guard": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "herval/openclaw-jev-plugin": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "Hesene/MM-JevBench": {
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hev/reranker": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "HexyeDEV/JevPR": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "heyjunpenn/awesome-jev": {
-    "stars": 785,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 968,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "himomohi/aside-jev": {
     "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "himomohi/jev-skill-router": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hndrr/ComfyUI-Jev": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hnegishi/typesafe-ai-ruby": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hosseintoussi/jev-flappy-bird": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hotchpotch/bekko-system-one": {
-    "stars": 29,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 37,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hotchpotch/jev-reranker": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 45,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hotchpotch/S1MB": {
-    "stars": 1,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hqman/JevScout": {
-    "stars": 34,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hr98w/jev-visual": {
-    "stars": 266,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 318,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "http4k/http4k": {
-    "stars": 2789,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2792,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "huggingface/setfit": {
-    "stars": 2818,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2842,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hugo-alves/jev-router-playground": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Hugo-DDT/JevTape": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hunkim/solar-mini4-jev": {
-    "stars": 41,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 45,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "huntedman/JevLint": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "hyperspaceai/jevcache": {
-    "stars": 72,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 77,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "HyunjunJeon/jev-judgment": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "iammrduncan/typesafe-ai-benchmark": {
     "stars": 38,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "IAmUnbounded/save-token-jev-clean": {
-    "stars": 69,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 81,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "iamvatsalpatel/tiershift": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "iapp-technology/openthai-systemone": {
-    "stars": 43,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 68,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ibrahemid/git-jev-stage": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ickma2311/jev-baselines-eval": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Icohen007/jev-play-ping-pong": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "idovmamane/dejevu": {
     "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ieee0824/jev-mcp": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "iJ03l/jear": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ikermoel/open-alternative-jev": {
-    "stars": 52,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 68,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ilkerulusoy/pi-jev-compact": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "imikerussell/beebots": {
-    "stars": 148,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 295,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "imohitmayank/jevfill": {
-    "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "inanna-malick/jev-dsl": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "incoai/splash": {
-    "stars": 709,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1490,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "instax-dutta/sysone-bench": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "integrate-your-mind/jev-codex-plugin": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "intikhab49/open-jev-typed-decision-engine": {
-    "stars": 43,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 46,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ipenywis/laya-ultrafast": {
-    "stars": 145,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 258,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "irfndi/prism-liquidity-agent": {
-    "stars": 98,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 128,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ishantanu/jevmetrics": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ItBayMax/typesafe-ai-jev-example": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ItisNoMatter/kojev": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "itsmostafa/typesafe-mcp": {
-    "stars": 288,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 352,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ItzSupra13/jev-is-not-odd": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "j341nono/jev-prompt-optimization": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jaewgwon/jevis": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jaibhasin/jev-flappy-bird": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jaibhasin/jev-yt-time-saver": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jakenbear/the-jev-enator": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jamesward/zio-typesafe-ai": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jammaru/jev-lab": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "JanDalhuysen/jev-clash-royale-test": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jaredpalmer/kev": {
-    "stars": 6319,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9237,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jarrodwatts/jev-trader": {
-    "stars": 2223,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3017,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jayozer/jevzero": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jbpayton/jevless": {
-    "stars": 1,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jbt95/jev-toolkit": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jcpsimmons/jev-macos-loop": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jcressler/jev-codex-token-saver": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jeffonelson/jev-bigquery-cloudrun": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jeiel85/jevscope": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jerryfane/omp-jev-compaction": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jerryjliu/docjev": {
-    "stars": 415,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 528,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jesset/pi-verdict": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jev-chat/jev-chat-jarvis": {
-    "stars": 5477,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7812,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jev-chat/jev-chat-windows": {
-    "stars": 483,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 814,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jev-ids/jev-ids": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Jevals/jevals-data": {
-    "stars": 2,
-    "fetched_at": "2026-09-29T15:48:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "JevBench/jevbench": {
-    "stars": 2,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jevbook/jevscan": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jexp/neo4jev": {
-    "stars": 129,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 174,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "JGalego/Jevs-Garage": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jgridifier/jev-research-eval": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Jhonnyr97/JevGuard": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jiangkoumo/ego-jev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jiawei686/jev-review-mcp": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jiawei686/jev-screen-mcp": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jiayylu/jev-as-quant": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jimmyhealer/jevex": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jimmyliao/jev-storyboard-lab": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jjd-lab/jev-synthetic-survey": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jkrup/jeveryword": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jkudish/jev-browser": {
-    "stars": 256,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 339,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jkudish/jev-mcp": {
-    "stars": 320,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 536,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jmanhype/jev-dspy-lab": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joelhooks/pi-fast-jev-compaction": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joevidev/ui-generator-instinct-jev": {
     "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "johnhughes3/LegalForecastBench": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jomatsu/pi-jev-auto-mode": {
-    "stars": 23,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 32,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jomatsu/zod-jev": {
     "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jon-devlapaz/tink-route": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jonathanavis96/jev-kit": {
-    "stars": 22,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 83,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jonesmelton/verdict": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jonymusky/jev-browser-qa": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joshhu/jevtest": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joshLong145/jev-cli": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joshmn/typesafe-sdk": {
     "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joshuaeroman/plasmallm": {
-    "stars": 29,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 30,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "JoshuaSP/open-jev": {
-    "stars": 39,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 42,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "joslynSmall/fast-jev-compaction-pi": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jsk4581/jev-blindspot": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jtsang4/jev-cli": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "juanegido/jev-pr-judge": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "juanlentino/jev-connector": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jujumilk3/jev-calibration-audit": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "juspay/neurolink": {
-    "stars": 139,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 157,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jvsteiner/jevex": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "jyatesdotdev/jev-logtriage": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "JYeswak/jev_playground": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "k4its1t/jevlens": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "KalyanM45/GitHub-Issue-Classification-Using-Jev": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "KamilPostrozny/pi-fast-jev-compaction": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "KantaHayashiAI/jev-does-not-play-dice": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Kaos599/jev-writer": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "karanb192/jev-skill-scout": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kataras/jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kaustav1996/reflex": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kavehmz/typesafe-playground": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kbhuw/jev-sift": {
-    "stars": 46,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 48,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "keeltrace/hermes-jev": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 42,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "keltokhy/jgrep": {
-    "stars": 76,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 138,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "keltokhy/jlink": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "keltokhy/jselect": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "keltokhy/jsort": {
-    "stars": 19,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 27,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kenhuangus/jev-usecases": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 22,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kentcdodds/kody": {
-    "stars": 672,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 804,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kerpopule/hermes-jev-skills": {
-    "stars": 720,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1133,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kevinbadi/hyperedit": {
-    "stars": 193,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 214,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kevinbadi/jev-voice": {
-    "stars": 84,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 119,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kevinpita/pi-jev-context": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Kevthetech143/super-jev": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kgonia/typesafe-sdk-java": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "khmuhtadin/n8n-nodes-jev-classification": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "khordoo/jev-reflex-autonomy-lab": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kieranklaassen/ruby_llm-typesafe": {
-    "stars": 19,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 18,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kieranklaassen/truffler": {
-    "stars": 44,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 52,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kikoncuo/jevfire": {
-    "stars": 63,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 75,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Kiln-AI/jev_jsonschema": {
     "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Kiln-AI/Kiln": {
-    "stars": 5079,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5193,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kindintelligence/jev-rust-review": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kitfunso/hippo-memory": {
-    "stars": 756,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 780,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kitze/pagegrade": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kitze/skillbox": {
-    "stars": 234,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 270,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kitze/unclutter": {
-    "stars": 225,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 378,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kiwi0719/jev-edge": {
-    "stars": 34,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 41,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Knuckles92/OpenWhisper": {
-    "stars": 188,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 210,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "koala73/worldmonitor": {
-    "stars": 87300,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 88568,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kolawong/fast-compaction-dsh": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kolibril13/jev-in-blender-experiment": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "komikat/jev-bfs": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kotoba-lang/typed-decisions": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T15:47:17Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kouhxp/gutsy": {
-    "stars": 15,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 92,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "krzyzanowskim/TypeSafe": {
     "stars": 27,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kshetrajna12/reflex": {
-    "stars": 132,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 168,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kt3k/jevchat": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ktaletsk/jevframe": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kubet/azdaja": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kuhung/ask-jev": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kuldeepsinh19/jev-decision-gateway": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kuleshov-group/mdlm": {
-    "stars": 715,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 720,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kunchenguid/compact-adviser": {
-    "stars": 183,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 218,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kunchenguid/firstmate": {
-    "stars": 7085,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7997,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kunchenguid/no-mistakes": {
-    "stars": 8617,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8898,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kunobi-ninja/kunobi-jev": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kurihada/pi-jev-permit": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kushals256/jevcache": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kydlikebtc/awesome-jev": {
-    "stars": 269,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 601,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kyle-chalmers/typesafe-jev-incident-router": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kyle-pena-nlp/jevchat": {
-    "stars": 90,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 97,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kylehovance-ai/jev-the-janitor": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kylemclaren/jevpdf": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kylemclaren/jevql": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kylemclaren/jevsearch": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kyotofin/tax-doc-classifier": {
-    "stars": 419,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 507,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "kyu1204/jgrep": {
-    "stars": 24,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 60,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "LabGuy94/jevtok": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Lagnajit09/sgrep": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "laguagu/jev-skills": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lahfir/agent-desktop": {
-    "stars": 1612,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1800,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "laihenyi/pi-Jev-browser": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lakeday-org/perch": {
-    "stars": 174,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 353,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "langchain-ai/langchain": {
-    "stars": 146961,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 147936,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "langchain-ai/langchainjs": {
-    "stars": 18223,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 18274,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "laravel/ai": {
-    "stars": 1189,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1230,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "larguesa/jev-search": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Larkspur-Wang/Jev_steer_or_queue": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "latitude-dev/latitude-llm": {
-    "stars": 4673,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4723,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lavallee/mk-jev-fly-brain": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lawrence3699/jev-style": {
-    "stars": 7,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lbotinelly/jev-little-airways": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ldbumble/taskuary": {
-    "stars": 120,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 138,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Leanmcp/jevbench": {
-    "stars": 0,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "LeddoEngano/jev-eyes": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "leepokai/jev-guard": {
-    "stars": 30,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 71,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "leftspace89/JevBird": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "legacybridge-tech/pi-typesafe-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "leonaaardob/fast-dev-compaction": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lgy1027/jevshield": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lianghsun/jev-tmmluplus-eval": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "liao96312/jev-arena-nanojev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "liaoyuhua/jev-trip": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 26,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "libingzheren/Jev-Mem": {
-    "stars": 60,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 215,
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "LikithMeruvu/xaya-2b": {
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lirantal/discoprint": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "litshing/jevcore": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Little-Planet-Labs/jev-playground": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "LiuHao-1443/jev-table-tennis": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Liuziyu77/Valen": {
-    "stars": 437,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 837,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Liyucheng1997/332_lab-jev-chat": {
-    "stars": 121,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 169,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "llt22/jev-lab": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "logan-markewich/jeff": {
-    "stars": 234,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 303,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "logicrw/ask-jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "logicrw/awesome-jev-projects": {
-    "stars": 469,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 683,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "luantak/is-malicious": {
-    "stars": 23,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 39,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lucianfialho/jev-model-router": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "luigivis/jev-sdk-java": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lukaske/jev-doom-agent": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 32,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lukstei/slop-grader": {
-    "stars": 22,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 35,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "luxus/ha-conversation-jev": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "LYchoon/paper-radar-jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "lykycy123/RoboJEV": {
-    "stars": 42,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 59,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "m-mizutani/semgate": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "m0rphtail/triagedy": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "maayanlevy/mysql-ailike": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "maddygoround/typesafeai-cli": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mahmut-gundogdu/bes-kelime-jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "maker-KK/todo-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "malevrigns/agent-jev": {
-    "stars": 312,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 388,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "manifoldor/xtags": {
     "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "MANISH007700/tab-bouncer": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mansicer/jev-plays": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Mapika/decider": {
-    "stars": 347,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1156,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "marandaneto/typesafe-sdk-swift": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "MarissaFamularo/citation-verifier": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "markjaquith/typesafe-ai-playground": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "matthew004-web/heyreach-jev-bot": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "MattiooFR/mcp-server-jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mattn/go-jev": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 46,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mattn/sqlite3-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mattt/AnyDecisionModel": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "maximhq/bifrost": {
-    "stars": 8302,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8856,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "maxlibin/jev-toto": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mayank953/Jev": {
-    "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 19,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mcftira/jev-route": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "MCG-NJU/VideoJev": {
+    "stars": 155,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mejiasd3v/pi-jev-router": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mertkayacs/jevalt": {
-    "stars": 4,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "metalbear-co/jev-auto-approve": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mhingston/jev-agent-browser": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Michaelliv/runline": {
-    "stars": 164,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 166,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "michaljach/jet": {
     "stars": 0,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "MichelePolo/jev-mcp": {
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "milind-soni/tiptour-macos": {
-    "stars": 662,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 681,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "minghanminghan/jev-demo": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "miniLV/Jev-Auto-Router": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mintannn/jev-asks-until-sure": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "miounet11/jevcode": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "misbahsy/doc-router": {
-    "stars": 26,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 31,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mithalouni/system-one-open": {
-    "stars": 35,
-    "fetched_at": "2026-09-24T15:47:17Z"
+    "stars": 40,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "MithrilMan/your-signal": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mittal-parth/jev-experiments": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mizchi/jev-lint": {
-    "stars": 78,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 119,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mizchi/jev-playground": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 73,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mizchi/jev-test-filter": {
-    "stars": 16,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 36,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mizorewww/laya-coreml": {
-    "stars": 1403,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1588,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mizorewww/laya-mlx": {
-    "stars": 6074,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6954,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mlc-ai/xgrammar": {
-    "stars": 1928,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1964,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "MM-sheng/jevspeak": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mmastrac/djev": {
-    "stars": 68,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 114,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mmastrac/djev-spark": {
-    "stars": 189,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 220,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "moisesfilho/typesafe-jev-opencode": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "molis-ai/jev-workbench": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mondaychen/semantic-assert": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "monotykamary/pi-fabric": {
-    "stars": 258,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 291,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "monteduro/killmyidea": {
-    "stars": 149,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 261,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "moomooskycow/polymorph": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "morcoan/JevSeek": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "morcoan/JMP": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "moritzkremb/jev-voice-browser": {
-    "stars": 271,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 409,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mossyfield/ST-jeved": {
-    "stars": 30,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 33,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "MrJev/awesome-jev": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Mrlyk/jev-browser": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mrmps/classifier-dev": {
-    "stars": 417,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 425,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mrnugget/jev-shell-history": {
-    "stars": 108,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 119,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "muratcakmak/jev-guard": {
     "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "muse0509/jev-preflight": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "myc0576/SmartMoney-Cub": {
-    "stars": 26,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 27,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "mychaelangelo/tempo-jev-demo": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "n3ndor/n8n-nodes-typesafe-jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nabsku/pi-follow-through": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nachom3/jevTrader": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nahid-sparktales/agent-dispatcher": {
-    "stars": 50,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 59,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nainish-Rai/jev-frontend-qa": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NAME0x0/Jevlet": {
     "stars": 1,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "namenu/pi-jev-effort": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nanako0129/lorenzini": {
     "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nanami-0713/dsh-jev-decide": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nancy-Chauhan/hearth-jev-rental-search": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NandhaKishorM/laya": {
-    "stars": 21403,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 33158,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nasrallah-AL/jev-cli": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 22,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nassim-arifette/jevgrep": {
-    "stars": 62,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 104,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nekowasabi/jev-routing": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "neo4j-field/jev-graphrag": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "newuser7171/antivirus": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "newuser7171/jev-gamepilot": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nexibeo/jev-cookbook": {
-    "stars": 22,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 36,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nextflow-io/nf-jev": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NiazMorshed2007/jcr": {
     "stars": 19,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NiazMorshed2007/jev-review": {
-    "stars": 218,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 243,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nibir1/typesafe-go": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nico-martin/open-jev": {
-    "stars": 32,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 42,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NicolaiLassen/open-bonsai-jev": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NicolasMontone/jev-tool-permissions": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nidhi-singh02/agent-router": {
-    "stars": 70,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 115,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nikkoxgonzales/jev-certify": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nisaka520/JevBystander": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nisaka520/JevIntent": {
-    "stars": 53,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 68,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nitoba/questions": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "noahbclarkson/typesafe-api-rs": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "noamgat/lm-format-enforcer": {
     "stars": 2041,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "noelzappy/tripwire": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "noetion/dsh-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nokia-applied-research/AnyJev": {
-    "stars": 417,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1317,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nomanjack/smart-paste": {
-    "stars": 38,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 45,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "noperator/siftrank": {
-    "stars": 214,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 227,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "noplan-inc/limpet": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "notque/vexjoy-agent": {
-    "stars": 425,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 442,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NotXf1le/choosekit": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nourhelmi/pi-jev-compaction": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NousResearch/hermes-agent": {
-    "stars": 248504,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 254376,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "novaleolin/jev-evolve": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "novvoo/nanojev": {
     "stars": null,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nrdz-labs/fast-jev-opencode": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nshkrdotcom/typesafe_sdk": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "nssmd/jev-bot": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "NullPo-jp/PocketJev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "numerous-com/dgp": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nyarlathoteppppp/pi-heed": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Nyarlathoteppppp/pi-jev-context": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "obie/ruby_decision_model": {
-    "stars": 50,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 57,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Octalab-Inc/jqv": {
     "stars": 0,
-    "fetched_at": "2026-09-24T15:47:17Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ohernandezdev/jevmod": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "okinaaudio/live-jev": {
-    "stars": 40,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 45,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "okooo5km/jev": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "olanotolu/jevbetter": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "oldmoldycake/jev_vampire_survivors": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ollaya-dev/ollaya": {
-    "stars": 874,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 1324,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Olli0103/openclaw-typesafe-ai": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "omkarghugarkar007/actiongate-jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "omni-/ask-jev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Omni-Scientist/Awesome-AI-Scientist": {
-    "stars": 101,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 109,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Omni-Scientist/Awesome-RSI": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "OmniJev/awesome-jev-gallery": {
-    "stars": 272,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 507,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "OmniJev/OneJev": {
-    "stars": 3,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 171,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "OmniJev/PlayJev": {
-    "stars": 29,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 55,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "onlyjq04/jev-agent-hooks": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "oomol-lab/open-connector": {
-    "stars": 5887,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6030,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "OpenByteInc/QuantDinger": {
-    "stars": 12082,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12835,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "openchamber/openchamber": {
-    "stars": 10406,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11700,
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "OpenLAIR/lev": {
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "openlayer-ai/jevals": {
-    "stars": 81,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 105,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "openroboto-ai/jev-robot-control": {
-    "stars": 44,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 64,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "OpeOginni/oc-plugins": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "org2AI/wald-4b": {
-    "stars": 2,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "oso95/x-scanner": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ozers/jevsome-projects": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pambrose/jev4k": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PanAchy/jevvy": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pankona/japanese-jev-lint": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "paramjeetn/jev-cookbook": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "parth-kp/jev-mail-classifier": {
-    "stars": 16,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Parthkomalwad/jevbrief": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Pasblinn/jev-lab": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Patrick-SCH03/jev-issue-radar": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "paulsmith/computer-use-jev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pc418/jev-calculator": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "PeisongXiao/fuzev-vllm-plugin": {
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PenglongHuang/jev-demo": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "peterfriese/jev-foundation-models": {
-    "stars": 42,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 117,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Peu77/JevFind": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "phd-peter/ego-jev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "philippdubach/pi-jev-router": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "phureewat29/jev-got": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "phyous/tsai-civ2": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "phyous/tsai-sc": {
-    "stars": 24,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 28,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PistachioAIHQ/jev-synergy-screening": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pithings/advocaat": {
-    "stars": 91,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 97,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Pluviobyte/rnskill": {
-    "stars": 1604,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1648,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pnthn-ai/polar_llama": {
     "stars": 30,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "poiuyjie/jev_project_context": {
     "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "poponline63/hermes-jev-north-star": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PostHog/jeeves": {
-    "stars": 402,
-    "fetched_at": "2026-10-03T22:17:30Z"
+    "stars": 425,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "prantikmedhi/anchorlint": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "prasanthj/duckdb-jev": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Premo-Cloud/typesafe-sdk-java": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "prismhq/jev-router": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PromptEngineer48/laya-vs-jev-arena": {
-    "stars": 29,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 30,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "promptgtm-shared/clay-jev-people-ranker": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Prophetlab/JevPokerBench": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "proshunsuke/jev-tab-order": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PsiACE/dohnuts": {
-    "stars": 25,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 36,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pydantic/pydantic-ai": {
-    "stars": 20138,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20666,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "PyModel/jev-judge-mcp": {
-    "stars": 24,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 48,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "pZacca/askjev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "q93304989-bit/jev-lab": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "qddegtya/qualm": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Qew7/jev-feels": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "qingshungLI/everything-about-jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "QiqianFu/Qev": {
-    "stars": 16,
-    "fetched_at": "2026-10-03T22:17:30Z"
+    "stars": 26,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "qkal/Canny": {
-    "stars": 75,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 123,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "QuentinCody/interlinked-cli": {
-    "stars": 178,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 179,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Query-farm/vgi-typesafe": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "QuicqDev/Jev-vs-ML": {
-    "stars": 16,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "r-ms/mini-jev": {
-    "stars": 52,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 59,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RafalWilinski/vibecheck": {
-    "stars": 47,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 50,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RahulBalakavi/claude-code-jev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rahulthakore16/n8n-nodes-jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "raihankhan-rk/jevarena": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rajasekharponakala/jev-mcp": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rajdhakad9826/jev-router": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rajivkuriakose/typesafe-jev-examples": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Ramneet-Singh/jevopt": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ranjan2829/AskJev": {
     "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rashedInt32/jev-gates": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rashedInt32/jev-mcp": {
     "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Ray-Hughes/jevalyn": {
-    "stars": 19,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "razorback16/openjev": {
-    "stars": 382,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 714,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "reachjalil/jev-tree": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "reachjalil/jevlogs": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ReallyArtificial/jev-by-example": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ReallyArtificial/stuntdouble": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "realZachi/pg-jev": {
-    "stars": 324,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1181,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "realZachi/typesafe-adblock": {
-    "stars": 74,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 91,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "receptron/laya": {
-    "stars": 373,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 946,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Red5d/jev-cvss": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "redreamality/jev-skill-selection": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Reindeer-AI/pi-jev-guard": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "reiswaffel78/jev-agent-toolkit": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RenaGao/jev-dataops": {
-    "stars": 55,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 63,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "replynodes/jev-web-analyzer": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Resadan-dev/jev-zork": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "reticlehq/reticle": {
-    "stars": 909,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 1245,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "revsmoke/promptrejectormcp": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rhighs/jev-code": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RileyCarney/JevTools": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RINNECODER/jev-behavior-study": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RiskAverseTech/toolgate": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Rizzo-AI-Academy/rizzo-flow": {
-    "stars": 396,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 902,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rlaope/jeval": {
-    "stars": 16,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rmalde/minecraft-agent": {
-    "stars": 536,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 589,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rmosleydb/jev-smart-router": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "robokrunch/jev-physical-ai": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rokbenko/quackd": {
-    "stars": 232,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 263,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rokcso/bluenoise": {
-    "stars": 90,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 93,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "romaluev/jev-ego": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "RomanSlack/jev-drone": {
-    "stars": 167,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 276,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "romeromarcelo/jev-retrieval": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "romiluz13/jevmory": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rorshopping/jev-browser-local": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rorshopping/jev-on-a-laptop": {
-    "stars": 23,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "royalpinto007/jev-msw": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "royosherove/graphlin": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ruban-24/switchboard": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 19,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "runta-dev/jot": {
-    "stars": 19,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rupeshpoojary9/awesome-open-system-one": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rupeshpoojary9/poorjev": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "rxova/jev-planner": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sabeel111/OpenSourceJev": {
-    "stars": 33,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 45,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sable-inc/jev-linter-action": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Sac-Y/Jev-cu": {
-    "stars": 591,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 622,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "saibimajdi/typesafeai-dotnet-sdk": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "samdotmak/jev-recall": {
-    "stars": 33,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sameerkhan24/decidekit": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SamratDuttaOfficial/WaterSheep": {
-    "stars": 3,
-    "fetched_at": "2026-10-03T20:49:55Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "samuelfaj/distill": {
-    "stars": 688,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 698,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SamuelSacco/jev-exploration": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Sanoy24/jevpolicy": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sarathi-aiml/jevsql": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sathariels/jevcheck": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sathariels/jevtriage": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "satviksinha/jev-model-router": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "savka777/jev-use": {
-    "stars": 93,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 124,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "scale-venture-partners/riff": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "scienthoon/jev-ood-calibration": {
     "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "scienthoon/luce": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "scikit-learn-contrib/MAPIE": {
-    "stars": 1594,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1602,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sdras/jev-webmcp-extension": {
-    "stars": 112,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 130,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Selmar/typesafe-jev-calibrate-for-code-review": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sensahin/transcript-lens": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 18,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SergeAx/typesafe-sdk-go": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shamazharikh/qwen-rlcd": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Shanghua-Gao/RSI-Jev": {
-    "stars": 14,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 117,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shantanugoel/ask-jev-skill": {
-    "stars": 39,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 41,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sharziki/semdecide": {
-    "stars": 54,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 80,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shashwatc12/watermelon": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sherajdev/jev-research": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shhivv/arc-cua": {
-    "stars": 128,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 320,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shhivv/third-hand": {
-    "stars": 286,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 374,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Shifty-Eye-Games/foreman-jev": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shiftynick/jev-axi": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 29,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shikaizhong-design/ego-jev-ultrafast": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shimo4228/jev-research-pipeline": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shimo4228/jev-skill-router": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 18,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shinpr/jev-reranker": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shitianfang/jev-use": {
-    "stars": 25,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 61,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "shitianfang/wakegate": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ShivamPansuriya/jev-skill-gate": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Shubham510/typesafe-go": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "ShubhJain007/VisionJev": {
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ShuhanSun/jev-oas-sentinel": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Siim/jev-claim-vs-measured": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SiliconLabAI/OpenJev": {
-    "stars": 118,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 178,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "simota/tenbin": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "siroccomask/snake-jev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Skyvern-AI/jevscape": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "smithclay/dbt_jev": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "smithersai/smithers": {
-    "stars": 421,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 439,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "smkrv/jev-calibrate": {
-    "stars": 31,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 33,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "smlayero/jev-debtgate": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "snellingio/system-one": {
-    "stars": 46,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 50,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "socai-io/jev-social": {
-    "stars": 53,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 171,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "softpudding/jev-frontier-100": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Solido/jev_dart": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "someka-vrc/obsidian-note-filer": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Songokou1983/jev-mcp": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sorrycc/typesafe-snake": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 24,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sosopop/jev_stock": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SoundBlaster/Jev4Mellea": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "spoonnotfound/soupbase": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "spring-ai-community/spring-ai-typesafe": {
-    "stars": 36,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 56,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SqaaSSL/openclaw-jev-compaction": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stacklok/typesafe-go": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "standardagents/jevpilot": {
-    "stars": 182,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 224,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stanfordnlp/dspy": {
-    "stars": 38246,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 38661,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stas4000/jev-clerk": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stas4000/jev-geo-audit": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stas4000/jev-linkmap": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 22,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stas4000/jev-papers": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "statico/jev-nethack": {
-    "stars": 2,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "stefanwebb/meta-awesome-jev": {
-    "stars": 5,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "steven-shoemaker/hunch": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "strands-labs/strands-decider": {
-    "stars": 290,
-    "fetched_at": "2026-10-03T22:17:30Z"
+    "stars": 658,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Stumble/jev-go": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "SuchintK/jev-call-screener": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sudeshkar/jev-corrective-rag": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sufianetaouil/every": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sugarforever/yummy-pi-extensions": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 22,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "suidouble/let-jev-speak": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sumanmichael/jevlang": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sumitrevolt/leadgenrationaivoiceagent": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sumleo/prompt2jev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sumleo/RLCDAlignBench": {
-    "stars": 3,
-    "fetched_at": "2026-09-25T15:35:18Z"
+    "stars": 28,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sunil-sadasivan/jevernetes": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "superagents-lab/jev-search": {
-    "stars": 446,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 537,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "supercorp-ai/supercov": {
-    "stars": 109,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 155,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "suraj-phanindra/wellposed": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "sutro-sh/jev-align": {
-    "stars": 284,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 309,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "syabdulr/responsible-ai-harness": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "syumai/jevyoumean": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tacticocc/Jevbridge": {
-    "stars": 41,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 48,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "taeold/djev-run": {
-    "stars": 496,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 584,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "taiki510/JevPaste": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "taman-spirit/guardrail-chatbot-jev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tamaratran/fast-jev-compaction": {
-    "stars": 6636,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7670,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tamaratran/jev-pruner": {
-    "stars": 144,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 164,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Tangerg/typesafe-sdk-go": {
     "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TannerMidd/SpecPi": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "taodav/jev_deep_rl": {
     "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TarunTomar122/jev-askable-arm": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tbphp/gpt-load": {
-    "stars": 6983,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7139,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Tech-Byte-Frontier/jevgate": {
-    "stars": 8,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 9,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "teempai/jev-in-codex": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TexasOct/jev-gateway": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "teyhouse/jev-secret-detection": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Teylersf/WindowsJev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Thanh-Mathieu95/jev-model-tokengate": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "theagentrouter/agent-router": {
-    "stars": 2132,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2233,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TheBous/jev-flash-review": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "thehan-co/jevriel": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TheoLeeCJ/SemIf": {
-    "stars": 4145,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4839,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TheoOliveira/pi-jev": {
-    "stars": 46,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 66,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "theopenco/llmgateway": {
-    "stars": 1658,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1687,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "thesammykins/jev_ampcode": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Thestral12/pr-sieve": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ThiagaoBR/typesafe_agent_gates": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "thijmenkam/jev-benchmarks": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ThinkInAIXYZ/deepchat": {
-    "stars": 6341,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6362,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "thruwire/foreman": {
-    "stars": 538,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 769,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tiandee/codex-jev-router": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TianyuCodings/NanoJev": {
-    "stars": 2142,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2558,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ticofab/scala-jev-sdk": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "timpratim/macbrow": {
-    "stars": 142,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 156,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "timrogers/formanator": {
-    "stars": 99,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 102,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TKY-27/JevSlop": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "togethercomputer/tev1": {
-    "stars": 23,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 237,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TokenTrim/jev-agent-failure-benchmark": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TokenTrim/jev-routing-experiment": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Tom-R-Main/Footwork": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tomek7667/cbjev": {
-    "stars": 2,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tomfrazier/slopmop": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TomRichner/can-jev-bayes": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Tongyun1/Jev-in-the-Loop": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tontoko/jev-browser": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tonyzdev/PiJ": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Towow-ai/jpp": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 30,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "trietphan/jev-claw": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "trungdq88/youtube-sponsor-detection": {
-    "stars": 95,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 113,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TrustifAI/typed_evals": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "trycatchkamal/typesafe-jev-traffic-demo": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "trycua/cua": {
-    "stars": 26175,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 29951,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tshmieldev/sharp": {
-    "stars": 30,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 31,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tubone24/jev-practice-speed": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tumf/jev-cli": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tusharck/jev-inbox-queue": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "tuvl-io/laya-serve": {
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Twister915/typesafe-ai": {
-    "stars": 12,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "tyler-dot-earth/patdown": {
-    "stars": 14,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 15,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typakon4/jev-layer": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typesafe-ai/skills": {
-    "stars": 2043,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2719,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typesafe-ai/system-one-adapter-python": {
-    "stars": 286,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 393,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typesafe-ai/typesafe-sdk-js": {
-    "stars": 232,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 278,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typesafe-ai/typesafe-sdk-python": {
-    "stars": 219,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 297,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typesafe-sdk-csharp/typesafe-sdk": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "TypeSafeAI/typesafe-playground": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "typesafeainate/dspy-typesafeify": {
-    "stars": 63,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 66,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "UditAkhourii/quicksilver": {
-    "stars": 73,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 122,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "uehaj/jev-semgrep": {
-    "stars": 134,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 150,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "uezo/aiavatarkit": {
-    "stars": 678,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 692,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ufec/jev-block-android-ad": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ufec/typesafe-sdk-kotlin": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "unicodeveloper/jevocks": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 41,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "unownone/jevsume": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "urchade/GLiNER": {
-    "stars": 3928,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4114,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "usail-hkust/JevLight": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 10,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "usenotra/notra": {
-    "stars": 215,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "utk2103/jev-studio": {
-    "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "v-modal/awesome-jev-tools": {
-    "stars": 699,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 742,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "v60samurai/jev-atlas": {
     "stars": null,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "valentynkit/awesome-jev-typesafe": {
-    "stars": 133,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 194,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "valentynkit/jev-belay": {
-    "stars": 18,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 38,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "valentynkit/jev-commit": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 16,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "valentynkit/jev-plays-pokemon-red": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "valentynkit/jev-skip": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "valentynkit/jev.nvim": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Vatsa10/typesafe-computer-use-win": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vbcherepanov/jev-symfony-bundle": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "VectifyAI/jev-doc-search": {
-    "stars": 4,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 153,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vectorize-io/hindsight": {
-    "stars": 26761,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 50443,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vellum-ai/vellum-assistant": {
-    "stars": 1313,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1430,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel-labs/ai-cli": {
-    "stars": 813,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 824,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel-labs/ai-python": {
-    "stars": 185,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 192,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel-labs/fx": {
-    "stars": 3142,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3456,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel-labs/jev-ai-sdk-form-router": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel-labs/json-render": {
-    "stars": 18211,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 18698,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel/ai": {
-    "stars": 26922,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 27356,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vercel/eve": {
-    "stars": 5342,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5586,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Vicente-MD/jev-resilience": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vikramlingam/excelpilot": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "vilinski/jev": {
+    "stars": 0,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vinilana/jev-eval-agent": {
-    "stars": 105,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 107,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vinilana/jev-gateway": {
-    "stars": 203,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 318,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vinilana/live-jev": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vinnylarouge/jevlike": {
-    "stars": 1275,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1352,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "virajbhartiya/laya-vs-jev": {
-    "stars": 93,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 112,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "virattt/ai-hedge-fund": {
-    "stars": 63701,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 64027,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "virolea/jev": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "VitaDAO/open-jev-tinfoil": {
     "stars": 0,
-    "fetched_at": "2026-09-24T15:47:17Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vizuh/sabi": {
     "stars": 15,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "VladyslavHontar/clear-head": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "vmendes90/jev-shield": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "volcengine/OpenViking": {
-    "stars": 38580,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 40108,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "w3cj/jev-chat": {
-    "stars": 94,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 116,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "walidboulanouar/jev-agent-kit": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "WallerChen/jev-measured": {
-    "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Wang-auspicious/codex-jev-compaction": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Wang-auspicious/pi-jev-compaction": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wanghai673/jev-browser-skill": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wangkuangkuang/jev-mcp-server": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "WanLanglin/jev-skills": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Waxmell114514/jev-compaction": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Waxmell114514/jev-trade": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "waynesutton/ask-jev-ai": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Wei-Shaw/sub2api": {
-    "stars": 42568,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 44212,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wellkilo/codex-jev-preflight": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wenchenxi/jev-console": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wfzyx/von": {
-    "stars": 606,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 916,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wh000wh000/awesome-jev-live": {
-    "stars": 60,
-    "fetched_at": "2026-09-28T23:25:38Z"
+    "stars": 337,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "whyashthakker/beam-cli": {
-    "stars": 11,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 14,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "WiktorB2004/llama-index-jev": {
-    "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "willfish/pi-observational-memory-jev": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "win4r/jev-security-scan": {
-    "stars": 10,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "win4r/jev-skill-suggester": {
-    "stars": 31,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 34,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Wing9897/jev.tg": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wjw66/deepseek-harness-jev-pre-compaction": {
     "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wnzn/semif-go": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wobsoriano/oxlint-plugin-jev": {
-    "stars": 60,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 88,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wondertwins/jev-benchmark": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wotai-dev/typesafe-jev-tools": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wquguru/dasheng": {
-    "stars": 138,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 144,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "WrongStack/WrongStack": {
-    "stars": 335,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 378,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wundercorp/loki": {
-    "stars": 26,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wuxie888/jev-yaba-wechat": {
-    "stars": 21,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 25,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wuyoscar/jev-skill": {
-    "stars": 467,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 625,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "wy-coliney/jev-browser-use": {
-    "stars": 447,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 1197,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xhongc/jev-music-tag": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xianggelila177/VideoAdGuard-Jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Xiaooolong/vev": {
-    "stars": 10,
-    "fetched_at": "2026-10-02T09:38:40Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "XieChengYuan/jev-gomoku": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xienda/dsh-jev-verify": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xinwang-nwpu/jev-mobile": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 8,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xinyao27/jevonian": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 26,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Xopher00/jevdevice": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xuan7zhang/jev-toolspace": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "xyzzzh/GroundingJev": {
-    "stars": 7,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 24,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "y0usaf/jev-lm": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 7,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "y0usaf/pi-jev": {
-    "stars": 143,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 165,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "y0usaf/typesafe-cli": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yangyu666/dsh-jev-prune": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 5,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yibie/awesome-jev": {
-    "stars": 1544,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 2379,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yibie/laya-jev-lab": {
-    "stars": 8,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "YidiDev/jev-benchmark": {
     "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yijunyu/jev-rs": {
-    "stars": 9,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 17,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yikangy873-gif/jev-desktop": {
-    "stars": 68,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 76,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Ying-Kai-Liao/jev-browser": {
-    "stars": 82,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 123,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Yinsongxu/LLM2Jev": {
-    "stars": 291,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 446,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yodablocks/jev-orderby-bench": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yoichiojima-2/deslop": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yonatangross/orchestkit": {
-    "stars": 283,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 295,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yushen100/wechat-jev-assistant": {
-    "stars": 13,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 19,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yusukebe/hono-jev-router": {
-    "stars": 46,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 52,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "YUTA-fywoo/jev-gui-delegate": {
-    "stars": 131,
-    "fetched_at": "2026-09-28T01:09:47Z"
+    "stars": 62,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yuyang2230/jev-agent-skill": {
     "stars": 0,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "yzfly/awesome-jev-zh": {
-    "stars": 69,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 83,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zadescoxp/Jev-Trades": {
-    "stars": 30,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 51,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Zafer-Liu/jev-xiangqi": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Zaious/jev-capability-atlas": {
-    "stars": 26,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 27,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zampierid4p/n8n-nodes-typesafe": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zbush/jev-context": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "Zefan-Cai/Open-Jev": {
-    "stars": 296,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 416,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ZephyrDeng/ego-jev": {
-    "stars": 7,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zeredy879/minojev": {
-    "stars": 25,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 13,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zerodegress/jevinf": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ZeroGold/call-coach-ai": {
-    "stars": 41,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 47,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zhangcy122/OpenJev": {
-    "stars": 26,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 42,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zhangxaochen/dsh-jev": {
-    "stars": 5,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 12,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zhengxuyu/litjev": {
-    "stars": 43,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 47,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zhihz/openjev": {
-    "stars": 32,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 37,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zhirschtritt/typesafe-go": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 4,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ZHUBoer/ego-jev": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zhuyansen/jev-search-rerank-eval": {
-    "stars": 6,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 11,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ZimmyGao/openjev-rlcd": {
-    "stars": 1,
-    "fetched_at": "2026-10-03T22:17:30Z"
+    "stars": 30,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ZJemYoung/jev-chat-windows-laya": {
     "stars": 4,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "ZJU-REAL/CUA-JEV": {
-    "stars": 3,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 20,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zjunlp/JevLoop": {
-    "stars": 17,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 23,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zkjoie/jevbus": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 3,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zsavage8/padflow-jev-evals": {
     "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zszz3/Pi-Jev-Guide": {
-    "stars": 20,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 21,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zurfyx/jev-browser-skill": {
     "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zzsong1023/jev-market-reflex": {
-    "stars": 2,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": 6,
+    "fetched_at": "2026-10-16T19:03:42Z"
   },
   "zzz1YAO/DataJev": {
-    "stars": 1,
-    "fetched_at": "2026-09-24T07:23:00Z"
+    "stars": null,
+    "fetched_at": "2026-10-16T19:03:42Z"
   }
 }

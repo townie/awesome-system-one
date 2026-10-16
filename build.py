@@ -801,6 +801,22 @@ SEEDS = [
 ("https://arxiv.org/abs/2609.36965","Chinese-Jev","Bringing System One decision models to Chinese-language tasks.","Evals & papers","seed-x-scan"),
 ("https://arxiv.org/abs/2610.00381","OmniMed-Jev","Calibrating LVLM confidence for trustworthy medical multimodal decisions via System One.","Evals & papers","seed-x-scan"),
 ("https://github.com/cmpnd-ai/dspy-system-one-agent-patterns","dspy-system-one-agent-patterns","Six-file coding-agent tutorial: DSPy RLM + TypeSafe Jev for permission gates, tool pick, history, and delegation.","Use cases","seed-x-scan"),
+("https://github.com/MCG-NJU/VideoJev","VideoJev","Nanjing University MCG video System One models (4B, 35B-A3B) that score temporal intervals and multiple-choice answers without text generation.","Open models & alternatives","seed-x-scan"),
+("https://arxiv.org/abs/2610.18615","VideoJev: System One Model for Video Understanding and Interaction","Paper: candidate-scoring head for temporal grounding and video QA with cached/joint inference across queries.","Evals & papers","seed-x-scan"),
+('https://github.com/OpenLAIR/lev','Lev','Looped "System 1.5" decision models: one checkpoint answering typed decisions at multiple compute depths.','Open models & alternatives',"seed-x-scan"),
+("https://github.com/ShubhJain007/VisionJev","VisionJev","Calibrated non-generative image+text decision model on Qwen3-VL-4B with choice / noul / score answers in one forward pass.","Open models & alternatives","seed-x-scan"),
+("https://github.com/LikithMeruvu/xaya-2b","XAYA-2B","2B multimodal structured decision model on Qwen3.5-2B with a Python SDK returning candidate probabilities.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/knowlet/Gemma-4-12B-Unified-System-One","Gemma 4 12B Unified System One","Gemma 4 12B LoRA fine-tune using the System One decision interface for calibrated BoolQ-style yes/no probabilities.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/spaces/LiquidAI/system-one-arcade","System One Arcade","Liquid AI Space: eleven camera, drawing and text demos asking d1-3B typed questions.","Use cases","seed-x-scan"),
+("https://builders.abnormal.ai/p/classifying-emails-with-jev-and-the","Classifying Emails with Jev and the OpenAI Decisions API","Abnormal AI benchmark of 40 models (Jev, OpenAI Decisions, 34 open decision models, frontier LLMs) on email classification calibration.","Evals & papers","seed-x-scan"),
+("https://github.com/Hesene/MM-JevBench","MM-JevBench","Benchmark for calibrated multimodal choice decisions and coherence in vision-language and GUI agents.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/datasets/JevAgentHarness/AgentDecisionBench","AgentDecisionBench","CC-BY dataset of typed agent/tool-use decision questions for evaluating decision models.","Evals & papers","seed-x-scan"),
+("https://github.com/Haple/system-one","System One course","Free animated course on decision models (Jev, OpenAI Decisions, Clef, Strands Decider): typed judgments and calibrated probabilities.","Docs & essays","seed-x-scan"),
+("https://github.com/vilinski/jev","jev (Rust CLI)","Rust CLI for System One decision models: typed questions in, calibrated probabilities out.","SDKs & tooling","seed-x-scan"),
+("https://github.com/MichelePolo/jev-mcp","jev-mcp","MCP server exposing Jev-style decision models (including Ollama /v1/systemone) as tools for chat models.","SDKs & tooling","seed-x-scan"),
+("https://github.com/PeisongXiao/fuzev-vllm-plugin","FuZev vLLM plugin","vLLM plugin serving generation plus Choice/Noul/Score decisions over POST /v1/systemone from one engine.","SDKs & tooling","seed-x-scan"),
+("https://github.com/tuvl-io/laya-serve","laya-serve","CPU-only container serving open Laya typed decisions over the /v1/systemone wire format.","SDKs & tooling","seed-x-scan"),
+("https://github.com/CyanSalt/decision-pony","decision-pony","npm polyfill that maps OpenAI Decisions API and Jev requests onto conversational LLM protocols.","SDKs & tooling","seed-x-scan"),
 ]
 
 INGEST_DATE = "2026-10-03 PT"
@@ -809,6 +825,7 @@ INGEST_DATE = "2026-10-03 PT"
 DISPLAY_ORDER = [CAT_HOSTED, CAT_OS, CAT_USE, CAT_DOCS, CAT_EVALS, CAT_SDKS, CAT_LISTS, CAT_COMMUNITY]
 
 LANDMARK_OS = [
+    "https://github.com/MCG-NJU/VideoJev",
     "https://github.com/jaredpalmer/kev",
     "https://github.com/razorback16/openjev",
     "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
@@ -850,6 +867,22 @@ PIN_EVALS = [
     "https://jevals.com",
 ]
 CATEGORY_OVERRIDE = {
+    "https://github.com/MCG-NJU/VideoJev": CAT_OS,
+    "https://arxiv.org/abs/2610.18615": CAT_EVALS,
+    "https://github.com/OpenLAIR/lev": CAT_OS,
+    "https://github.com/ShubhJain007/VisionJev": CAT_OS,
+    "https://github.com/LikithMeruvu/xaya-2b": CAT_OS,
+    "https://huggingface.co/knowlet/Gemma-4-12B-Unified-System-One": CAT_OS,
+    "https://huggingface.co/spaces/LiquidAI/system-one-arcade": CAT_USE,
+    "https://builders.abnormal.ai/p/classifying-emails-with-jev-and-the": CAT_EVALS,
+    "https://github.com/Hesene/MM-JevBench": CAT_EVALS,
+    "https://huggingface.co/datasets/JevAgentHarness/AgentDecisionBench": CAT_EVALS,
+    "https://github.com/Haple/system-one": CAT_DOCS,
+    "https://github.com/vilinski/jev": CAT_SDKS,
+    "https://github.com/MichelePolo/jev-mcp": CAT_SDKS,
+    "https://github.com/PeisongXiao/fuzev-vllm-plugin": CAT_SDKS,
+    "https://github.com/tuvl-io/laya-serve": CAT_SDKS,
+    "https://github.com/CyanSalt/decision-pony": CAT_SDKS,
     "https://developers.openai.com/api/docs/guides/decisions": CAT_DOCS,
     "https://github.com/mithalouni/system-one-open": CAT_OS,
     "https://github.com/kotoba-lang/typed-decisions": CAT_OS,
