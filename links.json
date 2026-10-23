@@ -890,6 +890,16 @@
     ]
   },
   {
+    "url": "https://github.com/xoai/chon",
+    "title": "Chon-1.0-12B",
+    "description": "12B open decision model with typed outputs and a local runner.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/NAME0x0/Jevlet",
     "title": "Jevlet",
     "description": "Small calibrated System One decision model (typed Noul/Choice/Score in, live-option probs out, no text generation).",
@@ -980,6 +990,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1",
+    "title": "AutoTrust-JEV-27B v1.1",
+    "description": "Updated AutoTrust 27B integrated System 1/2 decision checkpoint.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/jinghao1632/bit-jev-2b-distilled",
     "title": "bit-jev-2b-distilled",
     "description": "Distilled 2B open Jev-style decision weights.",
@@ -1043,6 +1063,16 @@
     "url": "https://huggingface.co/benmagnifico/DriveJev-4B",
     "title": "DriveJev-4B",
     "description": "DriveJev 1.0 4B vision decision weights for driving behaviours.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/baselabs/elephant-1",
+    "title": "Elephant-1 (Baseten)",
+    "description": "Smaller 9B sibling of Mammoth-1 from Baseten for typed decisions.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -1188,6 +1218,16 @@
     "subsection": "Models & weights",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/baselabs/mammoth-1",
+    "title": "Mammoth-1 (Baseten)",
+    "description": "Baseten's 27B open decision model with typed Choice/Score/Noul outputs; Decision Index entry.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -1404,6 +1444,16 @@
     "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
     "title": "Tev1-0.8B-experimental",
     "description": "Together AI experimental 0.8B Jev-inspired decision SFT on Qwen3.5-0.8B (letter-option head).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/doofz/THX-01",
+    "title": "THX-01",
+    "description": "Tiny 322M open-weight decision model with a hosted API.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -6331,6 +6381,16 @@
     ]
   },
   {
+    "url": "https://blog.cloudflare.com/clairic-extraction-model",
+    "title": "Clairic (Cloudflare)",
+    "description": "Cloudflare's extraction model post, a sibling of Clef for typed field extraction.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://docs.typesafe.ai/confidence",
     "title": "Confidence",
     "description": "How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.",
@@ -7758,6 +7818,16 @@
     ]
   },
   {
+    "url": "https://github.com/mmikaildemir/commit-or-abstain",
+    "title": "commit-or-abstain",
+    "description": "Code for the Commit or Abstain? paper.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/ghubnab99/jev-enterprise-decision-fabric",
     "title": "Jev Enterprise Decision Fabric",
     "description": "Experimental .NET decision architecture with a 111-case Jev-versus-Claude agent-action evaluation, public labels and raw JSONL, report-rebuild tooling, and a decision inspector; one annotator revised labels after reviewing a Jev pilot.",
@@ -7852,6 +7922,16 @@
     "url": "https://decisioneval.dev/models/typesafe-jev",
     "title": "DecisionEval: TypeSafe Jev",
     "description": "Independently measured Jev 1.13.0 card on LocalLLaMA/typed-decisions (acc 0.740, ECE 0.045) with CIs.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://sthanika.ai/research/decisionnativebench",
+    "title": "DecisionNativeBench",
+    "description": "Benchmark of 5,405 typed decisions scored across 30 models.",
     "category": "Evals & papers",
     "subsection": "Typed-decision benchmarks",
     "sources": [
@@ -8064,9 +8144,29 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.27099",
+    "title": "Clinical System One (CS1-4B)",
+    "description": "Paper on a 4B System One model for typed clinical decisions.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2610.01834",
     "title": "Code Owns the Simulation, Jev Owns the Evaluation",
     "description": "Boundary study: Jev excels at evaluation but fails when one call must also simulate; code lookahead restores control.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.29961",
+    "title": "Commit or Abstain?",
+    "description": "Paper on when decision models should commit or abstain.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8494,6 +8594,16 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.26793",
+    "title": "SOMA",
+    "description": "Paper on System One style decision modeling.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2609.28940",
     "title": "System One for Pentest Harnesses",
     "description": "Jev/Laya as calibrated decision layers (adjudication, severity, agent prune, confirmation) in LLM pentest agents.",
@@ -8561,6 +8671,16 @@
     "subsection": "Papers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.24929",
+    "title": "What Can't Jev Decide?",
+    "description": "Paper probing the limits of Jev-style typed decisions.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -15551,6 +15671,16 @@
     "subsection": "Other tooling",
     "sources": [
       "seed-logicrw-refresh"
+    ]
+  },
+  {
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+    "title": "Ollama v0.40.9 decision models",
+    "description": "Ollama release adding d3 decision models (2B/4B/9B/27B) for local typed decisions.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
