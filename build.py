@@ -817,6 +817,19 @@ SEEDS = [
 ("https://github.com/PeisongXiao/fuzev-vllm-plugin","FuZev vLLM plugin","vLLM plugin serving generation plus Choice/Noul/Score decisions over POST /v1/systemone from one engine.","SDKs & tooling","seed-x-scan"),
 ("https://github.com/tuvl-io/laya-serve","laya-serve","CPU-only container serving open Laya typed decisions over the /v1/systemone wire format.","SDKs & tooling","seed-x-scan"),
 ("https://github.com/CyanSalt/decision-pony","decision-pony","npm polyfill that maps OpenAI Decisions API and Jev requests onto conversational LLM protocols.","SDKs & tooling","seed-x-scan"),
+("https://huggingface.co/baselabs/mammoth-1","Mammoth-1 (Baseten)","Baseten's 27B open decision model with typed Choice/Score/Noul outputs; Decision Index entry.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/baselabs/elephant-1","Elephant-1 (Baseten)","Smaller 9B sibling of Mammoth-1 from Baseten for typed decisions.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1","AutoTrust-JEV-27B v1.1","Updated AutoTrust 27B integrated System 1/2 decision checkpoint.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/doofz/THX-01","THX-01","Tiny 322M open-weight decision model with a hosted API.","Open models & alternatives","seed-x-scan"),
+("https://github.com/xoai/chon","Chon-1.0-12B","12B open decision model with typed outputs and a local runner.","Open models & alternatives","seed-x-scan"),
+("https://arxiv.org/abs/2610.27099","Clinical System One (CS1-4B)","Paper on a 4B System One model for typed clinical decisions.","Evals & papers","seed-x-scan"),
+("https://blog.cloudflare.com/clairic-extraction-model/","Clairic (Cloudflare)","Cloudflare's extraction model post, a sibling of Clef for typed field extraction.","Docs & essays","seed-x-scan"),
+("https://sthanika.ai/research/decisionnativebench","DecisionNativeBench","Benchmark of 5,405 typed decisions scored across 30 models.","Evals & papers","seed-x-scan"),
+("https://github.com/ollama/ollama/releases/tag/v0.40.9","Ollama v0.40.9 decision models","Ollama release adding d3 decision models (2B/4B/9B/27B) for local typed decisions.","SDKs & tooling","seed-x-scan"),
+("https://arxiv.org/abs/2610.24929","What Can't Jev Decide?","Paper probing the limits of Jev-style typed decisions.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.29961","Commit or Abstain?","Paper on when decision models should commit or abstain.","Evals & papers","seed-x-scan"),
+("https://github.com/mmikaildemir/commit-or-abstain","commit-or-abstain","Code for the Commit or Abstain? paper.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.26793","SOMA","Paper on System One style decision modeling.","Evals & papers","seed-x-scan"),
 ]
 
 INGEST_DATE = "2026-10-03 PT"
