@@ -1010,6 +1010,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/Saanora/clara-1",
+    "title": "Clara-1 (Saanora)",
+    "description": "Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://classifier.dev",
     "title": "classifier.dev",
     "description": "Hosted service built on TypeSafe Jev; JevBench v1.5.0 honorable mention (Capability 82.5).",
@@ -1043,6 +1053,16 @@
     "url": "https://api.codiv.ai",
     "title": "Codiv API",
     "description": "Jev-compatible base URL for Codiv-hosted OpenJev (point TYPESAFE_BASE_URL here).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC-v9",
+    "title": "Darwin-27B-ZTC v9 (VIDRAFT)",
+    "description": "Apache-2.0 27B decision model listed at the top of the S1MB English leaderboard on its card.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -1444,6 +1464,16 @@
     "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
     "title": "Tev1-0.8B-experimental",
     "description": "Together AI experimental 0.8B Jev-inspired decision SFT on Qwen3.5-0.8B (letter-option head).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/flock-io/this-that-model-1.2",
+    "title": "THIS / THAT Model 1.2 (FLock)",
+    "description": "FLock's MIT-licensed open typed-decision model post-trained on Qwen3.5 2B.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -6425,6 +6455,16 @@
     ]
   },
   {
+    "url": "https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast",
+    "title": "Deterministic Text-to-SQL with Jev and AST",
+    "description": "Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://x.com/CompleteSkeptic/status/2099925682726002904",
     "title": "Founder launch thread on X",
     "description": ", Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do.…",
@@ -7460,6 +7500,16 @@
     ]
   },
   {
+    "url": "https://github.com/j1s4nn/jev-adaptive-granularity-WM",
+    "title": "Jev-routed temporal granularity",
+    "description": "Paper code using Jev as a routing oracle for fine/coarse/hold segments in causal video generation.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/zhuyansen/jev-search-rerank-eval",
     "title": "jev-search-rerank-eval",
     "description": "Retrieval evaluation system measuring Jev reranking against lexical, embedding, and fusion baselines across 9,831 query-document pairs.",
@@ -7744,6 +7794,16 @@
     "subsection": "Typed-decision benchmarks",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/KanishkaGD/decision-rerank",
+    "title": "decision-rerank",
+    "description": "Code for zero-shot reranking and calibration of Jev and Laya on TREC DL 2019/2020.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -8607,6 +8667,16 @@
     "url": "https://arxiv.org/abs/2609.28940",
     "title": "System One for Pentest Harnesses",
     "description": "Jev/Laya as calibrated decision layers (adjudication, severity, agent prune, confirmation) in LLM pentest agents.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.32318",
+    "title": "System One Models Are Not Better Rerankers",
+    "description": "Paper finding decision finetuning does not beat plain reranker finetuning on the same Qwen backbones.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [

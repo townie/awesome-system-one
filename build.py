@@ -830,6 +830,13 @@ SEEDS = [
 ("https://arxiv.org/abs/2610.29961","Commit or Abstain?","Paper on when decision models should commit or abstain.","Evals & papers","seed-x-scan"),
 ("https://github.com/mmikaildemir/commit-or-abstain","commit-or-abstain","Code for the Commit or Abstain? paper.","Evals & papers","seed-x-scan"),
 ("https://arxiv.org/abs/2610.26793","SOMA","Paper on System One style decision modeling.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/Saanora/clara-1","Clara-1 (Saanora)","Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/flock-io/this-that-model-1.2","THIS / THAT Model 1.2 (FLock)","FLock's MIT-licensed open typed-decision model post-trained on Qwen3.5 2B.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC-v9","Darwin-27B-ZTC v9 (VIDRAFT)","Apache-2.0 27B decision model listed at the top of the S1MB English leaderboard on its card.","Open models & alternatives","seed-x-scan"),
+("https://arxiv.org/abs/2610.32318","System One Models Are Not Better Rerankers","Paper finding decision finetuning does not beat plain reranker finetuning on the same Qwen backbones.","Evals & papers","seed-x-scan"),
+("https://github.com/KanishkaGD/decision-rerank","decision-rerank","Code for zero-shot reranking and calibration of Jev and Laya on TREC DL 2019/2020.","Evals & papers","seed-x-scan"),
+("https://github.com/j1s4nn/jev-adaptive-granularity-WM","Jev-routed temporal granularity","Paper code using Jev as a routing oracle for fine/coarse/hold segments in causal video generation.","Evals & papers","seed-x-scan"),
+("https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast","Deterministic Text-to-SQL with Jev and AST","Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.","Docs & essays","seed-x-scan"),
 ]
 
 INGEST_DATE = "2026-10-03 PT"

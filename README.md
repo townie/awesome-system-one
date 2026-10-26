@@ -171,10 +171,12 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [AgentJev-0.6B (weights)](https://huggingface.co/aimeigaoshou/agent-jev) — HF weights for AgentJev-0.6B (Qwen3 backbone + permutation-equivariant candidate head).
 - [AutoTrust-JEV-27B v1.1](https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1) — Updated AutoTrust 27B integrated System 1/2 decision checkpoint.
 - [bit-jev-2b-distilled](https://huggingface.co/jinghao1632/bit-jev-2b-distilled) — Distilled 2B open Jev-style decision weights.
+- [Clara-1 (Saanora)](https://huggingface.co/Saanora/clara-1) — Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.
 - [classifier.dev](https://classifier.dev) — Hosted service built on TypeSafe Jev; JevBench v1.5.0 honorable mention (Capability 82.5).
 - [Clef (Cloudflare)](https://huggingface.co/Cloudflare/clef) — 27B multimodal open model that maps text, JSON, images, or video state plus typed questions to probabilities in one pass; Jev/System One-compatible; Apache-2.0.
 - [Codiv](https://codiv.ai) — Hosted inference for open System One models; serves OpenJev through a Jev-compatible API.
 - [Codiv API](https://api.codiv.ai) — Jev-compatible base URL for Codiv-hosted OpenJev (point TYPESAFE_BASE_URL here).
+- [Darwin-27B-ZTC v9 (VIDRAFT)](https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC-v9) — Apache-2.0 27B decision model listed at the top of the S1MB English leaderboard on its card.
 - [Deem-4B](https://huggingface.co/mertkayacs/Deem-4B) — English JevAlt 4B decision weights (Intern-Decision-4B fine-tune); Apache-2.0.
 - [DriveJev-4B](https://huggingface.co/benmagnifico/DriveJev-4B) — DriveJev 1.0 4B vision decision weights for driving behaviours.
 - [Elephant-1 (Baseten)](https://huggingface.co/baselabs/elephant-1) — Smaller 9B sibling of Mammoth-1 from Baseten for typed decisions.
@@ -215,6 +217,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [tasksource-jev-nano-v0](https://huggingface.co/tasksource/tasksource-jev-nano-v0) — Nano Jev-style decision model from tasksource.
 - [Tev1 on Together serverless](https://api.together.ai/models/together/Tev1-4B-experimental) — Hosted Tev1-4B-experimental endpoint on Together AI ($0.042/M input, $0/M output per announcement).
 - [Tev1-0.8B-experimental](https://huggingface.co/togethercomputer/Tev1-0.8B-experimental) — Together AI experimental 0.8B Jev-inspired decision SFT on Qwen3.5-0.8B (letter-option head).
+- [THIS / THAT Model 1.2 (FLock)](https://huggingface.co/flock-io/this-that-model-1.2) — FLock's MIT-licensed open typed-decision model post-trained on Qwen3.5 2B.
 - [THX-01](https://huggingface.co/doofz/THX-01) — Tiny 322M open-weight decision model with a hosted API.
 - [vev-4b](https://huggingface.co/CountingSheep/vev-4b) — Open 4B vision-capable typed-decision weights for vev.
 - [vev-9b](https://huggingface.co/CountingSheep/vev-9b) — Open 9B vision-capable typed-decision weights for vev.
@@ -752,6 +755,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Confidence](https://docs.typesafe.ai/confidence) — How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.
 - [Current models](https://docs.typesafe.ai/models) — Find model versions, moving aliases, supported inputs, pricing, and current limits.
 - [Decoding Jev](https://navinpai.github.io/decoding-jev) — Independent walkthrough of architecture, inference, and RLCD evidence status.
+- [Deterministic Text-to-SQL with Jev and AST](https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast) — Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.
 - [Founder launch thread on X](https://x.com/CompleteSkeptic/status/2099925682726002904) — , Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do.…
 - [How does Jev work? RLCD and parallel inference](https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026) — , Explainer reconstructing the RLCD objective and the parallel sampler from public statements.…
 - [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
@@ -861,6 +865,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [Jev IDS](https://github.com/jev-ids/jev-ids) — MIT-licensed intrusion-detection prototype that asks Jev one Noul and one five-way Choice per network flow, comparing it with GPT-5.6 Luna and a Random Forest on NSL-KDD; it publishes run records and evidence limits, but the reported…
 - [jev-rag-benchmark](https://github.com/erendikmenn/jev-rag-benchmark) — Reproducible experiments on whether reranking with Jev improves a small RAG system, on a locked Turkish dataset, with quality, latency and cost reported together.
 - [jev-dspy-lab](https://github.com/jmanhype/jev-dspy-lab) — Reproducible calibration and selective-risk benchmarks for Jev/TypeSafe decisions in DSPy workflows
+- [Jev-routed temporal granularity](https://github.com/j1s4nn/jev-adaptive-granularity-WM) — Paper code using Jev as a routing oracle for fine/coarse/hold segments in causal video generation.
 - [jev-search-rerank-eval](https://github.com/zhuyansen/jev-search-rerank-eval) — Retrieval evaluation system measuring Jev reranking against lexical, embedding, and fusion baselines across 9,831 query-document pairs.
 - [JevBench coherence suite](https://github.com/JevBench/jevbench) — Label-free coherence/stability tests for Jev-compatible models (negation, IIA, Fréchet bounds).
 - [Jev Rerank Bench](https://github.com/anessbelbati/jev-rerank-bench) — Reranking comparison with raw provider responses, scoring code, dataset-level results, uncertainty intervals, and documented limitations.
@@ -889,6 +894,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [JevBench (Leanmcp)](https://github.com/Leanmcp/jevbench) — Open eval framework for typed decision models: calibration, option-order sensitivity, paired comparisons.
 - [ask-jev](https://github.com/omni-/ask-jev) — A Windows PowerShell tool for auditing recorded Codex execution evidence with :jev.
 - [chinese-workflow-decision-bench](https://github.com/Adkid-Zephyr/chinese-workflow-decision-bench) — Feishu-style Chinese message classification bench: 64 frozen scenarios, Choice/four-Noul workflows, published TypeSafe Jev vs Laya results. Project guide.
+- [decision-rerank](https://github.com/KanishkaGD/decision-rerank) — Code for zero-shot reranking and calibration of Jev and Laya on TREC DL 2019/2020.
 - [foreman-jev](https://github.com/Shifty-Eye-Games/foreman-jev) — An experimental Jev supervisor for Codex workers with programmer-selected acceptance commands.
 - [jev-eval](https://github.com/4esv/jev-eval) — Independent eval of Jev vs a frontier LLM across labelled classification tasks: accuracy, calibration, latency, and cost.
 - [jev-flash-review](https://github.com/TheBous/jev-flash-review) — An MCP review engine that evaluates Agent-supplied diffs against explicit rules.
@@ -978,6 +984,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [Same Scores, Different Decisions](https://arxiv.org/abs/2609.27678) — Evaluating JEV and language models for legal document understanding.
 - [SOMA](https://arxiv.org/abs/2610.26793) — Paper on System One style decision modeling.
 - [System One for Pentest Harnesses](https://arxiv.org/abs/2609.28940) — Jev/Laya as calibrated decision layers (adjudication, severity, agent prune, confirmation) in LLM pentest agents.
+- [System One Models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — Paper finding decision finetuning does not beat plain reranker finetuning on the same Qwen backbones.
 - [Thinking Fast and Slow in AI](https://arxiv.org/abs/2010.06002) — . The AI charter for System 1 components that answer from experience without search, what System One Models productizes. ![AAAI 2021](https://img.shields.io/badge/AAAI_2021-4B5563?style=flat-square)…
 - [Type-Safe Is Not Error-Free](https://arxiv.org/abs/2609.26758) — Option-name polarity study: typed models can flip definitions under yes/no names (AUC to 23.2% on Laya) while type-error stays 0%.
 - [Typed Decision Models: Early Evidence Audit](https://arxiv.org/abs/2609.32160) — Evidence audit and evaluation checklist for typed decision / System One models.

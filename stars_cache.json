@@ -1815,6 +1815,10 @@
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "j1s4nn/jev-adaptive-granularity-WM": {
+    "stars": 11,
+    "fetched_at": "2026-10-26T15:42:39Z"
+  },
   "j341nono/jev-prompt-optimization": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -2086,6 +2090,10 @@
   "KamilPostrozny/pi-fast-jev-compaction": {
     "stars": 2,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "KanishkaGD/decision-rerank": {
+    "stars": 1,
+    "fetched_at": "2026-10-26T15:42:39Z"
   },
   "KantaHayashiAI/jev-does-not-play-dice": {
     "stars": 3,
