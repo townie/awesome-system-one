@@ -382,6 +382,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/vllm-sr/d3-ultra",
+    "title": "d3-ultra (vLLM Semantic Router)",
+    "description": "Apache-2.0 open multimodal decision model for text, images, and video; returns a probability per question instead of text.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Landmark projects",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/TianyuCodings/NanoJev",
     "title": "NanoJev",
     "description": "Studies independent Qwen-based typed decision heads, local serving, and game controllers with recorded comparisons. Project guide.",
@@ -1010,6 +1020,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/ndemirdemir/BranchOne",
+    "title": "BranchOne",
+    "description": "Apache-2.0 decision model on Qwen3.5-0.8B with LoRA plus a scoring head; scores 2-150 supplied choices from text and an optional image.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/Saanora/clara-1",
     "title": "Clara-1 (Saanora)",
     "description": "Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.",
@@ -1244,6 +1264,16 @@
     "url": "https://huggingface.co/baselabs/mammoth-1",
     "title": "Mammoth-1 (Baseten)",
     "description": "Baseten's 27B open decision model with typed Choice/Score/Noul outputs; Decision Index entry.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/collections/lion-ai/meddecider",
+    "title": "MedDecider (lion-ai)",
+    "description": "Medical decision models in 4B, 9B, 27B, and 31B sizes that return a probability per option; CC-BY-NC-4.0.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -3176,6 +3206,16 @@
     "subsection": "Agents, tools & harnesses",
     "sources": [
       "seed-logicrw-refresh"
+    ]
+  },
+  {
+    "url": "https://github.com/1sakshm/pennywise",
+    "title": "Pennywise",
+    "description": "RL-trained Laya decision model that routes LLM requests to the cheapest model tier likely to get them right; OpenAI-compatible proxy and MCP server.",
+    "category": "Use cases",
+    "subsection": "Agents, tools & harnesses",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -8019,6 +8059,16 @@
     ]
   },
   {
+    "url": "https://gitlab.com/federicolucca/foyer-measure",
+    "title": "foyer-measure",
+    "description": "Code for the Measure Before You Train paper.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
     "title": "Jev Decision Index",
     "description": "HF Space indexing 30+ open-weight decision models across 35+ benchmarks / 130K questions.",
@@ -8254,6 +8304,16 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.34956",
+    "title": "Decision Model Factory",
+    "description": "Paper on building specialized sovereign decision models.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2310.03714",
     "title": "DSPy",
     "description": ", \"Compiling Declarative Language Model Calls into Self-Improving Pipelines\". Typed signatures compiled into prompts, named on the HN thread as the fair comparison for Jev's typed question interface. ![ICLR…",
@@ -8357,6 +8417,16 @@
     "url": "https://arxiv.org/abs/2609.26550",
     "title": "JEV-as-a-Judge",
     "description": "CMU study: decision-only judge within ~3 pp of SOTA LLM judges on preference/factuality at 0.36% fee; confidence cascades.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.20634",
+    "title": "Jev-as-a-Judge for RAG claim verification",
+    "description": "Paper on confidence-gated cascading between a non-generative Jev verifier and a frontier LLM.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8524,6 +8594,16 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.32955",
+    "title": "Measure Before You Train",
+    "description": "Paper comparing typed decision models, a classical baseline, and a generative LLM for routing a multilingual inbox.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2506.17298",
     "title": "Mercury",
     "description": ", \"Ultra-Fast Language Models Based on Diffusion\". HN read Jev as a stripped down text diffusion model, and Mercury is that idea shipped commercially with parallel refinement. !",
@@ -8531,6 +8611,16 @@
     "subsection": "Papers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.22276",
+    "title": "MJev-Spatial",
+    "description": "Paper treating VLM spatial reasoning as System One candidate selection via native attention matching.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -8607,6 +8697,16 @@
     "url": "https://arxiv.org/abs/2609.26532",
     "title": "REFLEX with Jev",
     "description": "Efficient selective control in LLM agents using Jev.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.35868",
+    "title": "Retriever-Free Retrieval",
+    "description": "Paper on navigating documents with decision models instead of a retriever.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [

@@ -837,6 +837,16 @@ SEEDS = [
 ("https://github.com/KanishkaGD/decision-rerank","decision-rerank","Code for zero-shot reranking and calibration of Jev and Laya on TREC DL 2019/2020.","Evals & papers","seed-x-scan"),
 ("https://github.com/j1s4nn/jev-adaptive-granularity-WM","Jev-routed temporal granularity","Paper code using Jev as a routing oracle for fine/coarse/hold segments in causal video generation.","Evals & papers","seed-x-scan"),
 ("https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast","Deterministic Text-to-SQL with Jev and AST","Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.","Docs & essays","seed-x-scan"),
+("https://huggingface.co/vllm-sr/d3-ultra","d3-ultra (vLLM Semantic Router)","Apache-2.0 open multimodal decision model for text, images, and video; returns a probability per question instead of text.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/collections/lion-ai/meddecider","MedDecider (lion-ai)","Medical decision models in 4B, 9B, 27B, and 31B sizes that return a probability per option; CC-BY-NC-4.0.","Open models & alternatives","seed-x-scan"),
+("https://huggingface.co/ndemirdemir/BranchOne","BranchOne","Apache-2.0 decision model on Qwen3.5-0.8B with LoRA plus a scoring head; scores 2-150 supplied choices from text and an optional image.","Open models & alternatives","seed-x-scan"),
+("https://github.com/1sakshm/pennywise","Pennywise","RL-trained Laya decision model that routes LLM requests to the cheapest model tier likely to get them right; OpenAI-compatible proxy and MCP server.","Use cases","seed-x-scan"),
+("https://arxiv.org/abs/2610.34956","Decision Model Factory","Paper on building specialized sovereign decision models.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.35868","Retriever-Free Retrieval","Paper on navigating documents with decision models instead of a retriever.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.22276","MJev-Spatial","Paper treating VLM spatial reasoning as System One candidate selection via native attention matching.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.20634","Jev-as-a-Judge for RAG claim verification","Paper on confidence-gated cascading between a non-generative Jev verifier and a frontier LLM.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.32955","Measure Before You Train","Paper comparing typed decision models, a classical baseline, and a generative LLM for routing a multilingual inbox.","Evals & papers","seed-x-scan"),
+("https://gitlab.com/federicolucca/foyer-measure","foyer-measure","Code for the Measure Before You Train paper.","Evals & papers","seed-x-scan"),
 ]
 
 INGEST_DATE = "2026-10-03 PT"
@@ -876,6 +886,7 @@ LANDMARK_OS = [
     "https://github.com/strands-labs/strands-decider",
     "https://github.com/QiqianFu/Qev",
     "https://github.com/benmagnifico/DriveJev",
+    "https://huggingface.co/vllm-sr/d3-ultra",
 ]
 PIN_DOCS = [
     "https://developers.openai.com/api/docs/guides/decisions",
@@ -887,6 +898,10 @@ PIN_EVALS = [
     "https://jevals.com",
 ]
 CATEGORY_OVERRIDE = {
+    "https://huggingface.co/vllm-sr/d3-ultra": CAT_OS,
+    "https://huggingface.co/collections/lion-ai/meddecider": CAT_OS,
+    "https://huggingface.co/ndemirdemir/BranchOne": CAT_OS,
+    "https://github.com/1sakshm/pennywise": CAT_USE,
     "https://github.com/MCG-NJU/VideoJev": CAT_OS,
     "https://arxiv.org/abs/2610.18615": CAT_EVALS,
     "https://github.com/OpenLAIR/lev": CAT_OS,
