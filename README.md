@@ -110,6 +110,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Qev](https://github.com/QiqianFu/Qev) — Open Jev-like decision models fine-tuned from Qwen (2B/4B/9B) with Choice/Noul/Score training and eval code; Apache-2.0.
 - [DriveJev](https://github.com/benmagnifico/DriveJev) — Open System One decision model for autonomous driving; closed-loop JevPilot harness and live demo.
 - [d3-ultra (vLLM Semantic Router)](https://huggingface.co/vllm-sr/d3-ultra) — Apache-2.0 open multimodal decision model for text, images, and video; returns a probability per question instead of text.
+- [d1-2B (Liquid AI)](https://huggingface.co/LiquidAI/d1-2B) — Liquid AI's 2B multimodal System One decision model on LFM3-VL-2B, built for edge devices; LFM1.0 license.
 
 ### Models & weights
 
@@ -907,6 +908,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [MM-JevBench](https://github.com/Hesene/MM-JevBench) — Benchmark for calibrated multimodal choice decisions and coherence in vision-language and GUI agents.
 - [padflow-jev-evals](https://github.com/zsavage8/padflow-jev-evals) — , Three production SaaS decisions published as schemas with auto-post confidence thresholds; LLM baseline rows filled, Jev row still empty.…
 - [commit-or-abstain](https://github.com/mmikaildemir/commit-or-abstain) — Code for the Commit or Abstain? paper.
+- [dfip](https://github.com/superagent-ai/dfip) — Code for the DFIP paper: decision-focused inference on Modal with native clients.
 - [Jev Enterprise Decision Fabric](https://github.com/ghubnab99/jev-enterprise-decision-fabric) — Experimental .NET decision architecture with a 111-case Jev-versus-Claude agent-action evaluation, public labels and raw JSONL, report-rebuild tooling, and a decision inspector; one annotator revised labels after reviewing a Jev pilot.
 - [jev-calibration-audit](https://github.com/jujumilk3/jev-calibration-audit) — Audits Jev calibration, option-wording effects and Korean judgments through public APIs and datasets.
 - [jev-demos](https://github.com/Bud-ro/jev-demos) — Maze experiments comparing Jev single-step choices with multi-step lookahead.
@@ -948,6 +950,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [Constitutional Classifiers](https://arxiv.org/abs/2501.18837) — , "Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming". Input and output classifiers gating a frontier model on a fixed policy, the deployed slot Noul targets. !
 - [Decision Hijacking](https://arxiv.org/abs/2609.28613) — Prompt injection attacks on Jev's typed probabilistic decisions.
 - [Decision Model Factory](https://arxiv.org/abs/2610.34956) — Paper on building specialized sovereign decision models.
+- [DFIP](https://arxiv.org/abs/2610.36804) — Systems study of decision-focused inference (CUDA graph replay, candidate-token projection) for System One models.
 - [DSPy](https://arxiv.org/abs/2310.03714) — , "Compiling Declarative Language Model Calls into Self-Improving Pipelines". Typed signatures compiled into prompts, named on the HN thread as the fair comparison for Jev's typed question interface. ![ICLR…
 - [Evaluating and Benchmarking the System One Model Jev](https://arxiv.org/abs/2609.37647) — Independent benchmark evaluation of TypeSafe Jev as a System One model.
 - [Generative or Discriminative?](https://arxiv.org/abs/2506.12181) — , "Revisiting Text Classification in the Era of Transformers". Controlled comparison of encoder, autoregressive and diffusion classifiers over fixed label sets on accuracy, calibration and ordinality. ![EMNLP…
@@ -983,6 +986,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [MT-Bench](https://arxiv.org/abs/2306.05685) — , "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena". The landmark LLM-as-a-judge paper, named on the launch thread as the layer Jev's score and Noul primitives replace. ![NeurIPS…
 - [NumericJev](https://arxiv.org/abs/2609.28587) — Jev-like LLM numerical decoding with multiway decision trees.
 - [OmniMed-Jev](https://arxiv.org/abs/2610.00381) — Calibrating LVLM confidence for trustworthy medical multimodal decisions via System One.
+- [OneCodeReviewBench](https://arxiv.org/abs/2610.33389) — Benchmark of 1,968 synthetic code-review cases across 12 languages plus YAML with Boolean, categorical, and ordered answers.
 - [Open-Jev on CallScreenBench](https://arxiv.org/abs/2609.23959) — JevLite (Qwen3-4B LoRA label-token readout) for per-turn scam screening: AUROC .974, 64.5 ms, calibrated P(scam).
 - [OpenJev-RLCD](https://arxiv.org/abs/2609.38850) — Working RLCD recipe for reasoning models: proper-score readout then reinforce; selective-prediction gains vs GRPO/SFT.
 - [Outlines](https://arxiv.org/abs/2307.09702) — , "Efficient Guided Generation for Large Language Models". The finite-state-machine guided decoding HN named as the incumbent way to get typed values, which Jev claims to replace. !

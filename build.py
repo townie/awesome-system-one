@@ -847,6 +847,10 @@ SEEDS = [
 ("https://arxiv.org/abs/2610.20634","Jev-as-a-Judge for RAG claim verification","Paper on confidence-gated cascading between a non-generative Jev verifier and a frontier LLM.","Evals & papers","seed-x-scan"),
 ("https://arxiv.org/abs/2610.32955","Measure Before You Train","Paper comparing typed decision models, a classical baseline, and a generative LLM for routing a multilingual inbox.","Evals & papers","seed-x-scan"),
 ("https://gitlab.com/federicolucca/foyer-measure","foyer-measure","Code for the Measure Before You Train paper.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/LiquidAI/d1-2B","d1-2B (Liquid AI)","Liquid AI's 2B multimodal System One decision model on LFM3-VL-2B, built for edge devices; LFM1.0 license.","Open models & alternatives","seed-x-scan"),
+("https://arxiv.org/abs/2610.33389","OneCodeReviewBench","Benchmark of 1,968 synthetic code-review cases across 12 languages plus YAML with Boolean, categorical, and ordered answers.","Evals & papers","seed-x-scan"),
+("https://arxiv.org/abs/2610.36804","DFIP","Systems study of decision-focused inference (CUDA graph replay, candidate-token projection) for System One models.","Evals & papers","seed-x-scan"),
+("https://github.com/superagent-ai/dfip","dfip","Code for the DFIP paper: decision-focused inference on Modal with native clients.","Evals & papers","seed-x-scan"),
 ]
 
 INGEST_DATE = "2026-10-03 PT"
@@ -887,6 +891,7 @@ LANDMARK_OS = [
     "https://github.com/QiqianFu/Qev",
     "https://github.com/benmagnifico/DriveJev",
     "https://huggingface.co/vllm-sr/d3-ultra",
+    "https://huggingface.co/LiquidAI/d1-2B",
 ]
 PIN_DOCS = [
     "https://developers.openai.com/api/docs/guides/decisions",
@@ -899,6 +904,7 @@ PIN_EVALS = [
 ]
 CATEGORY_OVERRIDE = {
     "https://huggingface.co/vllm-sr/d3-ultra": CAT_OS,
+    "https://huggingface.co/LiquidAI/d1-2B": CAT_OS,
     "https://huggingface.co/collections/lion-ai/meddecider": CAT_OS,
     "https://huggingface.co/ndemirdemir/BranchOne": CAT_OS,
     "https://github.com/1sakshm/pennywise": CAT_USE,
