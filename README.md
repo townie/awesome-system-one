@@ -564,6 +564,8 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [Jev Asks Until Sure](https://github.com/mintannn/jev-asks-until-sure) — `Open source` · `Free` · `BYOK`. Twenty-questions web game: TypeSafe Jev keeps asking until calibrated confidence crosses a threshold (hosted demo or BYOK). [Try app](https://jev.mintan.org/) · [Project…
 - [Jev Chess Lab](https://github.com/denikuchero/jev-chess-lab) — Recorded chess experiments with a candid result: Jev on its own still blunders pieces.
 - [turing-jail](https://github.com/bugkiwi/turing-jail) — Interactive three-level AI interrogation game powered by TypeSafe Jev; write responses and pass plea, logic, and paradox verdicts to earn release.
+- [Board Games vs d1](https://huggingface.co/spaces/DJLougen/board-games-vs-d1) — Play Tic-Tac-Toe, Connect Four, Checkers and more against d1-Omni-2B running in the browser on WebGPU.
+- [Decision Casino](https://huggingface.co/spaces/DJLougen/poker-elo-arena) — Pixel-art casino where decision models (d1, d3) play poker and other games via choice questions, ranked by Elo.
 - [Jev Chess](https://jevchess.com) — Anyone can play Jev on a shared chessboard. One Choice question covers every legal move; probabilities shade the board. Its confidence panel uses a narrow, one-ply material check. Source is closed.
 - [jevai.org community app gallery](https://jevai.org/apps) — Thirty-six community builds curated from social posts: browser agents, spreadsheet tooling, inbox search by intent, ad blocking with judgement, games and robotics.
 - [System One Arcade](https://huggingface.co/spaces/LiquidAI/system-one-arcade) — Liquid AI Space: eleven camera, drawing and text demos asking d1-3B typed questions.
@@ -765,6 +767,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [How does Jev work? RLCD and parallel inference](https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026) — , Explainer reconstructing the RLCD objective and the parallel sampler from public statements.…
 - [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
 - [How to train your own Jev](https://together.ai/blog/how-to-train-your-own-jev) — Together tutorial / data recipe for fine-tuning a decision classifier (~$17 Tev1 training cost claimed).
+- [How To Use Decision Models for Evals (Hamel Husain)](https://hamel.dev/blog/posts/decision-model-evals) — Choosing a decision model for an eval task, tuning its threshold, and interpreting its scores.
 - [I read 7 clones of Jev](https://note.com/zephel01/n/ne9a2c037e513) — Critical read of open Jev clones vs the 2020 computational form; JevBench v1.2.5 context.
 - [Internal classifier field note](https://x.com/identityTorn/status/2100475121324728615) — A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.
 - [Introducing DiffusionGemma](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation) — Google blog on DiffusionGemma — faster non-autoregressive text generation used by open System One servers.
@@ -834,6 +837,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [TypeSafe's Jev: Can decision models replace LLM judges?](https://arize.com/blog/typesafe-jev-llm-judge) — Collects the third-party evaluations that exist so far and frames the question of where a decision model can stand in for an LLM judge.
 - [typesafeai.app](https://typesafeai.app) — Independent directory of public Jev capabilities: each record states what Jev was shown doing, links to its public sources, and carries an evidence level (author-reported to editor-reproduced) and an Official or Community label;…
 - [Using TypeSafe Jev with the AI SDK](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk) — The richest Vercel walkthrough: single and multi-question calls, probability-threshold routing, and unit tests with a mock evaluation model.
+- [We Tested 8 Decision Models (Dataiku)](https://dataiku.com/tech-blog/decision-models-part-2) — Eight decision models and two LLMs compared in a Dataiku agent on 248 supplier requests: accuracy, cost, speed, thresholds.
 - [What Is Jev? (AIMLAPI)](https://aimlapi.com/blog/what-is-jev) — Independent overview comparing hosted Jev with open alternatives (Laya, Kev, Tev1) and pricing.
 
 ## Evals & papers

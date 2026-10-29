@@ -851,6 +851,10 @@ SEEDS = [
 ("https://arxiv.org/abs/2610.33389","OneCodeReviewBench","Benchmark of 1,968 synthetic code-review cases across 12 languages plus YAML with Boolean, categorical, and ordered answers.","Evals & papers","seed-x-scan"),
 ("https://arxiv.org/abs/2610.36804","DFIP","Systems study of decision-focused inference (CUDA graph replay, candidate-token projection) for System One models.","Evals & papers","seed-x-scan"),
 ("https://github.com/superagent-ai/dfip","dfip","Code for the DFIP paper: decision-focused inference on Modal with native clients.","Evals & papers","seed-x-scan"),
+("https://huggingface.co/spaces/DJLougen/poker-elo-arena","Decision Casino","Pixel-art casino where decision models (d1, d3) play poker and other games via choice questions, ranked by Elo.","Use cases","seed-x-scan"),
+("https://huggingface.co/spaces/DJLougen/board-games-vs-d1","Board Games vs d1","Play Tic-Tac-Toe, Connect Four, Checkers and more against d1-Omni-2B running in the browser on WebGPU.","Use cases","seed-x-scan"),
+("https://hamel.dev/blog/posts/decision-model-evals/","How To Use Decision Models for Evals (Hamel Husain)","Choosing a decision model for an eval task, tuning its threshold, and interpreting its scores.","Docs & essays","seed-x-scan"),
+("https://www.dataiku.com/tech-blog/decision-models-part-2","We Tested 8 Decision Models (Dataiku)","Eight decision models and two LLMs compared in a Dataiku agent on 248 supplier requests: accuracy, cost, speed, thresholds.","Docs & essays","seed-x-scan"),
 ]
 
 INGEST_DATE = "2026-10-03 PT"

@@ -4707,6 +4707,26 @@
     ]
   },
   {
+    "url": "https://huggingface.co/spaces/DJLougen/board-games-vs-d1",
+    "title": "Board Games vs d1",
+    "description": "Play Tic-Tac-Toe, Connect Four, Checkers and more against d1-Omni-2B running in the browser on WebGPU.",
+    "category": "Use cases",
+    "subsection": "Games, robotics & simulation",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/spaces/DJLougen/poker-elo-arena",
+    "title": "Decision Casino",
+    "description": "Pixel-art casino where decision models (d1, d3) play poker and other games via choice questions, ranked by Elo.",
+    "category": "Use cases",
+    "subsection": "Games, robotics & simulation",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://jevchess.com",
     "title": "Jev Chess",
     "description": "Anyone can play Jev on a shared chessboard. One Choice question covers every legal move; probabilities shade the board. Its confidence panel uses a narrow, one-ply material check. Source is closed.",
@@ -6555,6 +6575,16 @@
     ]
   },
   {
+    "url": "https://hamel.dev/blog/posts/decision-model-evals",
+    "title": "How To Use Decision Models for Evals (Hamel Husain)",
+    "description": "Choosing a decision model for an eval task, tuning its threshold, and interpreting its scores.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://note.com/zephel01/n/ne9a2c037e513",
     "title": "I read 7 clones of Jev",
     "description": "Critical read of open Jev clones vs the 2020 computational form; JevBench v1.2.5 context.",
@@ -7271,6 +7301,16 @@
     "subsection": "",
     "sources": [
       "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://dataiku.com/tech-blog/decision-models-part-2",
+    "title": "We Tested 8 Decision Models (Dataiku)",
+    "description": "Eight decision models and two LLMs compared in a Dataiku agent on 248 supplier requests: accuracy, cost, speed, thresholds.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
