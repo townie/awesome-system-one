@@ -16661,5 +16661,25 @@
       "AbdelStark/awesome-typesafe-jev",
       "seed-official"
     ]
+  },
+  {
+    "url": "https://huggingface.co/MachineFi/Trio-Spark-DI",
+    "title": "Trio-Spark DI",
+    "description": "Gated 9B research checkpoint (GGUF, CC BY-NC 4.0) with a deterministic llama.cpp /v1/systemone server for Choice, Noul and Score; self-run 56.74 on the public Decision Index 0.3 suite.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "links.json"
+    ]
+  },
+  {
+    "url": "https://github.com/machinefi/trio-spark",
+    "title": "Trio-Spark demos",
+    "description": "Runnable demos for the System One-compatible Trio-Spark API: support-ticket routing with human review, comment moderation with movable thresholds, and camera decisions.",
+    "category": "Use cases",
+    "subsection": "Playgrounds & live demos",
+    "sources": [
+      "links.json"
+    ]
   }
 ]
