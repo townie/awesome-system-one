@@ -19,6 +19,10 @@
     "stars": 20937,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "1sakshm/pennywise": {
+    "stars": 0,
+    "fetched_at": "2026-10-27T15:44:39Z"
+  },
   "2389-research/typesafe-go": {
     "stars": 2,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -1815,6 +1819,10 @@
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "j1s4nn/jev-adaptive-granularity-WM": {
+    "stars": 11,
+    "fetched_at": "2026-10-26T15:42:39Z"
+  },
   "j341nono/jev-prompt-optimization": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -2086,6 +2094,10 @@
   "KamilPostrozny/pi-fast-jev-compaction": {
     "stars": 2,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "KanishkaGD/decision-rerank": {
+    "stars": 1,
+    "fetched_at": "2026-10-26T15:42:39Z"
   },
   "KantaHayashiAI/jev-does-not-play-dice": {
     "stars": 3,
@@ -2718,6 +2730,10 @@
   "mmastrac/djev-spark": {
     "stars": 220,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "mmikaildemir/commit-or-abstain": {
+    "stars": 0,
+    "fetched_at": "2026-10-23T20:09:24Z"
   },
   "moisesfilho/typesafe-jev-opencode": {
     "stars": 3,
@@ -3851,6 +3867,10 @@
     "stars": 15,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "superagent-ai/dfip": {
+    "stars": 0,
+    "fetched_at": "2026-10-28T15:35:39Z"
+  },
   "superagents-lab/jev-search": {
     "stars": 537,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -4482,6 +4502,10 @@
   "xinyao27/jevonian": {
     "stars": 26,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "xoai/chon": {
+    "stars": 1,
+    "fetched_at": "2026-10-23T20:09:24Z"
   },
   "Xopher00/jevdevice": {
     "stars": 0,

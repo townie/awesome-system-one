@@ -382,6 +382,26 @@
     ]
   },
   {
+    "url": "https://huggingface.co/vllm-sr/d3-ultra",
+    "title": "d3-ultra (vLLM Semantic Router)",
+    "description": "Apache-2.0 open multimodal decision model for text, images, and video; returns a probability per question instead of text.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Landmark projects",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/LiquidAI/d1-2B",
+    "title": "d1-2B (Liquid AI)",
+    "description": "Liquid AI's 2B multimodal System One decision model on LFM3-VL-2B, built for edge devices; LFM1.0 license.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Landmark projects",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/TianyuCodings/NanoJev",
     "title": "NanoJev",
     "description": "Studies independent Qwen-based typed decision heads, local serving, and game controllers with recorded comparisons. Project guide.",
@@ -890,6 +910,16 @@
     ]
   },
   {
+    "url": "https://github.com/xoai/chon",
+    "title": "Chon-1.0-12B",
+    "description": "12B open decision model with typed outputs and a local runner.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/NAME0x0/Jevlet",
     "title": "Jevlet",
     "description": "Small calibrated System One decision model (typed Noul/Choice/Score in, live-option probs out, no text generation).",
@@ -980,9 +1010,39 @@
     ]
   },
   {
+    "url": "https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1",
+    "title": "AutoTrust-JEV-27B v1.1",
+    "description": "Updated AutoTrust 27B integrated System 1/2 decision checkpoint.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/jinghao1632/bit-jev-2b-distilled",
     "title": "bit-jev-2b-distilled",
     "description": "Distilled 2B open Jev-style decision weights.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/ndemirdemir/BranchOne",
+    "title": "BranchOne",
+    "description": "Apache-2.0 decision model on Qwen3.5-0.8B with LoRA plus a scoring head; scores 2-150 supplied choices from text and an optional image.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/Saanora/clara-1",
+    "title": "Clara-1 (Saanora)",
+    "description": "Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -1030,6 +1090,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC-v9",
+    "title": "Darwin-27B-ZTC v9 (VIDRAFT)",
+    "description": "Apache-2.0 27B decision model listed at the top of the S1MB English leaderboard on its card.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/mertkayacs/Deem-4B",
     "title": "Deem-4B",
     "description": "English JevAlt 4B decision weights (Intern-Decision-4B fine-tune); Apache-2.0.",
@@ -1043,6 +1113,16 @@
     "url": "https://huggingface.co/benmagnifico/DriveJev-4B",
     "title": "DriveJev-4B",
     "description": "DriveJev 1.0 4B vision decision weights for driving behaviours.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/baselabs/elephant-1",
+    "title": "Elephant-1 (Baseten)",
+    "description": "Smaller 9B sibling of Mammoth-1 from Baseten for typed decisions.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -1188,6 +1268,26 @@
     "subsection": "Models & weights",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/baselabs/mammoth-1",
+    "title": "Mammoth-1 (Baseten)",
+    "description": "Baseten's 27B open decision model with typed Choice/Score/Noul outputs; Decision Index entry.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/collections/lion-ai/meddecider",
+    "title": "MedDecider (lion-ai)",
+    "description": "Medical decision models in 4B, 9B, 27B, and 31B sizes that return a probability per option; CC-BY-NC-4.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -1404,6 +1504,26 @@
     "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
     "title": "Tev1-0.8B-experimental",
     "description": "Together AI experimental 0.8B Jev-inspired decision SFT on Qwen3.5-0.8B (letter-option head).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/flock-io/this-that-model-1.2",
+    "title": "THIS / THAT Model 1.2 (FLock)",
+    "description": "FLock's MIT-licensed open typed-decision model post-trained on Qwen3.5 2B.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/doofz/THX-01",
+    "title": "THX-01",
+    "description": "Tiny 322M open-weight decision model with a hosted API.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -3099,6 +3219,16 @@
     ]
   },
   {
+    "url": "https://github.com/1sakshm/pennywise",
+    "title": "Pennywise",
+    "description": "RL-trained Laya decision model that routes LLM requests to the cheapest model tier likely to get them right; OpenAI-compatible proxy and MCP server.",
+    "category": "Use cases",
+    "subsection": "Agents, tools & harnesses",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://mrjev.com/projects/wuyoscar-jev-skill",
     "title": "Jev Skills",
     "description": "Jev Skills — System One / Jev related resource.",
@@ -4574,6 +4704,26 @@
     "subsection": "Games, robotics & simulation",
     "sources": [
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/spaces/DJLougen/board-games-vs-d1",
+    "title": "Board Games vs d1",
+    "description": "Play Tic-Tac-Toe, Connect Four, Checkers and more against d1-Omni-2B running in the browser on WebGPU.",
+    "category": "Use cases",
+    "subsection": "Games, robotics & simulation",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/spaces/DJLougen/poker-elo-arena",
+    "title": "Decision Casino",
+    "description": "Pixel-art casino where decision models (d1, d3) play poker and other games via choice questions, ranked by Elo.",
+    "category": "Use cases",
+    "subsection": "Games, robotics & simulation",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -6331,6 +6481,16 @@
     ]
   },
   {
+    "url": "https://blog.cloudflare.com/clairic-extraction-model",
+    "title": "Clairic (Cloudflare)",
+    "description": "Cloudflare's extraction model post, a sibling of Clef for typed field extraction.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://docs.typesafe.ai/confidence",
     "title": "Confidence",
     "description": "How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.",
@@ -6362,6 +6522,16 @@
     "subsection": "",
     "sources": [
       "seed-essays"
+    ]
+  },
+  {
+    "url": "https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast",
+    "title": "Deterministic Text-to-SQL with Jev and AST",
+    "description": "Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -6402,6 +6572,16 @@
     "subsection": "",
     "sources": [
       "seed-essays"
+    ]
+  },
+  {
+    "url": "https://hamel.dev/blog/posts/decision-model-evals",
+    "title": "How To Use Decision Models for Evals (Hamel Husain)",
+    "description": "Choosing a decision model for an eval task, tuning its threshold, and interpreting its scores.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -7124,6 +7304,16 @@
     ]
   },
   {
+    "url": "https://dataiku.com/tech-blog/decision-models-part-2",
+    "title": "We Tested 8 Decision Models (Dataiku)",
+    "description": "Eight decision models and two LLMs compared in a Dataiku agent on 248 supplier requests: accuracy, cost, speed, thresholds.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://aimlapi.com/blog/what-is-jev",
     "title": "What Is Jev? (AIMLAPI)",
     "description": "Independent overview comparing hosted Jev with open alternatives (Laya, Kev, Tev1) and pricing.",
@@ -7397,6 +7587,16 @@
     "subsection": "Typed-decision benchmarks",
     "sources": [
       "seed-logicrw-refresh"
+    ]
+  },
+  {
+    "url": "https://github.com/j1s4nn/jev-adaptive-granularity-WM",
+    "title": "Jev-routed temporal granularity",
+    "description": "Paper code using Jev as a routing oracle for fine/coarse/hold segments in causal video generation.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -7687,6 +7887,16 @@
     ]
   },
   {
+    "url": "https://github.com/KanishkaGD/decision-rerank",
+    "title": "decision-rerank",
+    "description": "Code for zero-shot reranking and calibration of Jev and Laya on TREC DL 2019/2020.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/Shifty-Eye-Games/foreman-jev",
     "title": "foreman-jev",
     "description": "An experimental Jev supervisor for Codex workers with programmer-selected acceptance commands.",
@@ -7755,6 +7965,26 @@
     "subsection": "Typed-decision benchmarks",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://github.com/mmikaildemir/commit-or-abstain",
+    "title": "commit-or-abstain",
+    "description": "Code for the Commit or Abstain? paper.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://github.com/superagent-ai/dfip",
+    "title": "dfip",
+    "description": "Code for the DFIP paper: decision-focused inference on Modal with native clients.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -7859,6 +8089,16 @@
     ]
   },
   {
+    "url": "https://sthanika.ai/research/decisionnativebench",
+    "title": "DecisionNativeBench",
+    "description": "Benchmark of 5,405 typed decisions scored across 30 models.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://logicrw.github.io/awesome-jev-projects/en/categories/evaluation-observability",
     "title": "Evaluation & Observability (29)",
     "description": "Evaluation & Observability (29) — System One / Jev related resource.",
@@ -7876,6 +8116,16 @@
     "subsection": "Typed-decision benchmarks",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://gitlab.com/federicolucca/foyer-measure",
+    "title": "foyer-measure",
+    "description": "Code for the Measure Before You Train paper.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -8064,9 +8314,29 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.27099",
+    "title": "Clinical System One (CS1-4B)",
+    "description": "Paper on a 4B System One model for typed clinical decisions.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2610.01834",
     "title": "Code Owns the Simulation, Jev Owns the Evaluation",
     "description": "Boundary study: Jev excels at evaluation but fails when one call must also simulate; code lookahead restores control.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.29961",
+    "title": "Commit or Abstain?",
+    "description": "Paper on when decision models should commit or abstain.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8087,6 +8357,26 @@
     "url": "https://arxiv.org/abs/2609.28613",
     "title": "Decision Hijacking",
     "description": "Prompt injection attacks on Jev's typed probabilistic decisions.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.34956",
+    "title": "Decision Model Factory",
+    "description": "Paper on building specialized sovereign decision models.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.36804",
+    "title": "DFIP",
+    "description": "Systems study of decision-focused inference (CUDA graph replay, candidate-token projection) for System One models.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8197,6 +8487,16 @@
     "url": "https://arxiv.org/abs/2609.26550",
     "title": "JEV-as-a-Judge",
     "description": "CMU study: decision-only judge within ~3 pp of SOTA LLM judges on preference/factuality at 0.36% fee; confidence cascades.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.20634",
+    "title": "Jev-as-a-Judge for RAG claim verification",
+    "description": "Paper on confidence-gated cascading between a non-generative Jev verifier and a frontier LLM.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8364,6 +8664,16 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.32955",
+    "title": "Measure Before You Train",
+    "description": "Paper comparing typed decision models, a classical baseline, and a generative LLM for routing a multilingual inbox.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2506.17298",
     "title": "Mercury",
     "description": ", \"Ultra-Fast Language Models Based on Diffusion\". HN read Jev as a stripped down text diffusion model, and Mercury is that idea shipped commercially with parallel refinement. !",
@@ -8371,6 +8681,16 @@
     "subsection": "Papers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.22276",
+    "title": "MJev-Spatial",
+    "description": "Paper treating VLM spatial reasoning as System One candidate selection via native attention matching.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -8407,6 +8727,16 @@
     "url": "https://arxiv.org/abs/2610.00381",
     "title": "OmniMed-Jev",
     "description": "Calibrating LVLM confidence for trustworthy medical multimodal decisions via System One.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.33389",
+    "title": "OneCodeReviewBench",
+    "description": "Benchmark of 1,968 synthetic code-review cases across 12 languages plus YAML with Boolean, categorical, and ordered answers.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8454,6 +8784,16 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.35868",
+    "title": "Retriever-Free Retrieval",
+    "description": "Paper on navigating documents with decision models instead of a retriever.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2503.02623",
     "title": "Rewarding Doubt",
     "description": ", \"A Reinforcement Learning Approach to Calibrated Confidence Expression of Large Language Models\". Trains confidence expression by RL on the logarithmic scoring rule, an independent rediscovery of the proper-scoring-rule reward RLCD…",
@@ -8494,9 +8834,29 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2610.26793",
+    "title": "SOMA",
+    "description": "Paper on System One style decision modeling.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2609.28940",
     "title": "System One for Pentest Harnesses",
     "description": "Jev/Laya as calibrated decision layers (adjudication, severity, agent prune, confirmation) in LLM pentest agents.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.32318",
+    "title": "System One Models Are Not Better Rerankers",
+    "description": "Paper finding decision finetuning does not beat plain reranker finetuning on the same Qwen backbones.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -8561,6 +8921,16 @@
     "subsection": "Papers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.24929",
+    "title": "What Can't Jev Decide?",
+    "description": "Paper probing the limits of Jev-style typed decisions.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -15551,6 +15921,16 @@
     "subsection": "Other tooling",
     "sources": [
       "seed-logicrw-refresh"
+    ]
+  },
+  {
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9",
+    "title": "Ollama v0.40.9 decision models",
+    "description": "Ollama release adding d3 decision models (2B/4B/9B/27B) for local typed decisions.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
