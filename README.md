@@ -244,6 +244,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [djev](https://github.com/mmastrac/djev) — , DiffusionGemma structured-read server that pins fixed answer text and denoises answer slots into per-option probabilities through Jev's API; requires the linked vLLM PR branch.…
 - [jevfire](https://github.com/kikoncuo/jevfire) — Parallel typed decisions for CUDA LLMs via vLLM shared-prefix batching.
 - [open-jev](https://github.com/nico-martin/open-jev) — Runs independent Kev and DeBERTa typed-decision models locally through Transformers.js, with browser WebGPU/WASM support; does not use official Jev weights. Project guide.
+- [layaForWeb](https://github.com/vishalmysore/layaForWeb) — Runs the 421M-parameter Laya decision model entirely in the browser (ONNX int8 on WebGPU/WASM): text plus typed questions in, probabilities and a confidence score out.
 - [cygnet-recipe](https://github.com/blockbrain-ai/cygnet-recipe) — Frozen Gemma-4-12B-it typed decisions via one-token option-letter readout on stock vLLM (JevBench package).
 - [tinyjev](https://github.com/ankit-aglawe/tinyjev) — Tiny offline Jev-like Choice/Score/Noul model (MLX or PyTorch) with calibrated probs; System One compatible.
 - [open-spark-jev](https://github.com/abhishek085/open-spark-jev) — Local decision models on Qwen3 sized for NVIDIA DGX Spark.
@@ -251,6 +252,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [glide-mlx](https://github.com/internet-projects/glide-mlx) — MLX port of Fastino's GLiDE decision model for Apple silicon with 8-bit and 4-bit builds and a /v1/systemone server.
 - [JimmyJenk](https://github.com/hayriyigit/JimmyJenk) — Local harness for Jev-style System One decisions from any LLM logprobs; vLLM + llama.cpp backends.
 - [vllm-mammoth](https://github.com/reaxlabs/vllm-mammoth) — vLLM plugin that serves baselabs/mammoth-1 on /v1/systemone with its trained block-bidirectional mask, prompt and readout.
+- [d1-2B OptiQ 4-bit (MLX)](https://huggingface.co/mlx-community/d1-2B-OptiQ-4bit) — 4-bit MLX build of Liquid AI's d1-2B for Apple silicon (1.7 GB); authors report 0.641 on Typed Decisions vs 0.637 for the original weights.
 - [Jebadiah collection](https://huggingface.co/collections/frontier-infra/jebadiah-open-system-one-decision-models-6ab80765ddd3fa0b3eba5213) — HF collection of Jebadiah bf16, GGUF, and MLX System One decision models.
 - [jebadiah-9b-v2-GGUF](https://huggingface.co/frontier-infra/jebadiah-9b-v2-GGUF) — Official GGUF builds of Jebadiah 9B v2 for llama.cpp / LM Studio.
 - [Jev-Style-0.8B-Decision-v3](https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3) — Open 0.8B decision weights (default jev-style release); 64.1% JevBench public; MLX/GGUF.
@@ -832,6 +834,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Reddit: 287 open-source Jev projects (top 20)](https://reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are) — r/LLMDevs roundup of 287 reviewed OSS Jev projects with 20 recommended starters (browser, compaction, MCP, games, finance).
 - [RLCD explained: Reinforcement Learning for Calibrated Decisions](https://systemonemodels.org/guides/rlcd-explained) — An independent write-up whose most useful finding is a negative one: there is no paper, no reward function, no dataset description and no reproducible evaluation for RLCD.
 - [RLCD: how Jev is trained](https://learnjev.com/concepts/rlcd) — Learn Jev primer on what is and is not public about RLCD.
+- [Rune 26B-A4B (Fireworks)](https://fireworks.ai/models/fireworks/rune) — Rune's hosted System One decision model on Fireworks serverless: 26B MoE (4B active), reads a document once and answers up to 256 multiple-choice, true/false or graded-scale questions with calibrated probabilities; 262K context, text only.
 - [S1MB (System One Mosaic Benchmark)](https://huggingface.co/blog/hotchpotch/system-one-mosaic-benchmark) — HF blog (2026-09-30): 137-benchmark Borda/Task-Avg comparison of 23 System One models including bekko.
 - [System One (TypeSafe docs)](https://docs.typesafe.ai/concepts/system-one) — Author definition of System One models and the typed-decision interface.
 - [System One Models](https://systemonemodels.org) — Independent living documentation site for the System One category.
@@ -1450,6 +1453,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [pi-fabric](https://github.com/monotykamary/pi-fabric) — 244 stars — Pi’s programmable runtime includes an optional Jev loop for observing state, making decisions and running bounded actions.…
 - [Jev Drone](https://github.com/RomanSlack/jev-drone) — 119 stars — A MuJoCo drone experiment deriving scene features from camera buffers for Jev tactical advice. [Source](https://github.com/RomanSlack/jev-drone/blob/cbeb53ce4f17a06ea490ae43effcdad231143610/tactics.py#L184)
 - [quackd](https://github.com/rokbenko/quackd) — Robot orchestration CLI with an optional Jev stepper for choosing among permitted discrete calls while an LLM still writes poses and prose and the executor enforces safety gates; one arm has run on hardware under the LLM pilot, but the…
+- [switch](https://github.com/osolmaz/switch) — Framework for decision-model harnesses: your program offers a short list of next steps and the model picks one at a time until it can answer; MIT.
 - [jevpilot](https://github.com/standardagents/jevpilot) — A driving simulator autopilot asking two choices per tick, which short-circuits single-option questions locally instead of paying to send them.
 - [Jev-Mem](https://github.com/libingzheren/Jev-Mem) — System-One–controlled agentic memory: TypeSafe Jev steers admission, multi-relational linking, and adaptive retrieval before a text model answers. Project guide.
 - [System One Harness](https://github.com/HarnessRouter/SystemOneHarness) — Python controller: finite-action agent loops with TypeSafe Jev (OpenRouter or TypeSafe), confidence gates, and step traces. Project guide.

@@ -890,6 +890,10 @@ SEEDS = [
 ('https://github.com/ssccio/switchyard','switchyard','Claude Code plugin that routes each turn and sub-agent to the cheapest capable Claude model using a /v1/systemone decision model.','Use cases','seed-x-scan'),
 ('https://huggingface.co/spaces/Tonic/OCR-with-JEV','MiniCPM-OCR + Jev Checker','Space pairing MiniCPM-OCR parsing with MiniCPM-OCR Jev region correctness scores.','Use cases','seed-x-scan'),
 ('https://www.fratepietro.com/2026/how-to-build-a-decision-model-like-jev/','How to Build a Decision Model Like Jev (Fratepietro)','Building and serving a decision model: transformers serve /v1/systemone, reserved option tokens, calibration, tree batching, and black-box probing of Jev.','Docs & essays','seed-x-scan'),
+('https://fireworks.ai/models/fireworks/rune','Rune 26B-A4B (Fireworks)',"Rune's hosted System One decision model on Fireworks serverless: 26B MoE (4B active), reads a document once and answers up to 256 multiple-choice, true/false or graded-scale questions with calibrated probabilities; 262K context, text only.",'Docs & essays','seed-x-scan'),
+('https://huggingface.co/mlx-community/d1-2B-OptiQ-4bit','d1-2B OptiQ 4-bit (MLX)',"4-bit MLX build of Liquid AI's d1-2B for Apple silicon (1.7 GB); authors report 0.641 on Typed Decisions vs 0.637 for the original weights.",'Open models & alternatives','seed-x-scan'),
+('https://github.com/vishalmysore/layaForWeb','layaForWeb','Runs the 421M-parameter Laya decision model entirely in the browser (ONNX int8 on WebGPU/WASM): text plus typed questions in, probabilities and a confidence score out.','Open models & alternatives','seed-x-scan'),
+('https://github.com/osolmaz/switch','switch','Framework for decision-model harnesses: your program offers a short list of next steps and the model picks one at a time until it can answer; MIT.','SDKs & tooling','seed-x-scan'),
 ]
 
 INGEST_DATE = "2026-10-03 PT"
@@ -942,6 +946,10 @@ PIN_EVALS = [
     "https://jevals.com",
 ]
 CATEGORY_OVERRIDE = {
+    'https://fireworks.ai/models/fireworks/rune': CAT_DOCS,
+    'https://huggingface.co/mlx-community/d1-2B-OptiQ-4bit': CAT_OS,
+    'https://github.com/vishalmysore/layaForWeb': CAT_OS,
+    'https://github.com/osolmaz/switch': CAT_SDKS,
     "https://huggingface.co/baselabs/joey-1": CAT_OS,
     "https://huggingface.co/ibm-granite/granite-switch-4.1-8b": CAT_OS,
     "https://huggingface.co/cribl-ai/cribl-decision-2-4B": CAT_OS,

@@ -1727,6 +1727,16 @@
     ]
   },
   {
+    "url": "https://github.com/vishalmysore/layaForWeb",
+    "title": "layaForWeb",
+    "description": "Runs the 421M-parameter Laya decision model entirely in the browser (ONNX int8 on WebGPU/WASM): text plus typed questions in, probabilities and a confidence score out.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Runtimes, ports & servers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/blockbrain-ai/cygnet-recipe",
     "title": "cygnet-recipe",
     "description": "Frozen Gemma-4-12B-it typed decisions via one-token option-letter readout on stock vLLM (JevBench package).",
@@ -1791,6 +1801,16 @@
     "url": "https://github.com/reaxlabs/vllm-mammoth",
     "title": "vllm-mammoth",
     "description": "vLLM plugin that serves baselabs/mammoth-1 on /v1/systemone with its trained block-bidirectional mask, prompt and readout.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Runtimes, ports & servers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/mlx-community/d1-2B-OptiQ-4bit",
+    "title": "d1-2B OptiQ 4-bit (MLX)",
+    "description": "4-bit MLX build of Liquid AI's d1-2B for Apple silicon (1.7 GB); authors report 0.641 on Typed Decisions vs 0.637 for the original weights.",
     "category": "Open-source / local alternatives",
     "subsection": "Runtimes, ports & servers",
     "sources": [
@@ -7242,6 +7262,16 @@
     "subsection": "",
     "sources": [
       "seed-essays"
+    ]
+  },
+  {
+    "url": "https://fireworks.ai/models/fireworks/rune",
+    "title": "Rune 26B-A4B (Fireworks)",
+    "description": "Rune's hosted System One decision model on Fireworks serverless: 26B MoE (4B active), reads a document once and answers up to 256 multiple-choice, true/false or graded-scale questions with calibrated probabilities; 262K context, text only.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -13451,6 +13481,16 @@
       "AbdelStark/awesome-typesafe-jev",
       "AppitStudio/awesome-jev",
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://github.com/osolmaz/switch",
+    "title": "switch",
+    "description": "Framework for decision-model harnesses: your program offers a short list of next steps and the model picks one at a time until it can answer; MIT.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
