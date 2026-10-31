@@ -630,6 +630,16 @@
     ]
   },
   {
+    "url": "https://github.com/yanqiangmiffy/chinese-decision",
+    "title": "chinese-decision",
+    "description": "Chinese probabilistic decision models (0.8B/2B/4B) that read candidate probabilities in one forward pass; the unified 4B checkpoint also does typed extraction from the same weights.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/fidecastro/jevify",
     "title": "jevify",
     "description": "Minimal way to serve any LLM as a Jev-like /v1/systemone endpoint.",
@@ -1000,6 +1010,16 @@
     ]
   },
   {
+    "url": "https://github.com/agentscope-ai/Piccolo",
+    "title": "Piccolo (AgentScope)",
+    "description": "AgentScope's 4B, 9B and 27B open decision models for agent tool review, context retention and data workflows, with Hugging Face weights and an interactive Arena; Apache-2.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/ShubhJain007/VisionJev",
     "title": "VisionJev",
     "description": "Calibrated non-generative image+text decision model on Qwen3-VL-4B with choice / noul / score answers in one forward pass.",
@@ -1103,6 +1123,16 @@
     "url": "https://huggingface.co/cribl-ai/cribl-decision-2-4B",
     "title": "Cribl Decision 2",
     "description": "Cribl's 4B decision model on Qwen3.5-4B for IT, security and telemetry questions (log type, suspicious events, severity); Apache-2.0, with a 0.8B mini.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-Decision",
+    "title": "Darwin-27B-RSI-Decision",
+    "description": "FINAL-Bench's 27B decision model (same team as Darwin-27B-ZTC-v9) served over /v1/systemone, with self-reported public Decision Index results; Apache-2.0.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -1501,6 +1531,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/surogate/rune-26b-a4b-GGUF",
+    "title": "Surogate Rune 26B-A4B (open weights)",
+    "description": "Open weights for Rune, the model behind the Fireworks entry: Apache-2.0 Gemma 4 26B MoE (4B active, 262k context) for text and image decisions; v3 ships as bf16 safetensors served by the surogate engine.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/DavidHatley/system-one-mini",
     "title": "system-one-mini",
     "description": ", DistilBERT-sized System One shape, a floor for how small the idea can go. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/DavidHatley/system-one-mini)",
@@ -1594,6 +1634,16 @@
     "url": "https://huggingface.co/CountingSheep/vev-9b",
     "title": "vev-9b",
     "description": "Open 9B vision-capable typed-decision weights for vev.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/mwei/WeMM-JEV",
+    "title": "WeMM-JEV",
+    "description": "27B multimodal decision model on Qwen3.8-27B: choice, noul and score over text and multiple images in one forward pass per question; self-reported public Decision Index 0.3 results; Apache-2.0.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -3339,6 +3389,26 @@
     ]
   },
   {
+    "url": "https://github.com/webmaxru/decision-models-demo",
+    "title": "decision-models-demo",
+    "description": "Jev, Microsoft-Decision-1 and OpenAI Decisions vs a generative LLM on everyday coding-agent decisions; vendor-agnostic, zero dependencies, with a mock mode; MIT.",
+    "category": "Use cases",
+    "subsection": "Agents, tools & harnesses",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://github.com/Jacqkues/lfm-talk",
+    "title": "lfm-talk",
+    "description": "Local voice assistant built from Liquid models on llama.cpp: d1-Omni-2B hears each spoken turn and picks the agent (voice, notes, web, reminders) with one choice question over /v1/systemone.",
+    "category": "Use cases",
+    "subsection": "Agents, tools & harnesses",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/1sakshm/pennywise",
     "title": "Pennywise",
     "description": "RL-trained Laya decision model that routes LLM requests to the cheapest model tier likely to get them right; OpenAI-compatible proxy and MCP server.",
@@ -4306,6 +4376,16 @@
     "sources": [
       "AbdelStark/awesome-typesafe-jev",
       "BeatAPI/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/ramenvr/autopilot",
+    "title": "Aura Autopilot",
+    "description": "In-editor playtesting for Unreal Engine 5, Unity 6 and Godot 4: a coding agent writes a per-game harness and Jev picks actions in real time during play. Writeup: tryaura.dev/updates.",
+    "category": "Use cases",
+    "subsection": "Games, robotics & simulation",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -5350,6 +5430,16 @@
     "subsection": "Playgrounds & live demos",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/carollia-99/jev-determinism-and-abstraction",
+    "title": "Jev abstract-art playground",
+    "description": "Programmatic abstract-art playground where Jev decisions fill an 80+ field rendering spec, compared against LLMs and image generators; live demo at jev-abstract-art.vercel.app.",
+    "category": "Use cases",
+    "subsection": "Playgrounds & live demos",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -7474,6 +7564,16 @@
     ]
   },
   {
+    "url": "https://towardsdatascience.com/your-agents-tools-can-make-decisions-too",
+    "title": "Your Agent's Tools Can Make Decisions, Too (Towards Data Science)",
+    "description": "Hands-on decision-model-as-a-tool pattern: a decision model picks lookups inside one agent tool (OpenAI Agents SDK), with Decision-1, GPT-6 Luna Decisions and Jev request examples.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://benchmarkheaven.com/jev-models",
     "title": "JevBench (Benchmark Heaven)",
     "description": "Interactive JevBench leaderboard: typed decision models scored on intelligence, calibration, speed, and cost.",
@@ -8279,6 +8379,16 @@
     ]
   },
   {
+    "url": "https://clavia.ai/blog/detecting-private-data-with-extraction-and-decision-models",
+    "title": "Detecting private data with extraction + decision models (Clavia)",
+    "description": "Clairic extraction followed by Jev keep/hide decisions vs OpenAI Privacy Filter on the Text Anonymization Benchmark: precision, recall and cost. Code: clavia-labs/private-data-detection.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://logicrw.github.io/awesome-jev-projects/en/categories/evaluation-observability",
     "title": "Evaluation & Observability (29)",
     "description": "Evaluation & Observability (29) — System One / Jev related resource.",
@@ -8431,6 +8541,16 @@
     ]
   },
   {
+    "url": "https://givecareapp.com/words/three-safety-judges-for-caregiver-crisis-routing",
+    "title": "Three safety judges for caregiver crisis routing (GiveCare)",
+    "description": "Exploratory note comparing Jev, OpenAI Decisions and open-weight CoPE-B-S1 on 84 synthetic caregiver messages routed to 911, 988 and other resources, with repeat-run stability, latency and cost.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions",
     "title": "typed-decisions",
     "description": "Independent typed probabilistic decision benchmark (noul/choice/score) used by DecisionEval and open trainers.",
@@ -8567,6 +8687,16 @@
     "url": "https://arxiv.org/abs/2610.38623",
     "title": "Cross-Primitive Consistency in Jev",
     "description": "PrimaCons benchmark testing whether Jev gives consistent decisions when the same question is asked as Noul, Choice or Score.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.40318",
+    "title": "Decision and System One models in rheumatology",
+    "description": "Accuracy and calibration of Jev 1.13, Clef, Microsoft-Decision-1, Laya and GPT-6 Luna on Spanish specialty-exam questions and diagnostic vignettes (RheumaMIR, RheumBench).",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -9267,6 +9397,16 @@
     "url": "https://arxiv.org/abs/2610.24929",
     "title": "What Can't Jev Decide?",
     "description": "Paper probing the limits of Jev-style typed decisions.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.39747",
+    "title": "When the Top Answer Decides: Gender Bias in Decision Models",
+    "description": "Tests Jev and five open decision models on gender-swapped decisions, BBQ and StereoSet, and shows how confidence gates change the stereotyped share of kept answers.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -12176,6 +12316,16 @@
     ]
   },
   {
+    "url": "https://github.com/bojansandhaus/dsh-jev-mcp",
+    "title": "dsh-jev-mcp",
+    "description": "Dependency-free TypeSafe Jev client plus stdio MCP server for DeepSeek Harness (jev_check, jev_route, jev_score, jev_evaluate); MIT.",
+    "category": "SDKs & tooling",
+    "subsection": "MCP, skills & agent plugins",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/xienda/dsh-jev-verify",
     "title": "dsh-jev-verify",
     "description": "DeepSeek Harness plugin with TypeSafe Jev `jev_decision` plus live `jev_verify` benchmark (no mock fallback; distinct from dsh-jev). Project guide.",
@@ -14453,6 +14603,16 @@
     ]
   },
   {
+    "url": "https://github.com/jpcamara/judgelint",
+    "title": "judgelint (jpcamara)",
+    "description": "Checks code against conventions written in plain English using decision models, locally or in CI; Jev by default, other System One backends supported (distinct from filip-a-9/judgelint); MIT.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/Friedjof/jev-mobile",
     "title": "jev-mobile",
     "description": "Experimental Android agent that uses Jev for bounded, per-step choices over prevalidated UI actions, with confidence gates, pagination, escalation, and optional LLM planning; currently a proof of concept tested mainly against Android…",
@@ -16311,6 +16471,16 @@
     "subsection": "Other tooling",
     "sources": [
       "seed-logicrw-refresh"
+    ]
+  },
+  {
+    "url": "https://nobodywho.ai/posts/announcing-decision-models",
+    "title": "NobodyWho decision models",
+    "description": "NobodyWho's local inference engine adds decision-model support on llama.cpp: choice, noul and score questions against Laya GGUF models from Python.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
