@@ -1040,6 +1040,16 @@
     ]
   },
   {
+    "url": "https://amos.scira.ai",
+    "title": "Amos 1",
+    "description": "Open-weight decision models that read text, JSON or photos and answer each typed question with a probability; the large model is self-described as second of 55 on the Decision Index vision board as of 22 October 2026.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1",
     "title": "AutoTrust-JEV-27B v1.1",
     "description": "Updated AutoTrust 27B integrated System 1/2 decision checkpoint.",
@@ -1183,6 +1193,16 @@
     "url": "https://huggingface.co/baselabs/elephant-1",
     "title": "Elephant-1 (Baseten)",
     "description": "Smaller 9B sibling of Mammoth-1 from Baseten for typed decisions.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router",
+    "title": "embeddinggemma2-decision-router",
+    "description": "Apache-2.0 multimodal (text, image, 16 kHz audio) decision and routing model: frozen EmbeddingGemma 2 backbone plus a 3.55M-parameter set-equivariant decision head; reports 0.0% option-order flips and a null gate for abstaining.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -1531,6 +1551,26 @@
     ]
   },
   {
+    "url": "https://huggingface.co/sarvamai/prism",
+    "title": "Sarvam Prism (open weights)",
+    "description": "Apache-2.0 LoRA fine-tune of Sarvam 105B that returns calibrated per-option probabilities for noul, choice and score questions in one forward pass; also served by Sarvam's hosted /v2/systemone API. Self-reported 71.8 average across…",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/sthanika-ai/Sieve-31B-v3",
+    "title": "Sieve-31B-v3 (Sthanika AI)",
+    "description": "Apache-2.0 31B decision model fine-tuned from Gemma 4 31B; authors self-report 71.1 on the Decision Index and run it on one 96 GB GPU.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19",
     "title": "strands-decider-2B-hobson-v19",
     "description": "HF Hobson v19 weights for Strands Decider 2B typed decisions.",
@@ -1574,6 +1614,16 @@
     "url": "https://huggingface.co/tasksource/tasksource-jev-nano-v0",
     "title": "tasksource-jev-nano-v0",
     "description": "Nano Jev-style decision model from tasksource.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://tazolabs.com",
+    "title": "Tazo (Tazo Labs)",
+    "description": "Audio-native decision model for live calls: listens to the audio and returns a probability for each developer-defined next action, with no transcript step. Hosted API.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -6875,6 +6925,16 @@
     ]
   },
   {
+    "url": "https://sarvam.ai/blogs/sarvam-prism",
+    "title": "Introducing Sarvam Prism (Sarvam AI)",
+    "description": "Launch post for Sarvam Prism, Sarvam's System One decision model: open weights plus a hosted API.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://strandsagents.com/blog/introducing-strands-decider",
     "title": "Introducing Strands Decider 2B",
     "description": "Official Strands Labs launch post: architecture, JevBench numbers, local latency, and agent intervention examples.",
@@ -8167,6 +8227,16 @@
     ]
   },
   {
+    "url": "https://github.com/Athe-kunal/llm-as-jev",
+    "title": "llm-as-jev (Athe-kunal)",
+    "description": "Open-source code to replicate and extend Microsoft Research's LLM-as-Jev paper: trains LLMs as decision models with SGLang prefill inference and ContextCite attribution, plus Qwen3 0.6B and 4B checkpoints and a dataset on Hugging Face.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/omni-/ask-jev",
     "title": "ask-jev",
     "description": "A Windows PowerShell tool for auditing recorded Codex execution evidence with :jev.",
@@ -8292,6 +8362,16 @@
     "url": "https://github.com/mmikaildemir/commit-or-abstain",
     "title": "commit-or-abstain",
     "description": "Code for the Commit or Abstain? paper.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://github.com/yhavinga/decision-model-gender-bias",
+    "title": "decision-model-gender-bias",
+    "description": "Code and results for 'When the Top Answer Decides: Gender Bias in Decision Models' (arXiv:2610.39747): Jev and five open decision models on gender-swapped decisions, BBQ, StereoSet and Fulgu & Capraro (2024).",
     "category": "Evals & papers",
     "subsection": "Typed-decision benchmarks",
     "sources": [
@@ -8811,6 +8891,16 @@
     "subsection": "Papers",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.41079",
+    "title": "EDU-Jev",
+    "description": "Training System-One decision models for education.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
