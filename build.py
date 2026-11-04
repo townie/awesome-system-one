@@ -926,6 +926,11 @@ SEEDS = [
 ('https://github.com/Athe-kunal/llm-as-jev','llm-as-jev (Athe-kunal)',"Open-source code to replicate and extend Microsoft Research's LLM-as-Jev paper: trains LLMs as decision models with SGLang prefill inference and ContextCite attribution, plus Qwen3 0.6B and 4B checkpoints and a dataset on Hugging Face.",'Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2610.41079','EDU-Jev','Training System-One decision models for education.','Evals & papers','seed-x-scan'),
 ('https://github.com/yhavinga/decision-model-gender-bias','decision-model-gender-bias',"Code and results for 'When the Top Answer Decides: Gender Bias in Decision Models' (arXiv:2610.39747): Jev and five open decision models on gender-swapped decisions, BBQ, StereoSet and Fulgu & Capraro (2024).",'Evals & papers','seed-x-scan'),
+('https://huggingface.co/okayuji/jev-27b-coreai','JEV-27B Core AI (okayuji)','Apache-2.0 4-bit Core AI conversion of autotrust/JEV-27B for Apple silicon Macs on macOS 27; runs noul, choice and score decisions locally via Swift, with verification results in the model card.','Open models & alternatives','seed-x-scan'),
+('https://github.com/oka-yuji/coreai-samples','coreai-samples (oka-yuji)','Open LLMs on Apple silicon with Core AI and Foundation Models: Swift runtime, verification harness and sample app (work in progress), including a doc on running JEV-27B typed decisions locally.','SDKs & tooling','seed-x-scan'),
+('https://github.com/BitMind-AI/yugos','Yugos (Bittensor SN34)','Bittensor subnet that rewards the best System One decision model for inference: miners submit router weights that choose the model, provider and effort per request, scored on answer quality, cost and time.','Open models & alternatives','seed-x-scan'),
+('https://github.com/xiaoyaner0201/hermes-jev-thread-status','hermes-jev-thread-status','Jev-powered Discord thread status titles for Hermes Agent: reads each agent turn and sets [Running], [Needs feedback] or [Done], with auto-retitle and delayed archive.','SDKs & tooling','seed-x-scan'),
+('https://blog.nextscape.net/archives/2026/11/04/123116','Jevを使ってみる (NEXTSCAPE blog)','Japanese-language blog post on trying out Jev.','Docs & essays','seed-x-scan'),
 ]
 
 INGEST_DATE = "2026-10-03 PT"

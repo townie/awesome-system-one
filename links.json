@@ -920,6 +920,16 @@
     ]
   },
   {
+    "url": "https://github.com/BitMind-AI/yugos",
+    "title": "Yugos (Bittensor SN34)",
+    "description": "Bittensor subnet that rewards the best System One decision model for inference: miners submit router weights that choose the model, provider and effort per request, scored on answer quality, cost and time.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/xoai/chon",
     "title": "Chon-1.0-12B",
     "description": "12B open decision model with typed outputs and a local runner.",
@@ -1283,6 +1293,16 @@
     "url": "https://huggingface.co/autotrust/JEV-27B",
     "title": "JEV-27B (AutoTrust)",
     "description": "Apache-2.0 Qwen3.8-27B decision model serving System 1 typed probs + System 2 generation from one weights set.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/okayuji/jev-27b-coreai",
+    "title": "JEV-27B Core AI (okayuji)",
+    "description": "Apache-2.0 4-bit Core AI conversion of autotrust/JEV-27B for Apple silicon Macs on macOS 27; runs noul, choice and score decisions locally via Swift, with verification results in the model card.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -7289,6 +7309,16 @@
     ]
   },
   {
+    "url": "https://blog.nextscape.net/archives/2026/11/04/123116",
+    "title": "Jevを使ってみる (NEXTSCAPE blog)",
+    "description": "Japanese-language blog post on trying out Jev.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://x.com/thekitze/status/2102775497822503298",
     "title": "kitze thread: Kev / OpenJev / Laya",
     "description": "Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.",
@@ -12647,6 +12677,16 @@
     ]
   },
   {
+    "url": "https://github.com/xiaoyaner0201/hermes-jev-thread-status",
+    "title": "hermes-jev-thread-status",
+    "description": "Jev-powered Discord thread status titles for Hermes Agent: reads each agent turn and sets [Running], [Needs feedback] or [Done], with auto-retitle and delayed archive.",
+    "category": "SDKs & tooling",
+    "subsection": "MCP, skills & agent plugins",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/rashedInt32/jev-gates",
     "title": "jev-gates",
     "description": "Seven calibrated gates for Claude Code (rules, scope, intent, done, claims, proof, and commit honesty) that escalate but never approve.",
@@ -15625,6 +15665,16 @@
     "subsection": "Other tooling",
     "sources": [
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://github.com/oka-yuji/coreai-samples",
+    "title": "coreai-samples (oka-yuji)",
+    "description": "Open LLMs on Apple silicon with Core AI and Foundation Models: Swift runtime, verification harness and sample app (work in progress), including a doc on running JEV-27B typed decisions locally.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {

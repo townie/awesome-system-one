@@ -162,6 +162,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Open Medical Jev](https://github.com/FeiLiuEM/open-medical-jev) — Frozen open-model medical judgment (Qwen3.5 27B/35B-A3B) with conformal router; near Jev on exams.
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) — , Choice, Score and Noul on Qwen3.5-0.8B, the smallest decoder-based reproduction.…
 - [jevless](https://github.com/jbpayton/jevless) — Jev-style Choice/Noul/Score from any logprobs API, plus a local /v1/systemone server.
+- [Yugos (Bittensor SN34)](https://github.com/BitMind-AI/yugos) — Bittensor subnet that rewards the best System One decision model for inference: miners submit router weights that choose the model, provider and effort per request, scored on answer quality, cost and time.
 - [Chon-1.0-12B](https://github.com/xoai/chon) — 12B open decision model with typed outputs and a local runner.
 - [Jevlet](https://github.com/NAME0x0/Jevlet) — Small calibrated System One decision model (typed Noul/Choice/Score in, live-option probs out, no text generation).
 - [stuntdouble](https://github.com/ReallyArtificial/stuntdouble) — Drop-in /v1/systemone proxy that shadows Jev with local decision models (Kev, Laya) and reports whether you can swap
@@ -199,6 +200,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [jebadiah-9b-v2](https://huggingface.co/frontier-infra/jebadiah-9b-v2) — Jebadiah 9B v2 open System One weights (Qwen3.5-9B chat base); default local /v1/systemone model.
 - [Jeeves (weights)](https://huggingface.co/PostHog/jeeves) — HF weights for PostHog Jeeves 9B (fused LoRA, pointer head, temperature, diffusion drafters).
 - [JEV-27B (AutoTrust)](https://huggingface.co/autotrust/JEV-27B) — Apache-2.0 Qwen3.8-27B decision model serving System 1 typed probs + System 2 generation from one weights set.
+- [JEV-27B Core AI (okayuji)](https://huggingface.co/okayuji/jev-27b-coreai) — Apache-2.0 4-bit Core AI conversion of autotrust/JEV-27B for Apple silicon Macs on macOS 27; runs noul, choice and score decisions locally via Swift, with verification results in the model card.
 - [JEV-9B (AutoTrust)](https://huggingface.co/autotrust/JEV-9B) — Smaller AutoTrust open integrated System 1/2 decision model.
 - [jevling-2b-v0.1](https://huggingface.co/BricksDisplay/jevling-2b-v0.1) — Open 2B Jevling typed-decision checkpoint (text-classification head).
 - [joey-1 (Baseten)](https://huggingface.co/baselabs/joey-1) — Baseten's 2B open decision model post-trained from Qwen3.5-2B; text and image states, calibrated probabilities from one shared-prefix prefill; MIT.
@@ -837,6 +839,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [jevstyle.com](https://jevstyle.com) — Project site for jev-style local decision models and agent tooling.
 - [jevwiki.ai](https://jevwiki.ai) — Community wiki for agents and developers: System One concepts, SDKs, FAQ, and entity pages.
 - [Jev’s Architecture Unmasked](https://archerhume.com/posts/jevs-architecture-unmasked) — Archer Hume: architecture probe from ~10k API calls — shared state, isolated questions, parallel readouts.
+- [Jevを使ってみる (NEXTSCAPE blog)](https://blog.nextscape.net/archives/2026/11/04/123116) — Japanese-language blog post on trying out Jev.
 - [kitze thread: Kev / OpenJev / Laya](https://x.com/thekitze/status/2102775497822503298) — Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.
 - [Latent.Space: 6 clones of Jev in 2 days](https://latent.space/p/ainews-here-are-6-clones-of-jev-in) — Roundup of early open reproductions (Nimble, Kev, and others).
 - [Learn Jev](https://learnjev.com) — Independent hands-on tutorials for TypeSafe Jev (first call, primitives, calibration caveats).
@@ -1375,6 +1378,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [typesafe-jev-tools](https://github.com/wotai-dev/typesafe-jev-tools) — A Claude Code hook that asks whether the decision you are writing needs a model at all. Includes a measured 149-row comparison of TypeSafe Jev against Claude Haiku 4.5.
 - [deslop](https://github.com/yoichiojima-2/deslop) — Agent skill/CLI that scores page bodies with TypeSafe Jev probabilities for ads, slop, SEO shape, and derivative content. Project guide.
 - [FuZev vLLM plugin](https://github.com/PeisongXiao/fuzev-vllm-plugin) — vLLM plugin serving generation plus Choice/Noul/Score decisions over POST /v1/systemone from one engine.
+- [hermes-jev-thread-status](https://github.com/xiaoyaner0201/hermes-jev-thread-status) — Jev-powered Discord thread status titles for Hermes Agent: reads each agent turn and sets [Running], [Needs feedback] or [Done], with auto-retitle and delayed archive.
 - [jev-gates](https://github.com/rashedInt32/jev-gates) — Seven calibrated gates for Claude Code (rules, scope, intent, done, claims, proof, and commit honesty) that escalate but never approve.
 - [jev-mcp](https://github.com/MichelePolo/jev-mcp) — MCP server exposing Jev-style decision models (including Ollama /v1/systemone) as tools for chat models.
 - [jevdevice](https://github.com/Xopher00/jevdevice) — MCP harness for Android (adb) or local shell: TypeSafe Jev (or local Laya) picks one runtime-discovered target per goal; code gates and executes. Project guide.
@@ -1656,6 +1660,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [typesafe-jev-calibrate-for-code-review](https://github.com/Selmar/typesafe-jev-calibrate-for-code-review) — About calibrating Jev for code reviews
 - [antivirus](https://github.com/newuser7171/antivirus) — A file scanner that sends extracted features to Jev for a verdict, a 0–4 severity score, and Noul indicators, then applies local quarantine or review rules.
 - [ask-jev](https://github.com/logicrw/ask-jev) — Ultra-fast, fail-open advisory decisions and verbatim extractive reading view for AI coding agents and CLI pipelines
+- [coreai-samples (oka-yuji)](https://github.com/oka-yuji/coreai-samples) — Open LLMs on Apple silicon with Core AI and Foundation Models: Swift runtime, verification harness and sample app (work in progress), including a doc on running JEV-27B typed decisions locally.
 - [DecideKit](https://github.com/sameerkhan24/decidekit) — Typed decision policies for TypeScript/Python with Jev via OpenRouter or TypeSafe, offline fixtures, and explicit confidence fallbacks. Project guide.
 - [Footwork](https://github.com/Tom-R-Main/Footwork) — Dual-process browser agent: TypeSafe Jev as System 1 in front of browser-use System 2, with a code-owned arbiter and evidence verification (`jevdual`). Project guide.
 - [git-jev-stage](https://github.com/ibrahemid/git-jev-stage) — Classifies Git hunks against a one-sentence staging intent with TypeSafe Jev, then stages confirmed blocks. Project guide.
