@@ -1240,6 +1240,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4",
+    "title": "IOTA Decide 4B (Macrocosmos)",
+    "description": "Macrocosmos's first public decision model, a Qwen3.5-4B fine-tune trained across distributed GPUs with its SDK; Apache-2.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/frontier-infra/jebadiah-27b",
     "title": "jebadiah-27b",
     "description": "Jebadiah 27B open System One weights on Qwen3.8-27B; largest published Jebadiah checkpoint.",
@@ -1343,6 +1353,16 @@
     "url": "https://huggingface.co/mertkayacs/Karar-4B",
     "title": "Karar-4B",
     "description": "Turkish JevAlt 4B decision weights; Jev API compatible.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://modelscope.ai/collections/EMLab/KnowLine-Decision",
+    "title": "KnowLine-Decision (EMLab)",
+    "description": "EMLab's seven open-weight decision models (0.8B to 31B dense plus two MoE) for RAG, agents and enterprise workflows, served through a Jev-compatible API; weights Apache-2.0, serving code MIT; self-reported 71.86 on Jev Decision Index…",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -2257,6 +2277,16 @@
     "sources": [
       "seed-tier",
       "systemonemodels.org/examples/alternatives"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/HAL-X-AI/THX-02",
+    "title": "THX-02 (HAL-X AI)",
+    "description": "HAL-X AI's 4.5B open multimodal thinking decision model: returns probabilities over supplied options and reasons only when a decision needs it (60M adapter); Apache-2.0, with ModelScope weights and a hosted API.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Adapters & logit readers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -6575,6 +6605,16 @@
     ]
   },
   {
+    "url": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations",
+    "title": "Use decision models with Amazon Bedrock AgentCore Evaluations (AWS)",
+    "description": "Connects Jev and Strands Decider to AgentCore Evaluations through code-based evaluators, with a cascade that sends only low-confidence traces to an LLM-as-a-judge.",
+    "category": "Use cases",
+    "subsection": "Other applications",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://developers.openai.com/api/docs/guides/decisions",
     "title": "OpenAI Decisions API",
     "description": "OpenAI public-beta POST /v1/decisions on gpt-6-luna: typed predicate (probability), choice, and score answers with per-option probabilities and confidence over text and images, about 10x faster than the Responses API.",
@@ -6738,6 +6778,16 @@
     ]
   },
   {
+    "url": "https://n.demir.io/articles/branchone-system-one-decision-model",
+    "title": "BranchOne: A System One Decision Model (Necati Demir)",
+    "description": "Write-up of BranchOne: Qwen3.5-0.8B-Base with LoRA adapters and a shared scoring head, where the choices arrive with each request so the output space is not fixed during training.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://x.com/gregpr07/status/2100411066966749359",
     "title": "Browser Use + Jev",
     "description": "Gregor Zunic's real-time flight-search demo and short description of the dynamic DOM action space.",
@@ -6892,6 +6942,16 @@
     "subsection": "",
     "sources": [
       "AbdelStark/awesome-typesafe-jev"
+    ]
+  },
+  {
+    "url": "https://machinelearningmastery.com/how-to-train-your-own-decision-model-like-jev-using-unsloth",
+    "title": "How to Train Your Own Decision Model like Jev Using Unsloth (MachineLearningMastery)",
+    "description": "Tutorial fine-tuning Qwen3.5-4B on CLINC150 with Unsloth to turn an open-weight model into an intent-classifying decision model.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -7452,6 +7512,16 @@
     "subsection": "",
     "sources": [
       "seed-lists"
+    ]
+  },
+  {
+    "url": "https://opper.ai/morph/reflex",
+    "title": "reflex (Morph on Opper)",
+    "description": "Morph's yes/no decision model, released 24 Oct 2026 and listed on Opper with $0.04/M input pricing and a 66K context.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -8449,6 +8519,16 @@
     ]
   },
   {
+    "url": "https://github.com/dengzhe-hou/S1CogBench",
+    "title": "S1CogBench",
+    "description": "Code for 'S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments' (arXiv:2611.00911): 24 cognitive experiments for Jev, Laya and Intern-Decision with protocol-aware evaluation and reproducible task runners.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://lindfors.no/blog/a-first-look-at-typesafes-jev",
     "title": "An early-access test of TypeSafe's Jev: calibrated judgments for half a cent",
     "description": "The best independent test found: 24 Norwegian documents on one pinned model version, opening with a case the model got wrong while correctly reporting low confidence.",
@@ -8731,6 +8811,16 @@
       "MrJev/awesome-jev",
       "OmniJev/awesome-jev-gallery",
       "seed-official"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.41199",
+    "title": "Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models",
+    "description": "arXiv paper on using System One decision models for few-shot product defect detection in manufacturing inspection.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
@@ -13424,6 +13514,16 @@
     "sources": [
       "BeatAPI/awesome-jev",
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://github.com/trymirai/uzu",
+    "title": "uzu (Mirai)",
+    "description": "Mirai's high-performance on-device inference engine, which added decision-model support: a local server compatible with Typesafe's API and a CLI that runs trymirai/d3-flash-M.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {

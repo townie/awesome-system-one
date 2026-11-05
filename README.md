@@ -194,6 +194,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [embeddinggemma2-decision-router](https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router) — Apache-2.0 multimodal (text, image, 16 kHz audio) decision and routing model: frozen EmbeddingGemma 2 backbone plus a 3.55M-parameter set-equivariant decision head; reports 0.0% option-order flips and a null gate for abstaining.
 - [Gemma 4 12B Unified System One](https://huggingface.co/knowlet/Gemma-4-12B-Unified-System-One) — Gemma 4 12B LoRA fine-tune using the System One decision interface for calibrated BoolQ-style yes/no probabilities.
 - [gutsy-0.8b (weights)](https://huggingface.co/kouhxp/gutsy) — GGUF weights for gutsy-0.8b v0.3 (Qwen3.5-0.8B fine-tune).
+- [IOTA Decide 4B (Macrocosmos)](https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4) — Macrocosmos's first public decision model, a Qwen3.5-4B fine-tune trained across distributed GPUs with its SDK; Apache-2.0.
 - [jebadiah-27b](https://huggingface.co/frontier-infra/jebadiah-27b) — Jebadiah 27B open System One weights on Qwen3.8-27B; largest published Jebadiah checkpoint.
 - [jebadiah-4b-v1](https://huggingface.co/frontier-infra/jebadiah-4b-v1) — Open Jebadiah 4B decision weights (Apache-2.0) from frontier-infra.
 - [jebadiah-4b-v2](https://huggingface.co/frontier-infra/jebadiah-4b-v2) — Jebadiah 4B v2 open decision weights (Apache-2.0); smaller sibling of the v2 family.
@@ -205,6 +206,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [jevling-2b-v0.1](https://huggingface.co/BricksDisplay/jevling-2b-v0.1) — Open 2B Jevling typed-decision checkpoint (text-classification head).
 - [joey-1 (Baseten)](https://huggingface.co/baselabs/joey-1) — Baseten's 2B open decision model post-trained from Qwen3.5-2B; text and image states, calibrated probabilities from one shared-prefix prefill; MIT.
 - [Karar-4B](https://huggingface.co/mertkayacs/Karar-4B) — Turkish JevAlt 4B decision weights; Jev API compatible.
+- [KnowLine-Decision (EMLab)](https://modelscope.ai/collections/EMLab/KnowLine-Decision) — EMLab's seven open-weight decision models (0.8B to 31B dense plus two MoE) for RAG, agents and enterprise workflows, served through a Jev-compatible API; weights Apache-2.0, serving code MIT; self-reported 71.86 on Jev Decision Index…
 - [Laya](https://laya.convaiinnovations.com) — A 421M non-autoregressive System One decision engine with RLCD-trained calibrated probabilities and multilingual support.
 - [LFM2.5-2.6B-RLCD](https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD) — , RLCD-style fine-tune of Liquid AI's LFM2.5-2.6B for typed decisions. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/monotykamary/LFM2.5-2.6B-RLCD)
 - [LFM2.5-350M-RLCD](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD) — , 350M-parameter RLCD-style decision model, the smallest open attempt. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD)
@@ -298,6 +300,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Parallel Constrained Decision Engine](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding) — , Live demo of the Qwen-2.5-1B-RLCD approach: KV-cache broadcast, logit slicing per candidate, 100 percent schema validity.…
 - [Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) — , Qwen2.5-1.5B fine-tune plus parallel constrained decoding; all schema fields scored in one broadcast prefill, 5.6x to 7x faster on Apple Silicon.…
 - [simplejev.ai](https://simplejev.ai) — Hosted/open library giving HF models Jev-style structured decision output.
+- [THX-02 (HAL-X AI)](https://huggingface.co/HAL-X-AI/THX-02) — HAL-X AI's 4.5B open multimodal thinking decision model: returns probabilities over supplied options and reasons only when a decision needs it (60M adapter); Apache-2.0, with ModelScope weights and a hosted API.
 
 ### Related classifiers & structured output
 
@@ -763,6 +766,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [Read](https://mrjev.com/projects/alurith-jeff) — Read — System One / Jev related resource.
 - [Read](https://mrjev.com/projects/wfzyx-von) — Read — System One / Jev related resource.
 - [Speculative fan-out](https://docs.typesafe.ai/patterns/fan-out) — Pack many questions, including ones you may not need, into a single request and let your code decide afterwards what was relevant.
+- [Use decision models with Amazon Bedrock AgentCore Evaluations (AWS)](https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations) — Connects Jev and Strands Decider to AgentCore Evaluations through code-based evaluators, with a cascade that sends only low-confidence traces to an LLM-as-a-judge.
 
 ## Docs & essays
 
@@ -784,6 +788,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [AINews: Jev, a System One Model that only decides](https://latent.space/p/ainews-jev-a-system-one-model-that) — Community roundup of the System One / Jev launch and early reactions.
 - [Amazon Strands Decider (TechCrunch)](https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web) — TechCrunch coverage of Amazon's open Strands Decider 2B amid the wave of Jev-style decision models.
 - [Avi Chawla: pg-jev](https://x.com/_avichawla/status/2106328920211800165) — Avi Chawla post introducing pg-jev — Postgres extension with jev()/jev_prob()/jev_choice()/jev_score() for plain-language SQL predicates.
+- [BranchOne: A System One Decision Model (Necati Demir)](https://n.demir.io/articles/branchone-system-one-decision-model) — Write-up of BranchOne: Qwen3.5-0.8B-Base with LoRA adapters and a shared scoring head, where the choices arrive with each request so the output space is not fixed during training.
 - [Browser Use + Jev](https://x.com/gregpr07/status/2100411066966749359) — Gregor Zunic's real-time flight-search demo and short description of the dynamic DOM action space.
 - [Build your own Jev (100% local)](https://x.com/_avichawla/status/2101563610644496464) — Avi Chawla X article: turn an open LLM into a local decision engine via SGLang /v1/score next-token scoring (no retraining).
 - [Build your own Jev (100% local) — essay](https://blog.dailydoseofds.com/p/build-your-own-jev-100-local) — Avi Chawla Substack write-up of local Jev-style scoring with SGLang, Qwen/DeepSeek, and latency vs generation.
@@ -799,6 +804,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [How does Jev work? RLCD and parallel inference](https://explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026) — , Explainer reconstructing the RLCD objective and the parallel sampler from public statements.…
 - [How to Build a Decision Model Like Jev (Fratepietro)](https://fratepietro.com/2026/how-to-build-a-decision-model-like-jev) — Building and serving a decision model: transformers serve /v1/systemone, reserved option tokens, calibration, tree batching, and black-box probing of Jev.
 - [How to build with TypeSafe](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) — Design guidance for decomposing a workflow into narrow judgments while keeping policy and side effects in code.
+- [How to Train Your Own Decision Model like Jev Using Unsloth (MachineLearningMastery)](https://machinelearningmastery.com/how-to-train-your-own-decision-model-like-jev-using-unsloth) — Tutorial fine-tuning Qwen3.5-4B on CLINC150 with Unsloth to turn an open-weight model into an intent-classifying decision model.
 - [How to train your own Jev](https://together.ai/blog/how-to-train-your-own-jev) — Together tutorial / data recipe for fine-tuning a decision classifier (~$17 Tev1 training cost claimed).
 - [How To Use Decision Models for Evals (Hamel Husain)](https://hamel.dev/blog/posts/decision-model-evals) — Choosing a decision model for an eval task, tuning its threshold, and interpreting its scores.
 - [I read 7 clones of Jev](https://note.com/zephel01/n/ne9a2c037e513) — Critical read of open Jev clones vs the 2020 computational form; JevBench v1.2.5 context.
@@ -853,6 +859,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Quick start](https://docs.typesafe.ai/introduction/quickstart) — The canonical first call: one support ticket, one Choice, one Score and one Noul in a single request, in Python, JS and cURL.
 - [Qwen on Cerebras comparison](https://x.com/iamMrDuncan/status/2100467548298899918) — Shannon's video and source-backed comparison of a structured-output LLM baseline with Jev.
 - [Reddit: 287 open-source Jev projects (top 20)](https://reddit.com/r/LLMDevs/comments/1wko2e5/i_reviewed_287_opensource_jev_projects_here_are) — r/LLMDevs roundup of 287 reviewed OSS Jev projects with 20 recommended starters (browser, compaction, MCP, games, finance).
+- [reflex (Morph on Opper)](https://opper.ai/morph/reflex) — Morph's yes/no decision model, released 24 Oct 2026 and listed on Opper with $0.04/M input pricing and a 66K context.
 - [RLCD explained: Reinforcement Learning for Calibrated Decisions](https://systemonemodels.org/guides/rlcd-explained) — An independent write-up whose most useful finding is a negative one: there is no paper, no reward function, no dataset description and no reproducible evaluation for RLCD.
 - [RLCD: how Jev is trained](https://learnjev.com/concepts/rlcd) — Learn Jev primer on what is and is not public about RLCD.
 - [Rune 26B-A4B (Fireworks)](https://fireworks.ai/models/fireworks/rune) — Rune's hosted System One decision model on Fireworks serverless: 26B MoE (4B active), reads a document once and answers up to 256 multiple-choice, true/false or graded-scale questions with calibrated probabilities; 262K context, text only.
@@ -959,6 +966,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [Jev Enterprise Decision Fabric](https://github.com/ghubnab99/jev-enterprise-decision-fabric) — Experimental .NET decision architecture with a 111-case Jev-versus-Claude agent-action evaluation, public labels and raw JSONL, report-rebuild tooling, and a decision inspector; one annotator revised labels after reviewing a Jev pilot.
 - [jev-demos](https://github.com/Bud-ro/jev-demos) — Maze experiments comparing Jev single-step choices with multi-step lookahead.
 - [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) — Independent measurement of whether `ORDER BY` over a Jev probability is defensible, with a pre-registered gate on pairwise inversion, Score ordinality against a graded target, calibration, and negation and paraphrase invariants;…
+- [S1CogBench](https://github.com/dengzhe-hou/S1CogBench) — Code for 'S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments' (arXiv:2611.00911): 24 cognitive experiments for Jev, Laya and Intern-Decision with protocol-aware evaluation and reproducible task runners.
 - [An early-access test of TypeSafe's Jev: calibrated judgments for half a cent](https://lindfors.no/blog/a-first-look-at-typesafes-jev) — The best independent test found: 24 Norwegian documents on one pinned model version, opening with a case the model got wrong while correctly reporting low confidence.
 - [Classifying Emails with Jev and the OpenAI Decisions API](https://builders.abnormal.ai/p/classifying-emails-with-jev-and-the) — Abnormal AI benchmark of 40 models (Jev, OpenAI Decisions, 34 open decision models, frontier LLMs) on email classification calibration.
 - [DecisionBench](https://huggingface.co/datasets/akhilaaa3/decision-bench) — Public typed-decision eval set used with Jev-Omni (scenarios → questions with option probabilities).
@@ -990,6 +998,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 
 ### Papers
 
+- [Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models](https://arxiv.org/abs/2610.41199) — arXiv paper on using System One decision models for few-shot product defect detection in manufacturing inspection.
 - [Calibrated Decisions at Scale](https://arxiv.org/abs/2609.24052) — Texas crash-narrative coding with Jev: 195k narratives, F1 0.908 vs humans, review budgets from calibrated probs.
 - [Calibration-Aware RL for Decision-Making LLMs](https://arxiv.org/abs/2601.13284) — , "Balancing Classification and Calibration Performance in Decision-Making LLMs via Calibration Aware Reinforcement Learning". RL that adjusts decision-token probabilities directly, keeping RLVR accuracy while cutting ECE, the closest…
 - [Can Jev Judge Radiology Reports?](https://arxiv.org/abs/2609.27607) — System One model for clinical factuality in radiology reports.
@@ -1455,6 +1464,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [firstmate](https://github.com/kunchenguid/firstmate) — 6.9K stars — An agent crew dispatcher that can match task briefs to rules with JEV. [Source](https://github.com/kunchenguid/firstmate/blob/4812db801628040b609dc25a2a8a91ed5efac662/bin/fm-dispatch-resolve.sh)
 - [Kiln · JEV Adapter](https://github.com/Kiln-AI/Kiln) — A JSON-Schema-to-question compiler wired into the adapter registry, with an honest note on what it cannot serve.
 - [latitude-llm](https://github.com/latitude-dev/latitude-llm) — Latitude includes an optional Jev preclassifier for conversation checks and their selection records.
+- [uzu (Mirai)](https://github.com/trymirai/uzu) — Mirai's high-performance on-device inference engine, which added decision-model support: a local server compatible with Typesafe's API and a CLI that runs trymirai/d3-flash-M.
 - [jevgrep](https://github.com/dzhng/jevgrep) — CLI for coding agents that uses Jev to find relevant files and source context by asking what the code does.
 - [jev-trader](https://github.com/jarrodwatts/jev-trader) — Studies Jev market-direction choices, simulated fills, and on-chain order execution through a Bun trading experiment. Project guide.
 - [Beacon](https://github.com/Asymptote-Labs/agent-beacon) — Cross-harness agent memory tool with an explicit `beacon memory evaluations run` command: Jev judges bounded, redacted trace projections for reusable lessons, which a person reviews before adding to project memory or installing as a…
