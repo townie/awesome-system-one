@@ -942,6 +942,13 @@ SEEDS = [
 ('https://n.demir.io/articles/branchone-system-one-decision-model/','BranchOne: A System One Decision Model (Necati Demir)',"Write-up of BranchOne: Qwen3.5-0.8B-Base with LoRA adapters and a shared scoring head, where the choices arrive with each request so the output space is not fixed during training.",'Docs & essays','seed-x-scan'),
 ('https://machinelearningmastery.com/how-to-train-your-own-decision-model-like-jev-using-unsloth/','How to Train Your Own Decision Model like Jev Using Unsloth (MachineLearningMastery)','Tutorial fine-tuning Qwen3.5-4B on CLINC150 with Unsloth to turn an open-weight model into an intent-classifying decision model.','Docs & essays','seed-x-scan'),
 ('https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/','Use decision models with Amazon Bedrock AgentCore Evaluations (AWS)','Connects Jev and Strands Decider to AgentCore Evaluations through code-based evaluators, with a cascade that sends only low-confidence traces to an LLM-as-a-judge.','Use cases','seed-x-scan'),
+('https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611','Kanana-2-v-decide (Kakao)',"Kakao's 3.67B multimodal decision model: choice, noul and score over text and up to 10 images in one forward pass, with a /v1/systemone server; Kanana Open License.",'Open models & alternatives','seed-x-scan'),
+('https://tech.kakao.com/posts/846','Kanana-2-v-decide open-source release (Kakao tech)',"Kakao tech post introducing Kanana-2-v-decide, a multimodal decision model that returns probabilities instead of text for agent routing and triage.",'Docs & essays','seed-x-scan'),
+('https://github.com/OmniJev/Flide','Flide',"Open-source System One serving engine with exact state forking: one forward pass for a shared state plus many questions, drop-in /v1/systemone API.",'Open models & alternatives','seed-x-scan'),
+('https://arxiv.org/abs/2610.42148','Flide: Accelerating Decision Inference with Exact State Forking','Paper on Flide, a serving engine that forks a shared state into many typed questions in one pass for Jev-style decision models.','Evals & papers','seed-x-scan'),
+('https://huggingface.co/datasets/alvarobartt/sys1-benchmarks','sys1 serving benchmarks','Frozen request cohorts for System One serving-engine latency, throughput and load consistency (not model quality), reconstructed from LocalLLaMA/typed-decisions.','Evals & papers','seed-x-scan'),
+('https://arxiv.org/abs/2611.07854','Towards Foundation Decision Models: Drex','Nace AI technical report on the Drex decision-model family and RLAF training; covers pointer and readout architectures for Choice/Noul/Score.','Evals & papers','seed-x-scan'),
+
 ]
 
 INGEST_DATE = "2026-10-03 PT"
@@ -1312,6 +1319,12 @@ CATEGORY_OVERRIDE = {
     "https://arxiv.org/abs/2610.00381": CAT_EVALS,
     "https://github.com/cmpnd-ai/dspy-system-one-agent-patterns": CAT_USE,
 
+    "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611": CAT_OS,
+    "https://tech.kakao.com/posts/846": CAT_DOCS,
+    "https://github.com/OmniJev/Flide": CAT_OS,
+    "https://arxiv.org/abs/2610.42148": CAT_EVALS,
+    "https://huggingface.co/datasets/alvarobartt/sys1-benchmarks": CAT_EVALS,
+    "https://arxiv.org/abs/2611.07854": CAT_EVALS,
 }
 
 BLURBS = {

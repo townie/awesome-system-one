@@ -149,6 +149,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [JevBERT](https://github.com/hawkymisc/typed-decision-bert) — A local server that speaks Jev's `/v1/systemone` shape from a BERT encoder, with a numbered account of every request it refuses that Jev might accept.
 - [openjev-rlcd](https://github.com/ZimmyGao/openjev-rlcd) — Working open RLCD implementation for reasoning models (calibrate-then-reinforce) with API-compatible server.
 - [Jev on a laptop](https://github.com/rorshopping/jev-on-a-laptop) — , Unofficial study of Jev-style parallel typed decisions on stock 1.5B to 8B models on Apple Silicon, with benchmarks.…
+- [Flide](https://github.com/OmniJev/Flide) — Open-source System One serving engine with exact state forking: one forward pass for a shared state plus many questions, drop-in /v1/systemone API.
 - [GroundingJev](https://github.com/xyzzzh/GroundingJev) — Jev-inspired non-autoregressive visual grounding on Qwen3.5-0.8B with continuous box regression.
 - [vev](https://github.com/Xiaooolong/vev) — Open Jev-like multimodal decision models on Qwen3.5 that also see images.
 - [jevbetter](https://github.com/olanotolu/jevbetter) — , One-pass scorer over a variable option list: hashed n-gram encoder, rival-aware attention, gated head, temperature scaling.…
@@ -204,6 +205,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [JEV-9B (AutoTrust)](https://huggingface.co/autotrust/JEV-9B) — Smaller AutoTrust open integrated System 1/2 decision model.
 - [jevling-2b-v0.1](https://huggingface.co/BricksDisplay/jevling-2b-v0.1) — Open 2B Jevling typed-decision checkpoint (text-classification head).
 - [joey-1 (Baseten)](https://huggingface.co/baselabs/joey-1) — Baseten's 2B open decision model post-trained from Qwen3.5-2B; text and image states, calibrated probabilities from one shared-prefix prefill; MIT.
+- [Kanana-2-v-decide (Kakao)](https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611) — Kakao's 3.67B multimodal decision model: choice, noul and score over text and up to 10 images in one forward pass, with a /v1/systemone server; Kanana Open License.
 - [Karar-4B](https://huggingface.co/mertkayacs/Karar-4B) — Turkish JevAlt 4B decision weights; Jev API compatible.
 - [KnowLine-Decision (EMLab)](https://modelscope.ai/collections/EMLab/KnowLine-Decision) — EMLab's seven open-weight decision models (0.8B to 31B dense plus two MoE) for RAG, agents and enterprise workflows, served through a Jev-compatible API; weights Apache-2.0, serving code MIT; self-reported 71.86 on Jev Decision Index…
 - [Laya](https://laya.convaiinnovations.com) — A 421M non-autoregressive System One decision engine with RLCD-trained calibrated probabilities and multilingual support.
@@ -846,6 +848,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [jevwiki.ai](https://jevwiki.ai) — Community wiki for agents and developers: System One concepts, SDKs, FAQ, and entity pages.
 - [Jev’s Architecture Unmasked](https://archerhume.com/posts/jevs-architecture-unmasked) — Archer Hume: architecture probe from ~10k API calls — shared state, isolated questions, parallel readouts.
 - [Jevを使ってみる (NEXTSCAPE blog)](https://blog.nextscape.net/archives/2026/11/04/123116) — Japanese hands-on post: 40 GitHub issues classified with Jev choice questions, compared with Claude Haiku 5.5 on accuracy, latency and cost, including the request shape and two high-confidence misses.
+- [Kanana-2-v-decide open-source release (Kakao tech)](https://tech.kakao.com/posts/846) — Kakao tech post introducing Kanana-2-v-decide, a multimodal decision model that returns probabilities instead of text for agent routing and triage.
 - [kitze thread: Kev / OpenJev / Laya](https://x.com/thekitze/status/2102775497822503298) — Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.
 - [Latent.Space: 6 clones of Jev in 2 days](https://latent.space/p/ainews-here-are-6-clones-of-jev-in) — Roundup of early open reproductions (Nimble, Kev, and others).
 - [Learn Jev](https://learnjev.com) — Independent hands-on tutorials for TypeSafe Jev (first call, primitives, calibration caveats).
@@ -990,6 +993,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [RLCDAlignBench (dataset)](https://huggingface.co/datasets/sumleo/RLCDAlignBench) — Cached Jev responses and detection instances for RLCDAlignBench.
 - [s1mb-dataset](https://huggingface.co/datasets/hotchpotch/s1mb-dataset) — S1MB evaluation-only test split (14k cases / 26k judgments).
 - [s1mb-result](https://huggingface.co/datasets/hotchpotch/s1mb-result) — Published S1MB leaderboard results snapshot (23 models, 2026-09-30).
+- [sys1 serving benchmarks](https://huggingface.co/datasets/alvarobartt/sys1-benchmarks) — Frozen request cohorts for System One serving-engine latency, throughput and load consistency (not model quality), reconstructed from LocalLLaMA/typed-decisions.
 - [Three safety judges for caregiver crisis routing (GiveCare)](https://givecareapp.com/words/three-safety-judges-for-caregiver-crisis-routing) — Exploratory note comparing Jev, OpenAI Decisions and open-weight CoPE-B-S1 on 84 synthetic caregiver messages routed to 911, 988 and other resources, with repeat-run stability, latency and cost.
 - [typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions) — Independent typed probabilistic decision benchmark (noul/choice/score) used by DecisionEval and open trainers.
 - [TypeSafe Open-Jev (dataset)](https://huggingface.co/datasets/TypeSafeAI/Open-Jev) — Official TypeSafe CC0 Open-Jev training/eval data (EN/ZH/TR).
@@ -1020,6 +1024,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [EDU-Jev](https://arxiv.org/abs/2610.41079) — Training System-One decision models for education.
 - [Entity Matching using Decision Models](https://arxiv.org/abs/2610.34626) — Six decision models evaluated zero-shot on eight entity-matching benchmarks against fine-tuned PLMs and generative LLMs.
 - [Evaluating and Benchmarking the System One Model Jev](https://arxiv.org/abs/2609.37647) — Independent benchmark evaluation of TypeSafe Jev as a System One model.
+- [Flide: Accelerating Decision Inference with Exact State Forking](https://arxiv.org/abs/2610.42148) — Paper on Flide, a serving engine that forks a shared state into many typed questions in one pass for Jev-style decision models.
 - [Generative or Discriminative?](https://arxiv.org/abs/2506.12181) — , "Revisiting Text Classification in the Era of Transformers". Controlled comparison of encoder, autoregressive and diffusion classifiers over fixed label sets on accuracy, calibration and ordinality. ![EMNLP…
 - [GLiClass](https://arxiv.org/abs/2508.07662) — , "Generalist Lightweight Model for Sequence Classification Tasks". The open analogue HN pointed at: labels and text in one encoder pass, one probability per label, no decoding. !
 - [GLiNER](https://arxiv.org/abs/2311.08526) — , "Generalist Model for Named Entity Recognition using Bidirectional Transformer". The span-and-label encoder family HN mapped Jev onto, types supplied at inference and scored in one bidirectional pass. !
@@ -1075,6 +1080,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [System One Models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — Paper finding decision finetuning does not beat plain reranker finetuning on the same Qwen backbones.
 - [Thinking Fast and Slow in AI](https://arxiv.org/abs/2010.06002) — . The AI charter for System 1 components that answer from experience without search, what System One Models productizes. ![AAAI 2021](https://img.shields.io/badge/AAAI_2021-4B5563?style=flat-square)…
 - [ThinkJev](https://arxiv.org/abs/2610.37732) — Paper building fast and slow typed-decision systems from one open hybrid-thinking model, paying for thinking only where it helps.
+- [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — Nace AI technical report on the Drex decision-model family and RLAF training; covers pointer and readout architectures for Choice/Noul/Score.
 - [Type-Safe Is Not Error-Free](https://arxiv.org/abs/2609.26758) — Option-name polarity study: typed models can flip definitions under yes/no names (AUC to 23.2% on Laya) while type-error stays 0%.
 - [Typed Decision Models: Early Evidence Audit](https://arxiv.org/abs/2609.32160) — Evidence audit and evaluation checklist for typed decision / System One models.
 - [VideoJev: System One Model for Video Understanding and Interaction](https://arxiv.org/abs/2610.18615) — Paper: candidate-scoring head for temporal grounding and video QA with cached/joint inference across queries.

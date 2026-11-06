@@ -789,6 +789,16 @@
     ]
   },
   {
+    "url": "https://github.com/OmniJev/Flide",
+    "title": "Flide",
+    "description": "Open-source System One serving engine with exact state forking: one forward pass for a shared state plus many questions, drop-in /v1/systemone API.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/xyzzzh/GroundingJev",
     "title": "GroundingJev",
     "description": "Jev-inspired non-autoregressive visual grounding on Qwen3.5-0.8B with continuous box regression.",
@@ -1333,6 +1343,16 @@
     "url": "https://huggingface.co/baselabs/joey-1",
     "title": "joey-1 (Baseten)",
     "description": "Baseten's 2B open decision model post-trained from Qwen3.5-2B; text and image states, calibrated probabilities from one shared-prefix prefill; MIT.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611",
+    "title": "Kanana-2-v-decide (Kakao)",
+    "description": "Kakao's 3.67B multimodal decision model: choice, noul and score over text and up to 10 images in one forward pass, with a /v1/systemone server; Kanana Open License.",
     "category": "Open-source / local alternatives",
     "subsection": "Models & weights",
     "sources": [
@@ -7379,6 +7399,16 @@
     ]
   },
   {
+    "url": "https://tech.kakao.com/posts/846",
+    "title": "Kanana-2-v-decide open-source release (Kakao tech)",
+    "description": "Kakao tech post introducing Kanana-2-v-decide, a multimodal decision model that returns probabilities instead of text for agent routing and triage.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://x.com/thekitze/status/2102775497822503298",
     "title": "kitze thread: Kev / OpenJev / Laya",
     "description": "Community post threading open System One clones (Kev, OpenJev, Laya) and related serving work.",
@@ -8761,6 +8791,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/datasets/alvarobartt/sys1-benchmarks",
+    "title": "sys1 serving benchmarks",
+    "description": "Frozen request cohorts for System One serving-engine latency, throughput and load consistency (not model quality), reconstructed from LocalLLaMA/typed-decisions.",
+    "category": "Evals & papers",
+    "subsection": "Typed-decision benchmarks",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://givecareapp.com/words/three-safety-judges-for-caregiver-crisis-routing",
     "title": "Three safety judges for caregiver crisis routing (GiveCare)",
     "description": "Exploratory note comparing Jev, OpenAI Decisions and open-weight CoPE-B-S1 on 84 synthetic caregiver messages routed to 911, 988 and other resources, with repeat-run stability, latency and cost.",
@@ -9027,6 +9067,16 @@
     "url": "https://arxiv.org/abs/2609.37647",
     "title": "Evaluating and Benchmarking the System One Model Jev",
     "description": "Independent benchmark evaluation of TypeSafe Jev as a System One model.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.42148",
+    "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+    "description": "Paper on Flide, a serving engine that forks a shared state into many typed questions in one pass for Jev-style decision models.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
@@ -9577,6 +9627,16 @@
     "url": "https://arxiv.org/abs/2610.37732",
     "title": "ThinkJev",
     "description": "Paper building fast and slow typed-decision systems from one open hybrid-thinking model, paying for thinking only where it helps.",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.07854",
+    "title": "Towards Foundation Decision Models: Drex",
+    "description": "Nace AI technical report on the Drex decision-model family and RLAF training; covers pointer and readout architectures for Choice/Noul/Score.",
     "category": "Evals & papers",
     "subsection": "Papers",
     "sources": [
