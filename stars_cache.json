@@ -195,6 +195,10 @@
     "stars": 597,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "agentscope-ai/Piccolo": {
+    "stars": 0,
+    "fetched_at": "2026-10-31T23:10:43Z"
+  },
   "AgriciDaniel/jev-seo": {
     "stars": 652,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -314,6 +318,10 @@
   "AmoghCreator/doom-jev": {
     "stars": 8,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "amozo-es/system-one-bias-protocol": {
+    "stars": 0,
+    "fetched_at": "2026-10-30T02:17:12Z"
   },
   "anasbekheit/typesafe-jev-mcp": {
     "stars": 3,
@@ -455,6 +463,10 @@
     "stars": 1834,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "Athe-kunal/llm-as-jev": {
+    "stars": 2,
+    "fetched_at": "2026-11-03T16:34:44Z"
+  },
   "AustinAWay/Working-Memory-Jev": {
     "stars": 77,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -519,6 +531,10 @@
     "stars": 472,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "BitMind-AI/yugos": {
+    "stars": 2,
+    "fetched_at": "2026-11-04T16:34:27Z"
+  },
   "bitnovus/jev-spam-eval": {
     "stars": 3,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -562,6 +578,10 @@
   "Bodila51/muse-jev-playbook": {
     "stars": 25,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "bojansandhaus/dsh-jev-mcp": {
+    "stars": 1,
+    "fetched_at": "2026-10-31T23:10:43Z"
   },
   "bojansandhaus/jev-decisions": {
     "stars": 3,
@@ -698,6 +718,10 @@
   "carlosedm10/agi-jev-containment": {
     "stars": 5,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "carollia-99/jev-determinism-and-abstraction": {
+    "stars": 0,
+    "fetched_at": "2026-10-31T23:10:43Z"
   },
   "catpotd/agy-jevgate": {
     "stars": 1,
@@ -990,6 +1014,10 @@
   "deepopen-com/deepopen": {
     "stars": 2048,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "dengzhe-hou/S1CogBench": {
+    "stars": 0,
+    "fetched_at": "2026-11-05T16:41:07Z"
   },
   "denikuchero/jev-chess-lab": {
     "stars": 0,
@@ -1787,6 +1815,10 @@
     "stars": 12,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "internet-projects/glide-mlx": {
+    "stars": 0,
+    "fetched_at": "2026-10-30T02:17:12Z"
+  },
   "intikhab49/open-jev-typed-decision-engine": {
     "stars": 46,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -1826,6 +1858,10 @@
   "j341nono/jev-prompt-optimization": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "Jacqkues/lfm-talk": {
+    "stars": 0,
+    "fetched_at": "2026-10-31T23:10:43Z"
   },
   "jaewgwon/jevis": {
     "stars": 2,
@@ -2046,6 +2082,10 @@
   "joslynSmall/fast-jev-compaction-pi": {
     "stars": 0,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "jpcamara/judgelint": {
+    "stars": 11,
+    "fetched_at": "2026-10-31T23:10:43Z"
   },
   "jsk4581/jev-blindspot": {
     "stars": 12,
@@ -2547,6 +2587,10 @@
     "stars": 4,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "machinefi/trio-spark": {
+    "stars": 5,
+    "fetched_at": "2026-11-06T10:51:45Z"
+  },
   "maddygoround/typesafeai-cli": {
     "stars": 2,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -2735,6 +2779,10 @@
     "stars": 0,
     "fetched_at": "2026-10-23T20:09:24Z"
   },
+  "ModelJars/modeljars": {
+    "stars": 28,
+    "fetched_at": "2026-11-02T16:33:48Z"
+  },
   "moisesfilho/typesafe-jev-opencode": {
     "stars": 3,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -2859,6 +2907,10 @@
     "stars": 104,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "nearai/inference-sdk": {
+    "stars": 0,
+    "fetched_at": "2026-11-02T16:33:48Z"
+  },
   "nekowasabi/jev-routing": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -2894,6 +2946,14 @@
   "Nibir1/typesafe-go": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "nick7nlp/Jev-Selection-Bias": {
+    "stars": 1,
+    "fetched_at": "2026-10-30T02:17:12Z"
+  },
+  "nickproud/Jevelin": {
+    "stars": 0,
+    "fetched_at": "2026-10-30T02:17:12Z"
   },
   "nico-martin/open-jev": {
     "stars": 42,
@@ -2934,6 +2994,10 @@
   "noamgat/lm-format-enforcer": {
     "stars": 2041,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "nob-git-dev/gemma4-typed-decisions": {
+    "stars": 0,
+    "fetched_at": "2026-10-30T02:17:12Z"
   },
   "noelzappy/tripwire": {
     "stars": 3,
@@ -3022,6 +3086,10 @@
   "ohernandezdev/jevmod": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "oka-yuji/coreai-samples": {
+    "stars": 2,
+    "fetched_at": "2026-11-04T16:34:27Z"
   },
   "okinaaudio/live-jev": {
     "stars": 45,
@@ -3115,6 +3183,10 @@
     "stars": 23,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "osolmaz/switch": {
+    "stars": 252,
+    "fetched_at": "2026-10-30T15:36:25Z"
+  },
   "ozers/jevsome-projects": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -3182,6 +3254,10 @@
   "philippdubach/pi-jev-router": {
     "stars": 13,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "phpaisdk/typesafe": {
+    "stars": 0,
+    "fetched_at": "2026-10-30T02:17:12Z"
   },
   "phureewat29/jev-got": {
     "stars": 2,
@@ -3339,6 +3415,10 @@
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "ramenvr/autopilot": {
+    "stars": 511,
+    "fetched_at": "2026-10-31T23:10:43Z"
+  },
   "Ramneet-Singh/jevopt": {
     "stars": 5,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -3386,6 +3466,10 @@
   "realZachi/typesafe-adblock": {
     "stars": 91,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "reaxlabs/vllm-mammoth": {
+    "stars": 0,
+    "fetched_at": "2026-10-30T02:17:12Z"
   },
   "receptron/laya": {
     "stars": 946,
@@ -3534,6 +3618,10 @@
   "Sac-Y/Jev-cu": {
     "stars": 622,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "SaFo-Lab/FlipJev": {
+    "stars": 3,
+    "fetched_at": "2026-10-30T02:17:12Z"
   },
   "saibimajdi/typesafeai-dotnet-sdk": {
     "stars": 12,
@@ -3779,6 +3867,10 @@
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "ssccio/switchyard": {
+    "stars": 1,
+    "fetched_at": "2026-10-30T02:17:12Z"
+  },
   "stacklok/typesafe-go": {
     "stars": 1,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -3943,6 +4035,10 @@
     "stars": 9,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "tecnosam/tailwise": {
+    "stars": 0,
+    "fetched_at": "2026-11-02T16:33:48Z"
+  },
   "teempai/jev-in-codex": {
     "stars": 6,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -4098,6 +4194,10 @@
   "trycua/cua": {
     "stars": 29951,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "trymirai/uzu": {
+    "stars": 3224,
+    "fetched_at": "2026-11-05T16:41:07Z"
   },
   "tshmieldev/sharp": {
     "stars": 31,
@@ -4323,6 +4423,10 @@
     "stars": 5,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "vishalmysore/layaForWeb": {
+    "stars": 40,
+    "fetched_at": "2026-10-30T15:36:25Z"
+  },
   "VitaDAO/open-jev-tinfoil": {
     "stars": 0,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -4386,6 +4490,10 @@
   "waynesutton/ask-jev-ai": {
     "stars": 4,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "webmaxru/decision-models-demo": {
+    "stars": 0,
+    "fetched_at": "2026-10-31T23:10:43Z"
   },
   "Wei-Shaw/sub2api": {
     "stars": 44212,
@@ -4487,6 +4595,10 @@
     "stars": 17,
     "fetched_at": "2026-10-16T19:03:42Z"
   },
+  "xiaoyaner0201/hermes-jev-thread-status": {
+    "stars": 0,
+    "fetched_at": "2026-11-04T16:34:27Z"
+  },
   "XieChengYuan/jev-gomoku": {
     "stars": 3,
     "fetched_at": "2026-10-16T19:03:42Z"
@@ -4534,6 +4646,14 @@
   "yangyu666/dsh-jev-prune": {
     "stars": 5,
     "fetched_at": "2026-10-16T19:03:42Z"
+  },
+  "yanqiangmiffy/chinese-decision": {
+    "stars": 62,
+    "fetched_at": "2026-10-31T23:10:43Z"
+  },
+  "yhavinga/decision-model-gender-bias": {
+    "stars": 0,
+    "fetched_at": "2026-11-03T16:34:44Z"
   },
   "yibie/awesome-jev": {
     "stars": 2379,
