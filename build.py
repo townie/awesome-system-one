@@ -10,8 +10,10 @@ RAW, OUT = ROOT / "raw", ROOT
 STARS_CACHE = OUT / "stars_cache.json"
 # GraphQL batch size — polite to the API; ~1090 repos ≈ 22 calls.
 STARS_BATCH = 50
-# Skip re-fetching cache entries newer than this many days unless --refresh-stars.
-STARS_TTL_DAYS = 14
+# Plain `python3 build.py` reuses stars_cache.json and does not refetch.
+# A silent refresh of entries older than 14 days reordered existing projects
+# (Nov 2026). Refetch only with --refresh-stars. Slugs missing from the cache
+# are still fetched once so a new repo gets a count.
 GH_SKIP_OWNERS = {
     "topics", "orgs", "sponsors", "settings", "marketplace", "features", "pricing",
     "about", "login", "join", "explore", "collections", "events", "codespaces",
@@ -29,7 +31,12 @@ def normalize_url(url: str) -> str:
         else: return ""
     p = urlparse(url)
     host = (p.netloc or "").lower()
-    if host.startswith("www."): host = host[4:]
+    # fratepietro.com (no www) sends the article path to the homepage; www keeps it.
+    apex = host[4:] if host.startswith("www.") else host
+    if apex == "fratepietro.com":
+        host = "www.fratepietro.com"
+    elif host.startswith("www."):
+        host = host[4:]
     path = (p.path or "").rstrip("/")
     while "//" in path: path = path.replace("//", "/")
     for suf in ("/README.md", "/index.html"):
@@ -883,10 +890,8 @@ SEEDS = [
 ('https://arxiv.org/abs/2610.34875','RubriX','Non-autoregressive rubric judge (LoRA encoder, cosine-similarity softmax over levels) compared with Jev and LLM judges.','Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2610.38697','SatOps-Decision','Locally adapted Laya encoder and benchmark for low-latency decisions in satellite communication operations.','Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2610.36595','Learning to Formalize','Small candidate formalizer that turns open-ended tasks into validated option lists for a frozen decision model.','Evals & papers','seed-x-scan'),
-('https://github.com/gmrdad82/pito-jev','pito-jev',"Small blocking Rust client for Jev's systemone API with typed failures and a fixed deadline.",'SDKs & tooling','seed-x-scan'),
 ('https://github.com/nickproud/Jevelin','Jevelin','Unofficial C#/.NET client for TypeSafe Jev, on NuGet.','SDKs & tooling','seed-x-scan'),
 ('https://github.com/phpaisdk/typesafe','aisdk/typesafe (PHP)','Native Jev decisions provider for the framework-agnostic PHP AI SDK.','SDKs & tooling','seed-x-scan'),
-('https://github.com/filip-a-9/judgelint','judgelint','Lints and fuzzes typed decision questions (option-order bias, no-fit options, injected instructions) for Jev or a local model; CI-friendly.','SDKs & tooling','seed-x-scan'),
 ('https://github.com/ssccio/switchyard','switchyard','Claude Code plugin that routes each turn and sub-agent to the cheapest capable Claude model using a /v1/systemone decision model.','Use cases','seed-x-scan'),
 ('https://huggingface.co/spaces/Tonic/OCR-with-JEV','MiniCPM-OCR + Jev Checker','Space pairing MiniCPM-OCR parsing with MiniCPM-OCR Jev region correctness scores.','Use cases','seed-x-scan'),
 ('https://www.fratepietro.com/2026/how-to-build-a-decision-model-like-jev/','How to Build a Decision Model Like Jev (Fratepietro)','Building and serving a decision model: transformers serve /v1/systemone, reserved option tokens, calibration, tree batching, and black-box probing of Jev.','Docs & essays','seed-x-scan'),
@@ -907,11 +912,10 @@ SEEDS = [
 ('https://arxiv.org/abs/2610.40318','Decision and System One models in rheumatology','Accuracy and calibration of Jev 1.13, Clef, Microsoft-Decision-1, Laya and GPT-6 Luna on Spanish specialty-exam questions and diagnostic vignettes (RheumaMIR, RheumBench).','Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2610.39747','When the Top Answer Decides: Gender Bias in Decision Models','Tests Jev and five open decision models on gender-swapped decisions, BBQ and StereoSet, and shows how confidence gates change the stereotyped share of kept answers.','Evals & papers','seed-x-scan'),
 ('https://towardsdatascience.com/your-agents-tools-can-make-decisions-too/',"Your Agent's Tools Can Make Decisions, Too (Towards Data Science)",'Hands-on decision-model-as-a-tool pattern: a decision model picks lookups inside one agent tool (OpenAI Agents SDK), with Decision-1, GPT-6 Luna Decisions and Jev request examples.','Docs & essays','seed-x-scan'),
-('https://github.com/jpcamara/judgelint','judgelint (jpcamara)','Checks code against conventions written in plain English using decision models, locally or in CI; Jev by default, other System One backends supported (distinct from filip-a-9/judgelint); MIT.','SDKs & tooling','seed-x-scan'),
+('https://github.com/jpcamara/judgelint','judgelint (jpcamara)','Checks code against conventions written in plain English using decision models, locally or in CI; Jev by default, other System One backends supported; MIT.','SDKs & tooling','seed-x-scan'),
 ('https://github.com/bojansandhaus/dsh-jev-mcp','dsh-jev-mcp','Dependency-free TypeSafe Jev client plus stdio MCP server for DeepSeek Harness (jev_check, jev_route, jev_score, jev_evaluate); MIT.','SDKs & tooling','seed-x-scan'),
 ('https://www.nobodywho.ai/posts/announcing-decision-models/','NobodyWho decision models',"NobodyWho's local inference engine adds decision-model support on llama.cpp: choice, noul and score questions against Laya GGUF models from Python.",'SDKs & tooling','seed-x-scan'),
 ('https://huggingface.co/surogate/rune-26b-a4b-GGUF','Surogate Rune 26B-A4B (open weights)','Open weights for Rune, the model behind the Fireworks entry: Apache-2.0 Gemma 4 26B MoE (4B active, 262k context) for text and image decisions; v3 ships as bf16 safetensors served by the surogate engine.','Open models & alternatives','seed-x-scan'),
-('https://github.com/nace-ai/drex-decision-models','Drex Max v1 (Nace AI)',"Nace AI's open Drex decision models: Drex Max v1 is a dense 27B multimodal model (bf16, Q8_0 GGUF, affine Q4) that runs locally on Apple silicon via llama.cpp/Ollama forks and serves POST /v1/systemone; self-reported 67.52 on public Decision Index 0.4.",'Open models & alternatives','seed-x-scan'),
 ('https://huggingface.co/ollaya-dev/coba-150m-ternary','coba (Ollaya)',"Ollaya's own open encoder decision models: coba:400m plus a 66 MB ternary 150M build that runs in a browser tab with WebAssembly; Apache-2.0. Demo: ollaya.dev/try.",'Open models & alternatives','seed-x-scan'),
 ('https://github.com/tecnosam/tailwise','Tailwise','Picks which agent traces are worth human review using a System One keep_or_drop question (Jev by default, Kev and Laya benchmarked); authors report 7.6x the failures found vs random sampling on HotpotQA ReAct traces; Apache-2.0.','Use cases','seed-x-scan'),
 ('https://github.com/nearai/inference-sdk','NEAR AI Inference SDK','Verified (TEE) inference SDK for JavaScript, Python, Rust and Go; v0.2.0 adds Responses API and Jev System One support.','SDKs & tooling','seed-x-scan'),
@@ -921,23 +925,20 @@ SEEDS = [
 ('https://www.sarvam.ai/blogs/sarvam-prism','Introducing Sarvam Prism (Sarvam AI)',"Launch post for Sarvam Prism, Sarvam's System One decision model: open weights plus a hosted API.",'Docs & essays','seed-x-scan'),
 ('https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router','embeddinggemma2-decision-router','Apache-2.0 multimodal (text, image, 16 kHz audio) decision and routing model: frozen EmbeddingGemma 2 backbone plus a 3.55M-parameter set-equivariant decision head; reports 0.0% option-order flips and a null gate for abstaining.','Open models & alternatives','seed-x-scan'),
 ('https://huggingface.co/sthanika-ai/Sieve-31B-v3','Sieve-31B-v3 (Sthanika AI)','Apache-2.0 31B decision model fine-tuned from Gemma 4 31B; authors self-report 71.1 on the Decision Index and run it on one 96 GB GPU.','Open models & alternatives','seed-x-scan'),
-('https://amos.scira.ai','Amos 1','Open-weight decision models that read text, JSON or photos and answer each typed question with a probability; the large model is self-described as second of 55 on the Decision Index vision board as of 22 October 2026.','Open models & alternatives','seed-x-scan'),
-('https://tazolabs.com','Tazo (Tazo Labs)','Audio-native decision model for live calls: listens to the audio and returns a probability for each developer-defined next action, with no transcript step. Hosted API.','Open models & alternatives','seed-x-scan'),
+('https://amos.scira.ai','Amos 1','Open-weight decision models (0.5B to 27B, Apache-2.0) that read text, JSON or photos and answer each typed question with a probability; weights and a local server are in the mukaddamzaid/amos-1 Hugging Face repos.','Open models & alternatives','seed-x-scan'),
 ('https://github.com/Athe-kunal/llm-as-jev','llm-as-jev (Athe-kunal)',"Open-source code to replicate and extend Microsoft Research's LLM-as-Jev paper: trains LLMs as decision models with SGLang prefill inference and ContextCite attribution, plus Qwen3 0.6B and 4B checkpoints and a dataset on Hugging Face.",'Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2610.41079','EDU-Jev','Training System-One decision models for education.','Evals & papers','seed-x-scan'),
 ('https://github.com/yhavinga/decision-model-gender-bias','decision-model-gender-bias',"Code and results for 'When the Top Answer Decides: Gender Bias in Decision Models' (arXiv:2610.39747): Jev and five open decision models on gender-swapped decisions, BBQ, StereoSet and Fulgu & Capraro (2024).",'Evals & papers','seed-x-scan'),
-('https://huggingface.co/okayuji/jev-27b-coreai','JEV-27B Core AI (okayuji)','Apache-2.0 4-bit Core AI conversion of autotrust/JEV-27B for Apple silicon Macs on macOS 27; runs noul, choice and score decisions locally via Swift, with verification results in the model card.','Open models & alternatives','seed-x-scan'),
 ('https://github.com/oka-yuji/coreai-samples','coreai-samples (oka-yuji)','Open LLMs on Apple silicon with Core AI and Foundation Models: Swift runtime, verification harness and sample app (work in progress), including a doc on running JEV-27B typed decisions locally.','SDKs & tooling','seed-x-scan'),
 ('https://github.com/BitMind-AI/yugos','Yugos (Bittensor SN34)','Bittensor subnet that rewards the best System One decision model for inference: miners submit router weights that choose the model, provider and effort per request, scored on answer quality, cost and time.','Open models & alternatives','seed-x-scan'),
 ('https://github.com/xiaoyaner0201/hermes-jev-thread-status','hermes-jev-thread-status','Jev-powered Discord thread status titles for Hermes Agent: reads each agent turn and sets [Running], [Needs feedback] or [Done], with auto-retitle and delayed archive.','SDKs & tooling','seed-x-scan'),
-('https://blog.nextscape.net/archives/2026/11/04/123116','Jevを使ってみる (NEXTSCAPE blog)','Japanese-language blog post on trying out Jev.','Docs & essays','seed-x-scan'),
+('https://blog.nextscape.net/archives/2026/11/04/123116','Jevを使ってみる (NEXTSCAPE blog)','Japanese hands-on post: 40 GitHub issues classified with Jev choice questions, compared with Claude Haiku 5.5 on accuracy, latency and cost, including the request shape and two high-confidence misses.','Docs & essays','seed-x-scan'),
 ('https://huggingface.co/HAL-X-AI/THX-02','THX-02 (HAL-X AI)',"HAL-X AI's 4.5B open multimodal thinking decision model: returns probabilities over supplied options and reasons only when a decision needs it (60M adapter); Apache-2.0, with ModelScope weights and a hosted API.",'Open models & alternatives','seed-x-scan'),
 ('https://modelscope.ai/collections/EMLab/KnowLine-Decision','KnowLine-Decision (EMLab)',"EMLab's seven open-weight decision models (0.8B to 31B dense plus two MoE) for RAG, agents and enterprise workflows, served through a Jev-compatible API; weights Apache-2.0, serving code MIT; self-reported 71.86 on Jev Decision Index 0.4.1 Full for the 31B.",'Open models & alternatives','seed-x-scan'),
-('https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4','IOTA Decide 4B (Macrocosmos)',"Macrocosmos's first public decision model, a Qwen3.5-4B fine-tune trained across distributed GPUs with its SDK; Apache-2.0.",'Open models & alternatives','seed-x-scan'),
+('https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4','IOTA Decide 4B (Macrocosmos)','Macrocosmos 4B decision model, a Qwen3.5-4B fine-tune trained across distributed GPUs, with its SDK; Apache-2.0.','Open models & alternatives','seed-x-scan'),
 ('https://github.com/trymirai/uzu','uzu (Mirai)',"Mirai's high-performance on-device inference engine, which added decision-model support: a local server compatible with Typesafe's API and a CLI that runs trymirai/d3-flash-M.",'SDKs & tooling','seed-x-scan'),
 ('https://github.com/dengzhe-hou/S1CogBench','S1CogBench',"Code for 'S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments' (arXiv:2611.00911): 24 cognitive experiments for Jev, Laya and Intern-Decision with protocol-aware evaluation and reproducible task runners.",'Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2610.41199','Beyond CLIP: Calibrated (Few-Shot) Defect Detection With System One Decision Models','arXiv paper on using System One decision models for few-shot product defect detection in manufacturing inspection.','Evals & papers','seed-x-scan'),
-('https://opper.ai/morph/reflex','reflex (Morph on Opper)',"Morph's yes/no decision model, released 24 Oct 2026 and listed on Opper with $0.04/M input pricing and a 66K context.",'Docs & essays','seed-x-scan'),
 ('https://n.demir.io/articles/branchone-system-one-decision-model/','BranchOne: A System One Decision Model (Necati Demir)',"Write-up of BranchOne: Qwen3.5-0.8B-Base with LoRA adapters and a shared scoring head, where the choices arrive with each request so the output space is not fixed during training.",'Docs & essays','seed-x-scan'),
 ('https://machinelearningmastery.com/how-to-train-your-own-decision-model-like-jev-using-unsloth/','How to Train Your Own Decision Model like Jev Using Unsloth (MachineLearningMastery)','Tutorial fine-tuning Qwen3.5-4B on CLINC150 with Unsloth to turn an open-weight model into an intent-classifying decision model.','Docs & essays','seed-x-scan'),
 ('https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/','Use decision models with Amazon Bedrock AgentCore Evaluations (AWS)','Connects Jev and Strands Decider to AgentCore Evaluations through code-based evaluators, with a cascade that sends only low-confidence traces to an LLM-as-a-judge.','Use cases','seed-x-scan'),
@@ -1025,13 +1026,11 @@ CATEGORY_OVERRIDE = {
     "https://arxiv.org/abs/2610.34875": CAT_EVALS,
     "https://arxiv.org/abs/2610.38697": CAT_EVALS,
     "https://arxiv.org/abs/2610.36595": CAT_EVALS,
-    "https://github.com/gmrdad82/pito-jev": CAT_SDKS,
     "https://github.com/nickproud/Jevelin": CAT_SDKS,
     "https://github.com/phpaisdk/typesafe": CAT_SDKS,
-    "https://github.com/filip-a-9/judgelint": CAT_SDKS,
     "https://github.com/ssccio/switchyard": CAT_USE,
     "https://huggingface.co/spaces/Tonic/OCR-with-JEV": CAT_USE,
-    "https://www.fratepietro.com/2026/how-to-build-a-decision-model-like-jev/": CAT_DOCS,
+    "https://www.fratepietro.com/2026/how-to-build-a-decision-model-like-jev": CAT_DOCS,
     "https://huggingface.co/vllm-sr/d3-ultra": CAT_OS,
     "https://huggingface.co/LiquidAI/d1-2B": CAT_OS,
     "https://huggingface.co/collections/lion-ai/meddecider": CAT_OS,
@@ -1401,6 +1400,14 @@ def _first(blob: str, rules, default: str) -> str:
     return default
 
 def assign_subsection(e: Entry) -> str:
+    # Placed by hand on main. Keyword rules would file the checkpoint under
+    # runtimes (llama.cpp) and the demos under guardrails (moderation).
+    pinned = {
+        "https://huggingface.co/MachineFi/Trio-Spark-DI": "Models & weights",
+        "https://github.com/machinefi/trio-spark": "Playgrounds & live demos",
+    }
+    if e.url in pinned:
+        return pinned[e.url]
     blob = _blob(e)
     low = blob.lower()
     cat = e.category
@@ -1478,18 +1485,6 @@ def save_stars_cache(cache: dict) -> None:
     ordered = {k: cache[k] for k in sorted(cache, key=str.lower)}
     STARS_CACHE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-def _cache_entry_fresh(entry: dict, now: datetime) -> bool:
-    if not isinstance(entry, dict) or "stars" not in entry:
-        return False
-    fetched = entry.get("fetched_at") or ""
-    try:
-        ts = datetime.fromisoformat(fetched.replace("Z", "+00:00"))
-    except ValueError:
-        return False
-    if ts.tzinfo is None:
-        ts = ts.replace(tzinfo=timezone.utc)
-    return (now - ts).total_seconds() < STARS_TTL_DAYS * 86400
-
 def _fetch_stars_graphql_batch(slugs: list[str]) -> dict[str, int | None]:
     """Batch-fetch stargazerCount via `gh api graphql`. Missing repos → None."""
     if not slugs:
@@ -1560,7 +1555,9 @@ def ensure_stars(entries: dict, force: bool = False) -> dict[str, int | None]:
                 if k.lower() == key:
                     entry = v
                     break
-        if force or not _cache_entry_fresh(entry or {}, now):
+        # Missing cache entry → fetch once. Existing counts stay put unless --refresh-stars.
+        missing = not isinstance(entry, dict) or "stars" not in entry
+        if force or missing:
             needed.append(slug)
 
     # Dedupe while preserving order
