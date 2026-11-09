@@ -444,6 +444,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [decision-models-demo](https://github.com/webmaxru/decision-models-demo) — Jev, Microsoft-Decision-1 and OpenAI Decisions vs a generative LLM on everyday coding-agent decisions; vendor-agnostic, zero dependencies, with a mock mode; MIT.
 - [lfm-talk](https://github.com/Jacqkues/lfm-talk) — Local voice assistant built from Liquid models on llama.cpp: d1-Omni-2B hears each spoken turn and picks the agent (voice, notes, web, reminders) with one choice question over /v1/systemone.
 - [Pennywise](https://github.com/1sakshm/pennywise) — RL-trained Laya decision model that routes LLM requests to the cheapest model tier likely to get them right; OpenAI-compatible proxy and MCP server.
+- [simflick](https://github.com/da22le123/simflick) — MIT iOS-simulator UI driver for AI agents: an injected library reads the screen in ~25 ms and a Jev-driven CLI taps through apps toward a goal.
 - [Tailwise](https://github.com/tecnosam/tailwise) — Picks which agent traces are worth human review using a System One keep_or_drop question (Jev by default, Kev and Laya benchmarked); authors report 7.6x the failures found vs random sampling on HotpotQA ReAct traces; Apache-2.0.
 - [Jev Skills](https://mrjev.com/projects/wuyoscar-jev-skill) — Jev Skills — System One / Jev related resource.
 - [jevai.org community site](https://jevai.org) — An unaffiliated community site with a playground, a preset decision API, an MCP server, downloadable skills and a gallery of community apps.
@@ -682,6 +683,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 
 ### Other applications
 
+- [jev-job-search](https://github.com/qbeka/jev-job-search) — Open-source (MIT) Claude Code workflow that finds internships and new-grad jobs, fills application forms and checks each answer, with Jev (via OpenRouter) making the decisions.
 - [killmyidea](https://github.com/monteduro/killmyidea) — Scores a startup idea across several dimensions and returns a verdict of kill, fix or ship.
 - [JEV Chat](https://github.com/w3cj/jev-chat) — 84 stars — A tool-using chat interface where JEV chooses only from code-supplied reply and tool options. [Source](https://github.com/w3cj/jev-chat/blob/e543aba8c21b57a28a748ef41966502130f0f69e/apps/server/src/jev/pools.ts)
 - [jevchat](https://github.com/kyle-pena-nlp/jevchat) — Turns a decision model into a chat model by asking which symbol comes next, then sampling from the returned distribution.
@@ -1731,6 +1733,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [jevscript](https://github.com/amberwhitehead/jevscript) — An early language experiment whose current implementation is a Jev request-batching spike.
 - [n8n-nodes-typesafe](https://github.com/zampierid4p/n8n-nodes-typesafe) — n8n community node for asking typed questions inside workflows.
 - [openclaw-jev-compaction](https://github.com/SqaaSSL/openclaw-jev-compaction) — Verbatim context compaction for OpenClaw: a context engine powered by TypeSafe's Jev. Drops stale tool calls and results, never summarizes.
+- [pi-autothink](https://github.com/loofare/pi-autothink) — MIT single-file extension for the pi coding agent that scores each message with Jev (0-5) and sets the model's thinking level accordingly.
 - [pi-follow-through](https://github.com/Nabsku/pi-follow-through) — Pi extension that asks TypeSafe Jev whether useful work remains after a run and nudges only with verifiable unfinished evidence. Project guide.
 - [pi-Jev-browser](https://github.com/laihenyi/pi-Jev-browser) — Pi extension where TypeSafe Jev chooses each Playwright browser action over a structured DOM observation in a bounded loop. Project guide.
 - [pi-jev-compaction](https://github.com/Wang-auspicious/pi-jev-compaction) — Extractive context compaction for Pi that keeps selected original tool records instead of generating a summary.

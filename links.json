@@ -3539,6 +3539,16 @@
     ]
   },
   {
+    "url": "https://github.com/da22le123/simflick",
+    "title": "simflick",
+    "description": "MIT iOS-simulator UI driver for AI agents: an injected library reads the screen in ~25 ms and a Jev-driven CLI taps through apps toward a goal.",
+    "category": "Use cases",
+    "subsection": "Agents, tools & harnesses",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://github.com/tecnosam/tailwise",
     "title": "Tailwise",
     "description": "Picks which agent traces are worth human review using a System One keep_or_drop question (Jev by default, Kev and Laya benchmarked); authors report 7.6x the failures found vs random sampling on HotpotQA ReAct traces; Apache-2.0.",
@@ -5749,6 +5759,16 @@
     "description": "No-signup JevBench demo: typed decisions over a claim-dispute scenario.",
     "category": "Use cases",
     "subsection": "Playgrounds & live demos",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://github.com/qbeka/jev-job-search",
+    "title": "jev-job-search",
+    "description": "Open-source (MIT) Claude Code workflow that finds internships and new-grad jobs, fills application forms and checks each answer, with Jev (via OpenRouter) making the decisions.",
+    "category": "Use cases",
+    "subsection": "Other applications",
     "sources": [
       "seed-x-scan"
     ]
@@ -16379,6 +16399,16 @@
     "subsection": "Other tooling",
     "sources": [
       "logicrw/awesome-jev-projects"
+    ]
+  },
+  {
+    "url": "https://github.com/loofare/pi-autothink",
+    "title": "pi-autothink",
+    "description": "MIT single-file extension for the pi coding agent that scores each message with Jev (0-5) and sets the model's thinking level accordingly.",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {

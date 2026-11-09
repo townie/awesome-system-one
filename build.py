@@ -948,6 +948,9 @@ SEEDS = [
 ('https://arxiv.org/abs/2610.42148','Flide: Accelerating Decision Inference with Exact State Forking','Paper on Flide, a serving engine that forks a shared state into many typed questions in one pass for Jev-style decision models.','Evals & papers','seed-x-scan'),
 ('https://huggingface.co/datasets/alvarobartt/sys1-benchmarks','sys1 serving benchmarks','Frozen request cohorts for System One serving-engine latency, throughput and load consistency (not model quality), reconstructed from LocalLLaMA/typed-decisions.','Evals & papers','seed-x-scan'),
 ('https://arxiv.org/abs/2611.07854','Towards Foundation Decision Models: Drex','Nace AI technical report on the Drex decision-model family and RLAF training; covers pointer and readout architectures for Choice/Noul/Score.','Evals & papers','seed-x-scan'),
+('https://github.com/qbeka/jev-job-search','jev-job-search',"Open-source (MIT) Claude Code workflow that finds internships and new-grad jobs, fills application forms and checks each answer, with Jev (via OpenRouter) making the decisions.",'Use cases','seed-x-scan'),
+('https://github.com/loofare/pi-autothink','pi-autothink',"MIT single-file extension for the pi coding agent that scores each message with Jev (0-5) and sets the model's thinking level accordingly.",'SDKs & tooling','seed-x-scan'),
+('https://github.com/da22le123/simflick','simflick',"MIT iOS-simulator UI driver for AI agents: an injected library reads the screen in ~25 ms and a Jev-driven CLI taps through apps toward a goal.",'Use cases','seed-x-scan'),
 
 ]
 
