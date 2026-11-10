@@ -293,6 +293,8 @@ def parse_alternatives_html(path, entries):
             add(entries, url, urlparse(url).netloc, "", CAT_OS, source)
 
 SEEDS = [
+("https://github.com/markrussinovich/venn-vdm","Venn (venn-vdm)","Mark Russinovich's MIT-licensed research-preview Vector Decision Model: Choice, Score, and Noul answers over cached EmbeddingGemma 2 embeddings, Decisions API request format, trainable small heads, CPU-friendly.",CAT_OS,"seed-x"),
+("https://huggingface.co/markrussinovich/venn-1","venn-1","Venn's 3.15 MB generic decision head over google/embeddinggemma-2 (research preview).",CAT_OS,"seed-x"),
 ("https://typesafe.ai","TypeSafe AI","Product site for TypeSafe System One models and Jev.","Docs & essays","seed-official"),
 ("https://docs.typesafe.ai","Documentation","TypeSafe docs home — what Jev is and how System One differs from text generation.","Hosted: TypeSafe Jev","seed-official"),
 ("https://docs.typesafe.ai/concepts/system-one","System One concept","Author definition of System One models and the typed-decision interface.","Docs & essays","seed-official"),

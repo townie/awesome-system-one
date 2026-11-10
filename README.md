@@ -147,6 +147,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [openjev (zhihz)](https://github.com/zhihz/openjev) — , Local bilingual probability decisions from context, questions and candidate answers. [![Code](https://img.shields.io/github/stars/zhihz/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhihz/openjev)
 - [Dohnuts](https://github.com/PsiACE/dohnuts) — , 0.8B text-and-image decision model trained on one RX 7900 XTX; authors report 65.8% accuracy on 231 public JevBench tasks; Apache-2.0 code and non-commercial CC BY-NC-SA 4.0 weights.…
 - [JevBERT](https://github.com/hawkymisc/typed-decision-bert) — A local server that speaks Jev's `/v1/systemone` shape from a BERT encoder, with a numbered account of every request it refuses that Jev might accept.
+- [Venn (venn-vdm)](https://github.com/markrussinovich/venn-vdm) — Mark Russinovich's MIT-licensed research-preview Vector Decision Model: Choice, Score, and Noul answers over cached EmbeddingGemma 2 embeddings, Decisions API request format, trainable small heads, CPU-friendly.
 - [openjev-rlcd](https://github.com/ZimmyGao/openjev-rlcd) — Working open RLCD implementation for reasoning models (calibrate-then-reinforce) with API-compatible server.
 - [Jev on a laptop](https://github.com/rorshopping/jev-on-a-laptop) — , Unofficial study of Jev-style parallel typed decisions on stock 1.5B to 8B models on Apple Silicon, with benchmarks.…
 - [Flide](https://github.com/OmniJev/Flide) — Open-source System One serving engine with exact state forking: one forward pass for a shared state plus many questions, drop-in /v1/systemone API.
@@ -243,6 +244,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [THX-01](https://huggingface.co/doofz/THX-01) — Tiny 322M open-weight decision model with a hosted API.
 - [Torchcast Decision 31B](https://huggingface.co/torchcast-ai/torchcast-decision-31b) — Full fine-tune of Gemma 4 31B returning noul, choice and score distributions through a TypeSafe-compatible API; hybrid bidirectional global attention.
 - [Trio-Spark DI](https://huggingface.co/MachineFi/Trio-Spark-DI) — Gated 9B research checkpoint (GGUF, CC BY-NC 4.0) with a deterministic llama.cpp /v1/systemone server for Choice, Noul and Score; self-run 56.74 on the public Decision Index 0.3 suite.
+- [venn-1](https://huggingface.co/markrussinovich/venn-1) — Venn's 3.15 MB generic decision head over google/embeddinggemma-2 (research preview).
 - [vev-4b](https://huggingface.co/CountingSheep/vev-4b) — Open 4B vision-capable typed-decision weights for vev.
 - [vev-9b](https://huggingface.co/CountingSheep/vev-9b) — Open 9B vision-capable typed-decision weights for vev.
 - [WeMM-JEV](https://huggingface.co/mwei/WeMM-JEV) — 27B multimodal decision model on Qwen3.8-27B: choice, noul and score over text and multiple images in one forward pass per question; self-reported public Decision Index 0.3 results; Apache-2.0.

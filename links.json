@@ -767,6 +767,16 @@
     ]
   },
   {
+    "url": "https://github.com/markrussinovich/venn-vdm",
+    "title": "Venn (venn-vdm)",
+    "description": "Mark Russinovich's MIT-licensed research-preview Vector Decision Model: Choice, Score, and Noul answers over cached EmbeddingGemma 2 embeddings, Decisions API request format, trainable small heads, CPU-friendly.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x"
+    ]
+  },
+  {
     "url": "https://github.com/ZimmyGao/openjev-rlcd",
     "title": "openjev-rlcd",
     "description": "Working open RLCD implementation for reasoning models (calibrate-then-reinforce) with API-compatible server.",
@@ -1728,6 +1738,16 @@
     "subsection": "Models & weights",
     "sources": [
       "links.json"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/markrussinovich/venn-1",
+    "title": "venn-1",
+    "description": "Venn's 3.15 MB generic decision head over google/embeddinggemma-2 (research preview).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x"
     ]
   },
   {
