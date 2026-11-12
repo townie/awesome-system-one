@@ -1380,6 +1380,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/MachinePulseAI/karpo-decision-31B",
+    "title": "karpo-decision-31B (MachinePulseAI)",
+    "description": "Apache-2.0 text-only Gemma-4-31B-it fine-tune with a linear readout (up to 255 options, 32k context) answering choice, noul and score questions in one pass; vendor-reported 75.05 chance-corrected public Decision Index 0.3; probabilities…",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://modelscope.ai/collections/EMLab/KnowLine-Decision",
     "title": "KnowLine-Decision (EMLab)",
     "description": "EMLab's seven open-weight decision models (0.8B to 31B dense plus two MoE) for RAG, agents and enterprise workflows, served through a Jev-compatible API; weights Apache-2.0, serving code MIT; self-reported 71.86 on Jev Decision Index…",
@@ -6962,6 +6972,16 @@
     "subsection": "",
     "sources": [
       "OmniJev/awesome-jev-gallery"
+    ]
+  },
+  {
+    "url": "https://aistudio.google.com/docs/decisions-api",
+    "title": "Gemini Decisions API",
+    "description": "Google public-beta POST /v1beta/decisions on gemini-decision-1 (announced 2026-11-11): up to 1,000 typed noul, choice and score questions per request over text, images, audio, video and PDFs, calibrated probabilities with confidence,…",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
