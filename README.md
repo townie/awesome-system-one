@@ -226,6 +226,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [open-jev-deberta-v3-large](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large) — DeBERTa-v3-large Jev-shaped Choice/Score/Noul model from kotoba-lang/typed-decisions; public-gold training.
 - [OpenJev (weights)](https://huggingface.co/openjev/openjev) — HF decision-model checkpoint for OpenJev; zero-shot classification / calibrated option probabilities; CC-BY-NC-4.0.
 - [openjev-FP8](https://huggingface.co/openjev/openjev-FP8) — FP8 quantized OpenJev weights (~29 GB) for single-GPU serving.
+- [pplx-decider-v1.3 (Perplexity)](https://huggingface.co/perplexity-ai/pplx-decider-v1.3) — Perplexity's Apache-2.0 multimodal decision model on Qwen3.8-27B (plus a 4B Flash variant): typed probabilities for noul, choice and score questions, with a new locate feature for verbatim spans; also on OpenRouter and the Perplexity…
 - [ProtectAI prompt-injection DeBERTa v2](https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2) — , 184M DeBERTa returning a binary injection probability, the BERT-style encoder guardrail HN engineers mapped Jev onto.…
 - [Qev-2B](https://huggingface.co/AustinFu/Qev-2B) — Compact Qev decision weights with response distillation.
 - [Qev-4B](https://huggingface.co/AustinFu/Qev-4B) — Mid-size Qev decision weights on Qwen (Choice/Noul/Score).
@@ -1084,6 +1085,7 @@ How these models are measured — including [JevBench](https://jevbench.dev/) �
 - [SOMA](https://arxiv.org/abs/2610.26793) — Paper on System One style decision modeling.
 - [System One for Pentest Harnesses](https://arxiv.org/abs/2609.28940) — Jev/Laya as calibrated decision layers (adjudication, severity, agent prune, confirmation) in LLM pentest agents.
 - [System One Models Are Not Better Rerankers](https://arxiv.org/abs/2610.32318) — Paper finding decision finetuning does not beat plain reranker finetuning on the same Qwen backbones.
+- [The Value of Thinking: Learning When to Reason in Hybrid Decision Models (arXiv 2611.16961)](https://arxiv.org/abs/2611.16961) — Paper behind HDM: zero-or-T thinking with a self-routing block; reports HDM-4B at 0.857 vs Jev's 0.851 on JevBench at lower median latency (authors' numbers).
 - [Thinking Fast and Slow in AI](https://arxiv.org/abs/2010.06002) — . The AI charter for System 1 components that answer from experience without search, what System One Models productizes. ![AAAI 2021](https://img.shields.io/badge/AAAI_2021-4B5563?style=flat-square)…
 - [ThinkJev](https://arxiv.org/abs/2610.37732) — Paper building fast and slow typed-decision systems from one open hybrid-thinking model, paying for thinking only where it helps.
 - [Towards Foundation Decision Models: Drex](https://arxiv.org/abs/2611.07854) — Nace AI technical report on the Drex decision-model family and RLAF training; covers pointer and readout architectures for Choice/Noul/Score.
@@ -1710,6 +1712,7 @@ Clients, MCP servers, skills, and integrations — including TypeSafe’s SDKs. 
 - [typesafeai-cli](https://github.com/maddygoround/typesafeai-cli) — Python `typesafe` CLI for TypeSafe Jev ask/decide/screen/verify flows for humans and agents. Project guide.
 - [VideoAdGuard-Jev](https://github.com/xianggelila177/VideoAdGuard-Jev) — Jev returns a structured decision for the local program; consult the source for the exact decision policy.
 - [wellposed](https://github.com/suraj-phanindra/wellposed) — Zero-dependency linter for TypeSafe Jev requests: broken state paths, missing Choice escape hatches, bundled judgments (`wellposed` 0.4.0). Project guide.
+- [HDM (hybrid decision model)](https://github.com/zhengxuyu/HDM-code) — Official code for a hybrid decision model: a frozen backbone answers in one forward pass with no generated token, and a small self-routing block escalates to reasoning only when the value of thinking clears a per-request price; routing…
 - [japanese-jev-lint](https://github.com/pankona/japanese-jev-lint) — Go CLI (`jjl`) that flags Japanese sentences with TypeSafe Jev Noul probabilities (plus local です/ます regex); no rewrite generation. Project guide.
 - [Jev the Janitor](https://github.com/kylehovance-ai/jev-the-janitor) — Markdown vault janitor: TypeSafe Jev votes on each note; code adds frontmatter or quarantines secrets (dry-run default; offline mode). Project guide.
 - [jev-acp](https://github.com/formulahendry/jev-acp) — Standalone ACP agent for Jev Choice, Score, and Noul decisions, with guided input, reusable templates, and probability displays; requires a TypeSafe API key and sends decision inputs to TypeSafe.

@@ -1561,6 +1561,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.3",
+    "title": "pplx-decider-v1.3 (Perplexity)",
+    "description": "Perplexity's Apache-2.0 multimodal decision model on Qwen3.8-27B (plus a 4B Flash variant): typed probabilities for noul, choice and score questions, with a new locate feature for verbatim spans; also on OpenRouter and the Perplexity…",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2",
     "title": "ProtectAI prompt-injection DeBERTa v2",
     "description": ", 184M DeBERTa returning a binary injection probability, the BERT-style encoder guardrail HN engineers mapped Jev onto.…",
@@ -9674,6 +9684,16 @@
     ]
   },
   {
+    "url": "https://arxiv.org/abs/2611.16961",
+    "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models (arXiv 2611.16961)",
+    "description": "Paper behind HDM: zero-or-T thinking with a self-routing block; reports HDM-4B at 0.857 vs Jev's 0.851 on JevBench at lower median latency (authors' numbers).",
+    "category": "Evals & papers",
+    "subsection": "Papers",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://arxiv.org/abs/2010.06002",
     "title": "Thinking Fast and Slow in AI",
     "description": ". The AI charter for System 1 components that answer from experience without search, what System One Models productizes. ![AAAI 2021](https://img.shields.io/badge/AAAI_2021-4B5563?style=flat-square)…",
@@ -16166,6 +16186,16 @@
     "subsection": "Other tooling",
     "sources": [
       "AppitStudio/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://github.com/zhengxuyu/HDM-code",
+    "title": "HDM (hybrid decision model)",
+    "description": "Official code for a hybrid decision model: a frozen backbone answers in one forward pass with no generated token, and a small self-routing block escalates to reasoning only when the value of thinking clears a per-request price; routing…",
+    "category": "SDKs & tooling",
+    "subsection": "Other tooling",
+    "sources": [
+      "seed-x-scan"
     ]
   },
   {
