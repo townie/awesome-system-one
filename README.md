@@ -188,6 +188,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Codiv](https://codiv.ai) — Hosted inference for open System One models; serves OpenJev through a Jev-compatible API.
 - [Codiv API](https://api.codiv.ai) — Jev-compatible base URL for Codiv-hosted OpenJev (point TYPESAFE_BASE_URL here).
 - [Cribl Decision 2](https://huggingface.co/cribl-ai/cribl-decision-2-4B) — Cribl's 4B decision model on Qwen3.5-4B for IT, security and telemetry questions (log type, suspicious events, severity); Apache-2.0, with a 0.8B mini.
+- [d1-Omni-2B (Liquid AI)](https://huggingface.co/LiquidAI/d1-Omni-2B) — Open-weight 2.17B omnimodal decision model on LFM3-Omni-2B: text, images, video and audio in, typed answers with probabilities out in one forward pass; LFM Open License v1.0.
 - [Darwin-27B-RSI-Decision](https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-Decision) — FINAL-Bench's 27B decision model (same team as Darwin-27B-ZTC-v9) served over /v1/systemone, with self-reported public Decision Index results; Apache-2.0.
 - [Darwin-27B-ZTC v9 (VIDRAFT)](https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC-v9) — Apache-2.0 27B decision model listed at the top of the S1MB English leaderboard on its card.
 - [Deem-4B](https://huggingface.co/mertkayacs/Deem-4B) — English JevAlt 4B decision weights (Intern-Decision-4B fine-tune); Apache-2.0.
@@ -278,6 +279,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [Jev-Style-0.8B-Decision-v3](https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3) — Open 0.8B decision weights (default jev-style release); 64.1% JevBench public; MLX/GGUF.
 - [Jev-Style-2B-Decision-v3](https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3) — Open 2B decision weights: 73.6% on JevBench v1.4.1 public (231); torch/MLX/GGUF builds.
 - [openjev-MLX](https://huggingface.co/openjev/openjev-MLX) — MLX 8-bit OpenJev build for Apple silicon (text-only).
+- [OTel-2.0-Decision-26B-A4B-4bit](https://huggingface.co/farbodtavakkoli/OTel-2.0-Decision-26B-A4B-4bit) — Telecom-oriented OTel 2.0 recipe: 4-bit W4A16 Gemma 4 26B-A4B-it (no added training) read as typed decisions from label probabilities, with vLLM and llama.cpp /v1/systemone serving recipes.
 - [vLLM PR #57250 — DiffusionGemma structured mode](https://github.com/vllm-project/vllm/pull/57250) — Prototype structured-generation / Jev-like canvas read for DiffusionGemma with sample /v1/systemone interposer.
 - [vulcan-decision-shell-v1](https://huggingface.co/openvulcan/vulcan-decision-shell-v1) — Small decision models (0.75B, 0.36B flash, 0.2B mini) that judge a coding agent's tool calls as allow, review or block; Apache-2.0, ONNX runtime and data released.
 
@@ -805,6 +807,7 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Clairic (Cloudflare)](https://blog.cloudflare.com/clairic-extraction-model) — Cloudflare's extraction model post, a sibling of Clef for typed field extraction.
 - [Confidence](https://docs.typesafe.ai/confidence) — How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.
 - [Current models](https://docs.typesafe.ai/models) — Find model versions, moving aliases, supported inputs, pricing, and current limits.
+- [d1.2 and d1.2-ultra (Liquid AI)](https://liquid.ai/blog/d1-2) — Liquid's hosted-API omnimodal decision models adding audio input and five new tasks (read value, spans, boxes, number estimate, multi-select); vendor-reported 75 on the Artificial Analysis Decision Index v2.1.
 - [Decoding Jev](https://navinpai.github.io/decoding-jev) — Independent walkthrough of architecture, inference, and RLCD evidence status.
 - [Deterministic Text-to-SQL with Jev and AST](https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast) — Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.
 - [Founder launch thread on X](https://x.com/CompleteSkeptic/status/2099925682726002904) — , Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do.…

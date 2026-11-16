@@ -293,6 +293,9 @@ def parse_alternatives_html(path, entries):
             add(entries, url, urlparse(url).netloc, "", CAT_OS, source)
 
 SEEDS = [
+("https://huggingface.co/LiquidAI/d1-Omni-2B","d1-Omni-2B (Liquid AI)","Open-weight 2.17B omnimodal decision model on LFM3-Omni-2B: text, images, video and audio in, typed answers with probabilities out in one forward pass; LFM Open License v1.0.",CAT_OS,"seed-x"),
+("https://www.liquid.ai/blog/d1-2","d1.2 and d1.2-ultra (Liquid AI)","Liquid's hosted-API omnimodal decision models adding audio input and five new tasks (read value, spans, boxes, number estimate, multi-select); vendor-reported 75 on the Artificial Analysis Decision Index v2.1.",CAT_DOCS,"seed-x"),
+("https://huggingface.co/farbodtavakkoli/OTel-2.0-Decision-26B-A4B-4bit","OTel-2.0-Decision-26B-A4B-4bit","Telecom-oriented OTel 2.0 recipe: 4-bit W4A16 Gemma 4 26B-A4B-it (no added training) read as typed decisions from label probabilities, with vLLM and llama.cpp /v1/systemone serving recipes.",CAT_OS,"seed-x"),
 ("https://github.com/markrussinovich/venn-vdm","Venn (venn-vdm)","Mark Russinovich's MIT-licensed research-preview Vector Decision Model: Choice, Score, and Noul answers over cached EmbeddingGemma 2 embeddings, Decisions API request format, trainable small heads, CPU-friendly.",CAT_OS,"seed-x"),
 ("https://huggingface.co/markrussinovich/venn-1","venn-1","Venn's 3.15 MB generic decision head over google/embeddinggemma-2 (research preview).",CAT_OS,"seed-x"),
 ("https://typesafe.ai","TypeSafe AI","Product site for TypeSafe System One models and Jev.","Docs & essays","seed-official"),

@@ -1180,6 +1180,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/LiquidAI/d1-Omni-2B",
+    "title": "d1-Omni-2B (Liquid AI)",
+    "description": "Open-weight 2.17B omnimodal decision model on LFM3-Omni-2B: text, images, video and audio in, typed answers with probabilities out in one forward pass; LFM Open License v1.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x"
+    ]
+  },
+  {
     "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-RSI-Decision",
     "title": "Darwin-27B-RSI-Decision",
     "description": "FINAL-Bench's 27B decision model (same team as Darwin-27B-ZTC-v9) served over /v1/systemone, with self-reported public Decision Index results; Apache-2.0.",
@@ -2065,6 +2075,16 @@
     "subsection": "Runtimes, ports & servers",
     "sources": [
       "seed-x-scan"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/farbodtavakkoli/OTel-2.0-Decision-26B-A4B-4bit",
+    "title": "OTel-2.0-Decision-26B-A4B-4bit",
+    "description": "Telecom-oriented OTel 2.0 recipe: 4-bit W4A16 Gemma 4 26B-A4B-it (no added training) read as typed decisions from label probabilities, with vLLM and llama.cpp /v1/systemone serving recipes.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Runtimes, ports & servers",
+    "sources": [
+      "seed-x"
     ]
   },
   {
@@ -6952,6 +6972,16 @@
     "sources": [
       "AppitStudio/awesome-jev",
       "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://liquid.ai/blog/d1-2",
+    "title": "d1.2 and d1.2-ultra (Liquid AI)",
+    "description": "Liquid's hosted-API omnimodal decision models adding audio input and five new tasks (read value, spans, boxes, number estimate, multi-select); vendor-reported 75 on the Artificial Analysis Decision Index v2.1.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x"
     ]
   },
   {
