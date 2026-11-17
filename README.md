@@ -805,9 +805,11 @@ Explainers, launch coverage, TypeSafe concept pages, and background reading.
 - [Building a Harness with Jev](https://langchain.com/blog/building-a-harness-with-jev) — LangChain's explainer and integration walkthrough: the three question types, plus model routing and gating risky tool calls before they run.
 - [Choice, Score, or Noul?](https://jevdirectory.org/articles/choice-score-or-noul) — JevDirectory guide to picking the right System One primitive.
 - [Clairic (Cloudflare)](https://blog.cloudflare.com/clairic-extraction-model) — Cloudflare's extraction model post, a sibling of Clef for typed field extraction.
+- [Cloudflare Joins the Jevolution (Latent Space)](https://latent.space/p/cloudflare) — Latent Space interview with Cloudflare's AI Platform lead on Cloudflare's move into System One models.
 - [Confidence](https://docs.typesafe.ai/confidence) — How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.
 - [Current models](https://docs.typesafe.ai/models) — Find model versions, moving aliases, supported inputs, pricing, and current limits.
 - [d1.2 and d1.2-ultra (Liquid AI)](https://liquid.ai/blog/d1-2) — Liquid's hosted-API omnimodal decision models adding audio input and five new tasks (read value, spans, boxes, number estimate, multi-select); vendor-reported 75 on the Artificial Analysis Decision Index v2.1.
+- [Decider 1.1 (meraGPT)](https://meragpt.com/blog/introducing-decider-1-1) — Hosted decision model update: image input, 32k-token requests, up to 255 options, and abstention ("I don't know"); vendor-reported When2Call 42 to 77.9 at $0.04 per million input tokens.
 - [Decoding Jev](https://navinpai.github.io/decoding-jev) — Independent walkthrough of architecture, inference, and RLCD evidence status.
 - [Deterministic Text-to-SQL with Jev and AST](https://zenn.dev/snaga/articles/2026-10-25-deterministic-text-to-sql-jev-ast) — Japanese write-up of a Text-to-SQL prototype that uses Jev decisions plus an AST instead of generated SQL.
 - [Founder launch thread on X](https://x.com/CompleteSkeptic/status/2099925682726002904) — , Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do.…

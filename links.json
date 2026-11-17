@@ -6951,6 +6951,16 @@
     ]
   },
   {
+    "url": "https://latent.space/p/cloudflare",
+    "title": "Cloudflare Joins the Jevolution (Latent Space)",
+    "description": "Latent Space interview with Cloudflare's AI Platform lead on Cloudflare's move into System One models.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x"
+    ]
+  },
+  {
     "url": "https://docs.typesafe.ai/confidence",
     "title": "Confidence",
     "description": "How confidence is derived from the probability distribution, and why a threshold tuned on one question type does not transfer to another.",
@@ -6978,6 +6988,16 @@
     "url": "https://liquid.ai/blog/d1-2",
     "title": "d1.2 and d1.2-ultra (Liquid AI)",
     "description": "Liquid's hosted-API omnimodal decision models adding audio input and five new tasks (read value, spans, boxes, number estimate, multi-select); vendor-reported 75 on the Artificial Analysis Decision Index v2.1.",
+    "category": "Docs & essays",
+    "subsection": "",
+    "sources": [
+      "seed-x"
+    ]
+  },
+  {
+    "url": "https://meragpt.com/blog/introducing-decider-1-1",
+    "title": "Decider 1.1 (meraGPT)",
+    "description": "Hosted decision model update: image input, 32k-token requests, up to 255 options, and abstention (\"I don't know\"); vendor-reported When2Call 42 to 77.9 at $0.04 per million input tokens.",
     "category": "Docs & essays",
     "subsection": "",
     "sources": [
