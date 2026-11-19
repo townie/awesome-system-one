@@ -170,6 +170,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [stuntdouble](https://github.com/ReallyArtificial/stuntdouble) — Drop-in /v1/systemone proxy that shadows Jev with local decision models (Kev, Laya) and reports whether you can swap
 - [XAYA-2B](https://github.com/LikithMeruvu/xaya-2b) — 2B multimodal structured decision model on Qwen3.5-2B with a Python SDK returning candidate probabilities.
 - [Gemma 4 Typed Decisions](https://github.com/nob-git-dev/gemma4-typed-decisions) — Independent Gemma 4 /v1/systemone implementation (Noul, Choice, Score) with a reproducible accuracy and latency comparison against Jev on NVIDIA GB10.
+- [japanese-jev (bigrh0917)](https://github.com/bigrh0917/japanese-jev-release) — Unofficial Japanese decision model reproducing the System One approach: Qwen3 1.7B and 0.6B LoRA weights, eval sets and usage docs; per-option probabilities in one forward pass, runs on an 8 GB laptop GPU.
 - [jet](https://github.com/michaljach/jet) — Train and serve a small typed calibrated decision model (choice/score/noul) on Apple Silicon.
 - [jqv](https://github.com/Octalab-Inc/jqv) — Stock Qwen3 decision API: shared-state prefill, choice-token readout, temperature-calibrated probabilities, TypeSafe-compatible.
 - [NanoJev](https://github.com/chenyangcun/NanoJev) — A minimal nanoGPT-style replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline.
@@ -761,6 +762,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [jev-fit](https://jev-fit.com) — Hosted fit checker and public API: paste a software idea, and one Jev call over a fixed typed rubric returns plain code, Jev, or a reasoning LLM with probabilities, while application code adds an image veto and a low-confidence "not…
 - [jev-seo](https://mrjev.com/projects/akashpriyadarshii-jev-seo) — jev-seo — System One / Jev related resource.
 - [jev-use](https://mrjev.com/projects/shitianfang-jev-use) — jev-use — System One / Jev related resource.
+- [Jeveration](https://huggingface.co/spaces/linlinlinlinsdada/Jeveration) — Gradio Space applying the System One approach to image generation: a single forward pass through a frozen VLM; text-to-image, image-to-image and dense tasks, quality well below SOTA but very fast (per multimodalart).
 - [jevscan-evm](https://mrjev.com/projects/devtooligan-jevscan-evm) — jevscan-evm — System One / Jev related resource.
 - [Jevvy](https://mrjev.com/projects/panachy-jevvy) — Jevvy — System One / Jev related resource.
 - [MiniCPM-OCR + Jev Checker](https://huggingface.co/spaces/Tonic/OCR-with-JEV) — Space pairing MiniCPM-OCR parsing with MiniCPM-OCR Jev region correctness scores.

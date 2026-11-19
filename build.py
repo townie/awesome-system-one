@@ -293,6 +293,8 @@ def parse_alternatives_html(path, entries):
             add(entries, url, urlparse(url).netloc, "", CAT_OS, source)
 
 SEEDS = [
+("https://github.com/bigrh0917/japanese-jev-release","japanese-jev (bigrh0917)","Unofficial Japanese decision model reproducing the System One approach: Qwen3 1.7B and 0.6B LoRA weights, eval sets and usage docs; per-option probabilities in one forward pass, runs on an 8 GB laptop GPU.",CAT_OS,"seed-x"),
+("https://huggingface.co/spaces/linlinlinlinsdada/Jeveration","Jeveration","Gradio Space applying the System One approach to image generation: a single forward pass through a frozen VLM; text-to-image, image-to-image and dense tasks, quality well below SOTA but very fast (per multimodalart).",CAT_USE if 'CAT_USE' in globals() else "Use cases","seed-x"),
 ("https://meragpt.com/blog/introducing-decider-1-1","Decider 1.1 (meraGPT)","Hosted decision model update: image input, 32k-token requests, up to 255 options, and abstention (\"I don't know\"); vendor-reported When2Call 42 to 77.9 at $0.04 per million input tokens.",CAT_DOCS,"seed-x"),
 ("https://latent.space/p/cloudflare/","Cloudflare Joins the Jevolution (Latent Space)","Latent Space interview with Cloudflare's AI Platform lead on Cloudflare's move into System One models.",CAT_DOCS,"seed-x"),
 ("https://huggingface.co/LiquidAI/d1-Omni-2B","d1-Omni-2B (Liquid AI)","Open-weight 2.17B omnimodal decision model on LFM3-Omni-2B: text, images, video and audio in, typed answers with probabilities out in one forward pass; LFM Open License v1.0.",CAT_OS,"seed-x"),

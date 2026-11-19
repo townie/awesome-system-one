@@ -1000,6 +1000,16 @@
     ]
   },
   {
+    "url": "https://github.com/bigrh0917/japanese-jev-release",
+    "title": "japanese-jev (bigrh0917)",
+    "description": "Unofficial Japanese decision model reproducing the System One approach: Qwen3 1.7B and 0.6B LoRA weights, eval sets and usage docs; per-option probabilities in one forward pass, runs on an 8 GB laptop GPU.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x"
+    ]
+  },
+  {
     "url": "https://github.com/michaljach/jet",
     "title": "jet",
     "description": "Train and serve a small typed calibrated decision model (choice/score/noul) on Apple Silicon.",
@@ -6550,6 +6560,16 @@
     "subsection": "Other applications",
     "sources": [
       "MrJev/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/spaces/linlinlinlinsdada/Jeveration",
+    "title": "Jeveration",
+    "description": "Gradio Space applying the System One approach to image generation: a single forward pass through a frozen VLM; text-to-image, image-to-image and dense tasks, quality well below SOTA but very fast (per multimodalart).",
+    "category": "Use cases",
+    "subsection": "Other applications",
+    "sources": [
+      "seed-x"
     ]
   },
   {
