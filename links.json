@@ -1120,6 +1120,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/Cloudflare/clairic",
+    "title": "Clairic (Cloudflare)",
+    "description": "27B multimodal open model (Qwen3.8-27B fine-tune) for typed structured extraction from text and images; Clef sibling; Apache-2.0.",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x-scan"
+    ]
+  },
+  {
     "url": "https://huggingface.co/Saanora/clara-1",
     "title": "Clara-1 (Saanora)",
     "description": "Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.",
@@ -3195,6 +3205,16 @@
     "subsection": "Extraction & structured data",
     "sources": [
       "kydlikebtc/awesome-jev"
+    ]
+  },
+  {
+    "url": "https://huggingface.co/spaces/hugging-apps/clairic",
+    "title": "Clairic demo (hugging-apps)",
+    "description": "Gradio Space for Cloudflare Clairic 27B typed structured extraction, with receipt image examples; also exposed as an MCP server.",
+    "category": "Use cases",
+    "subsection": "Extraction & structured data",
+    "sources": [
+      "seed-x"
     ]
   },
   {

@@ -182,6 +182,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [AutoTrust-JEV-27B v1.1](https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1) — Updated AutoTrust 27B integrated System 1/2 decision checkpoint.
 - [bit-jev-2b-distilled](https://huggingface.co/jinghao1632/bit-jev-2b-distilled) — Distilled 2B open Jev-style decision weights.
 - [BranchOne](https://huggingface.co/ndemirdemir/BranchOne) — Apache-2.0 decision model on Qwen3.5-0.8B with LoRA plus a scoring head; scores 2-150 supplied choices from text and an optional image.
+- [Clairic (Cloudflare)](https://huggingface.co/Cloudflare/clairic) — 27B multimodal open model (Qwen3.8-27B fine-tune) for typed structured extraction from text and images; Clef sibling; Apache-2.0.
 - [Clara-1 (Saanora)](https://huggingface.co/Saanora/clara-1) — Apache-2.0 open-weight decision model (4B finetune) returning a probability per option; GGUF builds included.
 - [classifier.dev](https://classifier.dev) — Hosted service built on TypeSafe Jev; JevBench v1.5.0 honorable mention (Capability 82.5).
 - [Clef (Cloudflare)](https://huggingface.co/Cloudflare/clef) — 27B multimodal open model that maps text, JSON, images, or video state plus typed questions to probabilities in one pass; Jev/System One-compatible; Apache-2.0.
@@ -405,6 +406,7 @@ Apps, demos, and TypeSafe cookbooks/patterns grouped by decision shape.
 - [jev-information-extraction](https://github.com/abhishekmamdapure/jev-information-extraction) — Ask questions about a PDF. Use Jev to rank the source text that answers them. Inspect each match, its probability, and its location on the original page.
 - [sqlite3-jev](https://github.com/mattn/sqlite3-jev) — SQLite C extension enabling TypeSafe Jev judgments as native SQL functions for semantic scoring and choices.
 - [aegis: TypeSafe as a first-class provider](https://github.com/dvjn/aegis) — A personal Rust AI gateway with a TypeSafe provider, usage extraction and alias resolution tested against real response bodies.
+- [Clairic demo (hugging-apps)](https://huggingface.co/spaces/hugging-apps/clairic) — Gradio Space for Cloudflare Clairic 27B typed structured extraction, with receipt image examples; also exposed as an MCP server.
 - [Cookbook: Structured data extraction cascade](https://docs.typesafe.ai/cookbooks/sde_cascade) — A two-stage mini-then-verify-then-reasoning cascade that reaches most of a big reasoning model's quality at a fraction of the cost.
 - [Date extraction](https://docs.typesafe.ai/cookbooks/date_extraction_cookbook) — Extracts absolute and relative dates by asking for the parts a document names, then resolving and validating them in code with confidence-based review.
 - [Double-checking citations](https://docs.typesafe.ai/cookbooks/citation_check) — Catches wrong or invented citations against the source document with one Choice, using its confidence to flag borderline cases for review.
