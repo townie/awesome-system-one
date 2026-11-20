@@ -1481,6 +1481,16 @@
     ]
   },
   {
+    "url": "https://huggingface.co/MeTask-Rain/MetaDecision-31B-Rain",
+    "title": "MetaDecision 31B (MeTask-Rain)",
+    "description": "Open-weights structured decision model on Gemma 4 31B: yes/no, pick-one and rubric-score decisions with probabilities; posted as #2 by Capability Score on JevBench (12 Nov 2026, self-reported).",
+    "category": "Open-source / local alternatives",
+    "subsection": "Models & weights",
+    "sources": [
+      "seed-x"
+    ]
+  },
+  {
     "url": "https://huggingface.co/sky7350/Mica-v0.1-4B",
     "title": "Mica-v0.1-4B (weights)",
     "description": "Merged BF16 + GGUF checkpoints for Mica typed-decision model.",

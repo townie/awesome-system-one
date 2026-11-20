@@ -293,6 +293,7 @@ def parse_alternatives_html(path, entries):
             add(entries, url, urlparse(url).netloc, "", CAT_OS, source)
 
 SEEDS = [
+("https://huggingface.co/MeTask-Rain/MetaDecision-31B-Rain","MetaDecision 31B (MeTask-Rain)","Open-weights structured decision model on Gemma 4 31B: yes/no, pick-one and rubric-score decisions with probabilities; posted as #2 by Capability Score on JevBench (12 Nov 2026, self-reported).",CAT_OS,"seed-x"),
 ("https://github.com/bigrh0917/japanese-jev-release","japanese-jev (bigrh0917)","Unofficial Japanese decision model reproducing the System One approach: Qwen3 1.7B and 0.6B LoRA weights, eval sets and usage docs; per-option probabilities in one forward pass, runs on an 8 GB laptop GPU.",CAT_OS,"seed-x"),
 ("https://huggingface.co/spaces/linlinlinlinsdada/Jeveration","Jeveration","Gradio Space applying the System One approach to image generation: a single forward pass through a frozen VLM; text-to-image, image-to-image and dense tasks, quality well below SOTA but very fast (per multimodalart).",CAT_USE if 'CAT_USE' in globals() else "Use cases","seed-x"),
 ("https://huggingface.co/spaces/hugging-apps/clairic","Clairic demo (hugging-apps)","Gradio Space for Cloudflare Clairic 27B typed structured extraction, with receipt image examples; also exposed as an MCP server.",CAT_USE if 'CAT_USE' in globals() else "Use cases","seed-x"),

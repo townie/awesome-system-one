@@ -218,6 +218,7 @@ Run Jev-style `Choice` / `Score` / `Noul` locally: open models, MLX and Core ML 
 - [LFM2.5-350M-RLCD](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD) — , 350M-parameter RLCD-style decision model, the smallest open attempt. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD)
 - [Mammoth-1 (Baseten)](https://huggingface.co/baselabs/mammoth-1) — Baseten's 27B open decision model with typed Choice/Score/Noul outputs; Decision Index entry.
 - [MedDecider (lion-ai)](https://huggingface.co/collections/lion-ai/meddecider) — Medical decision models in 4B, 9B, 27B, and 31B sizes that return a probability per option; CC-BY-NC-4.0.
+- [MetaDecision 31B (MeTask-Rain)](https://huggingface.co/MeTask-Rain/MetaDecision-31B-Rain) — Open-weights structured decision model on Gemma 4 31B: yes/no, pick-one and rubric-score decisions with probabilities; posted as #2 by Capability Score on JevBench (12 Nov 2026, self-reported).
 - [Mica-v0.1-4B (weights)](https://huggingface.co/sky7350/Mica-v0.1-4B) — Merged BF16 + GGUF checkpoints for Mica typed-decision model.
 - [MiniCPM-OCR Jev (OpenBMB)](https://huggingface.co/openbmb/MiniCPM-OCR-Jev) — 2B OCR correctness decision model: scores a candidate OCR result for a text, formula or table region from 0 to 1; Apache-2.0.
 - [NanoJev](https://huggingface.co/C-Tianyu/NanoJev) — A 0.6B open replica of the JEV interface with parallel decisions and a training pipeline.
